@@ -1,0 +1,24 @@
+.partners {
+    &__swiper {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 8.9rem;
+    }
+
+    &__slide {
+        height: 16.3rem;
+    }
+
+    &__content {
+        background: #FFFFFF;
+        border-radius: 0.4rem;
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+			
+        img {
+            border-radius: 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.structure {
+	width: 102.3rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4rem;
+	&__main {
+		width: 100%;
+		border-radius: 6px;
+	}
+
+	&__submain {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 4rem;
+	}
+
+	&__block {
+		width: 49rem;
+		display: block;
+		padding: 1.8rem 2.8rem;
+		min-height: 10rem;
+		font-weight: 700;
+		font-size: 2.3rem;
+	}
+
+	&__block-top {
+		width: 102.3rem;
+		padding: 1.5rem 11.2rem;
+	}
+}

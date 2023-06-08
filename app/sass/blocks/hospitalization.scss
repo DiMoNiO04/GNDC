@@ -1,0 +1,219 @@
+.hospitalization {
+    margin-top: 5.6rem;
+    padding-bottom: 15rem;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 44.4rem;
+    }
+
+    &__item {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 125% ;
+        color: rgba(63, 76, 92, 0.69);
+        margin-bottom: 2.5rem;
+        display: block;
+        cursor: pointer;
+        padding-left: 2rem;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 0.6rem;
+            height: 0.6rem;
+            background: rgba(63, 76, 92, 0.69);
+            border-radius: 50%;
+            left: 0;
+            top: 0.8rem;
+        }
+    }
+
+    &__item.active {
+        font-size: 2.3rem;
+        line-height: 135%;
+        color: #3F4C5C;
+        &::before {
+            background: #3F4C5C;
+        }
+    }
+
+		&__btn {
+			background-color: #FFFFFF;
+			width: 100%;
+		}
+
+    &__tabs {
+        margin-bottom: 6rem;
+        padding-left: 1rem;
+    }
+
+    &__block {
+        padding-top: 2.5rem;
+        padding-bottom: 3.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        background: #D8DEE8;
+        border-radius: 0.6rem;
+        width: 32.6rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__block-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 125%;
+        text-align: center;
+        color: #3F4C5C;
+        margin-bottom: 2.3rem;
+    }
+
+    &__block:last-child {
+        margin-bottom: 0;
+    }
+
+    &__link {
+        position: relative;
+        width: 21rem;
+        &::before {
+            position: absolute;
+            content:'';
+            width: 2.4rem;
+            height: 2.4rem;
+            background-image: url(../img/icon/pdf.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            left: 2.3rem;
+        }
+    }
+
+    &__right {
+        width: 98.2rem;
+        padding-top: 8.3rem;
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__content.active {
+        display: block;
+    }
+
+    &__content-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 125% ;
+        color: #3F4C5C;
+        margin-bottom: 1.8rem;
+
+    }
+
+    &__content-lists {
+        margin-bottom: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #3F4C5C;
+
+        li {
+            
+            margin-bottom: 0rem;
+            padding-left: 2.5rem;
+            position: relative;
+          
+            &::before {
+                position: absolute;
+                content: '';
+                width: 0.5rem;
+                height: 0.5rem;
+                background: rgba(63, 76, 92, 0.69);
+                border-radius: 50%;
+                left: 1rem;
+                top: 1.2rem;
+            }
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__content-image {
+        width: 100%;
+        height: 48.5rem;
+
+        img {
+            border-radius: 0.6rem;
+        }
+    }
+
+    &__content-wrap {
+        margin-bottom: 4rem;
+    }
+
+    &__content-wrap:last-child {
+        margin-bottom: 0;
+    }
+
+    &__conditions-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #3F4C5C;
+        margin-bottom: 2.2rem;
+    }
+
+    &__conditions-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #3F4C5C;
+    }
+
+    &__conditions-lists {
+       
+        margin-bottom: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #3F4C5C;
+        margin-top: 0.8rem;
+
+        li {
+            
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 0.5rem;
+                height: 0.5rem;
+                background: rgba(63, 76, 92, 0.69);
+                border-radius: 50%;
+                left: 0;
+                top: 1.2rem;
+            }
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+.record {
+    margin-top: 5.8rem;
+    padding-bottom: 15rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 70rem;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 136%;
+        color: rgba(63, 76, 92, 0.69);
+        margin-bottom: 3.5rem;
+
+        a {
+            color:#00AC60;
+        }
+        p {
+            margin-bottom: 1.4rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+		&__btn {
+			width: 28.7rem;
+		}
+
+    &__form {
+        input {
+            font-family: 'Circe';
+            width: 69.9rem;
+            height: 6rem;
+            background: #D8DEE8;
+            border-radius: 0.8rem;
+            display: block;
+            margin-bottom: 1.5rem;
+            border: none;
+            padding-left: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 136%;
+            color: rgba(63, 76, 92, 0.62);
+        }
+
+        input:last-child {
+            margin-bottom: 0;
+        }
+
+
+        textarea {
+            border: none;
+            width: 69.9rem;
+            min-height: 12.6rem;
+            background: #D8DEE8;
+            border-radius: 0.8rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: rgba(63, 76, 92, 0.74);
+            resize: none;
+            padding-top: 1.8rem;
+            padding-left: 1.8rem;
+            margin-bottom: 3rem;
+        }
+
+       .all-btn {
+					width: 28.7rem;
+					background: #FFFFFF;
+					border: 1px solid #3F4C5C;
+					border-radius: 6px;
+					span {
+						color: #3F4C5C;
+					}
+					&:hover {
+						background-color: #00AC60;
+						transition: all 0.5s ease-in-out;
+						span {
+							color: #FFFFFF;
+						}
+					}
+       }
+    }
+
+    &__form-captcha {
+        width: 41.2rem;
+        height: 10.3rem;
+        display: inline-flex;
+				flex-direction: column;
+				justify-content: space-between;
+        margin-bottom: 3.7rem;
+				background: inherit;
+				border: 1px solid rgba(63, 76, 92, 0.62);
+				border-radius: 3px;
+				padding: 1.5rem 2rem 0.3rem 1.7rem;
+    }
+
+		.checkbox-record span {
+			padding-left: 5.6rem;
+		}
+
+		&__form-logo {
+			width: 6.3rem;
+			height: 6rem;
+		}
+
+		&__form-block {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__form-text {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.2rem;
+			line-height: 1.8rem;
+			display: inline-flex;
+			align-items: center;
+			justify-content: flex-end;
+			column-gap: 2.6rem;
+			font-feature-settings: 'tnum' on, 'lnum' on;
+			color: rgba(63, 76, 92, 0.74);
+			position: relative;
+			span:first-child {
+				&::after {
+					position: absolute;
+					content: "";
+					width: 0.6rem;
+					height: 0.6rem;
+					border-radius: 50%;
+					background: rgba(63, 76, 92, 0.74);
+					top: calc(50% - 0.6rem/2);
+					right: calc(36% + 0.6rem/2);
+				}
+			}
+		}
+
+    &__slide-image {
+
+    }
+
+    &__swiper {
+        overflow: hidden;
+        width: 65.9rem;
+        position: relative;
+    }
+
+    &__pagination {
+        position: absolute;
+        z-index: 2;
+        bottom: 3.5rem;
+        left: 43%;
+    }
+
+    .checkbox-other {
+        margin: 0 0 3.5rem 0;  
+    }
+
+    &__bullets {
+        .swiper-pagination-bullet {
+            margin-right: 1.3rem!important;
+        }
+    }
+}

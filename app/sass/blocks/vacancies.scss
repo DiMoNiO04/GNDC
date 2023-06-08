@@ -1,0 +1,113 @@
+.vacancies {
+	width: 115.4rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4rem;
+
+	&__menu-items {
+		display: flex;
+		column-gap: 0.4rem;
+	}
+
+	&__menu-item {
+    padding: 1.8rem 0;
+    width: 28.6rem;
+		font-weight: 700;
+		height: 10rem;
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: 4rem;
+	}
+
+	&__title {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 130%;
+		text-decoration-line: underline;
+		display: block;
+		cursor: pointer;
+		padding-left: 3rem;
+		position: relative;
+		margin-bottom: 0.4rem;
+		&::before {
+				position: absolute;
+				content: '';
+				width: 0.4rem;
+				height: 0.4rem;
+				background: rgba(63, 76, 92, 0.69);
+				border-radius: 50%;
+				left: 0.5rem;
+				top: 1rem;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		row-gap: 1rem;
+	}
+
+	&__subtitle {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 150%;
+		color: #3F4C5C;
+	}
+
+	&__descs {
+		display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 150%;
+		color: rgba(63, 76, 92, 0.69);
+		&-green {
+			font-weight: 700;
+			text-decoration-line: underline;
+			color: #00AC60;
+			cursor: pointer;
+			&:hover {
+				cursor: pointer;
+				text-decoration-line: none;
+			}
+		}
+	}
+
+	&__desc {
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.4rem;
+	}
+
+	&__point {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 150%;
+		display: block;
+		cursor: pointer;
+		padding-left: 3rem;
+		position: relative;
+		color: rgba(63, 76, 92, 0.69);
+		&::before {
+				position: absolute;
+				content: '';
+				width: 0.4rem;
+				height: 0.4rem;
+				background: rgba(63, 76, 92, 0.69);
+				border-radius: 50%;
+				left: 0.5rem;
+				top: 1rem;
+		}
+	}
+}

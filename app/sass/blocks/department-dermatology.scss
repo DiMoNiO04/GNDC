@@ -1,0 +1,116 @@
+.employees {
+	margin-top: 5.6rem;
+	padding-bottom: 15rem;
+
+	&__wrapper {
+		display: flex;
+		column-gap: 16.2rem;
+	}
+
+	&__left {
+		width: 39.6rem;
+	}
+
+	&__main {
+		width: 39.6rem;
+		height: 39.6rem;
+		margin-bottom: 3.4rem;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__main-link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 130%;
+		color: #00AC60;
+		margin-bottom: 1rem;
+		display: inline-block;
+		&::after {
+			background: #00AC60;
+		}
+	}
+
+	&__main-job {
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 2.7rem;
+		color: #3F4C5C;
+		margin-bottom: 2rem;
+	}
+
+	&__degrees-title {
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 2.7rem;
+		color: #3F4C5C;
+		margin-bottom: 0.5rem;
+	}
+
+	&__degrees-items li {
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: #3F4C5C;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 2.3rem;
+		line-height: 150%;
+		text-transform: uppercase;
+		color: #3F4C5C;
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: 2.3rem;
+		line-height: 150%;
+		color: #3F4C5C;
+		margin-bottom: 2rem;
+	}
+
+	&__name {
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 150%;
+		color: #3F4C5C;
+		margin-bottom: 0.6rem;
+		display: inline-block;
+	}
+
+	&__job {
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 150%;
+		color: rgba(63, 76, 92, 0.69);
+	}
+
+	&__img {
+		width: 30.8rem;
+		height: 30.8rem;
+		margin-bottom: 1.6rem;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__right {
+		width: 100%;
+		padding-top: 8rem;
+		display: flex;
+		flex-direction: column;
+		row-gap: 3rem;
+	}
+
+	&__items {
+		display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 3rem;
+	}
+}

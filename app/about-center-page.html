@@ -165,7 +165,7 @@
 				autoCenter: true,
 				gradients: true,
 				duration: 1000,
-				pages: 112,
+				pages: 18,
 				when: {
 					turning: function(e, page, view) {
 						console.log(page)
@@ -204,9 +204,9 @@
 							$('.sj-book .p2').removeClass('fixed');
 		
 						if (page<book.turn('pages'))
-							$('.sj-book .p111').addClass('fixed');
+							$('.sj-book .p17').addClass('fixed');
 						else
-							$('.sj-book .p111').removeClass('fixed');
+							$('.sj-book .p17').removeClass('fixed');
 		
 						Hash.go('page/'+page).update();
 							
@@ -258,7 +258,7 @@
 		
 					}
 				}
-			});
+			}). turn('page', 4);
 		
 		
 			$('#slider').slider('option', 'max', numberOfViews(flipbook));
@@ -279,8 +279,8 @@
 		yepnope({
 			test : Modernizr.csstransforms,
 			yep: ['./lib/turn.min.js'],
-			nope: ['./lib/turn.html4.min.js', 'cssBook/jquery.ui.html4.css'],
-			both: ['js/book.js', 'cssBook/jquery.ui.css', 'cssBook/book.css'],
+			nope: ['./lib/turn.html4.min.js'],
+			both: ['js/book.js', 'cssBook/book.css'],
 			complete: loadApp
 		});
 		

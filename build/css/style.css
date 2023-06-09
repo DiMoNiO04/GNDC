@@ -598,19 +598,6 @@ img {
      object-fit: cover;
 }
 
-.link::after {
-  content: "";
-  display: block;
-  height: 0.2rem;
-  width: 100%;
-  background-color: #3F4C5C;
-  position: relative;
-  top: -0.5rem;
-}
-.link:hover::after {
-  visibility: hidden;
-}
-
 .title {
   font-style: normal;
   font-weight: 700;
@@ -3171,6 +3158,9 @@ img {
 .aside__content {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
+}
+.aside__link::after {
+  display: none;
 }
 
 .aside__btn {

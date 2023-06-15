@@ -3,11 +3,13 @@
 *::after {
     box-sizing: border-box;
 }
+
 html {
     font-family: 'Circe',sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 0.520835vw; // на разрешении 1920 0.520835vw === 10px
+    -webkit-text-size-adjust: 100%;
+    font-size: .450835vw;
     -webkit-animation: bugfix infinite 1s;
     line-height: 1.3;
     margin: 0;

@@ -93,6 +93,12 @@ $('.hospitalization__item').click(function() {
 	
 	$('.hospitalization__content.active').removeClass('active'); // 3
 	content.addClass('active'); // 4
+
+	if(id == 1) {
+		$('.hospitalization__block').removeClass('hidden'); // 1
+	} else {
+		$('.hospitalization__block').addClass('hidden'); // 1
+	}
 });
 });
 

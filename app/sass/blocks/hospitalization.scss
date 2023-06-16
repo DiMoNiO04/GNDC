@@ -6,10 +6,6 @@
         justify-content: space-between;
     }
 
-    &__left {
-        width: 44.4rem;
-    }
-
     &__item {
         font-style: normal;
         font-weight: 700;
@@ -44,8 +40,16 @@
 
 		&__btn {
 			background-color: #FFFFFF;
-			width: 100%;
+			width: 21rem;
+			column-gap: 1.8rem;
+			img {
+				width: 1.8rem;
+				height: 2rem;
+				object-fit: contain;
+				fill: #FFFFFF;
+			}
 		}
+
 
     &__tabs {
         margin-bottom: 6rem;
@@ -64,6 +68,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+				&.hidden {
+					display: none;
+				}
     }
 
     &__block-title {
@@ -185,8 +192,11 @@
         color: #3F4C5C;
     }
 
+		&__conditions-text {
+			margin-bottom: 0.8rem;
+		}
+
     &__conditions-lists {
-       
         margin-bottom: 4rem;
         font-style: normal;
         font-weight: 400;

@@ -1894,6 +1894,14 @@ img {
 }
 .employees__main-link::after {
   background: #00AC60;
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0.01rem;
+  width: 100%;
+}
+.employees__main-link:hover::after {
+  visibility: visible;
 }
 .employees__main-job {
   font-weight: 400;
@@ -1936,6 +1944,16 @@ img {
   color: #3F4C5C;
   margin-bottom: 0.6rem;
   display: inline-block;
+}
+.employees__name::after {
+  display: block;
+  content: "";
+  height: 0.01rem;
+  width: 100%;
+  background-color: #3F4C5C;
+}
+.employees__name:hover::after {
+  visibility: hidden;
 }
 .employees__job {
   font-weight: 400;

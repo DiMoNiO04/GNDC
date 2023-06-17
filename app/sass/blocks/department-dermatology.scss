@@ -34,7 +34,7 @@
 			content: "";
 			display: block;
 			visibility: hidden;
-			height: 0.01rem;
+			height: 0.1rem;
 			width: 100%;
 		}
 		&:hover::after {
@@ -91,7 +91,7 @@
 		&::after {
 			display: block;
 			content: "";
-			height: 0.01rem;
+			height: 0.1rem;
 			width: 100%;
 			background-color: #3F4C5C;
 		}

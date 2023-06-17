@@ -323,10 +323,19 @@ img {
 }
 
 .checkbox-other a {
-	text-decoration: underline;
-	color:#00AC60;
-	&:hover {
-		text-decoration: none;
+	color: #00AC60;
+	display: inline-block;
+	&::after {
+		display: block;
+		content: "";
+		height: 0.01rem;
+		width: 100%;
+		background-color: #00AC60;
+		position: relative;
+		bottom: 0.3rem;
+	}
+	&:hover::after {
+		visibility: hidden;
 	}
 }
 .checkbox-other span:before {

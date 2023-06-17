@@ -856,11 +856,20 @@ img {
 }
 
 .checkbox-other a {
-  text-decoration: underline;
   color: #00AC60;
+  display: inline-block;
 }
-.checkbox-other a:hover {
-  text-decoration: none;
+.checkbox-other a::after {
+  display: block;
+  content: "";
+  height: 0.01rem;
+  width: 100%;
+  background-color: #00AC60;
+  position: relative;
+  bottom: 0.3rem;
+}
+.checkbox-other a:hover::after {
+  visibility: hidden;
 }
 
 .checkbox-other span:before {
@@ -1897,7 +1906,7 @@ img {
   content: "";
   display: block;
   visibility: hidden;
-  height: 0.01rem;
+  height: 0.1rem;
   width: 100%;
 }
 .employees__main-link:hover::after {
@@ -1948,7 +1957,7 @@ img {
 .employees__name::after {
   display: block;
   content: "";
-  height: 0.01rem;
+  height: 0.1rem;
   width: 100%;
   background-color: #3F4C5C;
 }

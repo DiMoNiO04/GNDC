@@ -638,7 +638,7 @@ img {
   opacity: 1;
 }
 .pagination__bullets .swiper-pagination-bullet:hover {
-  background: rgba(0, 172, 96, 0.3);
+  opacity: 0.5;
 }
 .pagination__bullets .swiper-pagination-bullet-active {
   background: #00AC60;
@@ -664,7 +664,7 @@ img {
   height: 1.2rem;
 }
 .pagination__prev:hover, .pagination__next:hover {
-  background: rgba(0, 172, 96, 0.3);
+  opacity: 0.5;
 }
 
 .select {
@@ -5044,4 +5044,109 @@ img {
   line-height: 150%;
   text-transform: uppercase;
   color: #3F4C5C;
+}
+
+.reference {
+  margin-top: 5.8rem;
+  padding-bottom: 15rem;
+}
+.reference__subtitle {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #3F4C5C;
+  margin-bottom: 2.2rem;
+}
+.reference__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4rem;
+}
+.reference__items li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.4rem;
+}
+.reference__items-title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 130%;
+  color: #3F4C5C;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2rem;
+}
+.reference__items-title::before {
+  display: block;
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: #3F4C5C;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0.5rem;
+}
+.reference__task-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+.reference__contact-block a {
+  color: #00AC60;
+  display: inline-block;
+}
+.reference__contact-block a::after {
+  display: block;
+  content: "";
+  height: 0.1rem;
+  width: 100%;
+  background-color: #00AC60;
+  position: relative;
+  bottom: 0.4rem;
+}
+.reference__contact-block a:hover::after {
+  visibility: hidden;
+}
+.reference li {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #3F4C5C;
+}
+.reference__aplicator {
+  margin-top: 4rem;
+}
+.reference__swipper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2.2rem;
+}
+.reference__pagination {
+  margin-top: 2.2rem;
+}
+.reference__next, .reference__prev {
+  background-color: #ffffff;
+  border: 0.1rem solid #3F4C5C;
+}
+.reference__bullets .swiper-pagination-bullet-active {
+  background: #3F4C5C;
 }

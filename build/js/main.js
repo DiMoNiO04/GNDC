@@ -28,7 +28,6 @@ const mainSlider = new Swiper('#main__swiper', {
    
 });
 
-
 const partnersSlider = new Swiper('#partners__swiper', {
     slidesPerView: 5,
     wrapperClass: 'partners__swiper-wrapper ',
@@ -52,8 +51,6 @@ const partnersSlider = new Swiper('#partners__swiper', {
     },
    
 });
-
-
 
 const recordSlider = new Swiper('.record__swiper', {
   slidesPerView: 1,
@@ -218,3 +215,29 @@ const largeSlider = ()=>{
 	})
 }
 window.addEventListener('load', largeSlider)
+
+
+
+const referenceSlider = new Swiper('#reference__swipper', {
+	slidesPerView: 1,
+	wrapperClass: 'reference__swipper-wrapper',
+	slideClass: 'reference__slide',
+	spaceBetween: 20,
+	loop: true,
+	navigation: {
+			prevEl: '.reference__prev',
+			nextEl: '.reference__next',
+		},
+	pagination: {
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `
+				<span class="${className}">
+				 
+				</span>
+			`;
+		},
+		el: '.reference__bullets',
+	},
+ 
+});

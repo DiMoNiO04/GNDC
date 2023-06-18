@@ -4988,3 +4988,60 @@ img {
 .footer__policy span {
   opacity: 0.5;
 }
+
+.telemedicine {
+  margin-top: 5.6rem;
+  padding-bottom: 15rem;
+}
+.telemedicine__block {
+  margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #3F4C5C;
+}
+.telemedicine__block:last-child {
+  margin-bottom: 0;
+}
+.telemedicine__block a {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 50%;
+  color: #3F4C5C;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.telemedicine__block a::after {
+  content: "";
+  display: inline-block;
+  height: 0.1rem;
+  width: 100%;
+  background-color: #3F4C5C;
+}
+.telemedicine__block a:hover::after {
+  visibility: hidden;
+}
+.telemedicine__block ul {
+  padding-left: 2.4rem;
+}
+.telemedicine__block li {
+  list-style: unset;
+}
+.telemedicine__subtitle {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #3F4C5C;
+}

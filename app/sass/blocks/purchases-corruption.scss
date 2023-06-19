@@ -1,0 +1,34 @@
+.purchases,
+.corruption {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2.2rem;
+
+	&__item {
+		position: relative;
+		padding-left: 2rem;
+	}
+
+	&__item a{
+		font-weight: 700;
+		font-size: 2.3rem;
+		line-height: 150%;
+		color: #3F4C5C;
+		border-bottom: 0.1rem solid #3F4C5C;
+		&:hover {
+			border-bottom: none;
+		}
+	}
+
+	&__item::before {
+		content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #3f4c5c;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+	}
+}

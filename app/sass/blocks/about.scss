@@ -107,16 +107,13 @@
 		padding-top: 8rem;
 	}
 
+	&__wrap-corruption {
+		justify-content: flex-start !important;
+	}
+
 	&__wrap.active {
 		display: flex;
     align-items: center;
     justify-content: center;
 	}
-}
-
-
-#album {
-	margin: 5% auto;
-	width: 600px;
-	height: 500px;
 }

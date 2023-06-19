@@ -217,3 +217,17 @@ $(".header__center-subitem").hover(function() {
   }
 });
 //-------------------------------//
+
+
+//-------------Clinical---------------------//
+$('.clinical-two__tabs-item').click(function() {
+	var id = $(this).attr('data-tab'),
+			content = $('.clinical-two__wrap[data-tab="'+ id +'"]');
+	
+	$('.clinical-two__tabs-item.active').removeClass('active'); // 1
+	$(this).addClass('active'); // 2
+	
+	$('.clinical-two__wrap.active').removeClass('active'); // 3
+	content.addClass('active'); // 4
+});
+//-----------------------------------------//

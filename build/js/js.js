@@ -2,6 +2,7 @@
 const distantBtns = document.querySelectorAll('.distant__btn');
 const vacanciesBtns = document.querySelectorAll('.vacancies__menu-item');
 const photosBtns = document.querySelectorAll('.photos__menu-item');
+const clinicalRecBtns = document.querySelectorAll('.clinical-two__menu-item');
 
 
 const setActiveBtn = (indexButton, btns) => {
@@ -26,4 +27,7 @@ vacanciesBtns.forEach((item, indexButton) => clickActiveBtn(item, indexButton, v
 
 const activeBtnPhotos = indexButton => setActiveBtn(indexButton, photosBtns)
 photosBtns.forEach((item, indexButton) => clickActiveBtn(item, indexButton, photosBtns))
+
+const activeBtnClinicalRec = indexButton => setActiveBtn(indexButton, clinicalRecBtns)
+clinicalRecBtns.forEach((item, indexButton) => clickActiveBtn(item, indexButton, clinicalRecBtns))
 //-------------------------------------------------//

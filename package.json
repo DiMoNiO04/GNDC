@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "air-datepicker": "^3.3.3",
+    "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "jquery-zoom": "^1.7.21",

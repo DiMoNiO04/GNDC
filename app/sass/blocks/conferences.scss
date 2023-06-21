@@ -93,6 +93,13 @@
 		top: 5rem;
 	}
 
+	&__block {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+
 	&__title {
 		font-weight: 700;
 		font-size: 23px;

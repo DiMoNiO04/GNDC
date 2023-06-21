@@ -2258,6 +2258,12 @@ img {
   right: 5rem;
   top: 5rem;
 }
+.conferences-modal__block {
+  display: none;
+}
+.conferences-modal__block.active {
+  display: block;
+}
 .conferences-modal__title {
   font-weight: 700;
   font-size: 23px;

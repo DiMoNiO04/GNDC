@@ -241,3 +241,28 @@ const referenceSlider = new Swiper('#reference__swipper', {
 	},
  
 });
+
+
+const conferencesModalSlider = new Swiper('#conferences-modal__swipper', {
+	slidesPerView: 1,
+	wrapperClass: 'conferences-modal__swipper-wrapper',
+	slideClass: 'conferences-modal__slide',
+	spaceBetween: 20,
+	loop: true,
+	navigation: {
+			prevEl: '.conferences-modal__prev',
+			nextEl: '.conferences-modal__next',
+		},
+	pagination: {
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `
+				<span class="${className}">
+				 
+				</span>
+			`;
+		},
+		el: '.conferences-modal__bullets',
+	},
+ 
+});

@@ -2221,10 +2221,16 @@ img {
   width: 100%;
   height: 100%;
 }
-.conferences__block:last-child p {
-  position: absolute;
-  top: calc(50% - 35px);
-  left: calc(50% - 140px);
+.conferences__block:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 .conferences__desc {

@@ -48,12 +48,10 @@
 	}
 
 	&__block:last-child {
-		p {
-			position: absolute;
-			top: calc(50% - 70px/2);
-			left: calc(50% - 280px/2);
-			text-align: center;
-		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 
 	&__desc {

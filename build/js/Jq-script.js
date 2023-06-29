@@ -48,6 +48,15 @@ $(".cost__block").each(function() {
     });
 });
 
+$(".block__item").each(function() {
+	let more = $(this).find(".block__item-inner");
+	let hide = $(this).find(".block__content");
+	hide.hide();
+	more.click(function() {
+			hide.slideToggle();
+			more.toggleClass('active');
+	});
+});
 
 $(".schedule__block").each(function() {
     let more = $(this).find(".schedule__block-inner");
@@ -130,18 +139,6 @@ $('.connection__item').click(function() {
 
 
 //-------------------About------------
-$('.about__item').click(function() {
-	var id = $(this).attr('data-tab'),
-			content = $('.about__wrap[data-tab="'+ id +'"]');
-	
-	$('.about__item.active').removeClass('active'); // 1
-	$(this).addClass('active'); // 2
-	
-	$('.about__wrap.active').removeClass('active'); // 3
-	content.addClass('active'); // 4
-});
-
-
 $('.about__item-inteligence').click(function() {
 	var id = $(this).attr('data-tab'),
 			content = $('.inteligence__wrap[data-tab="'+ id +'"]');
@@ -231,3 +228,20 @@ $('.clinical-two__tabs-item').click(function() {
 	content.addClass('active'); // 4
 });
 //-----------------------------------------//
+
+
+
+
+
+
+$('[data-vacancies').on('click', function() {
+	$('[data-vacancies]').removeClass('active');
+  $(`[data-vacancies="${$(this).data('vacancies')}"`).addClass('active');
+});
+
+
+$('[data-menu').on('click', function() {
+	$('[data-menu]').removeClass('active');
+  $(`[data-menu="${$(this).data('menu')}"`).addClass('active');
+});
+

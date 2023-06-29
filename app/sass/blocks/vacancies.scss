@@ -4,17 +4,7 @@
 	flex-direction: column;
 	row-gap: 4rem;
 
-	&__menu-items {
-		display: flex;
-		column-gap: 0.4rem;
-	}
 
-	&__menu-item {
-    padding: 1.8rem 0;
-    width: 28.6rem;
-		font-weight: 700;
-		height: 10rem;
-	}
 
 	&__items {
 		display: flex;
@@ -71,16 +61,6 @@
 		font-size: 1.8rem;
 		line-height: 150%;
 		color: rgba(63, 76, 92, 0.69);
-		&-green {
-			font-weight: 700;
-			text-decoration-line: underline;
-			color: #00AC60;
-			cursor: pointer;
-			&:hover {
-				cursor: pointer;
-				text-decoration-line: none;
-			}
-		}
 	}
 
 	&__desc {

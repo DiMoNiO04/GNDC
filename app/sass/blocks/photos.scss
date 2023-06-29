@@ -4,18 +4,6 @@
 	flex-direction: column;
 	row-gap: 4rem;
 
-	&__menu-items {
-		width: 100%;
-		display: flex;
-		column-gap: 0.5rem;
-	}
-
-	&__menu-item {
-		width: 50%;
-		height: 10rem;
-		font-weight: 700;
-	}
-
 	&__items {
 		display: flex;
     flex-wrap: wrap;

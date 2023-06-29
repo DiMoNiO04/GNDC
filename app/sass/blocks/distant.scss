@@ -37,19 +37,8 @@
     }
 
     &__text-link {
-        font-style: normal;
         font-weight: 700;
         font-size: 1.8rem;
-        display: block;
-        height: fit-content;
-        line-height: 1;
-        border-bottom: 0.1rem solid #00AC60;
-        color: #00AC60;
-				&:hover {
-					transition: all 0.5s ease-in-out;
-					cursor: pointer;
-					text-decoration: none;
-				}
     }
 
     &__wrapper {
@@ -199,7 +188,6 @@
         .select:last-child {
             margin-bottom: 0;
         }
-        
     }
 
     &__content-right-content-title {

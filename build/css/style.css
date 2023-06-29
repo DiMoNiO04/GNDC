@@ -855,23 +855,6 @@ img {
   color: #3F4C5C;
 }
 
-.checkbox-other a {
-  color: #00AC60;
-  display: inline-block;
-}
-.checkbox-other a::after {
-  display: block;
-  content: "";
-  height: 0.01rem;
-  width: 100%;
-  background-color: #00AC60;
-  position: relative;
-  bottom: 0.3rem;
-}
-.checkbox-other a:hover::after {
-  visibility: hidden;
-}
-
 .checkbox-other span:before {
   content: "";
   display: inline-block;
@@ -952,6 +935,49 @@ img {
   -webkit-font-feature-settings: "tnum" on, "lnum" on;
           font-feature-settings: "tnum" on, "lnum" on;
   color: #3F4C5C;
+}
+
+.menu__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+}
+
+.menu__button {
+  padding: 1.8rem 0;
+  width: 50%;
+  font-weight: 700;
+  height: 10rem;
+}
+
+.subtitle {
+  color: #3F4C5C;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+}
+
+.link-green {
+  color: #00AC60;
+  display: inline-block;
+  font-weight: 400;
+}
+.link-green::after {
+  display: block;
+  content: "";
+  height: 0.1rem;
+  width: 100%;
+  background-color: #00AC60;
+  position: relative;
+  bottom: 0.4rem;
+}
+.link-green:hover::after {
+  visibility: hidden;
 }
 
 .about {
@@ -1361,20 +1387,6 @@ img {
           flex-direction: column;
   row-gap: 4rem;
 }
-.vacancies__menu-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 0.4rem;
-     -moz-column-gap: 0.4rem;
-          column-gap: 0.4rem;
-}
-.vacancies__menu-item {
-  padding: 1.8rem 0;
-  width: 28.6rem;
-  font-weight: 700;
-  height: 10rem;
-}
 .vacancies__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1441,18 +1453,6 @@ img {
   font-size: 1.8rem;
   line-height: 150%;
   color: rgba(63, 76, 92, 0.69);
-}
-.vacancies__text-green {
-  font-weight: 700;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #00AC60;
-  cursor: pointer;
-}
-.vacancies__text-green:hover {
-  cursor: pointer;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
 }
 .vacancies__desc {
   display: -webkit-box;
@@ -1654,20 +1654,6 @@ img {
           flex-direction: column;
   row-gap: 4rem;
 }
-.photos__menu-items {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 0.5rem;
-     -moz-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-}
-.photos__menu-item {
-  width: 50%;
-  height: 10rem;
-  font-weight: 700;
-}
 .photos__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1742,14 +1728,6 @@ img {
   margin-top: 5.6rem;
   padding-bottom: 15rem;
 }
-.clinical__title {
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #3F4C5C;
-  margin-bottom: 3rem;
-}
 .clinical__link-title {
   font-style: normal;
   font-weight: 700;
@@ -1770,6 +1748,9 @@ img {
      -moz-column-gap: 5rem;
           column-gap: 5rem;
   margin-bottom: 8rem;
+}
+.clinical__menu .subtitle {
+  text-align: center;
 }
 .clinical__items {
   width: 50%;
@@ -1888,6 +1869,14 @@ img {
 }
 .clinical-two__right {
   width: 115.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4rem;
 }
 .clinical-two__wrap {
   display: -webkit-box;
@@ -1937,20 +1926,6 @@ img {
 }
 .clinical-two__tabs {
   padding-left: 1rem;
-}
-.clinical-two__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-column-gap: 0.5rem;
-     -moz-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-}
-.clinical-two__menu-item {
-  width: 50%;
-  height: 10rem;
-  font-weight: 700;
 }
 .clinical-two__items {
   display: -webkit-box;
@@ -3078,22 +3053,8 @@ img {
   color: #3F4C5C;
 }
 .distant__text-link {
-  font-style: normal;
   font-weight: 700;
   font-size: 1.8rem;
-  display: block;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  line-height: 1;
-  border-bottom: 0.1rem solid #00AC60;
-  color: #00AC60;
-}
-.distant__text-link:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
 }
 .distant__wrapper {
   margin-bottom: 4rem;
@@ -3671,6 +3632,10 @@ img {
 }
 .aside-form .checkbox-other a {
   color: #fff;
+  border-bottom: 0.1rem solid #fff;
+}
+.aside-form .checkbox-other a:hover {
+  border-bottom: none;
 }
 .aside-form .checkbox-other span:before {
   background: #FFFFFF;
@@ -3703,15 +3668,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 1.9rem;
-}
-.schedule__title strong {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3.6rem;
-  line-height: 112%;
-  color: #323439;
-  display: block;
-  margin-bottom: 2.6rem;
 }
 .schedule__title span {
   font-style: normal;
@@ -4149,9 +4105,6 @@ img {
   color: rgba(63, 76, 92, 0.69);
   margin-bottom: 3.5rem;
 }
-.record__text a {
-  color: #00AC60;
-}
 .record__text p {
   margin-bottom: 1.4rem;
 }
@@ -4419,14 +4372,6 @@ img {
 .hospitalization__content.active {
   display: block;
 }
-.hospitalization__content-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 125%;
-  color: #3F4C5C;
-  margin-bottom: 1.8rem;
-}
 .hospitalization__content-lists {
   margin-bottom: 4rem;
   font-style: normal;
@@ -4465,15 +4410,6 @@ img {
 }
 .hospitalization__content-wrap:last-child {
   margin-bottom: 0;
-}
-.hospitalization__conditions-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #3F4C5C;
-  margin-bottom: 2.2rem;
 }
 .hospitalization__conditions-text {
   font-style: normal;
@@ -4739,7 +4675,7 @@ img {
   width: 86.4rem;
 }
 .connection__appeal-title a {
-  color: #00AC60;
+  font-weight: 700;
 }
 .connection__appeal {
   font-style: normal;
@@ -4793,14 +4729,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 4rem;
-}
-.connection__contact-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #3F4C5C;
 }
 .connection__contact-text {
   font-style: normal;
@@ -4889,6 +4817,9 @@ img {
   width: 19rem;
   background: #FFFFFF;
 }
+.connection .subtitle {
+  margin-bottom: 0;
+}
 
 .contacts {
   margin-top: 5.8rem;
@@ -4931,15 +4862,6 @@ img {
 .contacts__top-left {
   width: 82rem;
 }
-.contacts__top-left-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 112%;
-  margin-bottom: 5rem;
-  font-variant: small-caps;
-  color: #3F4C5C;
-}
 .contacts__top-left-text {
   font-style: normal;
   font-weight: 700;
@@ -4951,13 +4873,6 @@ img {
 }
 .contacts__top-left-info--email {
   margin-top: 1rem;
-}
-.contacts__top-left-info--title p {
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #3F4C5C;
 }
 .contacts__top-left-info {
   display: -webkit-box;
@@ -5418,25 +5333,13 @@ img {
 .telemedicine__block li {
   list-style: unset;
 }
-.telemedicine__subtitle {
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #3F4C5C;
+.telemedicine .subtitle {
+  margin-bottom: 0;
 }
 
 .reference {
   margin-top: 5.8rem;
   padding-bottom: 15rem;
-}
-.reference__subtitle {
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #3F4C5C;
-  margin-bottom: 2.2rem;
 }
 .reference__items {
   display: -webkit-box;
@@ -5489,22 +5392,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 1rem;
-}
-.reference__contact-block a {
-  color: #00AC60;
-  display: inline-block;
-}
-.reference__contact-block a::after {
-  display: block;
-  content: "";
-  height: 0.1rem;
-  width: 100%;
-  background-color: #00AC60;
-  position: relative;
-  bottom: 0.4rem;
-}
-.reference__contact-block a:hover::after {
-  visibility: hidden;
 }
 .reference li {
   font-weight: 400;

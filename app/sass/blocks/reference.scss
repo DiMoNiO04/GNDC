@@ -2,15 +2,6 @@
 	margin-top: 5.8rem;
 	padding-bottom: 15rem;
 
-	&__subtitle {
-		font-weight: 700;
-		font-size: 2.3rem;
-		line-height: 150%;
-		text-transform: uppercase;
-		color: #3F4C5C;
-		margin-bottom: 2.2rem;
-	}
-
 	&__items {
 		display: flex;
 		flex-direction: column;
@@ -47,25 +38,6 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 1rem;
-	}
-
-	&__contact-block {
-		a {
-			color: #00AC60;
-			display: inline-block;
-			&::after {
-				display: block;
-				content: "";
-				height: 0.1rem;
-				width: 100%;
-				background-color: #00AC60;
-				position: relative;
-				bottom: 0.4rem;
-			}
-			&:hover::after {
-				visibility: hidden;
-			}
-		}
 	}
 
 	li {

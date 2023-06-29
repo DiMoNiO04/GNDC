@@ -128,8 +128,11 @@
     }
     
     .checkbox-other a {
-      
         color:#fff;
+				border-bottom: 0.1rem solid #fff;
+				&:hover {
+					border-bottom: none;
+				}
     }
     .checkbox-other span:before {
         background: #FFFFFF;
@@ -151,6 +154,4 @@
     .focused span:before {
         box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
     }
-
-    
 }

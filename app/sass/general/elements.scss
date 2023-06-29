@@ -1,3 +1,5 @@
+
+
 .all-btn__white,
 .all-btn__blue {
 	display: inline-flex;
@@ -322,22 +324,6 @@ img {
 	color: #3F4C5C;
 }
 
-.checkbox-other a {
-	color: #00AC60;
-	display: inline-block;
-	&::after {
-		display: block;
-		content: "";
-		height: 0.01rem;
-		width: 100%;
-		background-color: #00AC60;
-		position: relative;
-		bottom: 0.3rem;
-	}
-	&:hover::after {
-		visibility: hidden;
-	}
-}
 .checkbox-other span:before {
 	content: "";
 	display: inline-block;
@@ -407,5 +393,46 @@ img {
 		align-items: center;
 		font-feature-settings: 'tnum' on, 'lnum' on;
 		color: #3F4C5C;
+	}
+}
+
+
+
+.menu__buttons {
+	display: flex;
+	column-gap: 0.4rem;
+}
+
+.menu__button {
+	padding: 1.8rem 0;
+	width: 50%;
+	font-weight: 700;
+	height: 10rem;
+}
+
+.subtitle {
+	color: #3F4C5C;
+	font-size: 2.3rem;
+	font-weight: 700;
+	line-height: 150%;
+	text-transform: uppercase;
+	margin-bottom: 2.2rem;
+}
+
+.link-green {
+	color: #00AC60;
+	display: inline-block;
+	font-weight: 400;
+	&::after {
+		display: block;
+		content: "";
+		height: 0.1rem;
+		width: 100%;
+		background-color: #00AC60;
+		position: relative;
+		bottom: 0.4rem;
+	}
+	&:hover::after {
+		visibility: hidden;
 	}
 }

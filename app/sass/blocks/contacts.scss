@@ -42,16 +42,6 @@
         width: 82rem;
     }
 
-    &__top-left-title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 3.2rem;
-        line-height: 112%;
-        margin-bottom: 5rem;
-        font-variant: small-caps;
-        color: #3F4C5C;
-    }
-
     &__top-left-text  {
         font-style: normal;
         font-weight: 700;
@@ -60,20 +50,11 @@
         text-transform: uppercase;
         margin-bottom: 4rem;
         color: #3F4C5C;
-
     }
 
     &__top-left-info--email {
         margin-top: 1rem;
     }
-
-		&__top-left-info--title p{
-			font-weight: 700;
-			font-size: 2.3rem;
-			line-height: 150%;
-			text-transform: uppercase;
-			color: #3F4C5C;
-		}
 
     &__top-left-info {
         display: flex;
@@ -156,7 +137,6 @@
             line-height: 150%;
             display: block;
             color: #3F4C5C;
-
         }
 
         li {
@@ -166,7 +146,6 @@
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
             margin-bottom: 1.4rem;
-
         }
 
         li:last-child {

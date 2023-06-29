@@ -12,10 +12,6 @@
         width: 33.4rem;
     }
 
-    &__right {
-     
-    }
-
     &__item {
         font-style: normal;
         font-weight: 700;
@@ -231,7 +227,7 @@
         color: #3F4C5C;
         width: 86.4rem;
         a {
-            color: #00AC60;
+            font-weight: 700;
         }
     }
 
@@ -280,15 +276,6 @@
 			display: flex;
 			flex-direction: column;
 			row-gap: 4rem;
-		}
-
-		&__contact-title {
-			font-style: normal;
-			font-weight: 700;
-			font-size: 2.3rem;
-			line-height: 150%;
-			text-transform: uppercase;
-			color: #3F4C5C;
 		}
 
 		&__contact-text {
@@ -376,5 +363,9 @@
 		&__form-btn {
 			width: 19rem;
 			background: #FFFFFF;
+		}
+
+		.subtitle {
+			margin-bottom: 0;
 		}
 }

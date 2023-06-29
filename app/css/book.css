@@ -28,7 +28,7 @@
 #canvas{
 	width: 96rem;
 	height: 60rem;
-	margin: 0 auto;
+	margin: 0 auto 2rem auto;
 }
 
 #book-zoom{

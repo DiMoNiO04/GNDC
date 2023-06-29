@@ -4,73 +4,7 @@
 		z-index: -1;
 	}
 
-	&__blocks {
-		display: flex;
-		flex-direction: column;
-		row-gap: 3rem;
-		margin-top: 6rem;
-	}
-
-	&__block {
-		width: 115.4rem;
-    background: #d8dee8;
-    border-radius: 0.8rem;
-		padding: 2rem 4rem 0 4rem;
-	}
-
-	&__block-inner {
-		display: flex;
-		cursor: pointer;
-		justify-content: space-between;
-	}
-
-	&__block-inner.active {
-		.history__block-arrow {
-			transform: rotate(180deg);
-			transition: all 0.3s;
-		}
-	}
-
-	&__block-title {
-		line-height: 1;
-    color: #3f4c5c;
-    padding-bottom: 2rem;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 2.3rem;
-		line-height: 150%;
-		color: #3F4C5C;
-		width: 100.6rem;
-	}
-
-	&__block-arrow {
-		width: 3.2rem;
-    height: 3.2rem;
-    background: #00ac60;
-    border-radius: 50%;
-    display: flex;
-    transition: all .3s;
-    justify-content: center;
-    cursor: pointer;
-    align-items: center;
-    margin-left: 5.6rem;
-		svg {
-			width: 1.2rem;
-    	height: 0.8rem;
-		}
-	}
-
-	&__content[style*="display: block"] {
-		display: flex !important;
-		flex-direction: column;
-		row-gap: 2rem;
-		padding-bottom: 2rem;
-	}
-
-
-	&__text,
-	p {
-		font-style: normal;
+	&__content p {
 		font-weight: 400;
 		font-size: 1.8rem;
 		line-height: 150%;
@@ -89,13 +23,6 @@
 		width: 46rem;
 		height: 46rem;
 	}
-
-	&__content {
-		display: none;
-		&.active {
-			display: flex;
-		}
-	}
 }
 
 .history__book {
@@ -108,13 +35,7 @@
 	display: flex;
 	padding: 7rem;
 	overflow: hidden;
-	.qw {
-		width: 100%;
-    display: flex;
-		column-gap: 7rem;
-		position: relative;
-		transition: all 0.5s;
-	}
+	
 	p,
 	.history__main-img {
 		flex: 0 0 47%;
@@ -125,9 +46,10 @@
 #magazine{
 	width:800px;
 	height:400px;
- }
- #magazine .turn-page{
+}
+
+#magazine .turn-page{
 	width:400px;
 	height:400px;
 	background-color:#ccc;
- }
+}

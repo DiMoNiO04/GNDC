@@ -1,84 +1,41 @@
 
 .inteligence {
-	display: flex;
-	flex-direction: column;
-	row-gap: 3rem;
-	width: 100%;
-	&__block {
-		width: 115.4rem;
-		background: #d8dee8;
-		border-radius: 0.8rem;
-	}
-
-	&__block-title {
-		font-style: normal;
-		font-weight: 700;
-		font-size: 2.6rem;
-		line-height: 135%;
-		color: #3F4C5C;
-	}
-
-	&__block-inner {
+	&__content-item {
 		display: flex;
-		justify-content: space-between;
-		cursor: pointer;
-		padding: 2rem 4rem;
+    flex-direction: column;
+    row-gap: 3rem;
 	}
 
-	&__block-inner.active {
-		.inteligence__block-arrow {
-			transform: rotate(180deg);
-			transition: all 0.3s;
-		}
+	&__subtitle {
+		margin-bottom: 0;
 	}
 
-	&__block-arrow {
-		width: 3.2rem;
-		height: 3.2rem;
-		min-width: 3.2rem;
-		min-height: 3.2rem;
-		max-height: 3.2rem;
-		background: #00AC60;
-		border-radius: 50%;
+	&__items {
 		display: flex;
-		transition: all 0.3s;
-		justify-content: center;
-		cursor: pointer;
-		align-items:center;
-		margin-left: 5.6rem;
-		svg {
-				width: 1.2rem;
-				height: 0.8rem;
-		}
-	}
-
-	&__list {
 		flex-direction: column;
 		row-gap: 1rem;
-		padding: 3rem 4rem 2rem 4rem;
-	}
-
-	&__item {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 1.8rem;
-		line-height: 150%;
-		text-decoration-line: underline;
-		color: #3F4C5C;
-		padding-left: 3rem;
-		position: relative;
-		&::before {
-			position: absolute;
-			content: '';
-			width: 0.4rem;
-			height: 0.4rem;
-			background:  #3F4C5C;;
-			border-radius: 50%;
-			left: 0;
-			top: 1rem;
-		}
-		&:hover {
-			text-decoration-line: none;cursor: pointer;
+		li {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.8rem;
+			line-height: 150%;
+			text-decoration-line: underline;
+			color: #3F4C5C;
+			padding-left: 3rem;
+			position: relative;
+			&::before {
+				position: absolute;
+				content: '';
+				width: 0.4rem;
+				height: 0.4rem;
+				background:  #3F4C5C;;
+				border-radius: 50%;
+				left: 1rem;
+				top: 1rem;
+			}
+			&:hover {
+				text-decoration-line: none;cursor: pointer;
+			}
 		}
 	}
 
@@ -96,7 +53,6 @@
 	}
 
 	&__title {
-		font-style: normal;
 		font-weight: 700;
 		font-size: 2rem;
 		line-height: 2.5rem;
@@ -104,7 +60,6 @@
 	}
 
 	&__text {
-		font-style: normal;
 		font-weight: 400;
 		font-size: 1.8rem;
 		line-height: 150%;
@@ -112,14 +67,7 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 1.5rem;
-		&-uppercase {
-			font-style: normal;
-			font-weight: 700;
-			font-size: 2.3rem;
-			line-height: 150%;
-			text-transform: uppercase;
-			color: #3F4C5C;
-		}
+		
 		&-requisites {
 			flex-direction: row;
 			column-gap: 7.5rem;

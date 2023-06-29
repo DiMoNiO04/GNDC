@@ -1,15 +1,13 @@
 
 .managment {
-	display: flex;
-	flex-direction: column;
-	row-gap: 3rem;
-	width: 100%;
-	&__deputy-director, 
+
 	&__employees,
 	&__director {
 		display: flex;
 		justify-content: center;
-		column-gap: 3rem;
+		column-gap: 2.95rem;
+    row-gap: 3rem;
+		flex-wrap: wrap;
 	}
 
 	&__block {
@@ -52,6 +50,7 @@
 
 	&__button {
 		width: 100%;
+		background: #FFFFFF;
 		&:hover {
 			color: #FFFFFF;
 			background: #3F4C5C;

@@ -239,15 +239,22 @@ $('[data-vacancies').on('click', function() {
   $(`[data-vacancies="${$(this).data('vacancies')}"`).addClass('active');
 });
 
-
 $('[data-menu').on('click', function() {
 	$('[data-menu]').removeClass('active');
   $(`[data-menu="${$(this).data('menu')}"`).addClass('active');
+	
+	const title = document.querySelector(`[data-menu="${$(this).data('menu')}"`).firstChild.textContent;
+	$('.about__title').html(title);
 });
 
 $('[data-structure').on('click', function() {
 	$('[data-structure]').removeClass('active');
   $(`[data-structure="${$(this).data('structure')}"`).addClass('active');
+});
+
+$('[data-photo-category').on('click', function() {
+	$('[data-photo-category]').removeClass('active');
+  $(`[data-photo-category="${$(this).data('photo-category')}"`).addClass('active');
 });
 
 $('[data-photo').on('click', function() {

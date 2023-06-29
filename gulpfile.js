@@ -74,7 +74,7 @@ gulp.task("html", function () {
 			"app/extras/**",
 			"app/lib/**",
 			"app/pages/**",
-			"app/cssBook/**"
+			"app/css/**"
     ], {
       base: "app"
     })

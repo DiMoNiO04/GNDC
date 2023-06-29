@@ -106,15 +106,15 @@
 	<main>
 		<section class="hospitalization">
     <div class="container">
-        <div class="hospitalization__wrapper">  
+				<div class="title">Госпитализация</div>
+				
+        <div class="hospitalization__wrapper">
             <div class="hospitalization__left">
-                <div class="title">Госпитализация</div>
-                <ul class="hospitalization__tabs">
-                    <li class="hospitalization__item active" data-tab="1">Условия госпитализации</li>
-                    <li class="hospitalization__item" data-tab="2">Порядок госпитализации</li>
-                    <li class="hospitalization__item" data-tab="3">Документы необходимые<br> для госпитализации</li>
+                <ul class="menu__tabs">
+                    <li class="menu__tab active" data-menu="conditions">Условия госпитализации</li>
+                    <li class="menu__tab" data-menu="order">Порядок госпитализации</li>
+                    <li class="menu__tab" data-menu="documentation">Документы необходимые для госпитализации</li>
                 </ul>
-                <!--  -->
                 <div class="hospitalization__block">
                     <div class="hospitalization__block-title">Cтоимость медицинских услуг в стационарных условиях</div>
                     <a href="" download="" class="all-btn__blue hospitalization__btn">
@@ -134,14 +134,12 @@
 										</a>
                 </div>
             </div>
+
             <div class="hospitalization__right">
-                <div class="hospitalization__content active" data-tab="1">
+                <div class="hospitalization__content active" data-menu="conditions">
                     <div class="subtitle">Специализированная, в том числе, высокотехнологичная, медицинская помощь оказывается в стационарных условиях:</div>
                     <ul class="hospitalization__content-lists">
-                        <li>за счёт средств обязательного медицинского страхования в рамках Территориальных программ государственных гарантий оказания гражданам Российской Федерации бесплатной медицинской помощи;
-                            
-                           
-                            </li>
+                        <li>за счёт средств обязательного медицинского страхования в рамках Территориальных программ государственных гарантий оказания гражданам Российской Федерации бесплатной медицинской помощи;</li>
                         <li>за счёт средств добровольного медицинского страхования;</li>
                         <li> за счёт личных средств граждан</li>
                         <li>в рамках научной деятельности ФГБУ «ГНЦДК» Минздрава России</li>
@@ -150,7 +148,7 @@
                         <img src="./img/hospitalization.webp" alt="">
                     </div>
                 </div>
-                <div class="hospitalization__content " data-tab="2">
+                <div class="hospitalization__content " data-menu="order">
                     <div class="hospitalization__content-wrap">
                         <div class="subtitle">Порядок госпитализации</div>
                         <div class="hospitalization__conditions-text">Гопитализация пациентов в ФГБУ «ГНЦДК» Минздрава России осуществляется в плановом порядке на основании решения врачебной комиссии.<br>
@@ -164,7 +162,6 @@
                             <li>необходимость повторной госпитализации по рекомендации федеральной медицинской организации.</li>
                         </ul>
                     </div>
-                    <!--  -->
 
                     <div class="hospitalization__content-wrap">
                         <div class="subtitle">Адрес стационара:</div>
@@ -178,7 +175,7 @@
                     </div>
       
                 </div>
-                <div class="hospitalization__content " data-tab="3">
+                <div class="hospitalization__content" data-menu="documentation">
                     <div class="hospitalization__content-wrap">
                         <div class="subtitle">Документы необходимые для госпитализации</div>
                         <ul class="hospitalization__conditions-lists">
@@ -192,6 +189,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

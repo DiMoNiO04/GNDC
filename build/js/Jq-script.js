@@ -48,6 +48,8 @@ $(".cost__block").each(function() {
     });
 });
 
+
+
 $(".block__item").each(function() {
 	let more = $(this).find(".block__item-inner");
 	let hide = $(this).find(".block__content");
@@ -57,6 +59,8 @@ $(".block__item").each(function() {
 			more.toggleClass('active');
 	});
 });
+
+
 
 $(".schedule__block").each(function() {
     let more = $(this).find(".schedule__block-inner");
@@ -69,28 +73,7 @@ $(".schedule__block").each(function() {
 });
 
 
-$(".inteligence__block").each(function() {
-	let more = $(this).find(".inteligence__block-inner");
-	let hide = $(this).find(".inteligence__wrap");
-	hide.hide();
-	more.click(function() {
-			hide.slideToggle();
-			more.toggleClass('active');
-	});
-});
 
-
-$(".history__block").each(function() {
-	let more = $(this).find(".history__block-inner");
-	let hide = $(this).find(".history__content");
-
-	hide.hide();
-	more.click(function() {
-			hide.slideToggle();
-			more.toggleClass('active');
-			$(".qw").html(hide.html())
-	});
-});
 
 
 $('.hospitalization__item').click(function() {
@@ -244,7 +227,7 @@ $('[data-menu').on('click', function() {
   $(`[data-menu="${$(this).data('menu')}"`).addClass('active');
 	
 	const title = document.querySelector(`[data-menu="${$(this).data('menu')}"`).firstChild.textContent;
-	$('.about__title').html(title);
+	$('.title').html(title);
 });
 
 $('[data-structure').on('click', function() {
@@ -257,8 +240,8 @@ $('[data-photo-category').on('click', function() {
   $(`[data-photo-category="${$(this).data('photo-category')}"`).addClass('active');
 });
 
-$('[data-photo').on('click', function() {
-	$('[data-photo]').removeClass('active');
-  $(`[data-photo="${$(this).data('photo')}"`).addClass('active');
-});
+// $('[data-photo').on('click', function() {
+// 	$('[data-photo]').removeClass('active');
+//   $(`[data-photo="${$(this).data('photo')}"`).addClass('active');
+// });
 

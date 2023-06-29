@@ -2,6 +2,20 @@
 	margin-top: 5.6rem;
 	padding-bottom: 15rem;
 
+	&__wrap {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 4rem;
+	}
+
+	&__content {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+
 	.title {
 		display: none;
 		&.active {
@@ -23,7 +37,7 @@
 		width: 115.4rem;
 	}
 	
-	&__item {
+	&__tab {
 		font-style: normal;
 		font-weight: 700;
 		font-size: 2rem;
@@ -96,7 +110,7 @@
 		}
 	}
 
-	&__item.active {
+	&__tab.active {
 		font-size: 2.3rem;
 		line-height: 135%;
 		color: #3F4C5C;
@@ -109,16 +123,12 @@
 		padding-left: 1rem;
 	}
 
-	&__wrap {
+	&__item {
 		display: none;
 		padding-top: 8rem;
 	}
 
-	&__wrap-corruption {
-		justify-content: flex-start !important;
-	}
-
-	&__wrap.active {
+	&__item.active {
 		display: flex;
     align-items: center;
     justify-content: center;

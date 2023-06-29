@@ -124,25 +124,25 @@
 				<div class="title" data-menu="photo-gallery">Фотогалерия</div>
 
 				<ul class="about__tabs">
-					<li class="about__item active" data-menu="history">История создания ГНЦДК</li>
-					<li class="about__item" data-menu="management">Руководство</li>
-					<li class="about__item" data-menu="structure">Структура ГНЦДК</li>
-					<ul class="about__item" data-menu="intelligence">
+					<li class="about__tab active" data-menu="history">История создания ГНЦДК</li>
+					<li class="about__tab" data-menu="management">Руководство</li>
+					<li class="about__tab" data-menu="structure">Структура ГНЦДК</li>
+					<ul class="about__tab" data-menu="intelligence">
 						Сведения о медицинской организации
-						<li class="about__item-inteligence" data-menu="4.1">Основные сведения о медицинской организации</li>
-						<li class="about__item-inteligence" data-menu="4.2">Учредительные документы</li>
-						<li class="about__item-inteligence" data-menu="4.3">Документы организации</li>
-						<li class="about__item-inteligence" data-menu="4.4">Лицензии и сведетельства</li>
+						<li class="about__tab-inteligence" data-menu="4.1">Основные сведения о медицинской организации</li>
+						<li class="about__tab-inteligence" data-menu="4.2">Учредительные документы</li>
+						<li class="about__tab-inteligence" data-menu="4.3">Документы организации</li>
+						<li class="about__tab-inteligence" data-menu="4.4">Лицензии и сведетельства</li>
 					</ul>
-					<li class="about__item" data-menu="vacancies">Вакансии</li>
-					<li class="about__item" data-menu="purchases">Закупки</li>
-					<li class="about__item" data-menu="corruption">Противодействие коррупции</li>
-					<li class="about__item" data-menu="photo-gallery">Фотогалерея</li>
+					<li class="about__tab" data-menu="vacancies">Вакансии</li>
+					<li class="about__tab" data-menu="purchases">Закупки</li>
+					<li class="about__tab" data-menu="corruption">Противодействие коррупции</li>
+					<li class="about__tab" data-menu="photo-gallery">Фотогалерея</li>
 				</ul>
 			</div>
 			
 			<div class="about__right">
-				<div class="about__wrap" data-menu="history">
+				<div class="about__item" data-menu="history">
 					<div class="history">
 						<div id="canvas">
 							<div id="book-zoom">
@@ -490,7 +490,7 @@
 					</div>
 				</div>
 
-				<div class="about__wrap" data-menu="management">
+				<div class="about__item" data-menu="management">
 					<div class="managment">
 
 						<div class="managment__director">
@@ -603,25 +603,365 @@
 					</div>
 				</div>
 
-				<div class="about__wrap" data-menu="structure">
-					<div class="structure">
-						<div class="structure__main">
-							<a href="#" class="structure__block all-btn__blue structure__block-top">
-								Центральный научно-исследовательский кожно-венерологический институт <br>(ЦНИКВИ ФГБУ «ГНЦДК» Минздрав России)
-							</a>
+				<div class="about__item" data-menu="structure">
+					<div class="about__wrap">
+						<div class="menu__buttons">
+							<button class="menu__button all-btn__blue active" data-structure="sergiev-posad">Сергиево-Посадский филиал</button>
+							<button class="menu__button all-btn__blue" data-structure="fgbu">ФГБУ «ГНЦДК» Минздрав России</button>
+							<button class="menu__button all-btn__blue" data-structure="nizhny">Нижегородский филиал</button>
 						</div>
-						<div class="structure__submain">
-							<a href="#" class="structure__block all-btn__blue">
-								Сергиево-Посадский филиал <br>(СПФ ФГБУ «ГНЦДК» Минздрав России)
-							</a>
-							<a href="#" class="structure__block all-btn__blue">
-								Нижегородский филиал <br>(НГФ ФГБУ «ГНЦДК» Минздрав России)
-							</a>
+
+						<div class="about__content active" data-structure="sergiev-posad">
+							<ul class="block__items">
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Наука</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Клиника</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Заведующий клиникой</a></li>
+											<li><a href="#">Общеклинический персонал</a></li>
+											<li><a href="#">Приемное отделение</a></li>
+											<li><a href="#">Консультативно-диагностический центр</a></li>
+											<li><a href="#">Отделение клинической дерматологии</a></li>
+											<li><a href="#">Отделение физиотерапии</a></li>
+											<li><a href="#">Лабораторный центр</a></li>
+											<li><a href="#">Аптека</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Образование</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+										</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Научно- организационный отдел</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Испытательный лабораторный центр</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Финансово-экономические, кадровые, хозяйственные подразделения</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div class="about__content" data-structure="fgbu">
+							<ul class="block__items">
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Наука</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Клиника</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Заведующий клиникой</a></li>
+											<li><a href="#">Общеклинический персонал</a></li>
+											<li><a href="#">Приемное отделение</a></li>
+											<li><a href="#">Консультативно-диагностический центр</a></li>
+											<li><a href="#">Отделение клинической дерматологии</a></li>
+											<li><a href="#">Отделение физиотерапии</a></li>
+											<li><a href="#">Лабораторный центр</a></li>
+											<li><a href="#">Аптека</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Образование</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+										</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Научно- организационный отдел</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Испытательный лабораторный центр</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Финансово-экономические, кадровые, хозяйственные подразделения</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div class="about__content" data-structure="nizhny">
+							<ul class="block__items">
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Наука</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Клиника</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Заведующий клиникой</a></li>
+											<li><a href="#">Общеклинический персонал</a></li>
+											<li><a href="#">Приемное отделение</a></li>
+											<li><a href="#">Консультативно-диагностический центр</a></li>
+											<li><a href="#">Отделение клинической дерматологии</a></li>
+											<li><a href="#">Отделение физиотерапии</a></li>
+											<li><a href="#">Лабораторный центр</a></li>
+											<li><a href="#">Аптека</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Образование</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+										</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Научно- организационный отдел</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Испытательный лабораторный центр</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+								<li class="block__item">
+									<div class="block__item-inner">
+										<div class="block__item-title">Финансово-экономические, кадровые, хозяйственные подразделения</div>
+										<div class="block__item-arrow">
+												<svg  viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.48689 0.944269L6.999 6.045L12.5111 0.944269C12.6096 0.852951 12.7418 0.801828 12.8795 0.801828C13.0171 0.801828 13.1493 0.852951 13.2478 0.944269C13.2955 0.988622 13.3334 1.04156 13.3593 1.09999C13.3851 1.15841 13.3984 1.22115 13.3984 1.28453C13.3984 1.3479 13.3851 1.41064 13.3593 1.46907C13.3334 1.52749 13.2955 1.58043 13.2478 1.62478L7.3839 7.05216C7.28092 7.14745 7.14281 7.20078 6.999 7.20078C6.8552 7.20078 6.71708 7.14745 6.6141 7.05216L0.75018 1.62583C0.702157 1.58145 0.663989 1.52838 0.637926 1.46976C0.611864 1.41114 0.598437 1.34815 0.598437 1.28453C0.598437 1.2209 0.611864 1.15792 0.637926 1.0993C0.663989 1.04068 0.702157 0.987608 0.75018 0.943221C0.848663 0.851904 0.980869 0.800781 1.11854 0.800781C1.2562 0.800781 1.38841 0.851904 1.48689 0.943221V0.944269Z" fill="white"/>
+												</svg>
+										</div>
+									</div>
+									<div class="block__content">
+										<ul class="block__content-item structure__items">
+											<li><a href="#">Отдел дерматологии</a></li>
+											<li><a href="#">Отдел инфекций, передаваемых половым путем</a></li>
+											<li><a href="#">Отдел лабораторной диагностики ИППП и дерматозов</a></li>
+											<li><a href="#">Научная часть</a></li>
+											<li><a href="#">Группа эпидемиологии ИППП и дерматозов</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 
-				<div class="about__wrap" data-menu="intelligence">
+				<div class="about__item" data-menu="intelligence">
 					<div class="inteligence">
 
 						<div class="inteligence__block">
@@ -838,8 +1178,8 @@
 					</div>
 				</div>
 
-				<div class="about__wrap active" data-menu="vacancies">
-					<div class="vacancies">
+				<div class="about__item" data-menu="vacancies">
+					<div class="about__wrap">
 
 						<div class="menu__buttons">
 							<div class="menu__button all-btn__blue active" data-vacancies="scientific">Научные</div>
@@ -868,7 +1208,7 @@
 							</li>
 						</ul>
 
-						<div class="vacancies__content active" data-vacancies="scientific">
+						<div class="about__content active" data-vacancies="scientific">
 							<ul class="block__items">
 								<li class="block__item">
 									<div class="block__item-inner">
@@ -988,7 +1328,7 @@
 							</ul>
 						</div>
 
-						<div class="vacancies__content" data-vacancies="clinical">
+						<div class="about__content" data-vacancies="clinical">
 							<ul class="block__items">
 								<li class="block__item">
 									<div class="block__item-inner">
@@ -1108,7 +1448,7 @@
 							</ul>
 						</div>
 
-						<div class="vacancies__content" data-vacancies="lab-center">
+						<div class="about__content" data-vacancies="lab-center">
 							<ul class="block__items">
 								<li class="block__item">
 									<div class="block__item-inner">
@@ -1228,7 +1568,7 @@
 							</ul>
 						</div>
 
-						<div class="vacancies__content" data-vacancies="admin-control">
+						<div class="about__content" data-vacancies="admin-control">
 							<ul class="block__items">
 								<li class="block__item">
 									<div class="block__item-inner">
@@ -1351,14 +1691,14 @@
 					</div>
 				</div>
 
-				<div class="about__wrap" data-menu="purchases">
+				<div class="about__item" data-menu="purchases">
 					<ul class="purchases">
-						<li class="purchases__item">
+						<li>
 								<a href="https://zakupki.gov.ru/epz/gws/card/common-info.html?gwsInfoId=230310" target="_blank">
 									Перечень товаров, работ, услуг, закупки которых осуществляются у субъектов малого и среднего предпринимательства в рамках закупок согласно Федеральному закону от 18 июля 2011 г. N 223-ФЗ "О закупках товаров, работ, услуг отдельными видами юридических лиц"
 								</a>
 						</li>
-						<li class="purchases__item">
+						<li>
 							<a href="https://zakupki.gov.ru/epz/orderplan/purchase-plan/card/common-info.html?id=872461&infoId=6906369" target="_blank">
 								План закупок учреждения в рамках Федерального закона от 18 июля 2011 г. N 223-ФЗ "О закупках товаров, работ, услуг отдельными видами юридических лиц"
 							</a>
@@ -1366,7 +1706,7 @@
 					</ul>
 				</div>
 
-				<div class="about__wrap about__wrap-corruption" data-menu="corruption">
+				<div class="about__item" data-menu="corruption">
 					<ul class="corruption">
 						<li class="corruption__item">
 								<a href="https://cnikvi.ru/protivodeystvie-korruptsii/normativnye-pravovye-akty/" target="_blank">
@@ -1416,112 +1756,235 @@
 					</ul>
 				</div>
 
-				<div class="about__wrap" data-menu="photo-gallery">
-					<div class="photos">
+				<div class="about__item active" data-menu="photo-gallery">
+					<div class="about__wrap">
 						<div class="menu__buttons">
-							<div class="menu__button all-btn__blue" data-vacancies="event">Мероприятия</div>
-							<div class="menu__button all-btn__blue active" data-vacancies="department">Отделения</div>
+							<div class="menu__button all-btn__blue active" data-photo="event">Мероприятия</div>
+							<div class="menu__button all-btn__blue" data-photo="department">Отделения</div>
 						</div>
-						<ul class="photos__items" id="event">
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название мероприятия</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название мероприятия</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название мероприятия</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название мероприятия</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название мероприятия</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название мероприятия</div>
-								</a>
-							</li>
-						</ul>
-						<ul class="photos__items" id="department">
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название отделения</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название отделения</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название отделения</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название отделения</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название отделения</div>
-								</a>
-							</li>
-							<li class="photos__item">
-								<a href="#">
-									<div class="photos__item-image">
-										<img src="./img/photos/photo.webp" alt="">
-									</div>
-									<div class="photos__item-title">Название отделения</div>
-								</a>
-							</li>
-						</ul>
+
+						<div class="title photos__title active" data-photo="event">Название мероприятия</div>
+						<div class="title photos__title" data-photo="department">Название отделения</div>
+
+						<div class="about__content active" data-photo="event">
+							<ul class="photos__items">
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="about__content" data-photo="department">
+							<ul class="photos__items">
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="photos__item-image">
+											<img src="./img/photos/photo.webp" alt="">
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

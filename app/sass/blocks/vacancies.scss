@@ -1,16 +1,4 @@
 .vacancies {
-	width: 115.4rem;
-	display: flex;
-	flex-direction: column;
-	row-gap: 4rem;
-
-	&__content {
-		display: none;
-		&.active {
-			display: block;
-		}
-	}
-
 	&__subtitle {
 		font-style: normal;
 		font-weight: 400;

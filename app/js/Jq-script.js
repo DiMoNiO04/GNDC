@@ -245,3 +245,13 @@ $('[data-menu').on('click', function() {
   $(`[data-menu="${$(this).data('menu')}"`).addClass('active');
 });
 
+$('[data-structure').on('click', function() {
+	$('[data-structure]').removeClass('active');
+  $(`[data-structure="${$(this).data('structure')}"`).addClass('active');
+});
+
+$('[data-photo').on('click', function() {
+	$('[data-photo]').removeClass('active');
+  $(`[data-photo="${$(this).data('photo')}"`).addClass('active');
+});
+

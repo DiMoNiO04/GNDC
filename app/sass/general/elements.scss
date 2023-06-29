@@ -402,10 +402,11 @@ img {
 }
 
 .menu__button {
-	padding: 1.8rem 0;
+	padding: 1.8rem;
 	width: 50%;
 	font-weight: 700;
 	height: 10rem;
+	font-size: 2.3rem;
 }
 
 .subtitle {
@@ -471,6 +472,7 @@ img {
 	line-height: 1;
 	color: #3F4C5C;
 	max-width: 95rem;
+	line-height: 130%;
 }
 
 .block__item-arrow {

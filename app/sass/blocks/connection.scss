@@ -1,6 +1,7 @@
 .connection {
     margin-top: 5.6rem;
     padding-bottom: 15rem;
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -12,8 +13,11 @@
         width: 33.4rem;
     }
 
+		&__right {
+			width: 100%;
+		}
+
     &__item {
-        font-style: normal;
         font-weight: 700;
         font-size: 2rem;
         line-height: 125% ;
@@ -33,15 +37,14 @@
             left: 0;
             top: 0.8rem;
         }
-    }
-
-    &__item.active {
-        font-size: 2.3rem;
-        line-height: 135%;
-        color: #3F4C5C;
-        &::before {
-            background: #3F4C5C;
-        }
+				&.active {
+					font-size: 2.3rem;
+					line-height: 135%;
+					color: #3F4C5C;
+					&::before {
+							background: #3F4C5C;
+					}
+				}
     }
 
 		&__btn {
@@ -56,20 +59,17 @@
 
     &__wrap {
         display: none;
-        padding-top: 8.5rem;
     }
 
-    &__wrap.active {
-        display: block;
-    }
-
+		&__wrap.active {
+			display: block;
+		}
 
     &__block-inner {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
         padding-bottom: 0rem;
-        
     }
 
     &__block-inner.active {
@@ -87,14 +87,12 @@
         padding-top: 3.7rem;
         padding-right: 4rem;
         margin-bottom: 3rem;
-    }
-
-    &__block:last-child {
-        margin-bottom: 0;
+				&:last-child {
+					margin-bottom: 0;
+				}
     }
 
     &__block-title {
-        font-style: normal;
         font-weight: 700;
         font-size: 2.6rem;
         line-height: 130%;
@@ -126,7 +124,6 @@
         padding-bottom: 2.7rem;
         padding-top: 1rem;
         display: none;
-        
     }
 
     &__block-date {
@@ -134,12 +131,10 @@
         justify-content: space-between;
         padding-bottom: 2.9rem;
         border-bottom: 1px solid rgba(63, 76, 92, 0.2);
-        margin-bottom: 2.9rem;
-
+				margin-bottom: 1rem;
     }
 
     &__name {
-        font-style: normal;
         font-weight: 400;
         font-size: 2rem;
         line-height: 130%;
@@ -147,7 +142,6 @@
     }
 
     &__date {
-        font-style: normal;
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 130%;
@@ -155,22 +149,36 @@
     }
 
     &__text {
-        font-style: normal;
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
         color: #3F4C5C;
     }
 
-    &__swiper {
+    &__review-swiper,
+		&__question-swiper {
         width: 110rem;
         overflow: hidden;
-        
+        max-height: 263rem;
+				position: relative;
+				margin-bottom: 5rem;
     }
 
-    &__slide {
-        margin-bottom: 3rem;
-        height: fit-content!important;
+		&__question-swiper {
+			max-height: 158rem;
+		}
+
+		&__review-bullets,
+		&__question-bullets {
+			display: flex;
+			column-gap: 2rem;
+			transform: translate3d(0px,0%,0) !important;
+		}
+
+    &__review-slide,
+		&__question-slide {
+        // margin-bottom: 3rem;
+        height: fit-content !important;
     }
 
     &__feedback {
@@ -186,23 +194,13 @@
     }
 
     &__feedback-name {
-        font-style: normal;
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 135%;
         color: #3F4C5C;
     }
 
-    &__feedback-date {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 130%;
-        color: rgba(63, 76, 92, 0.69);
-    }
-
     &__feedback-work {
-        font-style: normal;
         font-weight: 400;
         font-size: 2rem;
         line-height: 130%;
@@ -210,16 +208,7 @@
         margin-bottom: 2.5rem;
     }
 
-    &__feedback-text {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 150%;
-        color: #3F4C5C;
-    }
-
     &__appeal-title {
-        font-style: normal;
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 135%;
@@ -232,14 +221,12 @@
     }
 
     &__appeal {
-        font-style: normal;
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
         color: #3F4C5C;
         max-width: 94.1rem;
         li {
-            font-style: normal;
             font-weight: 700;
             font-size: 2rem;
             line-height: 125% ;
@@ -259,6 +246,9 @@
                 left: 0;
                 top: 0.8rem;
             }
+						&:hover {
+							color: #3F4C5C;
+						}
         }
     }
 
@@ -277,14 +267,6 @@
 			flex-direction: column;
 			row-gap: 4rem;
 		}
-
-		&__contact-text {
-			font-style: normal;
-			font-weight: 400;
-			font-size: 1.8rem;
-			line-height: 150%;
-			color: #3F4C5C;
-		}
 		
 		&__section {
 			background: #D8DEE8;
@@ -299,7 +281,6 @@
 			}
 			input,
 			textarea {
-				font-style: normal;
 				font-weight: 400;
 				font-size: 1.6rem;
 				line-height: 136%;
@@ -313,7 +294,6 @@
 		}
 
 		&__form-title {
-			font-style: normal;
 			font-weight: 400;
 			font-size: 2rem;
 			line-height: 2.9rem;
@@ -321,7 +301,6 @@
 		}
 
 		&__form-block {
-			font-style: normal;
 			font-weight: 400;
 			font-size: 1.8rem;
 			line-height: 150%;
@@ -344,7 +323,6 @@
 
 		&__form-submit {
 			p {
-				font-style: normal;
 				font-weight: 400;
 				font-size: 1.8rem;
 				line-height: 2.7rem;

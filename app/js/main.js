@@ -81,18 +81,17 @@ const recordSlider = new Swiper('.record__swiper', {
 });
 
 
-const connectionSwiper = new Swiper('.connection__swiper', {
+const connectionReviewSwiper = new Swiper('#review__swiper', {
   direction: 'vertical',
   slidesPerView: 9,
-  wrapperClass: 'connection__swiper-wrapper',
-  slideClass: 'connection__slide',
+  wrapperClass: 'connection__review-swiper-wrapper',
+  slideClass: 'connection__review-slide',
   speed: 500,
   allowTouchMove:false,
   navigation: {
-    prevEl: '.connection__prev',
-    nextEl: '.connection__next',
+    prevEl: '.connection__review-prev',
+    nextEl: '.connection__review-next',
   },
-
   pagination: {
     clickable: true,
     renderBullet: function (index, className) {
@@ -102,12 +101,35 @@ const connectionSwiper = new Swiper('.connection__swiper', {
         </span>
       `;
     },
-    el: '.record__bullets',
+    el: '.connection__review-bullets',
   },
-
-
- 
 });
+
+const connectionQuestionSwiper = new Swiper('#question__swiper', {
+  direction: 'vertical',
+  slidesPerView: 9,
+  wrapperClass: 'connection__question-swiper-wrapper',
+  slideClass: 'connection__question-slide',
+  speed: 500,
+  allowTouchMove: false,
+	mousewheel: true,
+  navigation: {
+    prevEl: '.connection__question-prev',
+    nextEl: '.connection__question-next',
+  },
+  pagination: {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `
+        <span class="${className}">
+         
+        </span>
+      `;
+    },
+    el: '.connection__question-bullets',
+  },
+});
+
 
 
 const contactsSlider = new Swiper('.contacts__swiper', {
@@ -136,8 +158,8 @@ const contactsSlider = new Swiper('.contacts__swiper', {
     },
     el: '.contacts__bullets',
   },
- 
 });
+
 
 
 

@@ -1025,7 +1025,7 @@ img {
   font-size: 2.3rem;
   line-height: 1;
   color: #3F4C5C;
-  max-width: 95rem;
+  max-width: 92rem;
   line-height: 130%;
 }
 
@@ -4298,8 +4298,10 @@ img {
 .connection__left {
   width: 33.4rem;
 }
+.connection__right {
+  width: 100%;
+}
 .connection__item {
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 125%;
@@ -4338,7 +4340,6 @@ img {
 }
 .connection__wrap {
   display: none;
-  padding-top: 8.5rem;
 }
 .connection__wrap.active {
   display: block;
@@ -4372,7 +4373,6 @@ img {
   margin-bottom: 0;
 }
 .connection__block-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 2.6rem;
   line-height: 130%;
@@ -4419,35 +4419,47 @@ img {
           justify-content: space-between;
   padding-bottom: 2.9rem;
   border-bottom: 1px solid rgba(63, 76, 92, 0.2);
-  margin-bottom: 2.9rem;
+  margin-bottom: 1rem;
 }
 .connection__name {
-  font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 130%;
   color: #3F4C5C;
 }
 .connection__date {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 130%;
   color: rgba(63, 76, 92, 0.69);
 }
 .connection__text {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 150%;
   color: #3F4C5C;
 }
-.connection__swiper {
+.connection__review-swiper, .connection__question-swiper {
   width: 110rem;
   overflow: hidden;
+  max-height: 263rem;
+  position: relative;
+  margin-bottom: 5rem;
 }
-.connection__slide {
-  margin-bottom: 3rem;
+.connection__question-swiper {
+  max-height: 158rem;
+}
+.connection__review-bullets, .connection__question-bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  -webkit-transform: translate3d(0px, 0%, 0) !important;
+          transform: translate3d(0px, 0%, 0) !important;
+}
+.connection__review-slide, .connection__question-slide {
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
@@ -4467,36 +4479,19 @@ img {
   margin-bottom: 2.5rem;
 }
 .connection__feedback-name {
-  font-style: normal;
   font-weight: 700;
   font-size: 2.3rem;
   line-height: 135%;
   color: #3F4C5C;
 }
-.connection__feedback-date {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 130%;
-  color: rgba(63, 76, 92, 0.69);
-}
 .connection__feedback-work {
-  font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 130%;
   color: #00AC60;
   margin-bottom: 2.5rem;
 }
-.connection__feedback-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 150%;
-  color: #3F4C5C;
-}
 .connection__appeal-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 2.3rem;
   line-height: 135%;
@@ -4508,7 +4503,6 @@ img {
   font-weight: 700;
 }
 .connection__appeal {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 150%;
@@ -4516,7 +4510,6 @@ img {
   max-width: 94.1rem;
 }
 .connection__appeal li {
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 125%;
@@ -4536,6 +4529,9 @@ img {
   border-radius: 50%;
   left: 0;
   top: 0.8rem;
+}
+.connection__appeal li:hover {
+  color: #3F4C5C;
 }
 .connection__contact {
   margin-top: 8rem;
@@ -4560,13 +4556,6 @@ img {
           flex-direction: column;
   row-gap: 4rem;
 }
-.connection__contact-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 150%;
-  color: #3F4C5C;
-}
 .connection__section {
   background: #D8DEE8;
   border-radius: 8px;
@@ -4586,7 +4575,6 @@ img {
 }
 .connection__section input,
 .connection__section textarea {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 136%;
@@ -4598,14 +4586,12 @@ img {
   border: none;
 }
 .connection__form-title {
-  font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.9rem;
   color: #3F4C5C;
 }
 .connection__form-block {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 150%;
@@ -4631,7 +4617,6 @@ img {
   color: rgba(63, 76, 92, 0.74);
 }
 .connection__form-submit p {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.7rem;

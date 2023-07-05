@@ -52,7 +52,7 @@ const partnersSlider = new Swiper('#partners__swiper', {
    
 });
 
-const recordSlider = new Swiper('.record__swiper', {
+const recordSlider = new Swiper('#record__swiper', {
   slidesPerView: 1,
   speed: 500,
   wrapperClass: 'record__swiper-wrapper',

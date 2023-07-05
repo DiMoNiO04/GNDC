@@ -4007,15 +4007,14 @@ img {
   width: 70rem;
 }
 .record__text {
-  font-style: normal;
+  margin-bottom: 3.5rem;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 136%;
   color: rgba(63, 76, 92, 0.69);
-  margin-bottom: 3.5rem;
 }
 .record__text p {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 .record__text p:last-child {
   margin-bottom: 0;
@@ -4048,7 +4047,6 @@ img {
   min-height: 12.6rem;
   background: #D8DEE8;
   border-radius: 0.8rem;
-  font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.7rem;
@@ -4093,9 +4091,6 @@ img {
   border: 1px solid rgba(63, 76, 92, 0.62);
   border-radius: 3px;
   padding: 1.5rem 2rem 0.3rem 1.7rem;
-}
-.record .checkbox-record span {
-  padding-left: 5.6rem;
 }
 .record__form-logo {
   width: 6.3rem;
@@ -4155,11 +4150,14 @@ img {
   bottom: 3.5rem;
   left: 43%;
 }
+.record__bullets .swiper-pagination-bullet {
+  margin-right: 1.3rem !important;
+}
 .record .checkbox-other {
   margin: 0 0 3.5rem 0;
 }
-.record__bullets .swiper-pagination-bullet {
-  margin-right: 1.3rem !important;
+.record .checkbox-record span {
+  padding-left: 5.6rem;
 }
 
 .hospitalization {

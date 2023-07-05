@@ -112,17 +112,17 @@
 							<div class="record__text">
 									<p>Пожалуйста, заполните все поля регистрационной формы и нажмите кнопку «Записаться». Сотрудник Центра перезвонит вам в течение дня и запишет на приём к специалисту.
 											Если регистратор не сможет связаться с Вами по телефону, подтверждение заявки на приём придёт Вам на указанный e-mail адрес.</p>
-									<p>Или позвоните нам сами - <a href="#" class="link-green">+7 (499) 785-20-45</a></p>
+									<p>Или позвоните нам сами - <a href="tel:+7 (499) 785-20-45" class="link-green">+7 (499) 785-20-45</a></p>
 							</div>
-							<form class="record__form">
-									<input type="text" placeholder="ФИО*">
-									<input type="text" placeholder="Номер телефона*">
-									<input type="text" placeholder="E-mail*">
-									<textarea placeholder="Специалист или описание проблемы*"></textarea>
+							<form class="record__form" method="#" action="">
+									<input type="text" placeholder="ФИО*" name="#">
+									<input type="text" placeholder="Номер телефона*" name="#">
+									<input type="text" placeholder="E-mail*" name="#">
+									<textarea placeholder="Специалист или описание проблемы*" name="#"></textarea>
 									<div class="record__form-captcha">
 										 <div class="record__form-block">
 												<label class="checkbox-other checkbox-record">
-													<input type="checkbox" >
+													<input type="checkbox" name="#">
 													<span>Я не робот</span>
 												</label>
 												<div class="record__form-logo">
@@ -135,23 +135,29 @@
 											</div>
 									</div>
 									<label class="checkbox-other">
-											<input type="checkbox" >
+											<input type="checkbox" name="#">
 											<span>Я согласен на <a href="#" class="link-green">обработку персональных данных</a></span>
 									</label>
-									<button class="all-btn__white record__btn">Записаться</button>
+									<button class="all-btn__white record__btn" type="submit" name="#">Записаться</button>
 							</form>
 					</div>
 					<div class="record__right">
-							<div class="record__swiper swiper">
+							<div class="record__swiper swiper" id="record__swiper">
 									<div class="record__swiper-wrapper swiper-wrapper">
 											<div class="record__slide swiper-slide">
-													<div class="record__slide-image"><img src="./img/record2.webp" alt=""></div>
+													<div class="record__slide-image">
+														<img src="./img/record2.webp" alt="">
+													</div>
 											</div>
 											<div class="record__slide swiper-slide">
-													<div class="record__slide-image"><img src="./img/record.webp" alt=""></div>
+													<div class="record__slide-image">
+														<img src="./img/record.webp" alt="">
+													</div>
 											</div>
 											<div class="record__slide swiper-slide">
-													<div class="record__slide-image"><img src="./img/record2.webp" alt=""></div>
+													<div class="record__slide-image">
+														<img src="./img/record2.webp" alt="">
+													</div>
 											</div>
 									</div>
 									<!--  -->

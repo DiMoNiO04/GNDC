@@ -478,18 +478,8 @@ img {
 .block__item-arrow {
 	width: 3.2rem;
 	height: 3.2rem;
-	background: #00AC60;
-	border-radius: 50%;
-	display: flex;
-	transition: all 0.3s;
-	justify-content: center;
 	cursor: pointer;
-	align-items:center;
-	margin-left: 5.6rem;
-	svg {
-			width: 1.2rem;
-			height: 0.8rem;
-	}
+	transition: all 0.3s;
 }
 
 .block__content {

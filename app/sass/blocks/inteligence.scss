@@ -19,7 +19,6 @@
 			font-weight: 400;
 			font-size: 1.8rem;
 			line-height: 150%;
-			text-decoration-line: underline;
 			color: #3F4C5C;
 			padding-left: 3rem;
 			position: relative;
@@ -33,8 +32,12 @@
 				left: 1rem;
 				top: 1rem;
 			}
+		}
+		a {
+			border-bottom: 0.1rem solid;
 			&:hover {
-				text-decoration-line: none;cursor: pointer;
+				border-bottom: none;
+				cursor: pointer;
 			}
 		}
 	}

@@ -217,31 +217,49 @@ $('.clinical-two__tabs-item').click(function() {
 
 
 
-$('[data-vacancies').on('click', function() {
+$('[data-open-vacancies').on('click', function() {
+	$('[data-open-vacancies]').removeClass('active');
+  $(`[data-open-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
+
 	$('[data-vacancies]').removeClass('active');
-  $(`[data-vacancies="${$(this).data('vacancies')}"`).addClass('active');
+  $(`[data-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
 });
 
-$('[data-menu').on('click', function() {
+$('[data-open-menu').on('click', function() {
+	$('[data-open-menu]').removeClass('active');
+  $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
+
 	$('[data-menu]').removeClass('active');
-  $(`[data-menu="${$(this).data('menu')}"`).addClass('active');
+  $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
 	
-	const title = document.querySelector(`[data-menu="${$(this).data('menu')}"`).firstChild.textContent;
+	const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
 	$('.title').html(title);
 });
 
-$('[data-structure').on('click', function() {
+$('[data-open-structure').on('click', function() {
+	$('[data-open-structure]').removeClass('active');
+  $(`[data-open-structure="${$(this).data('open-structure')}"`).addClass('active');
+
 	$('[data-structure]').removeClass('active');
-  $(`[data-structure="${$(this).data('structure')}"`).addClass('active');
+  $(`[data-structure="${$(this).data('open-structure')}"`).addClass('active');
 });
 
-$('[data-photo-category').on('click', function() {
+$('[data-open-photo-category').on('click', function() {
+	$('.photos__gallery').removeClass('active')
+	$('.photos__contents').addClass('active')
+
+	$('[data-open-photo-category]').removeClass('active');
+  $(`[data-open-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
+
 	$('[data-photo-category]').removeClass('active');
-  $(`[data-photo-category="${$(this).data('photo-category')}"`).addClass('active');
+  $(`[data-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
 });
 
-// $('[data-photo').on('click', function() {
-// 	$('[data-photo]').removeClass('active');
-//   $(`[data-photo="${$(this).data('photo')}"`).addClass('active');
-// });
 
+$('.photos__item-image').on('click', function() {
+	$('.photos__gallery').addClass('active')
+	$('.photos__contents').removeClass('active')
+
+	const title = $(this).find('.photos__item-title').text()
+	$('.photos__gallery-title').text(title);
+})

@@ -1144,57 +1144,6 @@ img {
   background: #3F4C5C;
 }
 
-.about {
-  margin-top: 5.6rem;
-  padding-bottom: 15rem;
-}
-.about__wrap {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 4rem;
-}
-.about__content {
-  display: none;
-}
-.about__content.active {
-  display: block;
-}
-.about__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-.about__left {
-  width: 31.3rem;
-}
-.about__right {
-  width: 115.4rem;
-}
-.about__item {
-  display: none;
-}
-.about__item.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .managment__employees, .managment__director {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1632,6 +1581,99 @@ img {
   height: 100%;
 }
 
+.purchases,
+.corruption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.2rem;
+  width: 100%;
+}
+.purchases li,
+.corruption li {
+  position: relative;
+  padding-left: 2rem;
+}
+.purchases li a,
+.corruption li a {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 150%;
+  color: #3F4C5C;
+  border-bottom: 0.1rem solid #3F4C5C;
+}
+.purchases li a:hover,
+.corruption li a:hover {
+  border-bottom: none;
+}
+.purchases li::before,
+.corruption li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #3f4c5c;
+  position: absolute;
+  left: 0.5rem;
+  top: 1.4rem;
+}
+
+.about {
+  margin-top: 5.6rem;
+  padding-bottom: 15rem;
+}
+.about__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4rem;
+}
+.about__content {
+  display: none;
+}
+.about__content.active {
+  display: block;
+}
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.about__left {
+  width: 31.3rem;
+}
+.about__right {
+  width: 115.4rem;
+}
+.about__item {
+  display: none;
+}
+.about__item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .clinical {
   margin-top: 5.6rem;
   padding-bottom: 15rem;
@@ -2016,48 +2058,6 @@ img {
      -moz-column-gap: 3rem;
           column-gap: 3rem;
   row-gap: 3rem;
-}
-
-.purchases,
-.corruption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 2.2rem;
-  width: 100%;
-}
-.purchases li,
-.corruption li {
-  position: relative;
-  padding-left: 2rem;
-}
-.purchases li a,
-.corruption li a {
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  color: #3F4C5C;
-  border-bottom: 0.1rem solid #3F4C5C;
-}
-.purchases li a:hover,
-.corruption li a:hover {
-  border-bottom: none;
-}
-.purchases li::before,
-.corruption li::before {
-  content: "";
-  display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #3f4c5c;
-  position: absolute;
-  left: 0.5rem;
-  top: 1.4rem;
 }
 
 .conferences {

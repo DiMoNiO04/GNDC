@@ -1921,10 +1921,6 @@ img {
   height: 39.6rem;
   margin-bottom: 3.4rem;
 }
-.employees__main img {
-  width: 100%;
-  height: 100%;
-}
 .employees__main-link {
   font-style: normal;
   font-weight: 400;
@@ -1933,17 +1929,10 @@ img {
   color: #00AC60;
   margin-bottom: 1rem;
   display: inline-block;
+  border-bottom: 0.1rem solid #00AC60;
 }
-.employees__main-link::after {
-  background: #00AC60;
-  content: "";
-  display: block;
-  visibility: hidden;
-  height: 0.1rem;
-  width: 100%;
-}
-.employees__main-link:hover::after {
-  visibility: visible;
+.employees__main-link:hover {
+  border-bottom: 0.1rem solid transparent;
 }
 .employees__main-job {
   font-weight: 400;
@@ -1966,11 +1955,7 @@ img {
   color: #3F4C5C;
 }
 .employees__title {
-  font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #3F4C5C;
+  margin-bottom: 0;
 }
 .employees__subtitle {
   font-weight: 700;
@@ -1986,16 +1971,10 @@ img {
   color: #3F4C5C;
   margin-bottom: 0.6rem;
   display: inline-block;
+  border-bottom: 0.1rem solid;
 }
-.employees__name::after {
-  display: block;
-  content: "";
-  height: 0.1rem;
-  width: 100%;
-  background-color: #3F4C5C;
-}
-.employees__name:hover::after {
-  visibility: hidden;
+.employees__name:hover {
+  border-bottom: 0.1rem solid transparent;
 }
 .employees__job {
   font-weight: 400;
@@ -2008,13 +1987,8 @@ img {
   height: 30.8rem;
   margin-bottom: 1.6rem;
 }
-.employees__img img {
-  width: 100%;
-  height: 100%;
-}
 .employees__right {
   width: 100%;
-  padding-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

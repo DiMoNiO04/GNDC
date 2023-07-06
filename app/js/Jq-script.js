@@ -47,6 +47,42 @@ $(".block__item").each(function() {
 });
 
 
+$(".cost__content-item").each(function() {
+	let more = $(this).find(".cost__content-item-inner");
+	let hide = $(this).find(".cost__content-item-content");
+	hide.hide();
+	more.click(function() {
+			hide.slideToggle();
+			more.toggleClass('active');
+	});
+});
+
+$(".cost__content-item-content-it").each(function() {
+	let more = $(this).find(".cost__content-item-content-in");
+	let hide = $(this).find(".cost__content-item-content-con");
+	hide.hide();
+	more.click(function() {
+			hide.slideToggle();
+			more.toggleClass('active');
+	});
+});
+
+
+
+//-------------------Left menu-------------------------//
+$('[data-open-menu').on('click', function() {
+	$('[data-open-menu]').removeClass('active');
+  $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
+
+	$('[data-menu]').removeClass('active');
+  $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
+	
+	const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
+	$('.main-title').html(title);
+});
+//---------------------------------------------------------//
+
+
 //----------Header---------------------
 $(".header__bottom-item").hover(function() {
   $(this).toggleClass('active');
@@ -81,17 +117,6 @@ $(".header__center-subitem").hover(function() {
 
 
 //-------------------------About---------------------------------------//
-$('[data-open-menu').on('click', function() {
-	$('[data-open-menu]').removeClass('active');
-  $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
-
-	$('[data-menu]').removeClass('active');
-  $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
-	
-	const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
-	$('.about__title').html(title);
-});
-
 $('[data-open-vacancies').on('click', function() {
 	$('[data-open-vacancies]').removeClass('active');
   $(`[data-open-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
@@ -127,9 +152,6 @@ $('.photos__item-image').on('click', function() {
 	$('.photos__gallery-title').text(title);
 })
 //--------------------------------------------------------------------------//
-
-
-
 
 
 

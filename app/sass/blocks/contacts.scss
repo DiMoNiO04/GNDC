@@ -43,7 +43,6 @@
     }
 
     &__top-left-text  {
-        font-style: normal;
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 150%;
@@ -55,43 +54,38 @@
     &__top-left-info--email {
         margin-top: 1rem;
     }
-
     &__top-left-info {
         display: flex;
         flex-direction: column;
         margin-bottom: 3rem;
+				&.subtitle {
+					margin-bottom: 0;
+				}
         strong {
-            font-style: normal;
             font-weight: 700;
             font-size: 2rem;
             line-height: 125%;
             color: #3F4C5C;
             margin-bottom: 2.2rem;
-
         }
 
         span {
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             display: block;
             color: #3F4C5C;
-
         }
 
         li {
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
             margin-bottom: 1.5rem;
-
-        }
-
-        li:last-child {
-            margin-bottom: 0;
+						&:last-child {
+           	 	margin-bottom: 0;
+        		}
         }
     }
 
@@ -122,7 +116,6 @@
         display: flex;
         flex-direction: column;
         strong {
-            font-style: normal;
             font-weight: 700;
             font-size: 2rem;
             line-height: 125%;
@@ -131,7 +124,6 @@
         }
 
         span {
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
@@ -140,17 +132,15 @@
         }
 
         li {
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
             margin-bottom: 1.4rem;
-        }
-
-        li:last-child {
-            margin-bottom: 0;
-        }
+						&:last-child {
+            	margin-bottom: 0;
+        		}
+				}
     }
 
     &__down-inner {
@@ -167,7 +157,6 @@
         width: 70.3rem;
         strong {
             display: block;
-            font-style: normal;
             font-weight: 700;
             font-size: 2rem;
             line-height: 125% ;
@@ -177,7 +166,6 @@
 
         span {
             display: block;
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
@@ -212,7 +200,6 @@
 
     &__down-map-block-title {
         display: block;
-        font-style: normal;
         font-weight: 700;
         font-size: 2rem;
         line-height: 125% ;
@@ -232,14 +219,12 @@
         width: 70.3rem;
         display: inline-block;
         margin-right: 13.5rem;
-    }
-
-    &__down-block-diagram:last-child {
-        margin-right: 0;
+				&:last-child {
+        	margin-right: 0;
+    		}
     }
 
     &__down-block-diagram-title {
-        font-style: normal;
         font-weight: 700;
         font-size: 2rem;
         line-height: 125%;
@@ -264,10 +249,9 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 6rem;
-    }
-
-    &__branches-inner:last-child {
-        margin-bottom: 0;
+				&:last-child {
+        	margin-bottom: 0;
+    		}
     }
 
     &__branches-swiper {
@@ -304,7 +288,6 @@
     }
 
     &__branches-table-text {
-        font-style: normal;
         font-weight: 700;
         font-size: 2rem;
         line-height: 130%;
@@ -337,7 +320,6 @@
         margin-bottom: 3rem;
 
         strong {
-            font-style: normal;
             font-weight: 700;
             font-size: 2rem;
             line-height: 125%;
@@ -347,7 +329,6 @@
         }
 
         span {
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
@@ -356,7 +337,6 @@
         }
 
         a {
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
@@ -365,16 +345,14 @@
         }
 
         li {
-            font-style: normal;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
             margin-bottom: 1.5rem;
-        }
-
-        li:last-child {
-            margin-bottom: 0;
-        }
+						&:last-child {
+            	margin-bottom: 0;
+        		}
+				}
     }
 }

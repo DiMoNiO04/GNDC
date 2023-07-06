@@ -80,7 +80,6 @@ const recordSlider = new Swiper('#record__swiper', {
  
 });
 
-
 const connectionReviewSwiper = new Swiper('#review__swiper', {
   direction: 'vertical',
   slidesPerView: 9,
@@ -130,9 +129,7 @@ const connectionQuestionSwiper = new Swiper('#question__swiper', {
   },
 });
 
-
-
-const contactsSlider = new Swiper('.contacts__swiper', {
+const contactsSlider = new Swiper('#contacts__swiper', {
   slidesPerView: 'auto',
   speed: 500,
   freeMode: true,
@@ -160,10 +157,7 @@ const contactsSlider = new Swiper('.contacts__swiper', {
   },
 });
 
-
-
-
-const contactsDownSlider = new Swiper('.contacts__down-swiper', {
+const contactsDownSlider = new Swiper('#contacts__down-swiper', {
   slidesPerView: 'auto',
   speed: 500,
   freeMode: true,
@@ -189,19 +183,10 @@ const contactsDownSlider = new Swiper('.contacts__down-swiper', {
     },
     el: '.contacts__down-bullets',
   },
- 
 });
 
-
-
-
-
-
-
-
-
 const largeSlider = ()=>{
-	let largeSliders = document.querySelectorAll('.contacts__branches-swiper')
+	let largeSliders = document.querySelectorAll('#contacts__branches-swiper')
 	largeSliders.forEach((slider, index)=>{
     // this bit checks if there's more than 1 slide, if there's only 1 it won't loop
 		let sliderLength = slider.children[0].children.length
@@ -232,12 +217,10 @@ const largeSlider = ()=>{
         },
         el: '.contacts__branches-bullets',
       },
-         
 	});
 	})
 }
 window.addEventListener('load', largeSlider)
-
 
 
 const referenceSlider = new Swiper('#reference__swipper', {
@@ -249,7 +232,7 @@ const referenceSlider = new Swiper('#reference__swipper', {
 	navigation: {
 			prevEl: '.reference__prev',
 			nextEl: '.reference__next',
-		},
+	},
 	pagination: {
 		clickable: true,
 		renderBullet: function (index, className) {
@@ -261,7 +244,6 @@ const referenceSlider = new Swiper('#reference__swipper', {
 		},
 		el: '.reference__bullets',
 	},
- 
 });
 
 
@@ -274,7 +256,7 @@ const conferencesModalSlider = new Swiper('#conferences-modal__swipper', {
 	navigation: {
 			prevEl: '.conferences-modal__prev',
 			nextEl: '.conferences-modal__next',
-		},
+	},
 	pagination: {
 		clickable: true,
 		renderBullet: function (index, className) {
@@ -286,5 +268,4 @@ const conferencesModalSlider = new Swiper('#conferences-modal__swipper', {
 		},
 		el: '.conferences-modal__bullets',
 	},
- 
 });

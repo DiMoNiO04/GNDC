@@ -4471,7 +4471,7 @@ img {
   margin-bottom: 4rem;
   color: #3F4C5C;
 }
-.contacts__top-left-info--email {
+.contacts__top-left-info-email {
   margin-top: 1rem;
 }
 .contacts__top-left-info {
@@ -4483,9 +4483,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 3rem;
-}
-.contacts__top-left-info.subtitle {
-  margin-bottom: 0;
 }
 .contacts__top-left-info strong {
   font-weight: 700;
@@ -4542,6 +4539,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 3rem;
 }
 .contacts__bottom-info strong {
   font-weight: 700;
@@ -4773,6 +4771,10 @@ img {
   margin-bottom: 1.5rem;
 }
 .contacts__branches-table-info li:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__top-left-info .subtitle {
   margin-bottom: 0;
 }
 

@@ -1655,7 +1655,6 @@ img {
   padding-bottom: 15rem;
 }
 .clinical__link-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
@@ -1805,53 +1804,23 @@ img {
   row-gap: 4rem;
 }
 .clinical-two__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 4rem;
+  display: none;
 }
-.clinical-two__tabs-item {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 125%;
-  color: rgba(63, 76, 92, 0.69);
-  margin-bottom: 2.3rem;
+.clinical-two__wrap.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clinical-two__wrap-content {
+  display: none;
+}
+.clinical-two__wrap-content.active {
   display: block;
-  cursor: pointer;
-  padding-left: 2rem;
-  position: relative;
-}
-.clinical-two__tabs-item:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-  color: #3f4c5c;
-}
-.clinical-two__tabs-item::before {
-  position: absolute;
-  content: "";
-  width: 0.6rem;
-  height: 0.6rem;
-  background: rgba(63, 76, 92, 0.69);
-  border-radius: 50%;
-  left: 0;
-  top: 0.8rem;
-}
-.clinical-two__tabs-item.active {
-  font-size: 2.3rem;
-  line-height: 135%;
-  color: #3F4C5C;
-}
-.clinical-two__tabs-item.active::before {
-  background: #3F4C5C;
-}
-.clinical-two__tabs {
-  padding-left: 1rem;
 }
 .clinical-two__items {
   display: -webkit-box;
@@ -1884,10 +1853,6 @@ img {
 .clinical-two__item-img {
   width: 6rem;
   height: 6rem;
-}
-.clinical-two__item-img img {
-  width: 100%;
-  height: 100%;
 }
 .clinical-two__item-desc {
   font-weight: 700;

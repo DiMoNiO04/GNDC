@@ -36,6 +36,7 @@ $(document).ready(function () {
 });
 
 
+//-----------------------Block item----------------------------//
 $(".block__item").each(function() {
 	let more = $(this).find(".block__item-inner");
 	let hide = $(this).find(".block__content");
@@ -45,45 +46,10 @@ $(".block__item").each(function() {
 			more.toggleClass('active');
 	});
 });
+//-------------------------------------------------------------//
 
 
-$(".cost__content-item").each(function() {
-	let more = $(this).find(".cost__content-item-inner");
-	let hide = $(this).find(".cost__content-item-content");
-	hide.hide();
-	more.click(function() {
-			hide.slideToggle();
-			more.toggleClass('active');
-	});
-});
-
-$(".cost__content-item-content-it").each(function() {
-	let more = $(this).find(".cost__content-item-content-in");
-	let hide = $(this).find(".cost__content-item-content-con");
-	hide.hide();
-	more.click(function() {
-			hide.slideToggle();
-			more.toggleClass('active');
-	});
-});
-
-
-
-//-------------------Left menu-------------------------//
-$('[data-open-menu').on('click', function() {
-	$('[data-open-menu]').removeClass('active');
-  $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
-
-	$('[data-menu]').removeClass('active');
-  $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
-	
-	const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
-	$('.main-title').html(title);
-});
-//---------------------------------------------------------//
-
-
-//----------Header---------------------
+//----------------------------Header-------------------------//
 $(".header__bottom-item").hover(function() {
   $(this).toggleClass('active');
   var isHovered = $(this).is(":hover");
@@ -113,7 +79,44 @@ $(".header__center-subitem").hover(function() {
     $(this).children(".header__center-subdown").stop().slideUp(300);
   }
 });
-//-------------------------------//
+//------------------------------------------------------------//
+
+
+//-------------------Left menu-------------------------//
+$('[data-open-menu').on('click', function() {
+	$('[data-open-menu]').removeClass('active');
+  $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
+
+	$('[data-menu]').removeClass('active');
+  $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
+	
+	const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
+	$('.main-title').html(title);
+});
+//---------------------------------------------------------//
+
+
+//--------------------Cost---------------------------------//
+$(".cost__content-item").each(function() {
+	let more = $(this).find(".cost__content-item-inner");
+	let hide = $(this).find(".cost__content-item-content");
+	hide.hide();
+	more.click(function() {
+			hide.slideToggle();
+			more.toggleClass('active');
+	});
+});
+
+$(".cost__content-item-content-it").each(function() {
+	let more = $(this).find(".cost__content-item-content-in");
+	let hide = $(this).find(".cost__content-item-content-con");
+	hide.hide();
+	more.click(function() {
+			hide.slideToggle();
+			more.toggleClass('active');
+	});
+});
+//-------------------------------------------------------//
 
 
 //-------------------------About---------------------------------------//
@@ -154,28 +157,28 @@ $('.photos__item-image').on('click', function() {
 //--------------------------------------------------------------------------//
 
 
+//-------------------------Clinical quide----------------------------------//
+$('[data-open-clinical').on('click', function() {
+	$('[data-open-clinical]').removeClass('active');
+  $(`[data-open-clinical="${$(this).data('open-clinical')}"`).addClass('active');
 
-
-
-$(".cost__block").each(function() {
-    let more = $(this).find(".cost__block-inner");
-    let hide = $(this).find(".cost__content");
-    hide.hide();
-    more.click(function() {
-        hide.slideToggle();
-        more.toggleClass('active');
-    });
+	$('[data-clinical]').removeClass('active');
+  $(`[data-clinical="${$(this).data('open-clinical')}"`).addClass('active');
 });
 
-$(".schedule__block").each(function() {
-    let more = $(this).find(".schedule__block-inner");
-    let hide = $(this).find(".schedule__wrap");
-    hide.hide();
-    more.click(function() {
-        hide.slideToggle();
-        more.toggleClass('active');
-    });
+$('[data-open-draft-clinical').on('click', function() {
+	$('[data-open-draft-clinical]').removeClass('active');
+  $(`[data-open-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
+
+	$('[data-draft-clinical]').removeClass('active');
+  $(`[data-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
 });
+//------------------------------------------------------------------------//
+
+
+
+
+
 
 
 $('.hospitalization__item').click(function() {
@@ -245,16 +248,3 @@ $(".distant__text-btn").click(function() {
 	}
 });
 //---------------------------------------
-
-//-------------Clinical---------------------//
-$('.clinical-two__tabs-item').click(function() {
-	var id = $(this).attr('data-tab'),
-			content = $('.clinical-two__wrap[data-tab="'+ id +'"]');
-	
-	$('.clinical-two__tabs-item.active').removeClass('active'); // 1
-	$(this).addClass('active'); // 2
-	
-	$('.clinical-two__wrap.active').removeClass('active'); // 3
-	content.addClass('active'); // 4
-});
-//-----------------------------------------//

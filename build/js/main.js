@@ -1,20 +1,17 @@
 "use strict";
 
 const mainSlider = new Swiper('#main__swiper', {
-    slidesPerView: 1,
-    speed: 500,
-    wrapperClass: 'main__swiper-wrapper',
+		slidesPerView: 1,
+		speed: 1000,
+		wrapperClass: 'main__swiper-wrapper',
     slideClass: 'main__slide',
-    freeMode: true,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
-    autoplay: true,
+		loop: true,
+		spaceBetween: 20,
+		autoplay: true,
     autoplay: {
-        delay: 7000,
+        delay: 2000,
     },
-    pagination: {
+		pagination: {
       clickable: true,
       renderBullet: function (index, className) {
         return `
@@ -25,7 +22,6 @@ const mainSlider = new Swiper('#main__swiper', {
       },
       el: '.main__bullets',
     },
-   
 });
 
 const partnersSlider = new Swiper('#partners__swiper', {
@@ -53,6 +49,7 @@ const partnersSlider = new Swiper('#partners__swiper', {
 
 const recordSlider = new Swiper('#record__swiper', {
 	slidesPerView: 1,
+	speed: 1000,
   wrapperClass: 'record__swiper-wrapper',
   slideClass: 'record__slide',
   spaceBetween: 20,
@@ -78,38 +75,13 @@ const recordSlider = new Swiper('#record__swiper', {
   },
 });
 
-const connectionReviewSwiper = new Swiper('#review__swiper', {
-  direction: 'vertical',
-  slidesPerView: 9,
-  wrapperClass: 'connection__review-swiper-wrapper',
-  slideClass: 'connection__review-slide',
-  speed: 500,
-  allowTouchMove:false,
-  navigation: {
-    prevEl: '.connection__review-prev',
-    nextEl: '.connection__review-next',
-  },
-  pagination: {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return `
-        <span class="${className}">
-         
-        </span>
-      `;
-    },
-    el: '.connection__review-bullets',
-  },
-});
-
 const connectionQuestionSwiper = new Swiper('#question__swiper', {
-  direction: 'vertical',
-  slidesPerView: 9,
+  slidesPerView: 1,
   wrapperClass: 'connection__question-swiper-wrapper',
   slideClass: 'connection__question-slide',
-  speed: 500,
-  allowTouchMove: false,
-	mousewheel: true,
+  speed: 1000,
+	loop: true,
+	spaceBetween: 24,
   navigation: {
     prevEl: '.connection__question-prev',
     nextEl: '.connection__question-next',
@@ -127,20 +99,16 @@ const connectionQuestionSwiper = new Swiper('#question__swiper', {
   },
 });
 
-const contactsSlider = new Swiper('#contacts__swiper', {
-  slidesPerView: 'auto',
-  speed: 500,
-  freeMode: true,
-  direction: 'horizontal',
-  wrapperClass: 'contacts__swiper-wrapper',
-  slideClass: 'contacts__slide',
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  autoplay: true,
-  autoplay: {
-      delay: 4000,
+const connectionReviewSwiper = new Swiper('#review__swiper', {
+  slidesPerView: 1,
+  wrapperClass: 'connection__review-swiper-wrapper',
+  slideClass: 'connection__review-slide',
+  speed: 1000,
+	loop: true,
+	spaceBetween: 24,
+  navigation: {
+    prevEl: '.connection__review-prev',
+    nextEl: '.connection__review-next',
   },
   pagination: {
     clickable: true,
@@ -151,24 +119,43 @@ const contactsSlider = new Swiper('#contacts__swiper', {
         </span>
       `;
     },
-    el: '.contacts__bullets',
+    el: '.connection__review-bullets',
   },
 });
 
+const contactsSlider = new Swiper('#contacts__swiper', {
+	slidesPerView: 1,
+	wrapperClass: 'contacts__swiper-wrapper',
+  slideClass: 'contacts__slide',
+	loop: true,
+	spaceBetween: 20,
+	autoplay: true,
+  autoplay: {
+      delay: 2000,
+  },
+	pagination: {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `
+        <span class="${className}">
+         
+        </span>
+      `;
+    },
+    el: '.contacts__bullets',
+  }
+});
+
 const contactsDownSlider = new Swiper('#contacts__down-swiper', {
-  slidesPerView: 'auto',
-  speed: 500,
-  freeMode: true,
-  direction: 'horizontal',
+  slidesPerView: 1,
+  speed: 1000,
+	loop: true,
+	spaceBetween: 20,
   wrapperClass: 'contacts__down-swiper-wrapper',
   slideClass: 'contacts__down-slide',
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
   autoplay: true,
   autoplay: {
-      delay: 4000,
+      delay: 2000,
   },
   pagination: {
     clickable: true,
@@ -183,42 +170,29 @@ const contactsDownSlider = new Swiper('#contacts__down-swiper', {
   },
 });
 
-const largeSlider = ()=>{
-	let largeSliders = document.querySelectorAll('#contacts__branches-swiper')
-	largeSliders.forEach((slider, index)=>{
-    // this bit checks if there's more than 1 slide, if there's only 1 it won't loop
-		let sliderLength = slider.children[0].children.length
-		let result = (sliderLength > 1) ? true : false
-    const metropolis = new Swiper(slider, {
-      slidesPerView: 1,
-      speed: 500,
-      freeMode: true,
-      direction: 'horizontal',
-      wrapperClass: 'contacts__branches-swiper-wrapper',
-      slideClass: 'contacts__branches-slide',
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
-      },
-      autoplay: true,
-      autoplay: {
-          delay: 4000,
-      },
-      pagination: {
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `
-            <span class="${className}">
-             
-            </span>
-          `;
-        },
-        el: '.contacts__branches-bullets',
-      },
-	});
-	})
-}
-window.addEventListener('load', largeSlider)
+const contactsBranchesSlider = new Swiper('#contacts__branches-swiper', {
+  slidesPerView: 1,
+	wrapperClass: 'contacts__branches-swiper-wrapper',
+	slideClass: 'contacts__branches-slide',
+	loop: true,
+	spaceBetween: 20,
+	autoplay: true,
+  autoplay: {
+      delay: 2000,
+  },
+  pagination: {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `
+        <span class="${className}">
+         
+        </span>
+      `;
+    },
+		el: '.contacts__branches-bullets',
+  },
+});
+
 
 
 const referenceSlider = new Swiper('#reference__swipper', {

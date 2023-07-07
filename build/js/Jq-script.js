@@ -28,12 +28,21 @@ $(document).ready(function () {
         $(this).parent().prev().prev().val($(this).text());
     });
     
-    $(document).click(function (e) {
+    $(document).click(function (e) {	
         if (!$(e.target).closest('.select').length) {
             $('.select-head').removeClass('open');
             $('.select-list').fadeOut();
         }
+	});
 });
+
+
+//--------------------Menu buttons-----------------//
+$('.menu__button').on('click', function() {
+	$('.menu__button').removeClass('active');
+	$(this).addClass('active');
+});
+//------------------------------------------------//
 
 
 //-----------------------Block item----------------------------//
@@ -203,51 +212,6 @@ $('[data-modal-class]').on('click', function() {
 //----------------------------------------------------------------------//
 
 
-
-
-
-$('.hospitalization__item').click(function() {
-	var id = $(this).attr('data-tab'),
-			content = $('.hospitalization__content[data-tab="'+ id +'"]');
-	
-	$('.hospitalization__item.active').removeClass('active'); // 1
-	$(this).addClass('active'); // 2
-	
-	$('.hospitalization__content.active').removeClass('active'); // 3
-	content.addClass('active'); // 4
-
-	if(id == 1) {
-		$('.hospitalization__block').removeClass('hidden'); // 1
-	} else {
-		$('.hospitalization__block').addClass('hidden'); // 1
-	}
-});
-});
-
-//--------------Connecttion---------------
-$(".connection__block").each(function() {
-
-    let more = $(this).find(".connection__block-inner");
-    let hide = $(this).find(".connection__content");
-    hide.hide();
-    more.click(function() {
-        hide.slideToggle();
-        more.toggleClass('active');
-    });
-});
-
-$('.connection__item').click(function() {
-    var id = $(this).attr('data-tab'),
-        content = $('.connection__wrap[data-tab="'+ id +'"]');
-    
-    $('.connection__item.active').removeClass('active'); // 1
-    $(this).addClass('active'); // 2
-    
-    $('.connection__wrap.active').removeClass('active'); // 3
-    content.addClass('active'); // 4
-});
-//--------------------------------------
-
 //---------------Distant-------------
 $(".distant__btn-two").click(function() {
 	$(".distant__wrap").slideDown();
@@ -273,11 +237,6 @@ $(".distant__text-btn").click(function() {
 	}
 });
 //---------------------------------------
-
-$('.menu__button').on('click', function() {
-	$('.menu__button').removeClass('active');
-	$(this).addClass('active');
-});
 
 
 //--------------------Modal------------------------//
@@ -330,3 +289,4 @@ class Modal {
 
 let conferences = document.querySelector('[data-modal="conferences"]') ? new Modal('conferences') : null;
 //--------------------------------------------------------------------------//
+

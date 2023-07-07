@@ -14,7 +14,8 @@
     }
 
 		&__right {
-			width: 100%;
+			width: 110rem;
+			overflow: hidden;
 		}
 
     &__item {
@@ -157,16 +158,8 @@
 
     &__review-swiper,
 		&__question-swiper {
-        width: 110rem;
-        overflow: hidden;
-        max-height: 263rem;
-				position: relative;
-				margin-bottom: 5rem;
+        width: 100%;
     }
-
-		&__question-swiper {
-			max-height: 158rem;
-		}
 
 		&__review-bullets,
 		&__question-bullets {
@@ -174,12 +167,6 @@
 			column-gap: 2rem;
 			transform: translate3d(0px,0%,0) !important;
 		}
-
-    &__review-slide,
-		&__question-slide {
-        // margin-bottom: 3rem;
-        height: fit-content !important;
-    }
 
     &__feedback {
         width: 110rem;
@@ -341,6 +328,11 @@
 		&__form-btn {
 			width: 19rem;
 			background: #FFFFFF;
+		}
+
+		&__question-pagination,
+		&__review-pagination {
+			margin-top: 6rem;
 		}
 
 		.subtitle {

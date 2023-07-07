@@ -35,6 +35,13 @@ $(document).ready(function () {
         }
 });
 
+//--------------------Menu buttons-----------------//
+$('.menu__button').on('click', function() {
+	$('.menu__button').removeClass('active');
+	$(this).addClass('active');
+});
+//------------------------------------------------//
+
 
 //-----------------------Block item----------------------------//
 $(".block__item").each(function() {
@@ -176,6 +183,31 @@ $('[data-open-draft-clinical').on('click', function() {
 //------------------------------------------------------------------------//
 
 
+//----------------------Conferences--------------------------------------//
+$('[data-open-conf').on('click', function() {
+	$('[data-open-conf]').removeClass('active');
+  $(`[data-open-conf="${$(this).data('open-conf')}"`).addClass('active');
+
+	$('[data-conf]').removeClass('active');
+  $(`[data-conf="${$(this).data('open-conf')}"`).addClass('active');
+});
+
+$('[data-modal-class]').on('click', function() {
+	let id = $(this).attr('id');
+	
+	let title = $(this).find('.conferences__title').text();
+	$('.modal__title').text(title);
+
+	let info = $(this).find('.conferences__info').text();
+	$('[data-conf="info"]').text(info);
+
+	let results = $(this).find('.conferences__results').text();
+	$('[data-conf="results"]').text(results);
+
+	let programs =  $(this).find('.conferences__program').text();
+	$('[data-conf="program"').text(programs);
+})
+//----------------------------------------------------------------------//
 
 
 
@@ -248,3 +280,56 @@ $(".distant__text-btn").click(function() {
 	}
 });
 //---------------------------------------
+
+
+//--------------------Modal------------------------//
+class Modal {
+	constructor(name) {
+			this.name = name;
+			this.modal = document.querySelector(`[data-modal="${name}"]`)
+			this.triggers = document.querySelectorAll(`[data-modal-class="${name}"]`)
+			this.body = document.querySelector(`body`)
+			this.openHendler()
+	}
+	open() {
+			this.modal.classList.remove('success', 'error')
+			this.modal.classList.add('active')
+			document.body.style.overflow = 'hidden';
+			this.modal.addEventListener('click', this.closeHendler)
+	}
+	close() {
+			this.modal.classList.remove('active')
+			document.body.style.overflow = 'unset';
+			this.modal.removeEventListener('click', this.closeHendler)
+	}
+	success() {
+			this.modal.classList.remove('error')
+			this.modal.classList.add('success')
+	}
+	error() {
+			this.modal.classList.remove('success')
+			this.modal.classList.add('error')
+	}
+	update() {
+			this.modal = document.querySelector(`[data-modal="${this.name}"]`)
+			this.triggers = document.querySelectorAll(`[data-modal-class="${this.name}"]`)
+			this.openHendler()
+	}
+	openHendler = (e) => {
+			this.triggers.forEach(item => {
+					item.addEventListener('click', (e) => {
+							e.preventDefault()
+							this.open()
+					})
+			})
+	}
+	closeHendler = (e) => {
+			if (e.target.classList.contains('close-x')) {
+					this.close()
+			}
+	}
+}
+
+let conferences = document.querySelector('[data-modal="conferences"]') ? new Modal('conferences') : null;
+//--------------------------------------------------------------------------//
+

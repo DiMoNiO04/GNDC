@@ -64,112 +64,16 @@
 		left: 3.3rem;
 		z-index: -1;
 	}
-}
 
-
-//----------------Conferences modal------------//
-.conferences-modal {
-	border: 0;
-	background: #D8DEE8;
-	border-radius: 0.8rem;
-	width: 120rem;
-	position: relative;
-	padding: 0;
-
-	&__slide-image {
-		width: 96rem;
-		height: 39rem;
-	}
-
-	&__content {
-		padding: 10rem 12rem;
-	}
-
-	&__close {
-		position: absolute;
-		right: 5rem;
-		top: 5rem;
-	}
-
-	&__block {
+	&__title,
+	&__photos,
+	&__info,
+	&__program,
+	&__results {
 		display: none;
+		font-size: 2rem;
 		&.active {
 			display: block;
 		}
 	}
-
-	&__title {
-		font-weight: 700;
-		font-size: 23px;
-		line-height: 150%;
-		text-transform: uppercase;
-		color: #3F4C5C;
-		margin-bottom: 4.4rem;
-	}
-
-	&__swipper {
-		margin-bottom: 2.2rem;
-	}
-
-	&__pagination {
-		margin-bottom: 4.4rem;
-	}
-
-	&__buttons {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		column-gap: 1rem;
-		button {
-			background: #FFFFFF;
-			border: 0.1rem solid #3F4C5C;
-			border-radius: 0.6rem;
-			padding: 1.6rem 2.4rem;
-			font-weight: 400;
-			font-size: 1.8rem;
-			line-height: 150%;
-			text-align: center;
-			color: #3F4C5C;
-			&:hover {
-				opacity: 0.5;
-			}
-		}
-	}
-
-	&::backdrop {
-		background: rgba(63, 76, 92, 0.69);
-		backdrop-filter: blur(16px);
-	}
 }
-
-.conferences-modal[open] {
-	position: fixed;
-	animation: zoom 0.5s linear forwards;
-}
-
-.conferences-modal[open]::backdrop {
-	animation: fade 0.3s linear forwards ;
-}
-
-
-@keyframes zoom {
-	0% {
-		transform: scale((0.3));
-	}
-	50% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
-
-@keyframes fade {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-//---------------------------------------------//

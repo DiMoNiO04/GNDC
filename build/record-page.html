@@ -226,6 +226,79 @@
     </div>
 </footer>
 
+<!-- Модалка конференции-->
+<div class="modal close-x" data-modal="conferences">
+	<div class="modal__inner">
+		 <div class="modal__content modal__content-conferences">
+			<div class="modal__content-close close-x">
+				<img class="close-x" src="./img/icon/modal-close.svg" alt="">
+			</div>
+			<div class="modal__title">
+				
+			</div>
+			<div class="modal__conferences-main">
+				<div class="modal__block-conferences active" data-conf="photos">
+					<div class="modal__conferences-swiper swiper" id="modal__conferences-swiper">
+						<div class="modal__conferences-swiper-wrapper swiper-wrapper">
+							<div class="modal__conferences-slide swiper-slide">
+								<div class="modal__conferences-slide-image">
+									<img src="./img/conferences/tula/tula-1.webp" alt="">
+								</div>
+							</div>
+							<div class="modal__conferences-slide swiper-slide">
+								<div class="modal__conferences-slide-image">
+									<img src="./img/conferences/tula/tula-1.webp" alt="">
+								</div>
+							</div>
+							<div class="modal__conferences-slide swiper-slide">
+								<div class="modal__conferences-slide-image">
+									<img src="./img/conferences/tula/tula-1.webp" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination modal__conferences-pagination">
+						<div class="pagination__prev modal__conferenes-prev">
+							<svg  viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.71094 1.67773L2.38836 8.00032L8.71094 14.3229" stroke="white" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+						</div>
+						<div class="pagination__bullets modal__conferences-bullets"></div>
+						<div class="pagination__next modal__conferenes-next">
+							<svg  viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_i_642_15861)">
+								<path d="M1.22656 14.3223L7.54914 7.99968L1.22656 1.6771" stroke="white" stroke-width="2" stroke-linecap="round"/>
+								</g>
+								<defs>
+								<filter id="filter0_i_642_15861" x="0.226562" y="0.677124" width="11.7363" height="17.6451" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+								<feOffset dx="3" dy="3"/>
+								<feGaussianBlur stdDeviation="5"/>
+								<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+								<feBlend mode="normal" in2="shape" result="effect1_innerShadow_642_15861"/>
+								</filter>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="modal__block-conferences" data-conf="info"></div>
+				<div class="modal__block-conferences" data-conf="program"></div>
+				<div class="modal__block-conferences" data-conf="results"></div>
+			</div>
+			<div class="menu__buttons modal__buttons-conferences">
+				<button class="menu__button all-btn__blue" data-open-conf="info">Информация о конференции</button>
+				<button class="menu__button all-btn__blue" data-open-conf="program">Программа конференции</button>
+				<button class="menu__button all-btn__blue" data-open-conf="results">Итоги конференции</button>
+				<button class="menu__button all-btn__blue active" data-open-conf="photos">Фотогалерея</button>
+			</div>
+		 </div>
+	</div>
+</div>
+
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="./js/swiper-bundle.js"></script>

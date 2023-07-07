@@ -49,22 +49,21 @@ const partnersSlider = new Swiper('#partners__swiper', {
       },
       el: '.partners__bullets',
     },
-   
 });
 
 const recordSlider = new Swiper('#record__swiper', {
-  slidesPerView: 1,
-  speed: 500,
+	slidesPerView: 1,
   wrapperClass: 'record__swiper-wrapper',
   slideClass: 'record__slide',
-  freeMode: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    prevEl: '.partners__prev',
+    nextEl: '.partners__next',
   },
   autoplay: true,
   autoplay: {
-      delay: 4000,
+      delay: 1500,
   },
   pagination: {
     clickable: true,
@@ -77,7 +76,6 @@ const recordSlider = new Swiper('#record__swiper', {
     },
     el: '.record__bullets',
   },
- 
 });
 
 const connectionReviewSwiper = new Swiper('#review__swiper', {
@@ -247,15 +245,15 @@ const referenceSlider = new Swiper('#reference__swipper', {
 });
 
 
-const conferencesModalSlider = new Swiper('#conferences-modal__swipper', {
+const conferencesModalSlider = new Swiper('#modal__conferences-swiper', {
 	slidesPerView: 1,
-	wrapperClass: 'conferences-modal__swipper-wrapper',
-	slideClass: 'conferences-modal__slide',
+	wrapperClass: 'modal__conferences-swiper-wrapper',
+	slideClass: 'modal__conferences-slide',
 	spaceBetween: 20,
 	loop: true,
 	navigation: {
-			prevEl: '.conferences-modal__prev',
-			nextEl: '.conferences-modal__next',
+			prevEl: '.modal__conferenes-prev',
+			nextEl: '.modal__conferenes-next',
 	},
 	pagination: {
 		clickable: true,
@@ -266,6 +264,6 @@ const conferencesModalSlider = new Swiper('#conferences-modal__swipper', {
 				</span>
 			`;
 		},
-		el: '.conferences-modal__bullets',
+		el: '.modal__conferences-bullets',
 	},
 });

@@ -1,15 +1,6 @@
 .main {
     padding-top: 8rem;
     padding-bottom: 15rem;
-    // &__bg {
-    //     position: absolute;
-    //     z-index: -1;
-    //     top: 0;
-    //     width: 100%;
-    //     height: 265rem;
-		// 		background: url('../../img/main/bg.webp');
-		// 		background-size: cover;
-    // }
 
 		&__btn {
 			background: #00AC60;
@@ -26,8 +17,25 @@
         height: 41.8rem;
         overflow: hidden;
         position: relative;
-        left: -2.3rem;
+        margin-right: 4.4rem;
     }
+
+		&__news-pagination {
+			position: absolute;
+			bottom: 2.8rem;
+			right: 2rem;
+			z-index: 2;
+		}
+
+		&__news-bullets .swiper-pagination-bullet {
+			width: 0.6rem;
+			height: 0.6rem;
+			background: #D8DEE8;
+		}
+
+		&__news-bullets .swiper-pagination-bullet-active {
+			background: #00AC60;
+		}
 
     &__slide {
         min-height: 41.8rem;
@@ -44,14 +52,15 @@
         padding-left: 4.7rem;
         padding-top: 5.2rem;
        cursor: pointer;
+			 justify-content: space-between;
     }
 
     &__slide-right {
-        width: 49.5rem;
-        height: 41.8rem;
-        position: absolute;
-        top: 0;
-        right: 0;
+			width: 49.5rem;
+			height: 41.8rem;
+			position: relative;
+			bottom: 10.7rem;
+			right: 0;
     }
 
     &__slide-title {
@@ -88,15 +97,20 @@
         margin-bottom: 8rem;
     }
 
-    &__news {
-        width: 48rem;
+		&__news {
+			overflow: hidden;
+			position: relative;
+		}
+
+		&__news-slide {
+			width: 48rem;
         height: 36.3rem;
         background: #FEFEFE;
         border-radius: 0.8rem;
         margin-top: auto;
         padding: 2rem;
         position: relative;
-    }
+		}
 
     &__news-image {
         width: 44rem;

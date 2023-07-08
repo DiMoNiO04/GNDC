@@ -59,7 +59,7 @@ $(".block__item").each(function() {
 
 
 //----------------------------Header-------------------------//
-$('.header__bottom-lists-item > a').on('click', function(e){
+$('.header__bottom-lists-item-drop').on('click', function(e){
 	e.preventDefault();
 });
 	

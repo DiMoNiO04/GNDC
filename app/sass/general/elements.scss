@@ -521,3 +521,14 @@ img {
 		}
 	}
 }
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header,
+main {
+	flex: 1;
+}

@@ -1,13 +1,15 @@
 .main {
     padding-top: 8rem;
     padding-bottom: 15rem;
-    &__bg {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        width: 100%;
-        height: auto;
-    }
+    // &__bg {
+    //     position: absolute;
+    //     z-index: -1;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 265rem;
+		// 		background: url('../../img/main/bg.webp');
+		// 		background-size: cover;
+    // }
 
 		&__btn {
 			background: #00AC60;
@@ -338,4 +340,12 @@
 		color: #00AC60;
 		border-color: #00AC60;
 	}
+}
+
+.main-body {
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: -1;
+  background: url(../../img/main/bg.webp) no-repeat center;
+  background-size: cover;
 }

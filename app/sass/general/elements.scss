@@ -14,7 +14,7 @@
 	&:hover {
 		color: #FFFFFF;
 		cursor: pointer;
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 }
 
@@ -117,18 +117,9 @@ img {
 
 	&__prev,
 	&__next {
-		width: 5.6rem;
-		height: 5.6rem;
-		background: #00AC60;
-		border-radius: 0.6rem;
-		display: flex;
-		justify-content: center;
-		align-items:center;
+		width: auto;
+		height: auto;
 		cursor: pointer;
-		svg {
-			width: 1.2rem;
-			height: 1.2rem;
-		}
 		&:hover {
 			opacity: 0.5;
 		}

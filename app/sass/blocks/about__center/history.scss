@@ -24,32 +24,3 @@
 		height: 46rem;
 	}
 }
-
-.history__book {
-	width: 115.4rem;
-	height: 77.2rem;
-	position: relative;
-	overflow: hidden;
-	background: url('../img/histor.png');
-	background-size: cover;
-	display: flex;
-	padding: 7rem;
-	overflow: hidden;
-	
-	p,
-	.history__main-img {
-		flex: 0 0 47%;
-		font-size: 1.6rem;
-	}
-}
-
-#magazine{
-	width:800px;
-	height:400px;
-}
-
-#magazine .turn-page{
-	width:400px;
-	height:400px;
-	background-color:#ccc;
-}

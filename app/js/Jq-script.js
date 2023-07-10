@@ -59,9 +59,15 @@ $(".block__item").each(function() {
 
 
 //----------------------------Header-------------------------//
-$('.header__bottom-lists-item-drop').on('click', function(e){
-	e.preventDefault();
-});
+if($('body').width() < 768) {
+	console.log('q')
+	$('.header__bottom-lists-item-drop').on('click', function(e){
+		e.preventDefault();
+	});
+	$('.header__center-lists-item > a').on('click', function(e){
+		e.preventDefault();
+	});
+}
 	
 $('.header__bottom-lists-item').hover(function () {
 		 clearTimeout($.data(this,'timer'));
@@ -82,9 +88,6 @@ $('.header__bottom-lists-item').mouseleave(function () {
 });
 
 
-$('.header__center-lists-item > a').on('click', function(e){
-	e.preventDefault();
-});
 	
 $('.header__center-lists-item').hover(function () {
 		 clearTimeout($.data(this,'timer'));

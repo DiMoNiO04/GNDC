@@ -768,6 +768,29 @@ img {
   background-color: rgba(224, 229, 231, 0.5);
 }
 
+.input-file-white::before {
+  position: absolute;
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("../img/icon/heroicons.svg");
+  background-image: url(../img/icon/heroicons-white.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.input-file-white:hover {
+  cursor: pointer;
+  background: #00AC60;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.input-file-white:hover::before {
+  background-image: url(../img/icon/heroicons-white.svg);
+}
+.input-file-white:hover span {
+  color: #FFFFFF;
+}
+
 .input-file {
   position: relative;
   display: inline-block;
@@ -3282,10 +3305,17 @@ main {
 
 .aside {
   width: 33.7rem;
-  padding: 4rem 0;
-  background: #3F6088;
-  border-radius: 0.8rem;
-  margin-bottom: 15rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 31rem;
+  display: none;
+}
+.aside.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .aside__title {
   display: -webkit-box;
@@ -3329,6 +3359,9 @@ main {
 }
 
 .aside-form {
+  padding: 4rem 0;
+  background: #3F6088;
+  border-radius: 0.8rem;
   /* Checked */
   /* Focus */
 }

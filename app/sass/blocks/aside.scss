@@ -1,9 +1,12 @@
 .aside {
     width: 33.7rem;
-    padding: 4rem 0;
-    background: #3F6088;
-    border-radius: 0.8rem;
-    margin-bottom: 15rem;
+		flex-direction: column;
+		row-gap: 31rem;
+		display: none;
+		
+		&.active {
+			display: flex;
+		}
     
     &__title {
         display: flex;
@@ -46,6 +49,9 @@
 }
 
 .aside-form {
+	padding: 4rem 0;
+	background: #3F6088;
+	border-radius: 0.8rem;
     &__title {
         display: flex;
         flex-direction: column;

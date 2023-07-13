@@ -2913,6 +2913,14 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.distant__buttons .menu__buttons {
+  -webkit-column-gap: 8rem;
+     -moz-column-gap: 8rem;
+          column-gap: 8rem;
+}
+.distant__buttons .menu__buttons button {
+  width: 100%;
+}
 .distant__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3305,17 +3313,18 @@ main {
 
 .aside {
   width: 33.7rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 31rem;
+  padding: 4rem 0;
+  background: #3F6088;
+  border-radius: 0.8rem;
+}
+.aside:not(:last-child) {
+  margin-bottom: 15rem;
+}
+.aside__connection {
   display: none;
 }
-.aside.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.aside__connection.active {
+  display: block;
 }
 .aside__title {
   display: -webkit-box;
@@ -3359,9 +3368,6 @@ main {
 }
 
 .aside-form {
-  padding: 4rem 0;
-  background: #3F6088;
-  border-radius: 0.8rem;
   /* Checked */
   /* Focus */
 }

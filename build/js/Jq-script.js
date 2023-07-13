@@ -255,6 +255,11 @@ $('[data-modal-class]').on('click', function() {
 
 
 //---------------Distant-------------
+$('.distant__btn').on('click', function() {
+	$('.distant__btn').removeClass('active');
+	$(this).addClass('active');
+});
+
 $(".distant__btn-two").click(function() {
 	$(".distant__wrap").slideDown();
 	$(".distant__btn-two").addClass('hidden');

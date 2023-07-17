@@ -620,7 +620,7 @@ img {
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .link-green {
@@ -5035,11 +5035,11 @@ main {
   top: 1.2rem;
 }
 
-.hair {
+.hair-center {
   margin-top: 5.6rem;
   padding-bottom: 15rem;
 }
-.hair__container {
+.hair-center__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5049,7 +5049,7 @@ main {
           flex-direction: column;
   row-gap: 6rem;
 }
-.hair__block {
+.hair-center__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5059,7 +5059,7 @@ main {
           flex-direction: column;
   row-gap: 2.4rem;
 }
-.hair__block-items {
+.hair-center__block-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5073,17 +5073,17 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.hair__block-items:last-child .hair__block-item {
+.hair-center__block-items:last-child .hair-center__block-item {
   width: 50%;
 }
-.hair__block-item {
+.hair-center__block-item {
   border-radius: 0.8rem;
   background: #D8DEE8;
   padding: 1.6rem;
   width: 25%;
   min-height: 19.3rem;
 }
-.hair__block-links {
+.hair-center__block-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5097,13 +5097,13 @@ main {
      -moz-column-gap: 3rem;
           column-gap: 3rem;
 }
-.hair__block-link:hover .hair__block-link-img img {
+.hair-center__block-link:hover .hair-center__block-link-img img {
   -webkit-transition: 0.7s;
   transition: 0.7s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.hair__block-link a {
+.hair-center__block-link {
   background: rgba(63, 76, 92, 0.5);
   border-radius: 0.8rem;
   width: 36.1rem;
@@ -5119,8 +5119,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
-.hair__block-links {
+.hair-center__block-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5128,14 +5129,14 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.hair__block-link-img {
+.hair-center__block-link-img {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
   top: 0;
 }
-.hair__block-link-title {
+.hair-center__block-link-title {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
@@ -5143,28 +5144,276 @@ main {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.hair__block-item-img {
+.hair-center__block-item-img {
   margin-bottom: 3.1rem;
   width: 6rem;
   height: 6.3rem;
 }
-.hair__block-item-text {
+.hair-center__block-item-text {
   color: #3F4C5C;
   font-size: 2.3rem;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
 }
-.hair__block-text {
+.hair-center__block-text {
   color: #3F4C5C;
   font-size: 2.3rem;
   font-weight: 700;
   line-height: normal;
 }
-.hair__block-text span {
+.hair-center__block-text span {
   text-transform: uppercase;
 }
-.hair__block-img {
+.hair-center__block-img {
   width: 154.2rem;
   height: 100.2rem;
+}
+
+.hair-transplant {
+  margin-top: 5.6rem;
+  padding-bottom: 15rem;
+}
+.hair-transplant__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 6rem;
+}
+.hair-transplant__block-list {
+  padding-left: 2.4rem;
+}
+.hair-transplant__block-list li {
+  list-style-type: inherit;
+  color: #3F4C5C;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.hair-transplant__block-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.hair-transplant__block-list li span {
+  color: #00AC60;
+}
+.hair-transplant__block-list li p {
+  color: rgba(63, 76, 92, 0.69);
+  margin-left: -2.4rem;
+}
+.hair-transplant__block-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hair-transplant__block-item {
+  border-radius: 0.8rem;
+  background: #d8dee8;
+  padding: 1.6rem;
+  width: 25%;
+  min-height: 19.3rem;
+}
+.hair-transplant__block-item-text {
+  color: #3f4c5c;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.hair-transplant__block-item-img {
+  margin-bottom: 3.1rem;
+  width: 6rem;
+  height: 6.3rem;
+}
+.hair-transplant__block-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hair-transplant__block-link {
+  width: 100%;
+  border-radius: 0.8rem;
+  width: 100%;
+  height: 26rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 9rem;
+  cursor: pointer;
+}
+.hair-transplant__block-link:hover .hair-transplant__block-link-img img {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.hair-transplant__block-link-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.hair-transplant__block-link-title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.hair-transplant__block-fut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hair-transplant__block-fut ul {
+  max-width: 70rem;
+}
+.hair-transplant__block-fut ul li {
+  font-size: 2rem;
+}
+.hair-transplant__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.4rem;
+}
+.hair-transplant__block-text li {
+  color: #3F4C5C;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hair-transplant__block-text span {
+  text-transform: uppercase;
+}
+.hair-transplant__block-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 3rem;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  width: 100%;
+}
+.hair-transplant__block-result {
+  border-radius: 0.8rem;
+  background: #D8DEE8;
+  padding: 1.6rem;
+  width: calc(50% - 1.5rem);
+}
+.hair-transplant__block-result-number {
+  background: #B9C3D3;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hair-transplant__block-result-number span {
+  color: #3F4C5C;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.hair-transplant__block-result-text {
+  color: #3F4C5C;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.hair-transplant__block-trans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hair-transplant__block-fut-img, .hair-transplant__block-fut-content, .hair-transplant__block-trans-content, .hair-transplant__block-trans-img {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+.hair-transplant__block-fut-img img, .hair-transplant__block-fut-content img, .hair-transplant__block-trans-content img, .hair-transplant__block-trans-img img {
+  border-radius: 0.8rem;
+}
+.hair-transplant__block-trans-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 6rem;
+}
+.hair-transplant__block-trans-content-block p {
+  color: #3F4C5C;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.hair-transplant__block-trans-content-block p span {
+  color: #00AC60;
+}
+.hair-transplant__block-trans-content-block p:not(:last-child) {
+  margin-bottom: 1rem;
 }

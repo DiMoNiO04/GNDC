@@ -20,7 +20,7 @@
 		justify-content: center;
 		align-items: center;
 		&:last-child {
-			.hair__block-item {
+			.hair-center__block-item {
 				width: 50%;
 			}
 		}
@@ -44,7 +44,7 @@
 
 	&__block-link {
 		&:hover {
-			.hair__block-link-img {
+			.hair-center__block-link-img {
 					img {
 							transition: 0.7s;
 							transform: scale(1.1);
@@ -53,7 +53,7 @@
 		}
 	}
 
-	&__block-link a {
+	&__block-link {
 		background: rgba(63,76,92,.5);
     border-radius: 0.8rem;
     width: 36.1rem;
@@ -63,6 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+		cursor: pointer;
 	}
 
 	&__block-links {

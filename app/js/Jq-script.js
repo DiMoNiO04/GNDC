@@ -55,6 +55,16 @@ $(".block__item").each(function() {
 			more.toggleClass('active');
 	});
 });
+
+$(".patients__item-lists-block").each(function() {
+	let more = $(this).find(".patients__item-lists-block-inner");
+	let hide = $(this).find(".patients__item-lists-block-content");
+	hide.hide();
+	more.click(function() {
+			hide.slideToggle();
+			more.toggleClass('active');
+	});
+});
 //-------------------------------------------------------------//
 
 

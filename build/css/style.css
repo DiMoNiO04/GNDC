@@ -373,7 +373,7 @@ html {
   font-weight: normal;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
-  font-size: 0.470835vw;
+  font-size: 0.520835vw;
   -webkit-animation: bugfix infinite 1s;
   line-height: 1.3;
   margin: 0;
@@ -5184,11 +5184,9 @@ main {
           flex-direction: column;
   row-gap: 6rem;
 }
-.hair-transplant__block-list {
-  padding-left: 2.4rem;
-}
 .hair-transplant__block-list li {
-  list-style-type: inherit;
+  position: relative;
+  padding-left: 2rem;
   color: #3F4C5C;
   font-size: 1.8rem;
   font-style: normal;
@@ -5204,6 +5202,17 @@ main {
 .hair-transplant__block-list li p {
   color: rgba(63, 76, 92, 0.69);
   margin-left: -2.4rem;
+}
+.hair-transplant__block-list li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #3F4C5C;
+  position: absolute;
+  left: 0.5rem;
+  top: 1.1rem;
 }
 .hair-transplant__block-items {
   display: -webkit-box;
@@ -5416,4 +5425,73 @@ main {
 }
 .hair-transplant__block-trans-content-block p:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.specialists {
+  margin-top: 5.6rem;
+  padding-bottom: 15rem;
+}
+.specialists__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 18.6rem;
+     -moz-column-gap: 18.6rem;
+          column-gap: 18.6rem;
+  width: 100%;
+}
+.specialists__left {
+  width: 38.8rem;
+}
+.specialists__right {
+  max-width: 89rem;
+}
+.specialists__item {
+  display: none;
+}
+.specialists__item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.specialists__item-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.2rem;
+}
+.specialists__item-links li {
+  position: relative;
+  padding-left: 2rem;
+}
+.specialists__item-links li a {
+  color: #3F4C5C;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 130%;
+  border-bottom: 0.1rem solid inherit;
+}
+.specialists__item-links li a:hover {
+  border-bottom: 0.1rem solid #3F4C5C;
+}
+.specialists__item-links li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #3F4C5C;
+  position: absolute;
+  left: 0.5rem;
+  top: 1.1rem;
 }

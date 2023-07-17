@@ -1261,6 +1261,7 @@ main {
 }
 .modal__conferences-swiper {
   margin-bottom: 2.2rem;
+  overflow: hidden;
 }
 .modal__conferences-pagination {
   margin-bottom: 4.4rem;

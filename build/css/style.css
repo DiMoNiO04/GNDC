@@ -1140,6 +1140,44 @@ img {
   background: #3F4C5C;
 }
 
+.bread-crumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+  margin-bottom: 5.6rem;
+}
+.bread-crumbs a {
+  color: #3F4C5C;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.6rem;
+     -moz-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bread-crumbs a:not(:last-child)::after {
+  content: "";
+  background: url("../img/icon/arrow-bread-crumbs.svg") no-repeat center;
+  background-size: cover;
+  width: 1rem;
+  height: 1rem;
+  display: block;
+}
+.bread-crumbs a:last-child {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: default;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5605,6 +5643,7 @@ main {
 }
 .patients__item-lists-block ul {
   padding: 1rem 0;
+  display: none;
 }
 .patients__item-lists-block li {
   color: rgba(63, 76, 92, 0.69);

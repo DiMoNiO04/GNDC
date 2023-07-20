@@ -74,7 +74,6 @@ $(".patients__item-lists-block").each(function() {
 
 //----------------------------Header-------------------------//
 if($('body').width() < 768) {
-	console.log('q')
 	$('.header__bottom-lists-item-drop').on('click', function(e){
 		e.preventDefault();
 	});

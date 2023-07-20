@@ -128,6 +128,15 @@ img {
 	}
 }
 
+.captcha {
+	width: 40rem;
+	height: 10rem;
+	img {
+		object-fit: contain;
+	}
+}
+
+
 .select {
 	padding-bottom: 1.8rem;
 	padding-top: 1.8rem;
@@ -550,6 +559,7 @@ img {
 
 .bread-crumbs {
 	display: flex;
+	flex-wrap: wrap;
 	column-gap: 1.6rem;
 	margin-bottom: 5.6rem;
 	a {
@@ -586,4 +596,65 @@ body {
 header,
 main {
 	flex: 1;
+}
+
+
+@media screen and (max-width: 48em) {
+
+	.title {
+		font-size: 5.86vw;
+		margin-bottom: 5.33vw;
+	}
+
+	.pagination {
+			.swiper-pagination-bullet {
+				width: 1.8vw;
+				height: 1.8vw;
+			}
+
+			&__bullets {
+				column-gap: 2rem;
+			}
+	}	
+
+	.bread-crumbs {
+		margin-bottom: 8vw;
+		a {
+			font-size: 4.27vw;
+			&:not(:last-child)::after {
+				width: 1.8vw;
+				height: 1.8vw;
+			}
+		}
+	}
+
+	.checkbox {
+		&-other {
+			span {
+				padding-left: 10.7vw;
+				height: 7vw;
+				display: flex;
+				align-items: center;
+				column-gap: 0.5rem;
+				font-size: 3.8vw;
+				&::before {
+					width: 8vw;
+					height: 8vw;
+				}
+			}
+			input[type=checkbox]:checked+span:before {
+				background-size: 3vw 3vw;
+			}
+		}
+	}
+
+
+	.link-green::after {
+		bottom: 0;
+	}
+
+	.captcha {
+		width: 100%;
+		height: 100%;
+	}
 }

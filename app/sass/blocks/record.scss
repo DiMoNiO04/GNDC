@@ -31,7 +31,7 @@
 
     &__form {
         input {
-            font-family: 'Circe';
+            font-family: 'Inter', sans-serif;
             width: 69.9rem;
             height: 6rem;
             background: #D8DEE8;
@@ -51,6 +51,7 @@
         }
 
         textarea {
+						font-family: 'Inter', sans-serif;
             border: none;
             width: 69.9rem;
             min-height: 12.6rem;
@@ -82,19 +83,6 @@
 						}
 					}
        }
-    }
-
-    &__form-captcha {
-        width: 41.2rem;
-        height: 10.3rem;
-        display: inline-flex;
-				flex-direction: column;
-				justify-content: space-between;
-        margin-bottom: 3.7rem;
-				background: inherit;
-				border: 1px solid rgba(63, 76, 92, 0.62);
-				border-radius: 3px;
-				padding: 1.5rem 2rem 0.3rem 1.7rem;
     }
 
 		&__form-logo {
@@ -144,8 +132,18 @@
         position: absolute;
         z-index: 2;
         bottom: 3.5rem;
-        left: 43%;
+				width: 100%;
+				justify-content: center;
+				left: 0;
     }
+
+		&__swiper-wrapper {
+			height: 58rem;
+		}
+
+		&__slide-image {
+			height: 100%;
+		}
 
 		&__bullets {
 			.swiper-pagination-bullet {
@@ -154,10 +152,88 @@
 		}
 
     .checkbox-other {
-        margin: 0 0 3.5rem 0;  
+        margin: 3.5rem 0;  
     }
 
 		.checkbox-record span {
 			padding-left: 5.6rem;
 		}
+}
+
+
+@media screen and (max-width: 48em) {
+	.record {
+		margin-top: 2.7vw;
+    padding-bottom: 24vw;
+
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&__slide-image {
+			height: 89rem;
+			width: 100%;
+		}
+
+		&__left {
+			width: 100%;
+			margin-bottom: 16vw;
+		}
+
+		&__text {
+			font-size: 3.72vw;
+    	line-height: 140%;
+			margin-bottom: 8vw;
+			p {
+				margin-bottom: 2.1vw;
+			}
+		}
+
+		&__form {
+			input,
+			textarea {
+				width: 100%;
+				height: auto;
+				padding: 5.33vw;
+				font-size: 4.27vw;
+				margin-bottom: 5.33vw;
+				border-radius: 1.8vw;
+			}
+
+			textarea {
+				min-height: 43vw;
+				margin-bottom: 8vw;
+			}
+		}
+
+		&__btn {
+			width: 100%;
+			font-size: 4.27vw;
+			height: auto;
+			padding: 4.37vw;
+			border-radius: 1.8vw;
+		}
+
+		.checkbox-other {
+			margin: 8vw 0;
+		}
+
+		&__swiper {
+			width: 100%;
+		}
+
+		&__swiper-wrapper {
+			height: auto;
+		}
+
+		&__pagination {
+			bottom: 5.33vw;
+		}
+
+		&__bullets .swiper-pagination-bullet {
+			width: 3.6vw;
+				height: 3.6vw;
+		}
+
+	}
 }

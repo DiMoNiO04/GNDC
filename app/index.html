@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/swiper.css"/>
-	<link rel="stylesheet" href="./css/style.min.css">
-	<title>Главная</title>
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <title>Главная</title>
+    </head>
 
-<body>
-	@@include('./template/header.html')
-	
-	<div class="main-body" style="background: url(../img/main/bg.webp) no-repeat center; background-size: cover;"></div>
-	<main>
-		@@include('./template/main.html')
-	</main>
-	@@include('./template/footer.html')
-	
-</body>
+    <body>
+        @@include('./template/header.html')
 
+        <div class="main-body"></div>
+        <main>@@include('./template/main.html')</main>
+        @@include('./template/footer.html')
+    </body>
 </html>

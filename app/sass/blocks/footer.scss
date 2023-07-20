@@ -1,3 +1,5 @@
+//1vw = 3.75
+
 .footer {
     background: #3F4C5C;
     padding-top: 3.4rem;
@@ -10,6 +12,7 @@
     &__wrapper {
         display: flex;
         margin-bottom: 4.2rem;
+				flex-wrap: wrap;
     }
 
     &__logo {
@@ -59,7 +62,9 @@
     &__right {
         display: flex;
         margin-left: 20rem;
-         margin-top: 2rem;
+        margin-top: 2rem;
+				column-gap: 21.7rem;
+				flex-direction: row-reverse;
     }
 
     &__right-lists {
@@ -78,10 +83,6 @@
         }
     }
 
-    &__right-lists:nth-child(1) {
-        margin-right: 21.7rem;
-    }
-
     &__policy {
         font-style: normal;
         font-weight: 400;
@@ -89,7 +90,12 @@
         line-height: 2.1rem;
         color: #FFFFFF;
 				display: flex;
-				column-gap: 0.5rem;
+				flex-wrap: wrap;
+
+				div{
+					display: flex;
+					column-gap: 0.5rem;
+				}
 
 				svg {
 					position: relative;
@@ -100,4 +106,77 @@
             opacity: 0.5;
         }
     }
+}
+
+@media screen and (max-width: 48em) {
+	.footer {
+		padding-top: 16vw;
+    padding-bottom: 16vw;
+
+		&__wrapper {
+			margin-bottom: 45vw;
+		}
+
+		&__left {
+			margin-bottom: 8vw;
+		}
+
+		&__logo {
+			margin-bottom: 8vw;
+			width: 100%;
+			height: auto;
+		}
+
+		&__iframe {
+			position: absolute;
+			bottom: 36rem;
+			width: auto;
+		}
+
+		&__lists {
+			margin-bottom: 8vw;
+			li {
+				font-size: 3.75vw;
+				margin-bottom: 4.27vw;
+			}
+		}
+
+		&__socials {
+			a {
+				width: 8.5vw;
+				height: 8.5vw;
+				margin-right: 7.5vw;
+			}
+		}
+
+		&__right {
+			margin: 0;
+			flex-direction: column-reverse;
+			row-gap: 4.27vw;
+		}
+
+
+		&__right-lists{
+			&:nth-child(1) {
+				margin-right: 0;
+			}
+			li {
+				font-size: 3.75vw;
+				margin-bottom: 4.27vw;
+				line-height: 140%;
+			}
+		}
+
+		&__policy {
+			font-size: 3.2vw;
+			line-height: 150%;
+			span {
+				margin-left: 3.2vw;
+			}
+			svg {
+				width: 4.5vw;
+				height: 3.2vw;
+			}
+		}
+	}
 }

@@ -48,12 +48,16 @@ const mainNewsSlider = new Swiper('#news__swiper', {
 	},
 });
 
+
 const partnersSlider = new Swiper('#partners__swiper', {
-    slidesPerView: 5,
     wrapperClass: 'partners__swiper-wrapper ',
     slideClass: 'partners__slide',
-    spaceBetween: 17,
+    spaceBetween: 20,
     loop: true,
+		autoplay: true,
+		autoplay: {
+				delay: 2000,
+		},
     navigation: {
         prevEl: '.partners__prev',
         nextEl: '.partners__next',
@@ -69,6 +73,17 @@ const partnersSlider = new Swiper('#partners__swiper', {
       },
       el: '.partners__bullets',
     },
+		breakpoints: {
+			300: {
+				slidesPerView: 1.5,
+				spaceBetween: 20,
+				loop: true,
+			},
+			769: {
+				slidesPerView: 5,
+				autoplay: false
+			},
+		},
 });
 
 const recordSlider = new Swiper('#record__swiper', {

@@ -22,3 +22,32 @@
         }
     }
 }
+
+@media screen and (max-width: 48em) {
+	.partners {
+		
+		&__slide {
+			height: auto;
+		}
+
+		&__content {
+			padding: 2.4vw 3.75vw;
+			border-radius: 1vw;
+		}
+
+		&__image {
+			img {
+				object-fit: fill;
+			}
+		}
+
+		&__pagination {
+			justify-content: center;
+		}
+
+		&__prev,
+		&__next {
+			display: none;
+		}
+	}
+}

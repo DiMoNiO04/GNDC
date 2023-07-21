@@ -1,0 +1,9 @@
+.department {
+		margin-top: 5.6rem;
+		padding-bottom: 15rem;
+
+		&__wrapper {
+			display: flex;
+			column-gap: 14rem;
+		}
+}

@@ -365,24 +365,23 @@ class Modal {
 let conferences = document.querySelector('[data-modal="conferences"]') ? new Modal('conferences') : null;
 //--------------------------------------------------------------------------//
 
-//-------------Change text symbols-------------------------------//
-const COUNT_SYMBOLS_ONE_STR = 53;
-const textContainers = document.querySelectorAll('.news__text');
+//---------------Change symbols str------------------------------//
+$('.news__text').each(function () {
+    let text = $(this).find('.news__text-desc');
 
-$('.news__text').each(function (index) {
     const textTitle = $(this).find('.news__text-title');
-    const textDesc = $(this).find('.news__text-desc');
 
     const heightTextContainer = $(this).height();
     const heightTextDesc = heightTextContainer - textTitle.height();
 
-    const lineHeight = Math.floor(textDesc.css('line-height').slice(0, 2));
-    const maxChars = Math.floor(heightTextDesc / lineHeight) * COUNT_SYMBOLS_ONE_STR;
-
-    let text = textDesc.html();
-    if (text.length > maxChars) {
-        text = text.substring(0, maxChars) + '...';
+    while (text.height() > heightTextDesc) {
+        text.text(
+            text
+                .text()
+                .split(' ')
+                .slice(0, text.text().split(' ').length - 1)
+                .join(' ') + '...'
+        );
     }
-    textDesc.html(text);
 });
-//--------------------------------------------------------------//
+//-------------------------------------------------------------------//

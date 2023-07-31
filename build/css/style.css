@@ -373,7 +373,7 @@ html {
   font-weight: normal;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
-  font-size: 0.470835vw;
+  font-size: 0.520835vw;
   -webkit-animation: bugfix infinite 1s;
   line-height: 1.3;
   margin: 0;
@@ -676,7 +676,9 @@ img {
   background: #00AC60;
 }
 .pagination__prev, .pagination__next {
-  width: 6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 7rem;
   cursor: pointer;
 }
@@ -5670,6 +5672,9 @@ main {
   margin-top: 5.6rem;
   padding-bottom: 15rem;
 }
+.department .subtitle {
+  margin-bottom: 0;
+}
 .department__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5677,6 +5682,163 @@ main {
   -webkit-column-gap: 14rem;
      -moz-column-gap: 14rem;
           column-gap: 14rem;
+}
+.department__left {
+  width: 42rem;
+}
+.department__main-employee {
+  margin-bottom: 4.4rem;
+}
+.department__main-employee-img {
+  width: 42rem;
+  height: 42rem;
+  border-radius: 0.8rem;
+  margin-bottom: 3.4rem;
+}
+.department__main-employee-name {
+  color: #3f4c5c;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.department__main-employee-name::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background: #3f4c5c;
+  display: block;
+}
+.department__main-employee-name:hover {
+  color: #00ac60;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.department__main-employee-name:hover::after {
+  background: #00ac60;
+}
+.department__main-employee-job {
+  color: #3f4c5c;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.department__employees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+}
+.department__employees-title {
+  color: #3f4c5c;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+.department__employees-block ul {
+  margin-top: 2rem;
+}
+.department__employees-block li {
+  position: relative;
+  padding-left: 2rem;
+}
+.department__employees-block li span {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #3f4c5c;
+}
+.department__employees-block li a {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #3f4c5c;
+  border-bottom: 0.1rem solid #3f4c5c;
+}
+.department__employees-block li a:hover {
+  border-bottom: none;
+}
+.department__employees-block li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #3f4c5c;
+  position: absolute;
+  left: 0.5rem;
+  top: 1.4rem;
+}
+.department__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4.4rem;
+  width: 98rem;
+}
+.department__text p,
+.department__text li {
+  color: #3f4c5c;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.department__text li {
+  position: relative;
+  padding-left: 2rem;
+}
+.department__text li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #3f4c5c;
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+}
+.department__photo-link {
+  color: #3f4c5c;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.department__photo-link::after {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background: #3f4c5c;
+  display: block;
+}
+.department__photo-link:hover::after {
+  display: none;
+}
+.department__slide {
+  width: 98rem;
+  height: 65rem;
+}
+.department__swiper-wrapper {
+  margin-bottom: 2.2rem;
+}
+.department__pagination .swiper-pagination-bullet-active {
+  background: #3f4c5c;
 }
 
 .news {

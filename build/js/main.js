@@ -296,3 +296,16 @@ const conferencesModalSlider = new Swiper('#modal__conferences-swiper', {
 		el: '.modal__conferences-bullets',
 	},
 });
+
+const departmentSwiper = new Swiper('#department-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.department__next',
+    prevEl: '.department__prev',
+  },
+  pagination: {
+    el: '.department__bullets',
+    clickable: true,
+  },
+});

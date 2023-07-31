@@ -119,7 +119,7 @@ img {
 
 	&__prev,
 	&__next {
-		width: 6rem;
+		width: fit-content;
 		height: 7rem;
 		cursor: pointer;
 		&:hover {

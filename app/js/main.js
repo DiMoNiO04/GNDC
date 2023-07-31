@@ -24,7 +24,7 @@ const mainSlider = new Swiper('#main__swiper', {
     },
 });
 
-const mainNewsSlider = new Swiper('#news__swiper', {
+const mainNewsSlider = new Swiper('#news-main__swiper', {
 	slidesPerView: 1,
 	speed: 1000,
 	wrapperClass: 'main__news-swiper',
@@ -232,6 +232,22 @@ const contactsBranchesSlider = new Swiper('#contacts__branches-swiper', {
   },
 });
 
+const brandsSwiper = new Swiper('#news-swiper', {
+  slidesPerView: 3,
+  slidesPerColumn: 3,
+  grid: {
+    rows: 3,
+  },
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.news__next',
+    prevEl: '.news__prev',
+  },
+  pagination: {
+    el: '.news__bullets',
+    clickable: true,
+  },
+});
 
 
 const referenceSlider = new Swiper('#reference__swipper', {

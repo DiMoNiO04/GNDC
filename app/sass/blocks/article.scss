@@ -1,0 +1,56 @@
+.article {
+    margin-top: 5.6rem;
+    padding-bottom: 15rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        column-gap: 4rem;
+    }
+
+    &__content {
+        width: 99.1rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4.4rem;
+        .title {
+            margin-bottom: 0;
+        }
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    &__content-text {
+        p {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+            color: #3f4c5c;
+        }
+
+        p,
+        span {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        span {
+            color: #00ac60;
+        }
+    }
+
+    &__content-images {
+        display: flex;
+        column-gap: 3rem;
+    }
+
+    &__content-image {
+        width: 48rem;
+        height: 32rem;
+    }
+}

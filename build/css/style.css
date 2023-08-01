@@ -2189,21 +2189,21 @@ main {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.7rem;
-  color: #3F4C5C;
+  color: #3f4c5c;
   margin-bottom: 2rem;
 }
 .employees__degrees-title {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.7rem;
-  color: #3F4C5C;
+  color: #3f4c5c;
   margin-bottom: 0.5rem;
 }
 .employees__degrees-items li {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2rem;
-  color: #3F4C5C;
+  color: #3f4c5c;
 }
 .employees__title {
   margin-bottom: 0;
@@ -2212,14 +2212,14 @@ main {
   font-weight: 700;
   font-size: 2.3rem;
   line-height: 150%;
-  color: #3F4C5C;
+  color: #3f4c5c;
   margin-bottom: 2rem;
 }
 .employees__name {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 150%;
-  color: #3F4C5C;
+  color: #3f4c5c;
   margin-bottom: 0.6rem;
   display: inline-block;
   border-bottom: 0.1rem solid;
@@ -6488,4 +6488,70 @@ main {
   .main__question-image {
     height: 100%;
   }
+}
+.article {
+  margin-top: 5.6rem;
+  padding-bottom: 15rem;
+}
+.article__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+}
+.article__content {
+  width: 99.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4.4rem;
+}
+.article__content .title {
+  margin-bottom: 0;
+}
+.article__news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 3rem;
+}
+.article__content-text p {
+  color: #3F4C5C;
+}
+.article__content-text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.article__content-text p, .article__content-text span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.article__content-text span {
+  color: #00AC60;
+}
+.article__content-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+}
+.article__content-image {
+  width: 48rem;
+  height: 32rem;
 }

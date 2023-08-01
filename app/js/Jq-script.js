@@ -57,9 +57,9 @@ $('.block__item').each(function () {
     });
 });
 
-$('.patients__item-lists-block').each(function () {
-    let more = $(this).find('.patients__item-lists-block-inner');
-    let hide = $(this).find('.patients__item-lists-block-content');
+$('.block__item-lists-subblock').each(function () {
+    let more = $(this).find('.block__item-lists-subblock-inner');
+    let hide = $(this).find('.block__item-lists-subblock-content');
     hide.hide();
     more.click(function () {
         hide.slideToggle();

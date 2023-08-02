@@ -1,9 +1,11 @@
 const PAGES = {
-    SPECIALISTS: 'specialists-page.html'
+    SPECIALISTS: 'specialists-page.html',
+		BUSSINES: 'bussines-page.html'
 };
 
 const CONTENT = {
-    RUSSIAN_SOCIETY: 'russian-society-dermatovenerologists-cosmetologists'
+    RUSSIAN_SOCIETY: 'rossijskoe-obshchestvo-dermatovenerologov-i-kosmetologov',
+		NAUCHNAYA_DEYATELNOST: 'nauchnaya-deyatelnost'
 };
 
 function renderContentPage(elem) {
@@ -28,5 +30,7 @@ $(document).ready(() => {
         renderContentPage(hash);
     } else if (page === PAGES.SPECIALISTS) {
         renderContentPage(CONTENT.RUSSIAN_SOCIETY);
-    }
+    } else if(page === PAGES.BUSSINES) {
+			renderContentPage(CONTENT.NAUCHNAYA_DEYATELNOST)
+		}
 });

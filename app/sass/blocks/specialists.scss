@@ -36,10 +36,10 @@
 				color: #3F4C5C;
 				font-size: 2.3rem;
 				font-weight: 700;
-				line-height: 130%;
-				border-bottom: 0.1rem solid inherit;
+				line-height: 150%;
+				border-bottom: 0.1rem solid #3F4C5C;
 				&:hover {
-					border-bottom: 0.1rem solid #3F4C5C;
+					border-bottom: none;
 				}
 			}
 			&::before {

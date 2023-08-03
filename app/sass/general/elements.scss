@@ -76,8 +76,8 @@ img {
     margin-bottom: 2.4rem;
 }
 
-.link-green {
-    color: #00ac60;
+.link-green,
+.link-blue {
     display: inline-block;
     font-weight: 400;
     &::after {
@@ -92,6 +92,21 @@ img {
     &:hover::after {
         visibility: hidden;
     }
+}
+
+.link-green {
+	color: #00ac60;
+	&::after {
+		background-color: #00ac60;
+	}
+}
+
+.link-blue {
+	color: #3f4c5c;
+
+	&::after {
+		background-color: #3f4c5c;
+	}
 }
 
 .pagination {

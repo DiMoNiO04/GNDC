@@ -95,18 +95,18 @@ img {
 }
 
 .link-green {
-	color: #00ac60;
-	&::after {
-		background-color: #00ac60;
-	}
+    color: #00ac60;
+    &::after {
+        background-color: #00ac60;
+    }
 }
 
 .link-blue {
-	color: #3f4c5c;
+    color: #3f4c5c;
 
-	&::after {
-		background-color: #3f4c5c;
-	}
+    &::after {
+        background-color: #3f4c5c;
+    }
 }
 
 .pagination {
@@ -476,6 +476,13 @@ img {
         margin: 0 5rem 0 auto;
     }
 
+    &__item-lists-subblock-inner {
+        color: #3f4c5c;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
     &__item-lists-subblock {
         cursor: pointer;
         &-content {
@@ -490,19 +497,21 @@ img {
                 &:not(:last-child) {
                     margin-bottom: 0.8rem;
                 }
-
-                
             }
 
             a {
+                border-bottom: 0.1rem solid transparent;
                 position: relative;
+                &:hover {
+                    border-bottom: 0.1rem solid rgba(63, 76, 92, 0.69);
+                }
                 &::before {
                     content: '';
                     display: inline-block;
                     width: 0.5rem;
                     height: 0.5rem;
                     border-radius: 50%;
-                    background-color: rgba(63, 76, 92, .69);
+                    background-color: rgba(63, 76, 92, 0.69);
                     position: absolute;
                     left: -1.5rem;
                     top: 1.1rem;

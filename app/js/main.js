@@ -309,3 +309,27 @@ const departmentSwiper = new Swiper('#department-swiper', {
     clickable: true,
   },
 });
+
+
+const bussinesSlider = new Swiper('#bussines__swipper', {
+	slidesPerView: 1,
+	wrapperClass: 'bussines__swipper-wrapper',
+	slideClass: 'bussines__slide',
+	spaceBetween: 20,
+	loop: true,
+	navigation: {
+			prevEl: '.bussines__prev',
+			nextEl: '.bussines__next',
+	},
+	pagination: {
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `
+				<span class="${className}">
+				 
+				</span>
+			`;
+		},
+		el: '.bussines__bullets',
+	},
+});

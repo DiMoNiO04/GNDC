@@ -89,11 +89,6 @@
         }
     }
 
-    .block__item-title {
-        text-transform: uppercase;
-        font-size: 2.6rem;
-    }
-
     .block__content {
         row-gap: 3rem;
         .subtitle {
@@ -103,13 +98,18 @@
 
     &__content {
         li,
-        p {
+        p,
+        a {
             position: relative;
             color: #3f4c5c;
             font-size: 2rem;
             font-weight: 400;
             line-height: 130%;
             cursor: pointer;
+        }
+
+        span {
+            color: #00ac60;
         }
 
         li {
@@ -132,5 +132,25 @@
             flex-direction: column;
             row-gap: 1rem;
         }
+    }
+
+    &__item-content-btns-download {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1.4rem;
+        column-gap: 1.4rem;
+        a {
+            width: calc(50% - 1.4rem / 2);
+            &:nth-child(5) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__content-block-title {
+        color: #3f4c5c;
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 130%;
     }
 }

@@ -100,6 +100,7 @@ img {
 .link-blue {
     display: inline-block;
     font-weight: 400;
+		width: fit-content;
     &::after {
         display: block;
         content: '';
@@ -115,14 +116,14 @@ img {
 }
 
 .link-green {
-    color: #00ac60;
+    color: #00ac60 !important;
     &::after {
         background-color: #00ac60;
     }
 }
 
 .link-blue {
-    color: #3f4c5c;
+    color: #3f4c5c !important;
 
     &::after {
         background-color: #3f4c5c;

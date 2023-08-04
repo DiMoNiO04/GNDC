@@ -598,6 +598,33 @@ input[type=number] {
   color: #ffffff;
 }
 
+.btn-white__download {
+  background: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.6rem 2.4rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 1.8rem;
+     -moz-column-gap: 1.8rem;
+          column-gap: 1.8rem;
+  text-align: left;
+  color: #3f4c5c;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.btn-white__download svg {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -5516,31 +5543,8 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.patients__btn {
-  background: #ffffff;
-  width: 100%;
-  height: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 1.6rem 2.4rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-column-gap: 1.8rem;
-     -moz-column-gap: 1.8rem;
-          column-gap: 1.8rem;
-  text-align: left;
-  color: #3f4c5c;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 150%;
-}
-.patients__btn svg {
-  min-width: 2rem;
-  min-height: 2rem;
-}
-.patients__btn:nth-child(1), .patients__btn:nth-child(2) {
+.patients__btns a:nth-child(1),
+.patients__btns a:nth-child(2) {
   width: calc(50% - 0.7rem);
 }
 .patients__item-lists {
@@ -6591,22 +6595,29 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 18.6rem;
-     -moz-column-gap: 18.6rem;
-          column-gap: 18.6rem;
+  -webkit-column-gap: 8.8rem;
+     -moz-column-gap: 8.8rem;
+          column-gap: 8.8rem;
   width: 100%;
 }
 .bussines__left {
   width: 38.8rem;
 }
 .bussines__right {
-  width: 89rem;
+  width: 107rem;
 }
 .bussines__item {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4rem;
 }
 .bussines__item.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .bussines__item-list {
   display: -webkit-box;
@@ -6642,6 +6653,84 @@ main {
   position: absolute;
   left: 0.5rem;
   top: 1.3rem;
+}
+.bussines .menu__button {
+  height: 12.3rem;
+}
+.bussines .menu__button.active {
+  font-size: 1.8rem;
+}
+.bussines__item-content {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4rem;
+}
+.bussines__item-content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bussines__item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.2rem;
+}
+.bussines__item-text p {
+  color: #3f4c5c;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.bussines .block__item-title {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+.bussines .block__content {
+  row-gap: 3rem;
+}
+.bussines .block__content .subtitle {
+  margin-bottom: 0;
+}
+.bussines__content li,
+.bussines__content p {
+  position: relative;
+  color: #3f4c5c;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 130%;
+  cursor: pointer;
+}
+.bussines__content li {
+  padding-left: 2rem;
+}
+.bussines__content li::before {
+  content: "";
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: #3f4c5c;
+  position: absolute;
+  left: 0.5rem;
+  top: 1.1rem;
+}
+.bussines__content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
 }
 
 .academic-consul {

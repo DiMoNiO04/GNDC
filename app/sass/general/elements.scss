@@ -52,6 +52,26 @@
     }
 }
 
+.btn-white__download {
+    background: #ffffff;
+    width: fit-content;
+    height: 100%;
+    align-items: flex-start;
+    padding: 1.6rem 2.4rem;
+    justify-content: flex-start;
+    column-gap: 1.8rem;
+    text-align: left;
+    color: #3f4c5c;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 150%;
+
+    svg {
+        min-width: 2rem;
+        min-height: 2rem;
+    }
+}
+
 img {
     width: 100%;
     height: 100%;

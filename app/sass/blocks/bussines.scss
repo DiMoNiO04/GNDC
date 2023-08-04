@@ -96,7 +96,7 @@
         }
     }
 
-    &__content {
+    &__content-block {
         li,
         p,
         a {
@@ -127,11 +127,9 @@
             }
         }
 
-        &-block {
-            display: flex;
+         display: flex;
             flex-direction: column;
             row-gap: 1rem;
-        }
     }
 
     &__item-content-btns-download {

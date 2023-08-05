@@ -27,7 +27,8 @@
 @import "./blocks/hair-center.scss";
 @import "./blocks/hair-transplant.scss";
 @import "./blocks/specialists.scss";
-@import "./blocks/patients.scss";
+@import "./blocks/patients/patients.scss";
+@import "./blocks/patients/patients-page.scss";
 @import "./blocks/dissertation-сouncil.scss";
 @import "./blocks/department.scss";
 @import "./blocks/news.scss";
@@ -36,8 +37,5 @@
 @import "./blocks/bussines.scss";
 @import "./blocks/bussines/academic-consul.scss";
 @import "./blocks/bussines/submit-doc.scss";
-@import "./blocks/provision-medical-care.scss";
 @import "./blocks/bussines/admission-residency-2023.scss";
 @import "./blocks/bussines/procedure-consideration-claims";
-@import "./blocks/types-medical-care.scss";
-@import "./blocks/rights-obligations-patients.scss";

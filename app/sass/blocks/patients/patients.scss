@@ -70,38 +70,4 @@
             }
         }
     }
-
-    &__page {
-        margin-top: 5.6rem;
-        padding-bottom: 15rem;
-    }
-
-    &__container {
-        display: flex;
-        flex-direction: column;
-        row-gap: 4.4rem;
-    }
-
-    &__block {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-
-        p {
-            color: #3f4c5c;
-            font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-        }
-    }
-
-    &__block-title-up {
-        color: #3f4c5c;
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 130%;
-        text-transform: uppercase;
-    }
 }

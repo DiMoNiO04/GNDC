@@ -1,231 +1,171 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=`, initial-scale=1.0" />
+        <link rel="stylesheet" href="./build/css/style.min.css" />
+        <title>ГНЦДК</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=`, initial-scale=1.0">
-  <link rel="stylesheet" href="./build/css/style.min.css">
-  <title>ГНЦДК</title>
-</head>
+    <style>
+        body {
+            background-color: rgb(96, 103, 103);
+            width: 100%;
+            height: 100%;
+        }
 
-<style>
-	body {
-		background-color: rgb(96, 103, 103);
-		width: 100%;
-		height: 100%;
-	}
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-left: 100px;
+        }
 
-	h2 {
-		font-size: 24px;
-		font-weight: 700;
-		color: #ffffff;
-		margin-left: 100px;
-	}
+        .menu {
+            margin: 40px 100px 80px 100px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 30px;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
 
-	.menu {
-		margin: 40px 100px 80px 100px;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		flex-direction: row;
-		column-gap: 30px;
-		flex-wrap: wrap;
-		row-gap: 20px;
-	}
+        .item {
+            display: block;
+            border: 3px solid black;
+            width: 200px;
+            height: 60px;
+            border-radius: 10px;
+            background: rgb(163, 172, 148);
+            text-align: center;
+        }
 
-	.item {
-		display: block;
-		border: 3px solid black;
-		width: 200px;
-		height: 60px;
-		border-radius: 10px;
-		background: rgb(163, 172, 148);
-		text-align: center;
-	}
+        .item a {
+            font-size: 16px;
+            font-weight: 700;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-	.item a {
-		font-size: 16px;
-		font-weight: 700;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+        .item:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    </style>
 
-	.item:hover {
-		opacity: 0.5;
-		cursor: pointer;
-	}
-
-</style>
-
-<body>
-
-	<ul class="menu">
-		<li class="item">
-			<a href="./build/index.html">
-				Главная страница
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/about-center-page.html">
-				О научном центре
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/record-page.html">
-				Запись в косметологии
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/record-page-two.html">
-				Запись в КДЦ
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/hospitalization-page.html">
-				Госпитализация
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/schedule-page.html">
-				Расписание врачей
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/telemedicine-consul-page.html">
-				Телемедицинские консультации
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/reference-center-page.html">
-				Референс-центр
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/сost-honey-page.html">
-				Стоимость услуг
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/department-dermatology-page.html">
-				Отдел дерматологии
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/contacts-page.html">
-				Контакты
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/clinical-guidelines-two-page.html">
-				Клинические рекомандации 1 вариант
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/clinical-guidelines-page.html">
-				Клинические рекомандации 2 вариант
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/conferences-page.html">
-				Научно-практическая конференция
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/connection-page.html">
-				Обратной связь
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/distant-consul-page.html">
-				Дистанционное обследование
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/employee-page.html">
-				Руководитель
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/hair-center-page.html">
-				Центр "Здоровые волосы"
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/hair-transplant-page.html">
-				Трансплантация волос
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/specialists-page.html">
-				Специалистам
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/patients-page.html">
-				Пациентам
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/dissertation-сouncil-page.html">
-				Диссертационный совет
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/news-page.html">
-				Новости
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/department-diagnosis-stis-page.html">
-				Отдел лабораторной диагностики ИППП и дерматозов
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/department-sexually-transmitted-infections-page.html">
-				Отдел инфекций, передаваемых половым путем
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/article-page.html">
-					Статья
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/bussines-page.html">
-				Направления деятельности
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/academic-consul-page.html">
-				Ученый совет
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/provision-medical-care-paid-basis-page.html">
-				Оказание медицинской помощи на платной основе
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/submit-documents-page.html">
-				Подать документы
-			</a>
-		</li>
-		<li class="item">
-			<a href="./build/admission-residency-2023-page.html">
-				Прием в ординатуру 2023
-			</a>
-		</li>
-			<li class="item">
-				<a href="./build/procedure-consideration-claims-page.html">
-					Порядок рассмотрения жалоб
-				</a>
-			</li>
-	</ul>
-
-</body>
-
+    <body>
+        <ul class="menu">
+            <li class="item">
+                <a href="./build/index.html"> Главная страница </a>
+            </li>
+            <li class="item">
+                <a href="./build/about-center-page.html"> О научном центре </a>
+            </li>
+            <li class="item">
+                <a href="./build/record-page.html"> Запись в косметологии </a>
+            </li>
+            <li class="item">
+                <a href="./build/record-page-two.html"> Запись в КДЦ </a>
+            </li>
+            <li class="item">
+                <a href="./build/hospitalization-page.html"> Госпитализация </a>
+            </li>
+            <li class="item">
+                <a href="./build/schedule-page.html"> Расписание врачей </a>
+            </li>
+            <li class="item">
+                <a href="./build/telemedicine-consul-page.html"> Телемедицинские консультации </a>
+            </li>
+            <li class="item">
+                <a href="./build/reference-center-page.html"> Референс-центр </a>
+            </li>
+            <li class="item">
+                <a href="./build/сost-honey-page.html"> Стоимость услуг </a>
+            </li>
+            <li class="item">
+                <a href="./build/department-dermatology-page.html"> Отдел дерматологии </a>
+            </li>
+            <li class="item">
+                <a href="./build/contacts-page.html"> Контакты </a>
+            </li>
+            <li class="item">
+                <a href="./build/clinical-guidelines-two-page.html"> Клинические рекомандации 1 вариант </a>
+            </li>
+            <li class="item">
+                <a href="./build/clinical-guidelines-page.html"> Клинические рекомандации 2 вариант </a>
+            </li>
+            <li class="item">
+                <a href="./build/conferences-page.html"> Научно-практическая конференция </a>
+            </li>
+            <li class="item">
+                <a href="./build/connection-page.html"> Обратной связь </a>
+            </li>
+            <li class="item">
+                <a href="./build/distant-consul-page.html"> Дистанционное обследование </a>
+            </li>
+            <li class="item">
+                <a href="./build/employee-page.html"> Руководитель </a>
+            </li>
+            <li class="item">
+                <a href="./build/hair-center-page.html"> Центр "Здоровые волосы" </a>
+            </li>
+            <li class="item">
+                <a href="./build/hair-transplant-page.html"> Трансплантация волос </a>
+            </li>
+            <li class="item">
+                <a href="./build/specialists-page.html"> Специалистам </a>
+            </li>
+            <li class="item">
+                <a href="./build/patients-page.html"> Пациентам </a>
+            </li>
+            <li class="item">
+                <a href="./build/dissertation-сouncil-page.html"> Диссертационный совет </a>
+            </li>
+            <li class="item">
+                <a href="./build/news-page.html"> Новости </a>
+            </li>
+            <li class="item">
+                <a href="./build/department-diagnosis-stis-page.html">
+                    Отдел лабораторной диагностики ИППП и дерматозов
+                </a>
+            </li>
+            <li class="item">
+                <a href="./build/department-sexually-transmitted-infections-page.html">
+                    Отдел инфекций, передаваемых половым путем
+                </a>
+            </li>
+            <li class="item">
+                <a href="./build/article-page.html"> Статья </a>
+            </li>
+            <li class="item">
+                <a href="./build/bussines-page.html"> Направления деятельности </a>
+            </li>
+            <li class="item">
+                <a href="./build/academic-consul-page.html"> Ученый совет </a>
+            </li>
+            <li class="item">
+                <a href="./build/provision-medical-care-paid-basis-page.html">
+                    Оказание медицинской помощи на платной основе
+                </a>
+            </li>
+            <li class="item">
+                <a href="./build/submit-documents-page.html"> Подать документы </a>
+            </li>
+            <li class="item">
+                <a href="./build/admission-residency-2023-page.html"> Прием в ординатуру 2023 </a>
+            </li>
+            <li class="item">
+                <a href="./build/procedure-consideration-claims-page.html"> Порядок рассмотрения жалоб </a>
+            </li>
+            <li class="item">
+                <a href="./build/types-medical-care-page.html"> Виды медицинской помощи </a>
+            </li>
+        </ul>
+    </body>
 </html>

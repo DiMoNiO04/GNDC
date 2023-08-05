@@ -6748,6 +6748,7 @@ main {
 }
 .bussines__item-content-btns-download a {
   width: calc(50% - 0.7rem);
+  height: auto;
 }
 .bussines__item-content-btns-download a:nth-child(5) {
   width: 100%;
@@ -6814,6 +6815,22 @@ main {
 }
 .bussines__slide-image {
   height: 65rem;
+}
+.bussines__content-block-isp p:first-child {
+  margin-bottom: 1rem;
+}
+.bussines__content-block-isp p:not(:first-child) {
+  color: rgba(63, 76, 92, 0.69);
+}
+.bussines__content-block-isp-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
 }
 
 .academic-consul {

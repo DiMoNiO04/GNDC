@@ -139,6 +139,7 @@
         column-gap: 1.4rem;
         a {
             width: calc(50% - 1.4rem / 2);
+            height: auto;
             &:nth-child(5) {
                 width: 100%;
             }
@@ -203,5 +204,22 @@
 
     &__slide-image {
         height: 65rem;
+    }
+
+    &__content-block-isp {
+        p {
+            &:first-child {
+                margin-bottom: 1rem;
+            }
+            &:not(:first-child) {
+                color: rgba(63, 76, 92, 0.69);
+            }
+        }
+    }
+
+    &__content-block-isp-main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
     }
 }

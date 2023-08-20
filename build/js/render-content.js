@@ -1,11 +1,13 @@
 const PAGES = {
     SPECIALISTS: 'specialists-page.html',
-		BUSSINES: 'bussines-page.html'
+    BUSSINES: 'bussines-page.html',
+    ABOUT: 'about-center-page.html',
 };
 
 const CONTENT = {
     RUSSIAN_SOCIETY: 'rossijskoe-obshchestvo-dermatovenerologov-i-kosmetologov',
-		NAUCHNAYA_DEYATELNOST: 'nauchnaya-deyatelnost'
+    NAUCHNAYA_DEYATELNOST: 'nauchnaya-deyatelnost',
+    ISTORIYA: 'istoriya',
 };
 
 function renderContentPage(elem) {
@@ -18,19 +20,23 @@ function renderContentPage(elem) {
 
 $(window).on('hashchange', () => {
     const hash = window.location.hash.slice(1);
-    renderContentPage(hash);
+    if (!hash.includes('page')) {
+        renderContentPage(hash);
+    }
 });
 
 $(document).ready(() => {
     const locationArr = window.location.href.split('/');
     const page = locationArr[locationArr.length - 1];
 
-    if (window.location.hash) {
+    if (window.location.hash && !window.location.hash.includes('page')) {
         const hash = window.location.hash.slice(1);
         renderContentPage(hash);
     } else if (page === PAGES.SPECIALISTS) {
         renderContentPage(CONTENT.RUSSIAN_SOCIETY);
-    } else if(page === PAGES.BUSSINES) {
-			renderContentPage(CONTENT.NAUCHNAYA_DEYATELNOST)
-		}
+    } else if (page === PAGES.BUSSINES) {
+        renderContentPage(CONTENT.NAUCHNAYA_DEYATELNOST);
+    } else if (page === PAGES.ABOUT) {
+        renderContentPage(CONTENT.ISTORIYA);
+    }
 });

@@ -38,14 +38,7 @@
                         <li><a href="#">История создания ГНЦДК</a></li>
                         <li><a href="#">Руководство</a></li>
                         <li><a href="#">Структура ГНЦДК</a></li>
-                        <li class="header__center-lists-item-bottom">
-                            <a href="#">Сведения о медицинской организации</a>
-                            <ul class="header-dropdown-two">
-                                <li><a href="#">Учредительные документы</a></li>
-                                <li><a href="#">Документы организации</a></li>
-                                <li><a href="#">Лицензии, свидетельства</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#">Сведения о медицинской организации</a></li>
                         <li><a href="#">Вакансии</a></li>
                         <li><a href="#">Закупки</a></li>
                         <li><a href="#">Противодействие коррупции</a></li>
@@ -156,27 +149,37 @@
         <div class="about__wrapper">
             <div class="about__left">
                 <ul class="menu__tabs">
-                    <li class="menu__tab active" data-open-menu="history">История создания ГНЦДК</li>
-                    <li class="menu__tab" data-open-menu="management">Руководство</li>
-                    <li class="menu__tab" data-open-menu="structure">Структура ГНЦДК</li>
-                    <ul class="menu__tab" data-open-menu="intelligence">
-                        Сведения о медицинской организации
-                        <li class="menu__tab-inteligence" data-open-menu="basic-info">
-                            Основные сведения о медицинской организации
-                        </li>
-                        <li class="menu__tab-inteligence" data-open-menu="found-docs">Учредительные документы</li>
-                        <li class="menu__tab-inteligence" data-open-menu="org-docs">Документы организации</li>
-                        <li class="menu__tab-inteligence" data-open-menu="certificates">Лицензии и сведетельства</li>
-                    </ul>
-                    <li class="menu__tab" data-open-menu="vacancies">Вакансии</li>
-                    <li class="menu__tab" data-open-menu="purchases">Закупки</li>
-                    <li class="menu__tab" data-open-menu="corruption">Противодействие коррупции</li>
-                    <li class="menu__tab" data-open-menu="photo-gallery">Фотогалерея</li>
+                    <li class="menu__tab active">
+                        <a href="#istoriya" data-open-content="istoriya">История создания ГНЦДК</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#rukovodstvo" data-open-content="rukovodstvo">Руководство</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#struktura-GNCDK" data-open-content="struktura-GNCDK">Структура ГНЦДК</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#svedeniya-o-medicinskoj-organizacii" data-open-content="svedeniya-o-medicinskoj-organizacii">Сведения о медицинской организации</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#vakansii" data-open-content="vakansii">Вакансии</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#zakupki" data-open-content="zakupki">Закупки</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#protivodejstvie-korrupcii" data-open-content="protivodejstvie-korrupcii"
+                            >Противодействие коррупции</a
+                        >
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#fotogalereya" data-open-content="fotogalereya">Фотогалерея</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="about__right">
-                <div class="about__item active" data-menu="history">
+                <div class="about__item active" data-content="istoriya">
     <div class="about__wrap">
         <div id="canvas">
             <div id="book-zoom">
@@ -1040,7 +1043,7 @@
         </ul>
     </div>
 </div>
- <div class="about__item" data-menu="management">
+ <div class="about__item" data-content="rukovodstvo">
     <div class="about__wrap">
         <div class="managment__director">
             <div class="managment__block">
@@ -1137,7 +1140,7 @@
     </div>
 </div>
 
-                <div class="about__item" data-menu="structure">
+                <div class="about__item" data-content="struktura-GNCDK">
     <div class="about__wrap">
         <div class="structure__btns">
             <a href="https://www.cnikvi.ru/centr/struktura/spf/spf.php?id=1" class="all-btn__blue" target="_blank"
@@ -1226,7 +1229,7 @@
                             <li><a href="http://gncdk.requestbitrix.ru/otdeli/apteka/">Аптека</a></li>
 
                             <li class="block__item-lists-subblock">
-                                <div class="block__item-lists-subblock-inner">Консультативно-диагностический центр</div>
+                                <div class="block__item-lists-subblock-inner structure-item">Консультативно-диагностический центр</div>
                                 <ul class="block__item-lists-subblock-content">
                                     <li>
                                         <a href="http://gncdk.requestbitrix.ru/otdeli/otdelenie-dermatologii/">
@@ -1303,7 +1306,7 @@
         </div>
     </div>
 </div>
- <div class="about__item" data-menu="intelligence">
+ <div class="about__item" data-content="svedeniya-o-medicinskoj-organizacii">
 	<div class="about__wrap">
 
 		<ul class="block__items">
@@ -1511,7 +1514,7 @@
 		</ul>
 	</div>
 </div>
-                <div class="about__item" data-menu="vacancies">
+                <div class="about__item" data-content="vakansii">
     <div class="about__wrap">
         <div class="menu__buttons">
             <button class="menu__button all-btn__blue active" data-open-vacancies="scientific">Научные</button>
@@ -2215,7 +2218,7 @@
         </div>
     </div>
 </div>
- <div class="about__item" data-menu="purchases">
+ <div class="about__item" data-content="zakupki">
     <ul class="purchases">
         <li>
             <a href="https://zakupki.gov.ru/epz/gws/card/common-info.html?gwsInfoId=230310" target="_blank">
@@ -2236,7 +2239,7 @@
     </ul>
 </div>
 
-                <div class="about__item" data-menu="corruption">
+                <div class="about__item" data-content="protivodejstvie-korrupcii">
     <ul class="corruption">
         <li class="corruption__item">
             <a href="https://cnikvi.ru/protivodeystvie-korruptsii/normativnye-pravovye-akty/" target="_blank">
@@ -2289,7 +2292,7 @@
         </li>
     </ul>
 </div>
- <div class="about__item" data-menu="photo-gallery">
+ <div class="about__item" data-content="fotogalereya">
     <div class="about__wrap">
         <div class="menu__buttons">
             <button class="menu__button all-btn__blue active" data-open-photo-category="event">Мероприятия</button>
@@ -2702,9 +2705,9 @@
                             turned: function (e, page, view) {
                                 var book = $(this);
 
-                                if (page == 2 || page == 3) {
-                                    book.turn('peel', 'br');
-                                }
+                                // if (page == 2 || page == 3) {
+                                //     book.turn('peel', 'br');
+                                // }
 
                                 updateDepth(book);
 
@@ -2736,7 +2739,7 @@
                             },
                         },
                     })
-                    .turn('page', 4);
+                    // .turn('page', 4);
 
                 $('#slider').slider('option', 'max', numberOfViews(flipbook));
 

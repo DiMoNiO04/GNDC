@@ -57,7 +57,7 @@
     &__table-doctor {
 				padding: 2rem 0;
         margin-left: 4rem;
-        width: 46.9rem;
+        width: 45.7rem;
         border-right: 0.1rem solid rgba(63, 76, 92, 0.2);
         border-bottom: 0.1rem solid rgba(63, 76, 92, 0.2);
         padding-right: 3.7rem;
@@ -119,6 +119,10 @@
         color: #3F4C5C;
     }
 
+		&__table-cab {
+			width: 9.8rem;
+		}
+
     &__table-doctor:last-child {
         border-bottom: none;
     }
@@ -128,7 +132,7 @@
     &__table-wednesday,
     &__table-thursday,
     &__table-friday {
-        width: 19.5rem;
+        width: 18.7rem;
     }
 
     &__table-friday {
@@ -138,7 +142,6 @@
     &__list {
         display: flex;
         border-top: 0.1rem solid rgba(63, 76, 92, 0.2);
-        border-bottom: 0.1rem solid rgba(63, 76, 92, 0.2);
         margin-left: 4rem;
     }
 

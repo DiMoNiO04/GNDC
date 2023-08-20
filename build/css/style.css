@@ -1675,6 +1675,10 @@ main {
   height: 10rem;
   font-size: 2.3rem;
 }
+.structure-item {
+  font-size: 2rem;
+  font-weight: 400;
+}
 
 .vacancies__subtitle {
   font-style: normal;
@@ -2242,11 +2246,13 @@ main {
   background: #00ac60;
 }
 .employees__main-job {
+  margin-bottom: 2rem;
+}
+.employees__main-job p {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.7rem;
   color: #3f4c5c;
-  margin-bottom: 2rem;
 }
 .employees__degrees-title {
   font-weight: 400;
@@ -3403,7 +3409,7 @@ main {
 .schedule__table-doctor {
   padding: 2rem 0;
   margin-left: 4rem;
-  width: 46.9rem;
+  width: 45.7rem;
   border-right: 0.1rem solid rgba(63, 76, 92, 0.2);
   border-bottom: 0.1rem solid rgba(63, 76, 92, 0.2);
   padding-right: 3.7rem;
@@ -3466,11 +3472,14 @@ main {
   line-height: 130%;
   color: #3F4C5C;
 }
+.schedule__table-cab {
+  width: 9.8rem;
+}
 .schedule__table-doctor:last-child {
   border-bottom: none;
 }
 .schedule__table-monday, .schedule__table-tuesday, .schedule__table-wednesday, .schedule__table-thursday, .schedule__table-friday {
-  width: 19.5rem;
+  width: 18.7rem;
 }
 .schedule__table-friday {
   border-right: 0;
@@ -3480,7 +3489,6 @@ main {
   display: -ms-flexbox;
   display: flex;
   border-top: 0.1rem solid rgba(63, 76, 92, 0.2);
-  border-bottom: 0.1rem solid rgba(63, 76, 92, 0.2);
   margin-left: 4rem;
 }
 .schedule__list-one {

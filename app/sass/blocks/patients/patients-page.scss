@@ -104,4 +104,17 @@
             }
         }
     }
+
+    &__block-work {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.2rem;
+        li {
+            color: rgba(63, 76, 92, 0.69);
+            padding-left: 0;
+            &::before {
+                display: none;
+            }
+        }
+    }
 }

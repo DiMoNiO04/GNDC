@@ -27,6 +27,7 @@
 			display: flex;
     	align-items: flex-start;
     	justify-content: space-between;
+			column-gap: 2rem;
 			cursor: pointer;
 			&.active {
 				.cost__content-item-arrow {
@@ -86,6 +87,7 @@
 			font-size: 1.8rem;
 			font-weight: 400;
 			line-height: 150%;
+			column-gap: 2rem;
 
 			div:last-child {
 				color: #3F4C5C;
@@ -93,6 +95,7 @@
 				font-size: 2rem;
 				font-weight: 700;
 				line-height: 150%;
+				flex-shrink: 0;
 			} 
 		}
 
@@ -105,6 +108,7 @@
 
 		&__content-item-arrow,
 		&__content-item-content-arrow {
+			flex-shrink: 0;
 			width: 3.2rem;
 			height: 3.2rem;
 			cursor: pointer;

@@ -452,6 +452,7 @@ img {
         padding: 2rem 4rem;
         justify-content: space-between;
         align-items: center;
+				column-gap: 2rem;
     }
     &__item-inner.active {
         .block__item-arrow {
@@ -472,6 +473,7 @@ img {
         height: 3.2rem;
         cursor: pointer;
         transition: all 0.3s;
+				flex-shrink: 0;
     }
     &__content {
         padding: 1rem 4rem 3rem 4rem;
@@ -495,6 +497,7 @@ img {
         color: #3f4c5c;
         display: inline-block;
         margin: 0 5rem 0 auto;
+				flex-shrink: 0;
     }
 
     &__item-lists-subblock-inner {

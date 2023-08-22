@@ -89,6 +89,18 @@
         }
     }
 
+    &__btns-download-state {
+        display: flex;
+        column-gap: 1.4rem;
+        row-gap: 1.4rem;
+        flex-wrap: wrap;
+
+        a {
+            width: calc(50% - 1.4rem / 2);
+            height: auto;
+        }
+    }
+
     &__btns-download-rights-obligations {
         display: flex;
         row-gap: 3rem;
@@ -141,6 +153,43 @@
             &::before {
                 display: none;
             }
+        }
+    }
+
+    &__block-link a {
+        border-bottom: 0.1px solid;
+        &:hover {
+            transition: all 0.2s;
+            border-bottom: 0.1px solid transparent;
+        }
+    }
+
+    .block__items {
+        margin-top: 4.4rem;
+    }
+
+    .block__item-title {
+        padding-left: 1.4rem;
+        max-width: 120rem;
+    }
+
+    .block__item-inner {
+        align-items: flex-start;
+    }
+
+    .state-guarant-content {
+        padding-bottom: 2rem;
+        row-gap: 3rem;
+        .patients-page__block a,
+        .patients-page__block li,
+        .patients-page__block p {
+            font-size: 2rem;
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.8rem;
         }
     }
 }

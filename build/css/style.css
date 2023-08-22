@@ -5693,6 +5693,21 @@ main {
   width: 33%;
   height: auto;
 }
+.patients-page__btns-download-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.4rem;
+     -moz-column-gap: 1.4rem;
+          column-gap: 1.4rem;
+  row-gap: 1.4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.patients-page__btns-download-state a {
+  width: calc(50% - 0.7rem);
+  height: auto;
+}
 .patients-page__btns-download-rights-obligations {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5748,6 +5763,45 @@ main {
 }
 .patients-page__block-work li::before {
   display: none;
+}
+.patients-page__block-link a {
+  border-bottom: 0.1px solid;
+}
+.patients-page__block-link a:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-bottom: 0.1px solid transparent;
+}
+.patients-page .block__items {
+  margin-top: 4.4rem;
+}
+.patients-page .block__item-title {
+  padding-left: 1.4rem;
+  max-width: 120rem;
+}
+.patients-page .block__item-inner {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.patients-page .state-guarant-content {
+  padding-bottom: 2rem;
+  row-gap: 3rem;
+}
+.patients-page .state-guarant-content .patients-page__block a,
+.patients-page .state-guarant-content .patients-page__block li,
+.patients-page .state-guarant-content .patients-page__block p {
+  font-size: 2rem;
+}
+.patients-page .state-guarant-content__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0.8rem;
 }
 
 .dissertation {

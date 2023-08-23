@@ -223,3 +223,40 @@
         row-gap: 2rem;
     }
 }
+
+.bussines__item-clinical {
+	.menu__button {
+		height: 21.5rem;
+		padding: 1.5rem 2rem;
+		line-height: 130%;
+	}
+
+	.bussines__content-block {
+		row-gap: 2rem;
+	}
+
+	.block__items {
+		> li {
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	.block__item {
+		padding-left: 0;
+	}
+
+	&-table {
+		display: flex;
+		flex-direction: column;
+
+		&-title {
+			display: flex;
+		}
+
+		&-item {
+			display: flex;
+		}
+	}
+}

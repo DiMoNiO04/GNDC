@@ -7067,6 +7067,40 @@ main {
   row-gap: 2rem;
 }
 
+.bussines__item-clinical .menu__button {
+  height: 21.5rem;
+  padding: 1.5rem 2rem;
+  line-height: 130%;
+}
+.bussines__item-clinical .bussines__content-block {
+  row-gap: 2rem;
+}
+.bussines__item-clinical .block__items > li::before {
+  display: none;
+}
+.bussines__item-clinical .block__item {
+  padding-left: 0;
+}
+.bussines__item-clinical-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bussines__item-clinical-table-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bussines__item-clinical-table-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .academic-consul {
   margin-top: 5.6rem;
   padding-bottom: 15rem;
@@ -7331,8 +7365,8 @@ main {
 .rules-preparing__item:not(:last-child) {
   border-bottom: 0.1px solid rgba(63, 76, 92, 0.2);
 }
-.rules-preparing__item:nth-of-type(even):nth-of-type(n+4) {
-  background: #B9C3D3;
+.rules-preparing__item:nth-of-type(even):nth-of-type(n + 4) {
+  background: #b9c3d3;
 }
 .rules-preparing__item div {
   color: #3f4c5c;

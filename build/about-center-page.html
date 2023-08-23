@@ -181,18 +181,21 @@
             <div class="about__right">
                 <div class="about__item active" data-content="istoriya">
     <div class="about__wrap">
-        <div id="canvas">
-            <div id="book-zoom">
-                <div class="sj-book">
-                    <div depth="3" class="hard"><div class="side"></div></div>
-                    <div depth="3" class="hard front-side"><div class="depth"></div></div>
-                    <div class="own-size"></div>
-                    <div class="own-size even"></div>
-                    <div class="hard fixed back-side p17"><div class="depth"></div></div>
-                    <div class="hard p18"></div>
-                </div>
-            </div>
-        </div>
+				<div id="canvas">
+				
+					<div class="zoom-icon zoom-icon-in"></div>
+				
+					<div class="magazine-viewport">
+						<div class="container">
+							<div class="magazine">
+								<!-- Next button -->
+								<div ignore="1" class="next-button"></div>
+								<!-- Previous button -->
+								<div ignore="1" class="previous-button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 
         <ul class="block__items">
             <li class="block__item">
@@ -1517,12 +1520,12 @@
                 <div class="about__item" data-content="vakansii">
     <div class="about__wrap">
         <div class="menu__buttons">
-            <button class="menu__button all-btn__blue active" data-open-vacancies="scientific">Научные</button>
-            <button class="menu__button all-btn__blue" data-open-vacancies="clinical">Клинические</button>
-            <button class="menu__button all-btn__blue" data-open-vacancies="lab-center">Лабораторный центр</button>
-            <button class="menu__button all-btn__blue" data-open-vacancies="admin-control">
+            <a href="#vakansii/scientific" class="menu__button all-btn__blue active" data-open-vacancies="vakansii/scientific">Научные</a>
+            <a href="#vakansii/clinical" class="menu__button all-btn__blue" data-open-vacancies="vakansii/clinical">Клинические</a>
+            <a href="#vakansii/lab-center" class="menu__button all-btn__blue" data-open-vacancies="vakansii/lab-center">Лабораторный центр</a>
+            <a href="#vakansii/admin-control" class="menu__button all-btn__blue" data-open-vacancies="vakansii/admin-control">
                 Административно-управленческие
-            </button>
+            </a>
         </div>
 
         <ul class="vacancies__buttons">
@@ -1553,7 +1556,7 @@
             </li>
         </ul>
 
-        <div class="about__content active" data-vacancies="scientific">
+        <div class="about__content active" data-vacancies="vakansii/scientific">
             <ul class="block__items">
                 <li class="block__item">
                     <div class="block__item-inner">
@@ -1719,7 +1722,7 @@
             </ul>
         </div>
 
-        <div class="about__content" data-vacancies="clinical">
+        <div class="about__content" data-vacancies="vakansii/clinical">
             <ul class="block__items">
                 <li class="block__item">
                     <div class="block__item-inner">
@@ -1885,7 +1888,7 @@
             </ul>
         </div>
 
-        <div class="about__content" data-vacancies="lab-center">
+        <div class="about__content" data-vacancies="vakansii/lab-center">
             <ul class="block__items">
                 <li class="block__item">
                     <div class="block__item-inner">
@@ -2051,7 +2054,7 @@
             </ul>
         </div>
 
-        <div class="about__content" data-vacancies="admin-control">
+        <div class="about__content" data-vacancies="vakansii/admin-control">
             <ul class="block__items">
                 <li class="block__item">
                     <div class="block__item-inner">
@@ -2540,229 +2543,398 @@
 <script type="module" src="./js/js.js"></script>
 <script src="./js/render-content.js"></script>
 
-        <script>
-            function loadApp() {
-                var flipbook = $('.sj-book');
+			<script type="text/javascript">
 
-                // Check if the CSS was already loaded
+				function loadApp() {
 
-                if (flipbook.width() == 0 || flipbook.height() == 0) {
-                    setTimeout(loadApp, 10);
-                    return;
-                }
+					$('#canvas').fadeIn(1000);
 
-                // Mousewheel
+					var flipbook = $('.magazine');
 
-                $('#book-zoom').mouseenter(function (event, delta, deltaX, deltaY) {
-                    var data = $(this).data(),
-                        step = 30,
-                        flipbook = $('.sj-book'),
-                        actualPos = $('#slider').slider('value') * step;
+					// Check if the CSS was already loaded
 
-                    if (typeof data.scrollX === 'undefined') {
-                        data.scrollX = actualPos;
-                        data.scrollPage = flipbook.turn('page');
-                    }
+					if (flipbook.width() == 0 || flipbook.height() == 0) {
+						setTimeout(loadApp, 10);
+						return;
+					}
 
-                    data.scrollX = Math.min(
-                        $('#slider').slider('option', 'max') * step,
-                        Math.max(0, data.scrollX + deltaX)
-                    );
+					// Create the flipbook
 
-                    var actualView = Math.round(data.scrollX / step),
-                        page = Math.min(flipbook.turn('pages'), Math.max(1, actualView * 2 - 2));
+					flipbook.turn({
 
-                    if ($.inArray(data.scrollPage, flipbook.turn('view', page)) == -1) {
-                        data.scrollPage = page;
-                        flipbook.turn('page', page);
-                    }
+						// Magazine width
 
-                    if (data.scrollTimer) clearInterval(data.scrollTimer);
+						width: 960,
 
-                    data.scrollTimer = setTimeout(function () {
-                        data.scrollX = undefined;
-                        data.scrollPage = undefined;
-                        data.scrollTimer = undefined;
-                    }, 1000);
-                });
+						// Magazine height
 
-                // Slider
+						height: 720,
 
-                $('#slider').slider({
-                    min: 1,
-                    max: 100,
+						// Duration in millisecond
 
-                    start: function (event, ui) {
-                        if (!window._thumbPreview) {
-                            _thumbPreview = $('<div />', { class: 'thumbnail' }).html('<div></div>');
-                            setPreview(ui.value);
-                            _thumbPreview.appendTo($(ui.handle));
-                        } else setPreview(ui.value);
+						duration: 1000,
 
-                        moveBar(false);
-                    },
+						// Hardware acceleration
 
-                    slide: function (event, ui) {
-                        setPreview(ui.value);
-                    },
+						acceleration: !isChrome(),
 
-                    stop: function () {
-                        if (window._thumbPreview) _thumbPreview.removeClass('show');
+						// Enables gradients
 
-                        $('.sj-book').turn('page', Math.max(1, $(this).slider('value') * 2 - 2));
-                    },
-                });
+						gradients: true,
 
-                // URIs
+						// Auto center this flipbook
 
-                Hash.on('^page\/([0-9]*)$', {
-                    yep: function (path, parts) {
-                        var page = parts[1];
+						autoCenter: true,
 
-                        if (page !== undefined) {
-                            if ($('.sj-book').turn('is')) $('.sj-book').turn('page', page);
-                        }
-                    },
-                    nop: function (path) {
-                        if ($('.sj-book').turn('is')) $('.sj-book').turn('page', 1);
-                    },
-                });
+						// Elevation from the edge of the flipbook when turning a page
 
-                // Arrows
+						elevation: 50,
 
-                $(document).keydown(function (e) {
-                    var previous = 37,
-                        next = 39;
+						// The number of pages
 
-                    switch (e.keyCode) {
-                        case previous:
-                            $('.sj-book').turn('previous');
+						pages: 10,
 
-                            break;
-                        case next:
-                            $('.sj-book').turn('next');
+						// Events
 
-                            break;
-                    }
-                });
+						when: {
+							turning: function (event, page, view) {
 
-                // Flipbook
+								var book = $(this),
+									currentPage = book.turn('page'),
+									pages = book.turn('pages');
 
-                flipbook.bind($.isTouch ? 'touchend' : 'click', zoomHandle);
+								// Update the current URI
 
-                flipbook
-                    .turn({
-                        elevation: 50,
-                        acceleration: !isChrome(),
-                        autoCenter: true,
-                        gradients: true,
-                        duration: 1000,
-                        pages: 18,
-                        when: {
-                            turning: function (e, page, view) {
-                                console.log(page);
-                                var book = $(this),
-                                    currentPage = book.turn('page'),
-                                    pages = book.turn('pages');
+								Hash.go('page/' + page).update();
 
-                                if (currentPage > 3 && currentPage < pages - 3) {
-                                    if (page == 1) {
-                                        book.turn('page', 2).turn('stop').turn('page', page);
-                                        e.preventDefault();
-                                        return;
-                                    } else if (page == pages) {
-                                        book.turn('page', pages - 1)
-                                            .turn('stop')
-                                            .turn('page', page);
-                                        e.preventDefault();
-                                        return;
-                                    }
-                                } else if (page > 3 && page < pages - 3) {
-                                    if (currentPage == 1) {
-                                        book.turn('page', 2).turn('stop').turn('page', page);
-                                        e.preventDefault();
-                                        return;
-                                    } else if (currentPage == pages) {
-                                        book.turn('page', pages - 1)
-                                            .turn('stop')
-                                            .turn('page', page);
-                                        e.preventDefault();
-                                        return;
-                                    }
-                                }
+								// Show and hide navigation buttons
 
-                                updateDepth(book, page);
+								disableControls(page);
 
-                                if (page >= 2) $('.sj-book .p2').addClass('fixed');
-                                else $('.sj-book .p2').removeClass('fixed');
 
-                                if (page < book.turn('pages')) $('.sj-book .p17').addClass('fixed');
-                                else $('.sj-book .p17').removeClass('fixed');
+								$('.thumbnails .page-' + currentPage).
+									parent().
+									removeClass('current');
 
-                                Hash.go('page/' + page).update();
-                            },
+								$('.thumbnails .page-' + page).
+									parent().
+									addClass('current');
 
-                            turned: function (e, page, view) {
-                                var book = $(this);
 
-                                if (page == 2 || page == 3) {
-                                    book.turn('peel', 'br');
-                                }
 
-                                updateDepth(book);
+							},
 
-                                $('#slider').slider('value', getViewNumber(book, page));
+							turned: function (event, page, view) {
 
-                                book.turn('center');
-                            },
+								disableControls(page);
 
-                            start: function (e, pageObj) {
-                                moveBar(true);
-                            },
+								$(this).turn('center');
 
-                            end: function (e, pageObj) {
-                                var book = $(this);
+								if (page == 1) {
+									$(this).turn('peel', 'br');
+								}
 
-                                updateDepth(book);
+							},
 
-                                setTimeout(function () {
-                                    $('#slider').slider('value', getViewNumber(book));
-                                }, 1);
+							missing: function (event, pages) {
 
-                                moveBar(false);
-                            },
+								// Add pages that aren't in the magazine
 
-                            missing: function (e, pages) {
-                                for (var i = 0; i < pages.length; i++) {
-                                    addPage(pages[i], $(this));
-                                }
-                            },
-                        },
-                    })
-                    // .turn('page', 4);
+								for (var i = 0; i < pages.length; i++)
+									addPage(pages[i], $(this));
 
-                $('#slider').slider('option', 'max', numberOfViews(flipbook));
+							}
+						}
 
-                flipbook.addClass('animated');
+					});
 
-                // Show canvas
+					// Zoom.js
 
-                $('#canvas').css({ visibility: '' });
-            }
+					$('.magazine-viewport').zoom({
+						flipbook: $('.magazine'),
 
-            // Hide canvas
+						max: function () {
 
-            $('#canvas').css({ visibility: 'hidden' });
+							return largeMagazineWidth() / $('.magazine').width();
 
-            // Load turn.js
+						},
 
-            yepnope({
-                test: Modernizr.csstransforms,
-                yep: ['./lib/turn.min.js'],
-                nope: ['./lib/turn.html4.min.js'],
-                both: ['js/book.js', 'css/book.css'],
-                complete: loadApp,
-            });
-        </script>
+						when: {
+
+							swipeLeft: function () {
+
+								$(this).zoom('flipbook').turn('next');
+
+							},
+
+							swipeRight: function () {
+
+								$(this).zoom('flipbook').turn('previous');
+
+							},
+
+							resize: function (event, scale, page, pageElement) {
+
+								if (scale == 1)
+									loadSmallPage(page, pageElement);
+								else
+									loadLargePage(page, pageElement);
+
+							},
+
+							zoomIn: function () {
+
+								$('.thumbnails').hide();
+								$('.made').hide();
+								$('.magazine').removeClass('animated').addClass('zoom-in');
+								$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+
+								if (!window.escTip && !$.isTouch) {
+									escTip = true;
+
+									$('<div />', { 'class': 'exit-message' }).
+										html('<div>Press ESC to exit</div>').
+										appendTo($('body')).
+										delay(2000).
+										animate({ opacity: 0 }, 500, function () {
+											$(this).remove();
+										});
+								}
+							},
+
+							zoomOut: function () {
+
+								$('.exit-message').hide();
+								$('.thumbnails').fadeIn();
+								$('.made').fadeIn();
+								$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+
+								setTimeout(function () {
+									$('.magazine').addClass('animated').removeClass('zoom-in');
+									resizeViewport();
+								}, 0);
+
+							}
+						}
+					});
+
+					// Zoom event
+
+					if ($.isTouch)
+						$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+					else
+						$('.magazine-viewport').bind('zoom.tap', zoomTo);
+
+
+					// Using arrow keys to turn the page
+
+					$(document).keydown(function (e) {
+
+						var previous = 37, next = 39, esc = 27;
+
+						switch (e.keyCode) {
+							case previous:
+
+								// left arrow
+								$('.magazine').turn('previous');
+								e.preventDefault();
+
+								break;
+							case next:
+
+								//right arrow
+								$('.magazine').turn('next');
+								e.preventDefault();
+
+								break;
+							case esc:
+
+								$('.magazine-viewport').zoom('zoomOut');
+								e.preventDefault();
+
+								break;
+						}
+					});
+
+					// URIs - Format #/page/1 
+
+					Hash.on('^page\/([0-9]*)$', {
+						yep: function (path, parts) {
+							var page = parts[1];
+
+							if (page !== undefined) {
+								if ($('.magazine').turn('is'))
+									$('.magazine').turn('page', page);
+							}
+
+						},
+						nop: function (path) {
+
+							if ($('.magazine').turn('is'))
+								$('.magazine').turn('page', 1);
+						}
+					});
+
+
+					$(window).resize(function () {
+						resizeViewport();
+					}).bind('orientationchange', function () {
+						resizeViewport();
+					});
+
+					// Events for thumbnails
+
+					$('.thumbnails').click(function (event) {
+
+						var page;
+
+						if (event.target && (page = /page-([0-9]+)/.exec($(event.target).attr('class')))) {
+
+							$('.magazine').turn('page', page[1]);
+						}
+					});
+
+					$('.thumbnails li').
+						bind($.mouseEvents.over, function () {
+
+							$(this).addClass('thumb-hover');
+
+						}).bind($.mouseEvents.out, function () {
+
+							$(this).removeClass('thumb-hover');
+
+						});
+
+					if ($.isTouch) {
+
+						$('.thumbnails').
+							addClass('thumbanils-touch').
+							bind($.mouseEvents.move, function (event) {
+								event.preventDefault();
+							});
+
+					} else {
+
+						$('.thumbnails ul').mouseover(function () {
+
+							$('.thumbnails').addClass('thumbnails-hover');
+
+						}).mousedown(function () {
+
+							return false;
+
+						}).mouseout(function () {
+
+							$('.thumbnails').removeClass('thumbnails-hover');
+
+						});
+
+					}
+
+
+					// Regions
+
+					if ($.isTouch) {
+						$('.magazine').bind('touchstart', regionClick);
+					} else {
+						$('.magazine').click(regionClick);
+					}
+
+					// Events for the next button
+
+					$('.next-button').bind($.mouseEvents.over, function () {
+
+						$(this).addClass('next-button-hover');
+
+					}).bind($.mouseEvents.out, function () {
+
+						$(this).removeClass('next-button-hover');
+
+					}).bind($.mouseEvents.down, function () {
+
+						$(this).addClass('next-button-down');
+
+					}).bind($.mouseEvents.up, function () {
+
+						$(this).removeClass('next-button-down');
+
+					}).click(function () {
+
+						$('.magazine').turn('next');
+
+					});
+
+					// Events for the next button
+
+					$('.previous-button').bind($.mouseEvents.over, function () {
+
+						$(this).addClass('previous-button-hover');
+
+					}).bind($.mouseEvents.out, function () {
+
+						$(this).removeClass('previous-button-hover');
+
+					}).bind($.mouseEvents.down, function () {
+
+						$(this).addClass('previous-button-down');
+
+					}).bind($.mouseEvents.up, function () {
+
+						$(this).removeClass('previous-button-down');
+
+					}).click(function () {
+
+						$('.magazine').turn('previous');
+
+					});
+
+
+					resizeViewport();
+
+					$('.magazine').addClass('animated');
+
+				}
+
+				// Zoom icon
+
+				$('.zoom-icon').bind('mouseover', function () {
+
+					if ($(this).hasClass('zoom-icon-in'))
+						$(this).addClass('zoom-icon-in-hover');
+
+					if ($(this).hasClass('zoom-icon-out'))
+						$(this).addClass('zoom-icon-out-hover');
+
+				}).bind('mouseout', function () {
+
+					if ($(this).hasClass('zoom-icon-in'))
+						$(this).removeClass('zoom-icon-in-hover');
+
+					if ($(this).hasClass('zoom-icon-out'))
+						$(this).removeClass('zoom-icon-out-hover');
+
+				}).bind('click', function () {
+
+					if ($(this).hasClass('zoom-icon-in'))
+						$('.magazine-viewport').zoom('zoomIn');
+					else if ($(this).hasClass('zoom-icon-out'))
+						$('.magazine-viewport').zoom('zoomOut');
+
+				});
+
+				$('#canvas').hide();
+
+
+				// Load the HTML4 version if there's not CSS transform
+
+				yepnope({
+					test: Modernizr.csstransforms,
+					yep: ['./lib/turn.js'],
+					nope: ['./lib/turn.html4.min.js'],
+					both: ['./lib/zoom.min.js', './js/magazine.js', './css/magazine.css'],
+					complete: loadApp
+				});
+
+			</script>
     </body>
 </html>

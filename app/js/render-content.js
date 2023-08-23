@@ -19,7 +19,7 @@ function renderContentPage(elem) {
 }
 
 $(window).on('hashchange', () => {
-    const hash = window.location.hash.slice(1);
+    const hash = window.location.hash.slice(1).split('/')[0];
     if (!hash.includes('page')) {
         renderContentPage(hash);
     }
@@ -27,7 +27,14 @@ $(window).on('hashchange', () => {
 
 $(document).ready(() => {
     const locationArr = window.location.href.split('/');
-    const page = locationArr[locationArr.length - 1];
+    let page;
+
+		locationArr.forEach(item => {
+			if(item.includes('#')) {
+				page = item.split('#')[0];
+			}
+		})
+
 
     if (window.location.hash && !window.location.hash.includes('page')) {
         const hash = window.location.hash.slice(1);
@@ -39,4 +46,16 @@ $(document).ready(() => {
     } else if (page === PAGES.ABOUT) {
         renderContentPage(CONTENT.ISTORIYA);
     }
+});
+
+$('[data-open-vacancies').on('click', function () {
+		let hash = $(this).attr('href').slice(1);
+
+    $('[data-open-vacancies]').removeClass('active');
+    $(`[data-open-vacancies="${hash}"`).addClass('active');
+
+    $('[data-vacancies]').removeClass('active');
+    $(`[data-vacancies="${hash}"`).addClass('active');
+
+		$('.menu__tab.active a').attr('href', `#${hash}`)
 });

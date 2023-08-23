@@ -1955,6 +1955,12 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .block__items {
+  width: 100%;
 }
 .about__content {
   display: none;

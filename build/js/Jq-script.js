@@ -168,16 +168,16 @@ $('.header__center-lists-item-bottom').mouseleave(function () {
 //------------------------------------------------------------//
 
 //-------------------Left menu-------------------------//
-$('[data-open-menu').on('click', function () {
-    $('[data-open-menu]').removeClass('active');
-    $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
+// $('[data-open-menu').on('click', function () {
+//     $('[data-open-menu]').removeClass('active');
+//     $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
 
-    $('[data-menu]').removeClass('active');
-    $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
+//     $('[data-menu]').removeClass('active');
+//     $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
 
-    const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
-    $('.main-title').html(title);
-});
+//     const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
+//     $('.main-title').html(title);
+// });
 //---------------------------------------------------------//
 
 //--------------------Cost---------------------------------//
@@ -203,58 +203,58 @@ $('.cost__content-item-content-it').each(function () {
 //-------------------------------------------------------//
 
 //-------------------------About---------------------------------------//
-$('[data-open-vacancies').on('click', function () {
-    $('[data-open-vacancies]').removeClass('active');
-    $(`[data-open-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
+// $('[data-open-vacancies').on('click', function () {
+//     // $('[data-open-vacancies]').removeClass('active');
+//     // $(`[data-open-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
 
-    $('[data-vacancies]').removeClass('active');
-    $(`[data-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
-});
+//     // $('[data-vacancies]').removeClass('active');
+//     // $(`[data-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
+// });
 
-$('[data-open-structure').on('click', function () {
-    $('[data-open-structure]').removeClass('active');
-    $(`[data-open-structure="${$(this).data('open-structure')}"`).addClass('active');
+// $('[data-open-structure').on('click', function () {
+//     $('[data-open-structure]').removeClass('active');
+//     $(`[data-open-structure="${$(this).data('open-structure')}"`).addClass('active');
 
-    $('[data-structure]').removeClass('active');
-    $(`[data-structure="${$(this).data('open-structure')}"`).addClass('active');
-});
+//     $('[data-structure]').removeClass('active');
+//     $(`[data-structure="${$(this).data('open-structure')}"`).addClass('active');
+// });
 
-$('[data-open-photo-category').on('click', function () {
-    $('.photos__gallery').removeClass('active');
-    $('.photos__contents').addClass('active');
+// $('[data-open-photo-category').on('click', function () {
+//     $('.photos__gallery').removeClass('active');
+//     $('.photos__contents').addClass('active');
 
-    $('[data-open-photo-category]').removeClass('active');
-    $(`[data-open-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
+//     $('[data-open-photo-category]').removeClass('active');
+//     $(`[data-open-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
 
-    $('[data-photo-category]').removeClass('active');
-    $(`[data-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
-});
+//     $('[data-photo-category]').removeClass('active');
+//     $(`[data-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
+// });
 
-$('.photos__item-image').on('click', function () {
-    $('.photos__gallery').addClass('active');
-    $('.photos__contents').removeClass('active');
+// $('.photos__item-image').on('click', function () {
+//     $('.photos__gallery').addClass('active');
+//     $('.photos__contents').removeClass('active');
 
-    const title = $(this).find('.photos__item-title').text();
-    $('.photos__gallery-title').text(title);
-});
+//     const title = $(this).find('.photos__item-title').text();
+//     $('.photos__gallery-title').text(title);
+// });
 //--------------------------------------------------------------------------//
 
 //-------------------------Clinical quide----------------------------------//
-$('[data-open-clinical').on('click', function () {
-    $('[data-open-clinical]').removeClass('active');
-    $(`[data-open-clinical="${$(this).data('open-clinical')}"`).addClass('active');
+// $('[data-open-clinical').on('click', function () {
+//     $('[data-open-clinical]').removeClass('active');
+//     $(`[data-open-clinical="${$(this).data('open-clinical')}"`).addClass('active');
 
-    $('[data-clinical]').removeClass('active');
-    $(`[data-clinical="${$(this).data('open-clinical')}"`).addClass('active');
-});
+//     $('[data-clinical]').removeClass('active');
+//     $(`[data-clinical="${$(this).data('open-clinical')}"`).addClass('active');
+// });
 
-$('[data-open-draft-clinical').on('click', function () {
-    $('[data-open-draft-clinical]').removeClass('active');
-    $(`[data-open-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
+// $('[data-open-draft-clinical').on('click', function () {
+//     $('[data-open-draft-clinical]').removeClass('active');
+//     $(`[data-open-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
 
-    $('[data-draft-clinical]').removeClass('active');
-    $(`[data-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
-});
+//     $('[data-draft-clinical]').removeClass('active');
+//     $(`[data-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
+// });
 //------------------------------------------------------------------------//
 
 //----------------------Conferences--------------------------------------//

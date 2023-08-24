@@ -1,30 +1,54 @@
 #canvas {
-	width: 120rem;
-	height: 72rem;
+	width: 115rem;
+	height: 67.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.book {
+	transition: all 0.5s;
+}
+
+.book.zoom {
+	position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 999;
+			transition: all 0.5s;
+}
+
+.magazine-viewport.zoom {
+	transform: scale(1.5);
+	transition: all 0.5s ease-in-out;
 }
 
 .magazine-viewport {
-	width: 120rem !important;
-	height: 72rem !important;
+	width: 115rem !important;
+	height: 67.5rem !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .magazine-viewport .container{
 	position:absolute;
-	top:50%;
-	left:50%;
-	width:92.2rem;
-	height:72rem;
+	width:100%;
+	height:67.5rem;
 	margin:auto;
 }
 
 .magazine-viewport .magazine{
-	width:120rem;
-	height:72rem;
+	width:115rem !important;
+	height:67.5rem !important;
+	top: 0 !important;
+	left: 0 !important;
 }
 
 .magazine-viewport .page{
-	width:46rem;
-	height:72rem;
+	height:67.5rem;
+	width: 57.5rem !important;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;

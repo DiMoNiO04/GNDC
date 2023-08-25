@@ -1,25 +1,24 @@
 #canvas {
   width: 115rem;
-  height: 66rem;
+  height: 65rem;
+}
+
+.book {
+  transition: all 0.5s;
 }
 
 .book.zoom {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 21rem;
+  left: 38rem;
   z-index: 999;
   transition: all 0.5s;
-}
-
-.magazine-viewport.zoom {
-  transform: scale(1.5);
-  transition: all 0.5s ease-in-out;
+  transform: scale(1.55);
 }
 
 .magazine-viewport {
-  width: 115rem !important;
-  height: 66rem !important;
+  width: 100% !important;
+  height: 100% !important;
   left: 0;
   top: 0;
   display: flex;
@@ -29,8 +28,8 @@
 
 .magazine-viewport .container {
   position: absolute;
-  width: 110rem;
-  height: 66rem;
+  width: calc(100% - 4rem);
+  height: 100%;
   margin: auto;
 }
 
@@ -40,13 +39,13 @@
 }
 
 .magazine-viewport .magazine {
-  width: 110rem !important;
-  height: 66rem !important;
+  width: 111.2rem !important;
+  height: 65rem !important;
 }
 
 .magazine-viewport .page {
-  width: 55rem;
-  height: 66rem;
+  width: 55.6rem !important;
+  height: 65rem !important;
   background-color: white;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -122,8 +121,8 @@
 
 .magazine-viewport .next-button,
 .magazine-viewport .previous-button {
-  width: 2.2rem;
-  height: 66rem !important;
+  width: 2rem;
+  height: 100% !important;
   position: absolute;
   top: 0;
 }
@@ -135,7 +134,7 @@
 }
 
 .magazine-viewport .next-button {
-  right: -2.2rem;
+  right: -2rem;
   -webkit-border-radius: 0 1.5rem 1.5rem 0;
   -moz-border-radius: 0 1.5rem 1.5rem 0;
   -ms-border-radius: 0 1.5rem 1.5rem 0;
@@ -146,7 +145,7 @@
 }
 
 .magazine-viewport .previous-button {
-  left: -2.2rem;
+  left: -2rem;
   -webkit-border-radius: 1.5rem 0 0 1.5rem;
   -moz-border-radius: 1.5rem 0 0 1.5rem;
   -ms-border-radius: 1.5rem 0 0 1.5rem;

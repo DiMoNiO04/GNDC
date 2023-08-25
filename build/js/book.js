@@ -199,16 +199,16 @@ function calculateBound(d) {
     return bound;
 }
 
-$('.book').on('click', function() {
-	$('.book').addClass('zoom');
-	$('.magazine-viewport').addClass('zoom')
-	$('.about__overlay').addClass('zoom')
-	$(document.body).addClass('hidden')
-})
+$('.book').on('dblclick', function () {
+    $('.book').addClass('zoom');
+    $('.magazine-viewport').addClass('zoom');
+    $('.about__overlay').addClass('zoom');
+    $(document.body).addClass('hidden');
+});
 
-$('.about__overlay').on('click', function() {
-		$('.book').removeClass('zoom');
-	$('.magazine-viewport').removeClass('zoom')
-	$('.about__overlay').removeClass('zoom')
-	$(document.body).removeClass('hidden')
-})
+$('.about__overlay').on('click', function () {
+    $('.book').removeClass('zoom');
+    $('.magazine-viewport').removeClass('zoom');
+    $('.about__overlay').removeClass('zoom');
+    $(document.body).removeClass('hidden');
+});

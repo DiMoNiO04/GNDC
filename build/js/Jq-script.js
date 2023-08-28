@@ -41,7 +41,7 @@ $('.date').mask('99.99.9999', { placeholder: 'дд.мм.гггг' });
 
 //--------------------Menu buttons-----------------//
 $('.menu__button').on('click', function () {
-    $('.menu__button').removeClass('active');
+    $(this).siblings().removeClass('active');
     $(this).addClass('active');
 });
 //------------------------------------------------//
@@ -167,19 +167,6 @@ $('.header__center-lists-item-bottom').mouseleave(function () {
 });
 //------------------------------------------------------------//
 
-//-------------------Left menu-------------------------//
-// $('[data-open-menu').on('click', function () {
-//     $('[data-open-menu]').removeClass('active');
-//     $(`[data-open-menu="${$(this).data('open-menu')}"`).addClass('active');
-
-//     $('[data-menu]').removeClass('active');
-//     $(`[data-menu="${$(this).data('open-menu')}"`).addClass('active');
-
-//     const title = document.querySelector(`[data-open-menu="${$(this).data('open-menu')}"`).firstChild.textContent;
-//     $('.main-title').html(title);
-// });
-//---------------------------------------------------------//
-
 //--------------------Cost---------------------------------//
 $('.cost__content-item').each(function () {
     let more = $(this).find('.cost__content-item-inner');
@@ -219,24 +206,24 @@ $('.cost__content-item-content-it').each(function () {
 //     $(`[data-structure="${$(this).data('open-structure')}"`).addClass('active');
 // });
 
-// $('[data-open-photo-category').on('click', function () {
-//     $('.photos__gallery').removeClass('active');
-//     $('.photos__contents').addClass('active');
+$('[data-open-photo-category').on('click', function () {
+    $('.photos__gallery').removeClass('active');
+    $('.photos__contents').addClass('active');
 
-//     $('[data-open-photo-category]').removeClass('active');
-//     $(`[data-open-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
+    $('[data-open-photo-category]').removeClass('active');
+    $(`[data-open-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
 
-//     $('[data-photo-category]').removeClass('active');
-//     $(`[data-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
-// });
+    $('[data-photo-category]').removeClass('active');
+    $(`[data-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
+});
 
-// $('.photos__item-image').on('click', function () {
-//     $('.photos__gallery').addClass('active');
-//     $('.photos__contents').removeClass('active');
+$('.photos__item-image').on('click', function () {
+    $('.photos__gallery').addClass('active');
+    $('.photos__contents').removeClass('active');
 
-//     const title = $(this).find('.photos__item-title').text();
-//     $('.photos__gallery-title').text(title);
-// });
+    const title = $(this).find('.photos__item-title').text();
+    $('.photos__gallery-title').text(title);
+});
 //--------------------------------------------------------------------------//
 
 //-------------------------Clinical quide----------------------------------//

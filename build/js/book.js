@@ -19,21 +19,12 @@ function loadPage(page, pageElement) {
         pageElement.find('.loader').remove();
     });
     img.attr('src', 'pages/' + page + '.webp');
-    loadRegions(page, pageElement);
 }
 
 function zoomTo(event) {
     setTimeout(function () {
         $('.magazine-viewport').data().regionClicked = false;
     }, 1);
-}
-
-function loadRegions(page, element) {
-    $.getJSON('pages/' + page + '-regions.json').done(function (data) {
-        $.each(data, function (key, region) {
-            addRegion(region, element);
-        });
-    });
 }
 
 function addRegion(region, pageElement) {

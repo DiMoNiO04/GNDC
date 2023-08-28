@@ -27,6 +27,7 @@
                     return;
                 }
                 flipbook.turn({
+									page: 2,
                     width: 1100,
                     height: 650,
                     duration: 1000,
@@ -58,7 +59,7 @@
                             for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
                         },
                     },
-                }).turn('page', 2)
+                })
 
                 $('.magazine-viewport').zoom({
                     flipbook: $('.magazine'),
@@ -102,13 +103,11 @@
                 Hash.on('^page\/([0-9]*)$', {
                     yep: function (path, parts) {
                         var page = parts[1];
+												console.log(page)
                         if (page !== undefined) {
                             if ($('.magazine').turn('is')) $('.magazine').turn('page', page);
                         }
-                    },
-                    nop: function (path) {
-                        if ($('.magazine').turn('is')) $('.magazine').turn('page', 1);
-                    },
+                    }
                 });
 
                 $(window)

@@ -11,15 +11,46 @@ const CONTENT = {
 };
 
 function renderContentPage(elem) {
+
+		const hash = elem.slice(1);
+		const hashPage = hash.split('/')[0];
+		const hashBlock = hash.split('/')[1];
+
     $('[data-content]').removeClass('active');
-    $(`[data-content=${elem}]`).addClass('active');
+    $(`[data-content=${hashPage}]`).addClass('active');
 
     $('[data-open-content]').parent().removeClass('active');
-    $(`[data-open-content=${elem}]`).parent().addClass('active');
+    $(`[data-open-content=${hashPage}]`).parent().addClass('active');
+
+		$('.photos__gallery').removeClass('active');
+    $('.photos__contents').addClass('active');
+
+		$('.main-title').html($('.menu__tab.active').text())
+
+		if(hashBlock) {
+
+			$(`[data-open-content-block="${hash}"`).siblings().removeClass('active');
+    	$(`[data-open-content-block="${hash}"`).addClass('active');
+
+    	$(`[data-content-block="${hash}"`).siblings().removeClass('active');
+    	$(`[data-content-block="${hash}"`).addClass('active');
+
+			$('.menu__tab.active a').attr('href', `#${hash}`)
+		} else {
+				const a = $(`[data-content=${hashPage}]`).find('[data-content-block]').first().attr('data-content-block');
+
+			$(`[data-open-content-block="${a}"`).siblings().removeClass('active');
+    	$(`[data-open-content-block="${a}"`).addClass('active');
+
+    	$(`[data-content-block="${a}"`).siblings().removeClass('active');
+    	$(`[data-content-block="${a}"`).addClass('active');
+		}
 }
 
+
 $(window).on('hashchange', () => {
-    const hash = window.location.hash.slice(1).split('/')[0];
+
+    const hash = window.location.hash;
     if (!hash.includes('page')) {
         renderContentPage(hash);
     }
@@ -35,9 +66,8 @@ $(document).ready(() => {
 			}
 		})
 
-
     if (window.location.hash && !window.location.hash.includes('page')) {
-        const hash = window.location.hash.slice(1);
+        const hash = window.location.hash;
         renderContentPage(hash);
     } else if (page === PAGES.SPECIALISTS) {
         renderContentPage(CONTENT.RUSSIAN_SOCIETY);
@@ -48,14 +78,14 @@ $(document).ready(() => {
     }
 });
 
-$('[data-open-vacancies').on('click', function () {
+$('[data-open-content-block').on('click', function () {
 		let hash = $(this).attr('href').slice(1);
 
-    $('[data-open-vacancies]').removeClass('active');
-    $(`[data-open-vacancies="${hash}"`).addClass('active');
+		$(this).siblings().removeClass('active');
+    $(`[data-open-content-block="${hash}"`).addClass('active');
 
-    $('[data-vacancies]').removeClass('active');
-    $(`[data-vacancies="${hash}"`).addClass('active');
+    $(`[data-content-block="${hash}"`).siblings().removeClass('active');
+    $(`[data-content-block="${hash}"`).addClass('active');
 
 		$('.menu__tab.active a').attr('href', `#${hash}`)
 });

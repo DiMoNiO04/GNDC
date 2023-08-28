@@ -657,7 +657,7 @@ img {
         display: flex;
         column-gap: 1.6rem;
         align-items: center;
-        &:not(:last-child)::after {
+        &:not(:first-child)::before {
             content: '';
             background: url('../img/icon/arrow-bread-crumbs.svg') no-repeat center;
             background-size: cover;

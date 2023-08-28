@@ -10,61 +10,87 @@ const CONTENT = {
     ISTORIYA: 'istoriya',
 };
 
+const breadCrumbs = $('.bread-crumbs');
+const crumbContentBlock = $('.crumb-content-block');
+const crumbContent = $('.crumb-content');
+const mainTitle = $('.main-title');
+
+const addNewCrumb = (hash, hashPage) => {
+    if (breadCrumbs.hasClass('crumb-content-block')) {
+        crumbContentBlock.html($(`[data-content=${hashPage}] .menu__button.active`).html());
+        crumbContentBlock.attr('href', `#${hash}`);
+    } else {
+        const newCrumb = $(`<a href=${hash} class="crumb-content-block"></a>`);
+        newCrumb.html($(`[data-content=${hashPage}] .menu__button.active`).html());
+        breadCrumbs.append(newCrumb);
+    }
+};
+
+const changeBreadCrumbs = () => {
+    const activeMenuTab = $('.menu__tab.active a');
+    if (breadCrumbs.find('a').hasClass('crumb-content-block')) {
+        $('.crumb-content-block').remove();
+    }
+    crumbContent.html(activeMenuTab.html());
+    crumbContent.attr('href', `${activeMenuTab.attr('href')}`);
+
+    mainTitle.html(activeMenuTab.text());
+};
+
+const changeContent = (hashPage) => {
+    if (!window.location.hash.includes('page')) {
+        $('[data-content]').removeClass('active');
+        $(`[data-content=${hashPage}]`).addClass('active');
+
+        $('[data-open-content]').parent().removeClass('active');
+        $(`[data-open-content=${hashPage}]`).parent().addClass('active');
+    }
+};
+
+const changeContentBlock = (hash) => {
+    $(`[data-open-content-block="${hash}"`).siblings().removeClass('active');
+    $(`[data-open-content-block="${hash}"`).addClass('active');
+
+    $(`[data-content-block="${hash}"`).siblings().removeClass('active');
+    $(`[data-content-block="${hash}"`).addClass('active');
+};
+
 function renderContentPage(elem) {
+    const hash = elem.slice(1);
+    const hashPage = hash.split('/')[0];
+    const hashBlock = hash.split('/')[1];
 
-		const hash = elem.slice(1);
-		const hashPage = hash.split('/')[0];
-		const hashBlock = hash.split('/')[1];
+    changeContent(hashPage);
+    changeBreadCrumbs();
 
-    $('[data-content]').removeClass('active');
-    $(`[data-content=${hashPage}]`).addClass('active');
+    if ('data-content="fotogalereya"') {
+        $('.photos__gallery').removeClass('active');
+        $('.photos__contents').addClass('active');
+    }
 
-    $('[data-open-content]').parent().removeClass('active');
-    $(`[data-open-content=${hashPage}]`).parent().addClass('active');
-
-		$('.photos__gallery').removeClass('active');
-    $('.photos__contents').addClass('active');
-
-		$('.main-title').html($('.menu__tab.active').text())
-
-		if(hashBlock) {
-
-			$(`[data-open-content-block="${hash}"`).siblings().removeClass('active');
-    	$(`[data-open-content-block="${hash}"`).addClass('active');
-
-    	$(`[data-content-block="${hash}"`).siblings().removeClass('active');
-    	$(`[data-content-block="${hash}"`).addClass('active');
-
-			$('.menu__tab.active a').attr('href', `#${hash}`)
-		} else {
-				const a = $(`[data-content=${hashPage}]`).find('[data-content-block]').first().attr('data-content-block');
-
-			$(`[data-open-content-block="${a}"`).siblings().removeClass('active');
-    	$(`[data-open-content-block="${a}"`).addClass('active');
-
-    	$(`[data-content-block="${a}"`).siblings().removeClass('active');
-    	$(`[data-content-block="${a}"`).addClass('active');
-		}
+    if (hashBlock) {
+        changeContentBlock(hash);
+        addNewCrumb(hash, hashPage);
+    }
 }
 
-
 $(window).on('hashchange', () => {
-
     const hash = window.location.hash;
     if (!hash.includes('page')) {
         renderContentPage(hash);
     }
+    console.log(hash);
 });
 
 $(document).ready(() => {
     const locationArr = window.location.href.split('/');
     let page;
 
-		locationArr.forEach(item => {
-			if(item.includes('#')) {
-				page = item.split('#')[0];
-			}
-		})
+    locationArr.forEach((item) => {
+        if (item.includes('#')) {
+            page = item.split('#')[0];
+        }
+    });
 
     if (window.location.hash && !window.location.hash.includes('page')) {
         const hash = window.location.hash;
@@ -76,16 +102,4 @@ $(document).ready(() => {
     } else if (page === PAGES.ABOUT) {
         renderContentPage(CONTENT.ISTORIYA);
     }
-});
-
-$('[data-open-content-block').on('click', function () {
-		let hash = $(this).attr('href').slice(1);
-
-		$(this).siblings().removeClass('active');
-    $(`[data-open-content-block="${hash}"`).addClass('active');
-
-    $(`[data-content-block="${hash}"`).siblings().removeClass('active');
-    $(`[data-content-block="${hash}"`).addClass('active');
-
-		$('.menu__tab.active a').attr('href', `#${hash}`)
 });

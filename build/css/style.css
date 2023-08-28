@@ -1274,7 +1274,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-.bread-crumbs a:not(:last-child)::after {
+.bread-crumbs a:not(:first-child)::before {
   content: "";
   background: url("../img/icon/arrow-bread-crumbs.svg") no-repeat center;
   background-size: cover;

@@ -1,5 +1,5 @@
 .hidden {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .all-btn__white,
@@ -104,7 +104,7 @@ img {
 .link-blue {
     display: inline-block;
     font-weight: 400;
-		width: fit-content;
+    width: fit-content;
     &::after {
         display: block;
         content: '';
@@ -456,7 +456,7 @@ img {
         padding: 2rem 4rem;
         justify-content: space-between;
         align-items: center;
-				column-gap: 2rem;
+        column-gap: 2rem;
     }
     &__item-inner.active {
         .block__item-arrow {
@@ -477,7 +477,7 @@ img {
         height: 3.2rem;
         cursor: pointer;
         transition: all 0.3s;
-				flex-shrink: 0;
+        flex-shrink: 0;
     }
     &__content {
         padding: 1rem 4rem 3rem 4rem;
@@ -501,7 +501,7 @@ img {
         color: #3f4c5c;
         display: inline-block;
         margin: 0 5rem 0 auto;
-				flex-shrink: 0;
+        flex-shrink: 0;
     }
 
     &__item-lists-subblock-inner {
@@ -553,7 +553,7 @@ img {
     &__buttons {
         display: flex;
         column-gap: 0.4rem;
-				width: 100%;
+        width: 100%;
     }
     &__button {
         padding: 1.8rem;
@@ -745,4 +745,22 @@ main {
         width: 100%;
         height: 100%;
     }
+}
+
+h1 {
+    color: #323439;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    font-variant: small-caps;
+}
+
+h2 {
+    color: #3f4c5c;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
 }

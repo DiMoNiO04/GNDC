@@ -1364,6 +1364,24 @@ main {
     height: 100%;
   }
 }
+h1 {
+  color: #323439;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  font-variant: small-caps;
+}
+
+h2 {
+  color: #3f4c5c;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;

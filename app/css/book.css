@@ -184,3 +184,23 @@
     bottom: 0;
     width: 100%;
 }
+
+h1 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+    color: rgba(63, 76, 92, 0.69);
+    margin-bottom: 2.3rem;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 2.3rem;
+    text-transform: uppercase;
+}

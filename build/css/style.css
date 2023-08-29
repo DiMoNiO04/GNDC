@@ -1795,11 +1795,15 @@ main {
           column-gap: 3rem;
 }
 .history__text-img p {
-  width: 58.3rem;
+  width: 100%;
 }
 .history__img-sm {
-  width: 46rem;
-  height: 46rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .photos {

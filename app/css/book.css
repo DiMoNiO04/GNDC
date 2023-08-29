@@ -19,6 +19,7 @@
 .magazine-viewport {
     width: 100% !important;
     height: 100% !important;
+    overflow: visible !important;
     left: 0;
     top: 0;
     display: flex;
@@ -111,11 +112,13 @@
 
 .magazine-viewport .loader {
     background-image: url(../img/loader.gif);
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: cover;
     position: absolute;
-    top: 28rem;
-    left: 21.9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .magazine-viewport .shadow {

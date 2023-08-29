@@ -168,9 +168,9 @@ $('.header__center-lists-item-bottom').mouseleave(function () {
 //------------------------------------------------------------//
 
 //--------------------Cost---------------------------------//
-$('.cost__content-item').each(function () {
-    let more = $(this).find('.cost__content-item-inner');
-    let hide = $(this).find('.cost__content-item-content');
+$('.cost__content-1').each(function () {
+    let more = $(this).find('.cost__content-1-inn');
+    let hide = $(this).find('.cost__content-1-con');
     hide.hide();
     more.click(function () {
         hide.slideToggle();
@@ -178,9 +178,19 @@ $('.cost__content-item').each(function () {
     });
 });
 
-$('.cost__content-item-content-it').each(function () {
-    let more = $(this).find('.cost__content-item-content-in');
-    let hide = $(this).find('.cost__content-item-content-con');
+$('.cost__content-2').each(function () {
+    let more = $(this).find('.cost__content-2-inn');
+    let hide = $(this).find('.cost__content-2-con');
+    hide.hide();
+    more.click(function () {
+        hide.slideToggle();
+        more.toggleClass('active');
+    });
+});
+
+$('.cost__content-3').each(function () {
+    let more = $(this).find('.cost__content-3-inn');
+    let hide = $(this).find('.cost__content-4-con');
     hide.hide();
     more.click(function () {
         hide.slideToggle();

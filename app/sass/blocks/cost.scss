@@ -10,108 +10,104 @@
         margin-top: 7rem;
     }
 
-		&__left {
-			width: 117.5rem;
+		.block__item-price {
+			margin: 0 3rem 0 auto;
 		}
 
-		&__content {
-			padding-bottom: 2rem;
-		}
+    &__left {
+        width: 117.5rem;
+    }
 
-		&__content-item {
-			display: flex;
-			flex-direction: column;
-		}
+    &__content {
+        padding-bottom: 2rem;
+        padding-top: 0;
+    }
 
-		&__content-item-inner {
-			display: flex;
-    	align-items: flex-start;
-    	justify-content: space-between;
-			column-gap: 2rem;
-			cursor: pointer;
-			&.active {
-				.cost__content-item-arrow {
-					transform: rotate(180deg);
-					transition: all 0.3s;
+    &__content-arrow {
+        flex-shrink: 0;
+        width: 3.2rem;
+        height: 3.2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    &__content-1-con,
+    &__content-2-con,
+    &__content-3-con,
+    &__content-4-con {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        row-gap: 2rem;
+    }
+
+    &__content-1-inn,
+    &__content-2-inn,
+    &__content-3-inn {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &.active {
+            .cost__content-arrow {
+                transform: rotate(180deg);
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    &__content-1-inn-title,
+    &__content-2-inn-title,
+    &__content-3-inn-title {
+        color: #3f4c5c;
+        line-height: 135%;
+        opacity: 0.6899999976158142;
+        max-width: 90rem;
+        font-size: 2.3rem;
+    }
+
+    &__content-1-inn-title {
+        font-weight: 700;
+    }
+
+    &__content-2-inn-title {
+        font-weight: 500;
+    }
+
+    &__content-3 {
+        .cost__content-4-con {
+            padding-top: 2.2rem;
+        }
+    }
+
+    &__content-3-inn-title {
+        font-weight: 400;
+				span {
+					border-bottom: 0.1rem solid #3f4c5c;
 				}
-			}
-		}
+    }
 
-		&__content-item-title {
-			color: #3F4C5C;
-			font-size: 2.3rem;
-			font-weight: 700;
-			line-height: 135%;
-			opacity: 0.6899999976158142;
-		}
+    &__content-4-con {
+        padding-top: 0;
+        row-gap: 1.7rem;
+        li {
+            display: flex;
+            justify-content: space-between;
+            max-width: 102rem;
+            color: #3f4c5c;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 140%;
+            column-gap: 2rem;
 
-		&__content-item-content-it {
-			display: flex;
-			flex-direction: column;
-		}
-
-		&__content-item-content-in {
-			display: flex;
-			justify-content: space-between;
-			cursor: pointer;
-			&.active {
-				.cost__content-item-content-arrow {
-					transform: rotate(180deg);
-					transition: all 0.3s;
-				}
-			}
-		}
-
-		&__content-item-content-title {
-			color: #3F4C5C;
-			font-size: 2.3rem;
-			font-weight: 400;
-			line-height: 135%;
-			opacity: 0.6899999976158142;
-			max-width: 90rem;
-			border-bottom: 0.1rem solid #3F4C5C;
-		}
-
-		&__content-item-content-con {
-			display: flex;
-			flex-direction: column;
-			row-gap: 1.7rem;
-			padding-top: 2.2rem;
-		}
-
-		&__content-item-content-con-li {
-			display: flex;
-			justify-content: space-between;
-			max-width: 102rem;
-			color:#3F4C5C;
-			font-size: 1.8rem;
-			font-weight: 400;
-			line-height: 150%;
-			column-gap: 2rem;
-
-			div:last-child {
-				color: #3F4C5C;
-				text-align: right;
-				font-size: 2rem;
-				font-weight: 700;
-				line-height: 150%;
-				flex-shrink: 0;
-			} 
-		}
-
-		&__content-item-content {
-			display: flex;
-			flex-direction: column;
-			padding-top: 2rem;
-			row-gap: 2rem;
-		}
-
-		&__content-item-arrow,
-		&__content-item-content-arrow {
-			flex-shrink: 0;
-			width: 3.2rem;
-			height: 3.2rem;
-			cursor: pointer;
-			transition: all 0.3s;
-		}
+            div:last-child {
+                color: #3f4c5c;
+                text-align: right;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 140%;
+                flex-shrink: 0;
+            }
+        }
+    }
 }

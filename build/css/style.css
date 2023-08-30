@@ -1120,7 +1120,7 @@ img {
   cursor: pointer;
 }
 .block__item-lists-subblock-content {
-  padding: 1rem 0 0 2rem;
+  padding: 1.5rem 0 0 3rem;
   display: none;
 }
 .block__item-lists-subblock-content li {
@@ -1129,7 +1129,7 @@ img {
   line-height: 150%;
 }
 .block__item-lists-subblock-content li:not(:last-child) {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.1rem;
 }
 .block__item-lists-subblock-content a {
   border-bottom: 0.1rem solid transparent;
@@ -1141,8 +1141,8 @@ img {
 .block__item-lists-subblock-content a::before {
   content: "";
   display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.3rem;
+  height: 0.3rem;
   border-radius: 50%;
   background-color: rgba(63, 76, 92, 0.69);
   position: absolute;
@@ -1696,17 +1696,26 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 0.4rem;
-     -moz-column-gap: 0.4rem;
-          column-gap: 0.4rem;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  row-gap: 4rem;
   width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.structure__btns button, .structure__btns a {
-  padding: 1.8rem;
-  width: 50%;
+.structure__btns button,
+.structure__btns a {
+  padding: 1.5rem 2rem;
   font-weight: 700;
   height: 10rem;
   font-size: 2.3rem;
+}
+.structure__btns button {
+  width: 100%;
+}
+.structure__btns a {
+  width: calc(50% - 2rem);
 }
 .structure-item {
   font-size: 2rem;
@@ -1784,6 +1793,7 @@ h2 {
 .vacancies__buttons li {
   background: #ffffff;
   width: auto;
+  font-size: 1.7rem;
 }
 .vacancies__buttons a {
   display: -webkit-box;

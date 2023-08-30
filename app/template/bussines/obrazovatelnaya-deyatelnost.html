@@ -1,18 +1,36 @@
 <div class="bussines__item" data-content="obrazovatelnaya-deyatelnost">
     <div class="menu__buttons">
-        <button class="menu__button all-btn__blue active" data-open-menu="higher-education">Высшее образование</button>
-        <button class="menu__button all-btn__blue" data-open-menu="additional-education">
+        <a
+            href="#obrazovatelnaya-deyatelnost/vysshee-obrazovanie"
+            data-open-content-block="obrazovatelnaya-deyatelnost/vysshee-obrazovanie"
+            class="menu__button all-btn__blue active"
+        >
+            Высшее образование
+        </a>
+        <a
+            href="#obrazovatelnaya-deyatelnost/dopolnitelnoe-obrazovanie"
+            data-open-content-block="obrazovatelnaya-deyatelnost/dopolnitelnoe-obrazovanie"
+            class="menu__button all-btn__blue"
+        >
             Дополнительное образование
-        </button>
-        <button class="menu__button all-btn__blue" data-open-menu="availability-special-conditions-training">
+        </a>
+        <a
+            href="#obrazovatelnaya-deyatelnost/nalichie-spec-uslovij-dlya-obucheniya"
+            data-open-content-block="obrazovatelnaya-deyatelnost/nalichie-spec-uslovij-dlya-obucheniya"
+            class="menu__button all-btn__blue"
+        >
             Наличие спец.условий для обучения
-        </button>
-        <button class="menu__button all-btn__blue" data-open-menu="methodological-center-accreditation-specialists">
+        </a>
+        <a
+            href="#obrazovatelnaya-deyatelnost/metodicheskij-centr-akkreditacii-specialistov"
+            data-open-content-block="obrazovatelnaya-deyatelnost/metodicheskij-centr-akkreditacii-specialistov"
+            class="menu__button all-btn__blue"
+        >
             Методический центр аккредитации специалистов
-        </button>
+        </a>
     </div>
 
-    <div class="bussines__item-content active" data-menu="higher-education">
+    <div class="bussines__item-content active" data-content-block="obrazovatelnaya-deyatelnost/vysshee-obrazovanie">
         <div class="bussines__item-content-btns-download">
             <a href="#" download="" class="all-btn__blue btn-white__download">
                 <svg width="1.8rem" height="2rem" viewBox="0 0 18 20" fill="#3F4C5C" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +250,7 @@
         </ul>
     </div>
 
-    <div class="bussines__item-content" data-menu="additional-education">
+    <div class="bussines__item-content" data-content-block="obrazovatelnaya-deyatelnost/dopolnitelnoe-obrazovanie">
         <div class="bussines__item-content-btns-download">
             <a href="#" download="" class="all-btn__blue btn-white__download">
                 <svg width="1.8rem" height="2rem" viewBox="0 0 18 20" fill="#3F4C5C" xmlns="http://www.w3.org/2000/svg">
@@ -560,7 +578,10 @@
         </ul>
     </div>
 
-    <div class="bussines__item-content" data-menu="availability-special-conditions-training">
+    <div
+        class="bussines__item-content"
+        data-content-block="obrazovatelnaya-deyatelnost/nalichie-spec-uslovij-dlya-obucheniya"
+    >
         <div class="bussines__content-block">
             <div class="bussines__content-block-title">Наличие оборудованных учебных кабинетов</div>
             <ul>
@@ -618,7 +639,10 @@
         </div>
     </div>
 
-    <div class="bussines__item-content" data-menu="methodological-center-accreditation-specialists">
+    <div
+        class="bussines__item-content"
+        data-content-block="obrazovatelnaya-deyatelnost/metodicheskij-centr-akkreditacii-specialistov"
+    >
         <div class="bussines__content-block">
             <div class="bussines__content-block-title">
                 ФГБУ “ГНЦДК” Минздрава России проводит первичную специализированную аккредитацию по специальностям:
@@ -636,7 +660,9 @@
                         <img src="./img/clinical-recomendation/syringe-with-drop.svg" alt="" />
                     </div>
                     <div class="bussines__content-block-items-item-desc">КОСМЕТОЛОГИЯ</div>
-                    <a href="./submit-documents-page.html" class="all-btn__blue bussines__content-block-items-item-btn"> Подать документы </a>
+                    <a href="./submit-documents-page.html" class="all-btn__blue bussines__content-block-items-item-btn">
+                        Подать документы
+                    </a>
                 </div>
             </div>
         </div>

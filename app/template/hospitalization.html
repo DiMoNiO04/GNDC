@@ -3,14 +3,29 @@
         <div class="bread-crumbs">
             <a href="../index.html">Главная</a>
             <a href="../hospitalization-page.html">Госпитализация</a>
+            <a href="#usloviya-gospitalizacii" class="crumb-content">Условия госпитализации</a>
         </div>
-        <div class="title main-title">Госпитализация</div>
+        <div class="title">Госпитализация</div>
         <div class="hospitalization__wrapper">
             <div class="hospitalization__left">
                 <ul class="menu__tabs">
-                    <li class="menu__tab active" data-open-menu="conditions">Условия госпитализации</li>
-                    <li class="menu__tab" data-open-menu="order">Порядок госпитализации</li>
-                    <li class="menu__tab" data-open-menu="documentation">Документы необходимые для госпитализации</li>
+                    <li class="menu__tab active">
+                        <a href="#usloviya-gospitalizacii" data-open-content="usloviya-gospitalizacii"
+                            >Условия госпитализации</a
+                        >
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#poryadok-gospitalizacii" data-open-content="poryadok-gospitalizacii"
+                            >Порядок госпитализации</a
+                        >
+                    </li>
+                    <li class="menu__tab">
+                        <a
+                            href="#dokumenty-neobhodimye-dlya-gospitalizacii"
+                            data-open-content="dokumenty-neobhodimye-dlya-gospitalizacii"
+                            >Документы необходимые для госпитализации</a
+                        >
+                    </li>
                 </ul>
                 <div class="hospitalization__block">
                     <div class="hospitalization__block-title">Cтоимость медицинских услуг в стационарных условиях</div>
@@ -49,7 +64,7 @@
             </div>
 
             <div class="hospitalization__right">
-                <div class="hospitalization__content active" data-menu="conditions">
+                <div class="hospitalization__content active" data-content="usloviya-gospitalizacii">
                     <div class="subtitle">
                         Специализированная, в том числе, высокотехнологичная, медицинская помощь оказывается
                         в стационарных условиях:
@@ -68,7 +83,7 @@
                         <img src="./img/hospitalization.webp" alt="" />
                     </div>
                 </div>
-                <div class="hospitalization__content" data-menu="order">
+                <div class="hospitalization__content" data-content="poryadok-gospitalizacii">
                     <div class="hospitalization__content-wrap">
                         <div class="subtitle">Порядок госпитализации</div>
                         <div class="hospitalization__conditions-text">
@@ -118,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hospitalization__content" data-menu="documentation">
+                <div class="hospitalization__content" data-content="dokumenty-neobhodimye-dlya-gospitalizacii">
                     <div class="hospitalization__content-wrap">
                         <div class="subtitle">Документы необходимые для госпитализации</div>
                         <ul class="hospitalization__conditions-lists">

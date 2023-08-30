@@ -103,6 +103,11 @@
 			text-align: center;
 			text-align: center;
 			line-height: 120%;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		&__center-lists-item > a {
@@ -132,7 +137,7 @@
 
 		&-dropdown {
 			padding: 2.7rem 3.4rem;
-			z-index: 4;
+			z-index: 170;
 			background: #3F4C5C;
 		}
 

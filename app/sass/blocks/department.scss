@@ -2,10 +2,6 @@
     margin-top: 5.6rem;
     padding-bottom: 15rem;
 
-    .subtitle {
-        margin-bottom: 0;
-    }
-
     &__wrapper {
         display: flex;
         column-gap: 14rem;
@@ -112,13 +108,11 @@
     }
 
     &__right {
-        display: flex;
-        flex-direction: column;
-        row-gap: 4.4rem;
         width: 98rem;
     }
 
     &__text {
+        margin-bottom: 4.4rem;
         p,
         li {
             color: #3f4c5c;
@@ -163,6 +157,10 @@
         &:hover::after {
             display: none;
         }
+    }
+
+    &__slider {
+        margin-bottom: 4.4rem;
     }
 
     &__slide {

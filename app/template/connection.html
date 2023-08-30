@@ -3,17 +3,29 @@
         <div class="bread-crumbs">
             <a href="../index.html">Главная</a>
             <a href="../connection-page.html">Обратная связь</a>
+            <a href="#voprosy-otvety" class="crumb-content">Вопросы и ответы</a>
         </div>
         <div class="title">Обратная связь</div>
         <div class="connection__wrapper">
             <div class="connection__left">
                 <ul class="menu__tabs">
-                    <li class="menu__tab active" data-open-menu="questions">Вопросы и ответы</li>
-                    <li class="menu__tab" data-open-menu="reviews">Отзывы пациентов</li>
-                    <li class="menu__tab" data-open-menu="appeals">Работа с обращениями граждан</li>
+                    <li class="menu__tab active">
+                        <a href="#voprosy-otvety" data-open-content="voprosy-otvety">Вопросы и ответы</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a href="#otzyvy-pacientov" data-open-content="otzyvy-pacientov">Отзывы пациентов</a>
+                    </li>
+                    <li class="menu__tab">
+                        <a
+                            href="#rabota-s-obrashcheniyami-grazhdan"
+                            data-open-content="rabota-s-obrashcheniyami-grazhdan"
+                        >
+                            Работа с обращениями граждан
+                        </a>
+                    </li>
                 </ul>
 
-                <aside data-menu="questions" class="aside aside__connection active">
+                <aside class="aside aside__connection active" data-content="voprosy-otvety">
                     <form action="#" class="aside-form" mehod="#">
                         <div class="aside-form__title">
                             <strong>Задать вопрос</strong>
@@ -33,7 +45,7 @@
                     </form>
                 </aside>
 
-                <aside data-menu="questions" class="aside aside__connection active">
+                <aside class="aside aside__connection active" data-content="voprosy-otvety">
                     <form action="#" class="aside-form" method="#" action="#">
                         <div class="aside-form__title">
                             <strong>Записаться на прием</strong>
@@ -52,7 +64,7 @@
                     </form>
                 </aside>
 
-                <aside class="aside aside__connection" data-menu="reviews">
+                <aside class="aside aside__connection" data-content="otzyvy-pacientov">
                     <form action="" class="aside-form" mehod="#">
                         <div class="aside-form__title">
                             <strong>Оставить отзыв</strong>
@@ -73,7 +85,7 @@
                     </form>
                 </aside>
 
-                <aside class="aside aside__connection" data-menu="reviews">
+                <aside class="aside aside__connection" data-content="otzyvy-pacientov">
                     <form action="" class="aside-form" method="#" action="#">
                         <div class="aside-form__title">
                             <strong>Записаться на прием</strong>
@@ -93,7 +105,7 @@
                 </aside>
             </div>
             <div class="connection__right">
-                <div class="connection__wrap active" data-menu="questions">
+                <div class="connection__wrap active" data-content="voprosy-otvety">
                     <div class="connection__question-swiper swiper" id="question__swiper">
                         <div class="connection__question-swiper-wrapper swiper-wrapper">
                             <div class="connection__question-slide swiper-slide">
@@ -833,7 +845,7 @@
                     </div>
                 </div>
 
-                <div class="connection__wrap" data-menu="reviews">
+                <div class="connection__wrap" data-content="otzyvy-pacientov">
                     <div class="connection__review-swiper swiper" id="review__swiper">
                         <div class="connection__review-swiper-wrapper swiper-wrapper">
                             <div class="connection__review-slide swiper-slide">
@@ -1190,7 +1202,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="connection__wrap" data-menu="appeals">
+                <div class="connection__wrap" data-content="rabota-s-obrashcheniyami-grazhdan">
                     <div class="connection__appeal-title">
                         Федеральный закон от 02.05.2006 N 59-ФЗ (ред. от 27 ноября 2017 г. № 355-ФЗ)<br />
                         <a href="#" class="link-green"

@@ -16,6 +16,20 @@
     transform: scale(1.5);
 }
 
+@media screen and (max-height: 59.9em) {
+    .book.zoom {
+        top: 14rem;
+        transform: scale(1.35);
+    }
+}
+
+@media screen and (max-height: 45em) {
+    .book.zoom {
+        top: 14rem;
+        transform: scale(1.25);
+    }
+}
+
 .magazine-viewport {
     width: 100% !important;
     height: 100% !important;

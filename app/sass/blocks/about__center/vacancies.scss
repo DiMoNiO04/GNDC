@@ -1,67 +1,68 @@
 .vacancies {
-	&__subtitle {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 1.8rem;
-		line-height: 150%;
-		color: #3F4C5C;
-	}
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #3f4c5c;
+    }
 
-	&__descs {
-		display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-	}
+    &__descs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
 
-	&__desc {
-		display: flex;
-		flex-direction: column;
-		row-gap: 0.5rem;
-	}
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
 
-	&__text {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 1.8rem;
-		line-height: 150%;
-		color: rgba(63, 76, 92, 0.69);
-	}
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: rgba(63, 76, 92, 0.69);
+    }
 
-	&__points li {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 1.8rem;
-		line-height: 150%;
-		display: block;
-		cursor: pointer;
-		padding-left: 3rem;
-		position: relative;
-		color: rgba(63, 76, 92, 0.69);
-		&::before {
-				position: absolute;
-				content: '';
-				width: 0.4rem;
-				height: 0.4rem;
-				background: rgba(63, 76, 92, 0.69);
-				border-radius: 50%;
-				left: 0.5rem;
-				top: 1rem;
-		}
-	}
+    &__points li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        display: block;
+        cursor: pointer;
+        padding-left: 3rem;
+        position: relative;
+        color: rgba(63, 76, 92, 0.69);
+        &::before {
+            position: absolute;
+            content: '';
+            width: 0.4rem;
+            height: 0.4rem;
+            background: rgba(63, 76, 92, 0.69);
+            border-radius: 50%;
+            left: 0.5rem;
+            top: 1rem;
+        }
+    }
 
-	&__buttons {
-		display: flex;
-		justify-content: space-between;
-		column-gap: 1rem;
-		width: 100%;
-		li {
-			background: #FFFFFF;
-			width: auto;
-		}
-		a {
-			display: flex;
-			align-items: center;
-			column-gap: 1.8rem;
-		}
-	}
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1rem;
+        width: 100%;
+        margin-bottom: 4rem;
+        li {
+            background: #ffffff;
+            width: auto;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 1.8rem;
+        }
+    }
 }

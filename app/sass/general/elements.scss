@@ -657,7 +657,7 @@ img {
         display: flex;
         column-gap: 1.6rem;
         align-items: center;
-        &:not(:first-child)::before {
+        &:not(:last-child)::after {
             content: '';
             background: url('../img/icon/arrow-bread-crumbs.svg') no-repeat center;
             background-size: cover;
@@ -754,6 +754,7 @@ h1 {
     font-weight: 700;
     line-height: 36px;
     font-variant: small-caps;
+		margin-bottom: 4.4rem;
 }
 
 h2 {
@@ -763,4 +764,5 @@ h2 {
     font-weight: 700;
     line-height: 150%;
     text-transform: uppercase;
+		margin-bottom: 2rem;
 }

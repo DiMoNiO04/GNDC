@@ -361,24 +361,3 @@ class Modal {
 
 let conferences = document.querySelector('[data-modal="conferences"]') ? new Modal('conferences') : null;
 //--------------------------------------------------------------------------//
-
-//---------------Change symbols str------------------------------//
-$('.news__text').each(function () {
-    let text = $(this).find('.news__text-desc');
-
-    const textTitle = $(this).find('.news__text-title');
-
-    const heightTextContainer = $(this).height();
-    const heightTextDesc = heightTextContainer - textTitle.height();
-
-    while (text.height() > heightTextDesc) {
-        text.text(
-            text
-                .text()
-                .split(' ')
-                .slice(0, text.text().split(' ').length - 1)
-                .join(' ') + '...'
-        );
-    }
-});
-//-------------------------------------------------------------------//

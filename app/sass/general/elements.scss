@@ -102,36 +102,21 @@ img {
 
 .link-green,
 .link-blue {
-    display: inline-block;
     font-weight: 400;
     width: fit-content;
-    &::after {
-        display: block;
-        content: '';
-        height: 0.1px;
-        width: 100%;
-        background-color: #00ac60;
-        position: relative;
-        bottom: 0.4rem;
-    }
-    &:hover::after {
-        visibility: hidden;
+    &:hover {
+				border-bottom: 1px solid transparent;
     }
 }
 
 .link-green {
-    color: #00ac60 !important;
-    &::after {
-        background-color: #00ac60;
-    }
+	color: #00ac60;
+		border-bottom: 1px solid #00ac60;
 }
 
 .link-blue {
-    color: #3f4c5c !important;
-
-    &::after {
-        background-color: #3f4c5c;
-    }
+	color: #3f4c5c;
+border-bottom: 1px solid #3f4c5c;
 }
 
 .pagination {
@@ -160,7 +145,7 @@ img {
     &__prev,
     &__next {
         width: fit-content;
-        height: 7rem;
+        height: 5.6rem;
         cursor: pointer;
         &:hover {
             opacity: 0.5;

@@ -79,7 +79,6 @@ $(window).on('hashchange', () => {
     if (!hash.includes('page')) {
         renderContentPage(hash);
     }
-    console.log(hash);
 });
 
 $(document).ready(() => {

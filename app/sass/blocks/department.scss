@@ -57,6 +57,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
+        .subtitle,
+        ul {
+            margin: 0;
+        }
     }
 
     &__employees-title {
@@ -67,9 +71,6 @@
     }
 
     &__employees-block {
-        ul {
-            margin-top: 2rem;
-        }
         li {
             position: relative;
             padding-left: 2rem;
@@ -113,6 +114,9 @@
 
     &__text {
         margin-bottom: 4.4rem;
+        div {
+            margin: 1rem 0 0.4rem 0;
+        }
         p,
         li {
             color: #3f4c5c;
@@ -176,5 +180,35 @@
         .swiper-pagination-bullet-active {
             background: #3f4c5c;
         }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.2rem;
+    }
+
+    &__block-title {
+        color: #3f4c5c;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 25px;
+    }
+
+    &__block-text {
+        color: #3f4c5c;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 150%;
+        font-style: normal;
+    }
+
+    .menu__buttons {
+        margin-bottom: 4rem;
+    }
+
+    .menu__button {
+        padding: 2.8rem 8.5rem;
+        height: auto;
     }
 }

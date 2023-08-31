@@ -6074,14 +6074,14 @@ h2 {
           flex-direction: column;
   row-gap: 2rem;
 }
+.department__employees .subtitle, .department__employees ul {
+  margin: 0;
+}
 .department__employees-title {
   color: #3f4c5c;
   font-size: 2.3rem;
   font-weight: 700;
   line-height: 150%;
-}
-.department__employees-block ul {
-  margin-top: 2rem;
 }
 .department__employees-block li {
   position: relative;
@@ -6119,6 +6119,9 @@ h2 {
 }
 .department__text {
   margin-bottom: 4.4rem;
+}
+.department__text div {
+  margin: 1rem 0 0.4rem 0;
 }
 .department__text p,
 .department__text li {
@@ -6176,6 +6179,36 @@ h2 {
 }
 .department__pagination .swiper-pagination-bullet-active {
   background: #3f4c5c;
+}
+.department__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.2rem;
+}
+.department__block-title {
+  color: #3F4C5C;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 25px;
+}
+.department__block-text {
+  color: #3F4C5C;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  font-style: normal;
+}
+.department .menu__buttons {
+  margin-bottom: 4rem;
+}
+.department .menu__button {
+  padding: 2.8rem 8.5rem;
+  height: auto;
 }
 
 .news {

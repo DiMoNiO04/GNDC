@@ -329,7 +329,7 @@
 
 @media screen and (max-width: 48em) {
     .main {
-        padding-top: 5.33vw;
+        padding-top: 16vw;
         padding-bottom: 16vw;
 
         &-body {
@@ -338,7 +338,7 @@
 
         &__top {
             flex-direction: column;
-            row-gap: 8vw;
+            row-gap: 21.3vw;
             margin-bottom: 21.3vw;
         }
 
@@ -364,7 +364,7 @@
         }
 
         &__swiper {
-            min-width: 100%;
+            width: 100%;
             height: 100%;
             margin-right: 0;
         }
@@ -372,8 +372,9 @@
         &__pagination {
             position: relative;
             justify-content: center;
-            top: -4vw;
+            top: 0;
             left: 0;
+						margin-top: 8.5vw;
         }
 
         &__bullets .swiper-pagination-bullet {
@@ -383,12 +384,19 @@
 
         &__slide {
             padding-top: 0;
-            height: 162vw;
         }
 
+				&__swiper {
+					min-width: 100%;
+				}
+
+				&__bullets {
+					top: 0 !important;
+				}
+
         &__slide-right {
-            width: auto;
-            height: auto;
+            width: 95vw;
+            height: 80vw;
             bottom: 0;
             left: 0;
             img {
@@ -428,27 +436,35 @@
 
         &__news-slide {
             height: auto;
-            padding: 5.33vw 5.33vw 8vw 5.33vw;
+            padding: 5.33vw;
             border-radius: 2.1vw;
         }
 
-        &__news-image {
+        .news__image {
             width: 100%;
             height: 100%;
-            margin-bottom: 2.8vw;
+            margin-bottom: 3.2vw;
         }
 
-        &__news-title {
+        .news__text-title {
             font-size: 5.33vw;
             margin-bottom: 2.6vw;
+						height: 19vw;
+						-webkit-line-clamp: 3;
         }
 
-        &__news-text {
-            font-size: 3.8vw;
-            line-height: 140%;
-        }
+				.news__text-desc {
+					font-size: 3.8vw;
+					line-height: 140%;
+					height: auto;
+				}
 
-        &__news-date {
+				.news__text {
+					max-height: fit-content;
+				}
+
+
+        .news__date {
             width: 23.5vw;
             height: 17.6vw;
             left: 10vw;
@@ -457,7 +473,7 @@
                 font-size: 4.27vw;
             }
             span {
-                font-size: 2.5vw;
+                font-size: 2.66vw;
             }
         }
 
@@ -471,6 +487,7 @@
             width: 1.8vw;
             height: 1.8vw;
             background: #ffffff;
+						top: 0;
         }
 
         &__news-bullets .swiper-pagination-bullet-active {

@@ -40,3 +40,21 @@
 @import "./blocks/bussines/admission-residency-2023.scss";
 @import "./blocks/bussines/procedure-consideration-claims.scss";
 @import "./blocks/patients/rules-preparing-diagnosis.scss";
+
+.--mob {
+	display: none;
+}
+
+.--desc {
+	display: block;
+}
+
+@media screen and (max-width: 48em) {
+	.--mob {
+			display: block;
+		}
+	
+		.--desc {
+			display: none;
+		}
+}

@@ -357,7 +357,7 @@ template {
 @font-face {
   font-family: "HeliosCondC";
   src: url("HeliosCond-Bold.woff");
-  src: local("HeliosCondC"), local("HeliosCondC"), url("../font/HeliosCond-Bold.woff") format("woff");
+  src: local("HeliosCondC"), local("HeliosCondC"), url("../fonts/HeliosCond-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -2444,13 +2444,14 @@ h2 {
   display: block;
 }
 
-.header {
+.header__top-container {
   padding-top: 6.4rem;
-}
-.header__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 3.7rem;
 }
 .header__logo {
@@ -2466,6 +2467,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .header__logo img {
   width: 6rem;
@@ -2473,47 +2475,100 @@ h2 {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.header__logo span {
+.header__logo-text {
   font-family: "HeliosCondC", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 3rem;
+  font-size: 2.8rem;
+  line-height: 140%;
+  color: #3f4c5c;
+}
+.header__search {
+  width: 38.3rem;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #3f4c5c;
+}
+.header__search form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #3f4c5c;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 2rem;
 }
-.header__search {
-  width: 38.3rem;
-  display: inline-block;
-  position: relative;
+.header__search button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
 }
-.header__search::before {
-  position: absolute;
-  content: "";
-  background-image: url(../img/icon/search.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 2.1rem;
-  height: 2.1rem;
-  top: 2rem;
-  left: 2.36rem;
-}
-.header__search input {
-  padding-left: 6.2rem;
+.header__search input::-webkit-input-placeholder {
+  height: 6.3rem;
   width: 100%;
-  height: 6.2rem;
-  border: 0.2rem solid #3f4c5c;
-  border-radius: 0.8rem;
-  background: none;
+  color: #3f4c5c;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 136%;
+  font-size: 2rem;
+  line-height: 110%;
+  border: none;
+  background: transparent;
+}
+.header__search input::-moz-placeholder {
+  height: 6.3rem;
+  width: 100%;
+  color: #3f4c5c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 110%;
+  border: none;
+  background: transparent;
+}
+.header__search input:-ms-input-placeholder {
+  height: 6.3rem;
+  width: 100%;
+  color: #3f4c5c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 110%;
+  border: none;
+  background: transparent;
+}
+.header__search input::-ms-input-placeholder {
+  height: 6.3rem;
+  width: 100%;
+  color: #3f4c5c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 110%;
+  border: none;
+  background: transparent;
+}
+.header__search input,
+.header__search input::placeholder {
+  height: 6.3rem;
+  width: 100%;
+  color: #3f4c5c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 110%;
+  border: none;
+  background: transparent;
 }
 .header__center {
   margin-bottom: 3rem;
@@ -2527,6 +2582,7 @@ h2 {
   outline: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .header__center-lists-item, .header__bottom-lists-item {
   cursor: pointer;
@@ -2572,6 +2628,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  outline: none;
 }
 .header__center-lists-item > a {
   -webkit-column-gap: 1.5rem;
@@ -2667,49 +2724,131 @@ h2 {
 }
 
 @media screen and (max-width: 48em) {
-  .header {
-    padding-top: 6.4rem;
-  }
   .header__top {
-    margin-bottom: 3.7rem;
+    background-color: #ffffff;
+  }
+  .header__logo-text {
+    font-family: HeliosCondC, sans-serif;
+    color: #3f4c5c;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    font-variant: small-caps;
+  }
+  .header__logo-text span {
+    color: rgba(63, 76, 92, 0.69);
+    font-size: 2.8vw;
+  }
+  .header__top-burger-search {
+    width: 6.4vw;
+    height: 5.4vw;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .header__top-burger-search .header__top-burger-search-close.active span::before {
+    top: 50%;
+    -webkit-transform: rotate(-45deg) translate(0px, -50%);
+            transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .header__top-burger-search .header__top-burger-search-close.active span::after {
+    bottom: 50%;
+    -webkit-transform: rotate(45deg) translate(0px, 50%);
+            transform: rotate(45deg) translate(0px, 50%);
+  }
+  .header__top-burger-search-close {
+    z-index: 5;
+    display: none;
+    position: relative;
+    width: 6.4vw;
+    height: 4.8vw;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .header__top-burger-search-close span::before,
+  .header__top-burger-search-close span::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #3f4c5c;
+  }
+  .header__top-container {
+    padding: 4.27vw 0;
+    margin-bottom: 5.3vw;
+    -webkit-column-gap: 2.8vw;
+       -moz-column-gap: 2.8vw;
+            column-gap: 2.8vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__logo {
-    width: 108.2rem;
-    -webkit-column-gap: 4rem;
-       -moz-column-gap: 4rem;
-            column-gap: 4rem;
-    margin-right: 7.8rem;
-    margin-top: -0.4rem;
+    width: 100%;
+    -webkit-column-gap: 2.8vw;
+       -moz-column-gap: 2.8vw;
+            column-gap: 2.8vw;
+    margin-right: 0;
+    margin-top: 0;
   }
   .header__logo img {
-    width: 6rem;
-    height: 6rem;
-  }
-  .header__logo span {
-    font-size: 2.2rem;
-    line-height: 3rem;
+    width: 8vw;
+    height: 7vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .header__search {
-    width: 38.3rem;
-  }
-  .header__search::before {
-    background-image: url(../img/icon/search.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 2.1rem;
-    height: 2.1rem;
-    top: 2rem;
-    left: 2.36rem;
-  }
-  .header__search input {
-    padding-left: 6.2rem;
+    display: none;
+    margin-bottom: 8vw;
     width: 100%;
-    height: 6.2rem;
-    border: 0.2rem solid #3f4c5c;
-    border-radius: 0.8rem;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 136%;
+    padding: 0 5.3vw;
+    border-radius: 2.2vw;
+    border-width: 0.4rem;
+  }
+  .header__search form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 5.3vw;
+       -moz-column-gap: 5.3vw;
+            column-gap: 5.3vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__search form input::-webkit-input-placeholder {
+    height: 12.5vw;
+    font-size: 4vw;
+  }
+  .header__search form input::-moz-placeholder {
+    height: 12.5vw;
+    font-size: 4vw;
+  }
+  .header__search form input:-ms-input-placeholder {
+    height: 12.5vw;
+    font-size: 4vw;
+  }
+  .header__search form input::-ms-input-placeholder {
+    height: 12.5vw;
+    font-size: 4vw;
+  }
+  .header__search form input,
+  .header__search form input::placeholder {
+    height: 12.5vw;
+    font-size: 4vw;
+  }
+  .header__search button {
+    width: 5.3vw;
+    height: 5.3vw;
+  }
+  .header__search.--mob {
+    display: none;
   }
   .header__center {
     margin-bottom: 8vw;
@@ -7599,4 +7738,21 @@ h2 {
   font-size: 2.3rem;
   font-weight: 700;
   line-height: 130%;
+}
+
+.--mob {
+  display: none;
+}
+
+.--desc {
+  display: block;
+}
+
+@media screen and (max-width: 48em) {
+  .--mob {
+    display: block;
+  }
+  .--desc {
+    display: none;
+  }
 }

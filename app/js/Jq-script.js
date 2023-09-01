@@ -68,38 +68,6 @@ $('.block__item-lists-subblock').each(function () {
 });
 //-------------------------------------------------------------//
 
-//----------------------------Header-------------------------//
-
-function headerDrop() {
-    $('.header-btn').hover(
-        function () {
-            $('.header-btn-drop', this).stop(true, true).slideDown(500);
-            $(this).addClass('active');
-        },
-        function () {
-            $(this).removeClass('active');
-            setTimeout(
-                $.proxy(function () {
-                    $('.header-btn-drop', this).stop().slideUp();
-                }, this),
-                100
-            );
-        }
-    );
-    if ($('body').width() < 768) {
-        $('.header-btn > a').on('click', function (e) {
-            e.preventDefault();
-        });
-    }
-}
-
-headerDrop();
-
-$(window).resize(function () {
-    headerDrop();
-});
-//------------------------------------------------------------//
-
 //--------------------Cost---------------------------------//
 $('.block__content')
     .find('.cost__content-1')
@@ -139,22 +107,6 @@ $('.block__content')
 //-------------------------------------------------------//
 
 //-------------------------About---------------------------------------//
-// $('[data-open-vacancies').on('click', function () {
-//     // $('[data-open-vacancies]').removeClass('active');
-//     // $(`[data-open-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
-
-//     // $('[data-vacancies]').removeClass('active');
-//     // $(`[data-vacancies="${$(this).data('open-vacancies')}"`).addClass('active');
-// });
-
-// $('[data-open-structure').on('click', function () {
-//     $('[data-open-structure]').removeClass('active');
-//     $(`[data-open-structure="${$(this).data('open-structure')}"`).addClass('active');
-
-//     $('[data-structure]').removeClass('active');
-//     $(`[data-structure="${$(this).data('open-structure')}"`).addClass('active');
-// });
-
 $('[data-open-photo-category').on('click', function () {
     $('.photos__gallery').removeClass('active');
     $('.photos__contents').addClass('active');
@@ -249,54 +201,3 @@ $('.distant__text-btn').click(function () {
     }
 });
 //---------------------------------------
-
-//--------------------Modal------------------------//
-class Modal {
-    constructor(name) {
-        this.name = name;
-        this.modal = document.querySelector(`[data-modal="${name}"]`);
-        this.triggers = document.querySelectorAll(`[data-modal-class="${name}"]`);
-        this.body = document.querySelector(`body`);
-        this.openHendler();
-    }
-    open() {
-        this.modal.classList.remove('success', 'error');
-        this.modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        this.modal.addEventListener('click', this.closeHendler);
-    }
-    close() {
-        this.modal.classList.remove('active');
-        document.body.style.overflow = 'unset';
-        this.modal.removeEventListener('click', this.closeHendler);
-    }
-    success() {
-        this.modal.classList.remove('error');
-        this.modal.classList.add('success');
-    }
-    error() {
-        this.modal.classList.remove('success');
-        this.modal.classList.add('error');
-    }
-    update() {
-        this.modal = document.querySelector(`[data-modal="${this.name}"]`);
-        this.triggers = document.querySelectorAll(`[data-modal-class="${this.name}"]`);
-        this.openHendler();
-    }
-    openHendler = (e) => {
-        this.triggers.forEach((item) => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.open();
-            });
-        });
-    };
-    closeHendler = (e) => {
-        if (e.target.classList.contains('close-x')) {
-            this.close();
-        }
-    };
-}
-
-let conferences = document.querySelector('[data-modal="conferences"]') ? new Modal('conferences') : null;
-//--------------------------------------------------------------------------//

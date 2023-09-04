@@ -240,27 +240,32 @@
             }
         }
 
-        &__top-burger-search {
+        &__top-burger-search,
+        &__top-burger-menu {
             width: 6.4vw;
             height: 5.4vw;
+            flex-shrink: 0;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            img {
+                object-fit: contain;
+            }
+        }
 
-            .header__top-burger-search-close.active {
-                span {
-                    &::before {
-                        top: 50%;
-                        transform: rotate(-45deg) translate(0px, -50%);
-                    }
+        &__top-burger-close.active {
+            span {
+                &::before {
+                    top: 50%;
+                    transform: rotate(-45deg) translate(0px, -50%);
+                }
 
-                    &::after {
-                        bottom: 50%;
-                        transform: rotate(45deg) translate(0px, 50%);
-                    }
+                &::after {
+                    bottom: 50%;
+                    transform: rotate(45deg) translate(0px, 50%);
                 }
             }
         }
 
-        &__top-burger-search-close {
+        &__top-burger-close {
             z-index: 5;
             display: none;
             position: relative;
@@ -283,9 +288,9 @@
 
         &__top-container {
             padding: 4.27vw 0;
-            margin-bottom: 5.3vw;
             column-gap: 2.8vw;
             align-items: center;
+            margin-bottom: 0;
         }
 
         &__logo {
@@ -307,7 +312,7 @@
             width: 100%;
             padding: 0 5.3vw;
             border-radius: 2.2vw;
-						border-width: 0.4rem;
+            border-width: 0.4rem;
             form {
                 display: flex;
                 column-gap: 5.3vw;
@@ -410,6 +415,35 @@
         &-btn.active,
         &-btn-drop.active {
             border-radius: 2.1vw;
+        }
+
+        &__menu {
+            padding-top: 5.3vw;
+            &-slide {
+                background: #e5e9ef;
+                width: 100%;
+                height: calc(100% - 31vw);
+                top: 31vw;
+                left: 0;
+                position: fixed;
+                z-index: 1000;
+                padding: 5.3vw 2.8vw 10.6vw 2.8vw;
+                flex-direction: column;
+                row-gap: 6.4vw;
+                overflow: scroll;
+                transform: translateX(100%);
+                transition: 0.4s all ease-in-out;
+
+                &.active {
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        &__menu-slide {
+            .header__search {
+                display: block;
+            }
         }
     }
 }

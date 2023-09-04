@@ -101,4 +101,10 @@ $(document).ready(() => {
     } else if (page === PAGES.ABOUT) {
         renderContentPage(CONTENT.ISTORIYA);
     }
+
+    if ($('main').hasClass('main-page')) {
+        $('.header__top-burger-search').removeClass('hide');
+        $('.header__top-burger-menu').addClass('hide');
+        $('.header__menu').removeClass('header__menu-slide');
+    }
 });

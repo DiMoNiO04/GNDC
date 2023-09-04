@@ -25,13 +25,13 @@
                     </div>
                 </a>
                 <div class="header__top-burger-search --mob hide">
-                    <img src="../img/icon/search.svg" class="active" alt="" />
+                    <img src="./img/icon/search.svg" class="active" alt="" />
                     <div class="header__top-burger-close">
                         <span></span>
                     </div>
                 </div>
                 <div class="header__top-burger-menu --mob">
-                    <img src="../img/icon/burger-icon.svg" class="active" alt="" />
+                    <img src="./img/icon/burger-icon.svg" class="active" alt="" />
                     <div class="header__top-burger-close">
                         <span></span>
                     </div>
@@ -39,7 +39,7 @@
                 <div class="header__search">
                     <form action="#" method="#">
                         <button type="submit">
-                            <img src="../img/icon/search.svg" alt="" />
+                            <img src="./img/icon/search.svg" alt="" />
                         </button>
                         <input type="text" placeholder="Поиск по сайту" />
                     </form>
@@ -53,7 +53,7 @@
             <div class="header__search --mob">
                 <form action="#" method="#">
                     <button type="submit">
-                        <img src="../img/icon/search.svg" alt="" />
+                        <img src="./img/icon/search.svg" alt="" />
                     </button>
                     <input type="text" placeholder="Поиск по сайту" />
                 </form>
@@ -63,7 +63,7 @@
                     <li class="header__center-lists-item header-btn">
                         <a href="./about-center-page.html">
                             О центре
-                            <img src="../img/icon/downarrowwhite.svg" alt="" />
+                            <img src="./img/icon/downarrowwhite.svg" alt="" />
                         </a>
                         <ul class="header-dropdown header-btn-drop">
                             <li><a href="./about-center-page.html#istoriya">История создания ГНЦДК</a></li>
@@ -87,7 +87,7 @@
                     <li class="header__center-lists-item header-btn">
                         <a href="./bussines-page.html">
                             Направления деятельности
-                            <img src="../img/icon/downarrowwhite.svg" alt="" />
+                            <img src="./img/icon/downarrowwhite.svg" alt="" />
                         </a>
                         <ul class="header-dropdown header-btn-drop">
                             <li><a href="./bussines-page.html#nauchnaya-deyatelnost">Научная деятельность</a></li>
@@ -125,7 +125,7 @@
                     <li class="header__center-lists-item header-btn">
                         <a href="./patients-page.html">
                             Пациентам
-                            <img src="../img/icon/downarrowwhite.svg" alt="" />
+                            <img src="./img/icon/downarrowwhite.svg" alt="" />
                         </a>
                         <ul class="header-dropdown header-btn-drop">
                             <li><a href="./patients-page.html#zapis-na-priem">Запись на прием</a></li>
@@ -161,7 +161,7 @@
                     <li class="header__center-lists-item header-btn">
                         <a href="./specialists-page.html">
                             Специалистам
-                            <img src="../img/icon/downarrowwhite.svg" alt="" />
+                            <img src="./img/icon/downarrowwhite.svg" alt="" />
                         </a>
                         <ul class="header-dropdown header-btn-drop">
                             <li>
@@ -226,7 +226,7 @@
                     <li class="header__bottom-lists-item header__bottom-lists-item-drop header-btn">
                         <a href="./hospitalization-page.html">
                             Госпитализация
-                            <img src="../img/icon/downarrowblue.svg" alt="" />
+                            <img src="./img/icon/downarrowblue.svg" alt="" />
                         </a>
                         <ul class="header-dropdown-three header-btn-drop">
                             <li>
@@ -255,7 +255,7 @@
                     <li class="header__bottom-lists-item header__bottom-lists-item-drop header-btn">
                         <a href="./connection-page.html">
                             Обратная связь
-                            <img src="../img/icon/downarrowblue.svg" alt="" />
+                            <img src="./img/icon/downarrowblue.svg" alt="" />
                         </a>
                         <ul class="header-dropdown-three header-btn-drop">
                             <li><a href="./connection-page.html#voprosy-otvety">Вопросы и ответы</a></li>
@@ -283,9 +283,9 @@
         </div>
         <div class="title about__title">О научном центре</div>
         <div class="about__wrapper">
-            <div class="about__left">
+            <div class="about__left content-menu-mob active">
                 <ul class="menu__tabs">
-                    <li class="menu__tab active">
+                    <li class="menu__tab">
                         <a href="#istoriya" data-open-content="istoriya">История создания ГНЦДК</a>
                     </li>
                     <li class="menu__tab">
@@ -318,7 +318,7 @@
                 </ul>
             </div>
 
-            <div class="about__right">
+            <div class="about__right content-mob">
                 <div class="about__item active" data-content="istoriya">
     <div class="about__wrap">
         <div class="about__overlay"></div>
@@ -2679,156 +2679,166 @@
 <script src="./js/header.js"></script>
 
         <script type="text/javascript">
-            function loadApp() {
-                $('#canvas').fadeIn(1000);
-                var flipbook = $('.magazine');
-                if (flipbook.width() == 0 || flipbook.height() == 0) {
-                    setTimeout(loadApp, 10);
-                    return;
-                }
-                flipbook.turn({
-                    page: 2,
-                    width: 1100,
-                    height: 650,
-                    duration: 1000,
-                    acceleration: !isChrome(),
-                    gradients: true,
-                    autoCenter: true,
-                    elevation: 50,
-                    pages: 160,
-                    when: {
-                        turning: function (event, page, view) {
-                            var book = $(this),
-                                currentPage = book.turn('page'),
-                                pages = book.turn('pages');
+            if (window.innerWidth > 768) {
+                function loadApp() {
+                    $('#canvas').fadeIn(1000);
+                    var flipbook = $('.magazine');
+                    if (flipbook.width() == 0 || flipbook.height() == 0) {
+                        setTimeout(loadApp, 10);
+                        return;
+                    }
+                    flipbook.turn({
+                        page: 2,
+                        width: 1100,
+                        height: 650,
+                        duration: 1000,
+                        acceleration: !isChrome(),
+                        gradients: true,
+                        autoCenter: true,
+                        elevation: 50,
+                        pages: 160,
+                        when: {
+                            turning: function (event, page, view) {
+                                var book = $(this),
+                                    currentPage = book.turn('page'),
+                                    pages = book.turn('pages');
 
-                            Hash.go('page/' + page).update();
+                                Hash.go('page/' + page).update();
 
-                            disableControls(page);
+                                disableControls(page);
+                            },
+
+                            turned: function (event, page, view) {
+                                disableControls(page);
+                                $(this).turn('center');
+                                if (page == 1) {
+                                    $(this).turn('peel', 'br');
+                                }
+                            },
+
+                            missing: function (event, pages) {
+                                for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
+                            },
                         },
+                    });
 
-                        turned: function (event, page, view) {
-                            disableControls(page);
-                            $(this).turn('center');
-                            if (page == 1) {
-                                $(this).turn('peel', 'br');
+                    $('.magazine-viewport').zoom({
+                        flipbook: $('.magazine'),
+                        max: function () {
+                            return largeMagazineWidth() / $('.magazine').width();
+                        },
+                        when: {
+                            swipeLeft: function () {
+                                $(this).zoom('flipbook').turn('next');
+                            },
+
+                            swipeRight: function () {
+                                $(this).zoom('flipbook').turn('previous');
+                            },
+                        },
+                    });
+
+                    if ($.isTouch) $('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+                    else $('.magazine-viewport').bind('zoom.tap', zoomTo);
+
+                    $(document).keydown(function (e) {
+                        var previous = 37,
+                            next = 39,
+                            esc = 27;
+                        switch (e.keyCode) {
+                            case previous:
+                                $('.magazine').turn('previous');
+                                e.preventDefault();
+                                break;
+                            case next:
+                                $('.magazine').turn('next');
+                                e.preventDefault();
+                                break;
+                            case esc:
+                                $('.magazine-viewport').zoom('zoomOut');
+                                e.preventDefault();
+                                break;
+                        }
+                    });
+
+                    Hash.on('^page/([0-9]*)$', {
+                        yep: function (path, parts) {
+                            var page = parts[1];
+                            console.log(page);
+                            if (page !== undefined) {
+                                if ($('.magazine').turn('is')) $('.magazine').turn('page', page);
                             }
                         },
-
-                        missing: function (event, pages) {
-                            for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
-                        },
-                    },
-                });
-
-                $('.magazine-viewport').zoom({
-                    flipbook: $('.magazine'),
-                    max: function () {
-                        return largeMagazineWidth() / $('.magazine').width();
-                    },
-                    when: {
-                        swipeLeft: function () {
-                            $(this).zoom('flipbook').turn('next');
-                        },
-
-                        swipeRight: function () {
-                            $(this).zoom('flipbook').turn('previous');
-                        },
-                    },
-                });
-
-                if ($.isTouch) $('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
-                else $('.magazine-viewport').bind('zoom.tap', zoomTo);
-
-                $(document).keydown(function (e) {
-                    var previous = 37,
-                        next = 39,
-                        esc = 27;
-                    switch (e.keyCode) {
-                        case previous:
-                            $('.magazine').turn('previous');
-                            e.preventDefault();
-                            break;
-                        case next:
-                            $('.magazine').turn('next');
-                            e.preventDefault();
-                            break;
-                        case esc:
-                            $('.magazine-viewport').zoom('zoomOut');
-                            e.preventDefault();
-                            break;
-                    }
-                });
-
-                Hash.on('^page/([0-9]*)$', {
-                    yep: function (path, parts) {
-                        var page = parts[1];
-                        console.log(page);
-                        if (page !== undefined) {
-                            if ($('.magazine').turn('is')) $('.magazine').turn('page', page);
-                        }
-                    },
-                });
-
-                $(window)
-                    .resize(function () {
-                        resizeViewport();
-                    })
-                    .bind('orientationchange', function () {
-                        resizeViewport();
                     });
 
-                if ($.isTouch) {
-                    $('.magazine').bind('touchstart', regionClick);
-                } else {
-                    $('.magazine').click(regionClick);
+                    $(window)
+                        .resize(function () {
+                            resizeViewport();
+                        })
+                        .bind('orientationchange', function () {
+                            resizeViewport();
+                        });
+
+                    if ($.isTouch) {
+                        $('.magazine').bind('touchstart', regionClick);
+                    } else {
+                        $('.magazine').click(regionClick);
+                    }
+
+                    $('.next-button')
+                        .bind($.mouseEvents.over, function () {
+                            $(this).addClass('next-button-hover');
+                        })
+                        .bind($.mouseEvents.out, function () {
+                            $(this).removeClass('next-button-hover');
+                        })
+                        .bind($.mouseEvents.down, function () {
+                            $(this).addClass('next-button-down');
+                        })
+                        .bind($.mouseEvents.up, function () {
+                            $(this).removeClass('next-button-down');
+                        })
+                        .click(function () {
+                            $('.magazine').turn('next');
+                        });
+
+                    $('.previous-button')
+                        .bind($.mouseEvents.over, function () {
+                            $(this).addClass('previous-button-hover');
+                        })
+                        .bind($.mouseEvents.out, function () {
+                            $(this).removeClass('previous-button-hover');
+                        })
+                        .bind($.mouseEvents.down, function () {
+                            $(this).addClass('previous-button-down');
+                        })
+                        .bind($.mouseEvents.up, function () {
+                            $(this).removeClass('previous-button-down');
+                        })
+                        .click(function () {
+                            $('.magazine').turn('previous');
+                        });
+                    resizeViewport();
+                    $('.magazine').addClass('animated');
                 }
 
-                $('.next-button')
-                    .bind($.mouseEvents.over, function () {
-                        $(this).addClass('next-button-hover');
-                    })
-                    .bind($.mouseEvents.out, function () {
-                        $(this).removeClass('next-button-hover');
-                    })
-                    .bind($.mouseEvents.down, function () {
-                        $(this).addClass('next-button-down');
-                    })
-                    .bind($.mouseEvents.up, function () {
-                        $(this).removeClass('next-button-down');
-                    })
-                    .click(function () {
-                        $('.magazine').turn('next');
-                    });
+                $('#canvas').hide();
 
-                $('.previous-button')
-                    .bind($.mouseEvents.over, function () {
-                        $(this).addClass('previous-button-hover');
-                    })
-                    .bind($.mouseEvents.out, function () {
-                        $(this).removeClass('previous-button-hover');
-                    })
-                    .bind($.mouseEvents.down, function () {
-                        $(this).addClass('previous-button-down');
-                    })
-                    .bind($.mouseEvents.up, function () {
-                        $(this).removeClass('previous-button-down');
-                    })
-                    .click(function () {
-                        $('.magazine').turn('previous');
-                    });
-                resizeViewport();
-                $('.magazine').addClass('animated');
+                yepnope({
+                    test: Modernizr.csstransforms,
+                    yep: ['./lib/turn.js'],
+                    nope: ['./lib/turn.html4.min.js'],
+                    both: ['./lib/zoom.min.js', './js/book.js', './css/book.css'],
+                    complete: loadApp,
+                });
             }
 
-            $('#canvas').hide();
-
-            yepnope({
-                test: Modernizr.csstransforms,
-                yep: ['./lib/turn.js'],
-                nope: ['./lib/turn.html4.min.js'],
-                both: ['./lib/zoom.min.js', './js/book.js', './css/book.css'],
-                complete: loadApp,
+            $(window).resize(function () {
+                if (window.innerWidth < 768) {
+                    $('.book').css('display', 'none');
+                } else {
+                    $('.book').css('display', 'block');
+                }
             });
         </script>
     </body>

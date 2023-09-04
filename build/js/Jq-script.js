@@ -201,3 +201,21 @@ $('.distant__text-btn').click(function () {
     }
 });
 //---------------------------------------
+
+if(window.innerWidth > 768) {
+	$('.menu__tab').first().addClass('active');
+}
+
+if(window.innerWidth < 768) {
+
+	$('.menu__tab').removeClass('active');
+	$('.crumb-content').addClass('hide');
+
+	$('.menu__tab').on('click', function() {
+		$('.content-menu-mob').removeClass('active');
+		$('.content-mob').addClass('active');
+		$('.crumb-content').removeClass('hide');
+
+		$('.title').text($(this).text())
+	})
+}

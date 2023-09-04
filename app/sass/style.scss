@@ -3,6 +3,14 @@
 @import './general/set';
 @import './general/elements';
 
+@import './components/bread-crumb.scss';
+@import './components/btn.scss';
+@import './components/checkbox.scss';
+@import './components/inputs.scss';
+@import './components/menu.scss';
+@import './components/select.scss';
+@import './components/block.scss';
+
 @import './blocks/modals.scss';
 @import './blocks/about.scss';
 @import './blocks/clinical-guidelines.scss';

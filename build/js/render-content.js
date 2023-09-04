@@ -102,6 +102,11 @@ $(document).ready(() => {
         renderContentPage(CONTENT.ISTORIYA);
     }
 
+    if (window.location.hash) {
+        $('.content-menu-mob').removeClass('active');
+        $('.content-mob').addClass('active');
+    }
+
     if ($('main').hasClass('main-page')) {
         $('.header__top-burger-search').removeClass('hide');
         $('.header__top-burger-menu').addClass('hide');

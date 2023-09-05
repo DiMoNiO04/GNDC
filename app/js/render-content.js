@@ -1,3 +1,4 @@
+//--------------Сonsts-----------------------------//
 const PAGES = {
     SPECIALISTS: 'specialists-page.html',
     BUSSINES: 'bussines-page.html',
@@ -5,15 +6,70 @@ const PAGES = {
 };
 
 const CONTENT = {
-    RUSSIAN_SOCIETY: 'rossijskoe-obshchestvo-dermatovenerologov-i-kosmetologov',
-    NAUCHNAYA_DEYATELNOST: 'nauchnaya-deyatelnost',
-    ISTORIYA: 'istoriya',
+    RUSSIAN_SOCIETY: '#rossijskoe-obshchestvo-dermatovenerologov-i-kosmetologov',
+    NAUCHNAYA_DEYATELNOST: '#nauchnaya-deyatelnost',
+    ISTORIYA: '#istoriya',
+};
+
+const TITLE = {
+    ABOUT: 'О научном центре',
+    BUSSINES: 'Направление деятельности',
+    SPECIALISTS: 'Специалистам',
+    PATIENTS: 'Пациентам',
 };
 
 const breadCrumbs = $('.bread-crumbs');
 const crumbContentBlock = $('.crumb-content-block');
 const crumbContent = $('.crumb-content');
-const mainTitle = $('.main-title');
+//------------------------------------------------------------//
+
+const showMobMenu = () => {
+    $('.content-mob').removeClass('active');
+    $('.content-menu-mob').addClass('active');
+};
+
+const showMobContent = () => {
+    $('.content-menu-mob').removeClass('active');
+    $('.content-mob').addClass('active');
+};
+
+const showContent = (content) => {
+    renderContentPage(content);
+    showMobMenu();
+};
+
+const getPage = () => {
+    let page;
+    const locationArr = window.location.href.split('/');
+
+    locationArr.forEach((item) => {
+        if (item.includes('#')) {
+            page = item.split('#')[0];
+        } else {
+            page = locationArr[locationArr.length - 1];
+        }
+    });
+
+    return page;
+};
+
+const removeActiveTab = () => {
+    if (window.innerWidth < 768) {
+        $('.menu__tab').removeClass('active');
+    }
+};
+
+const renderTitle = (page) => {
+    if (page === PAGES.ABOUT) {
+        $('.title').text(TITLE.ABOUT);
+    } else if (page == PAGES.BUSSINES) {
+        $('.title').text(TITLE.BUSSINES);
+    }
+
+    if (window.innerWidth < 768 && window.location.hash) {
+        $('.title').text($('.menu__tab.active a').text());
+    }
+};
 
 const addNewCrumb = (hash, hashPage) => {
     if (breadCrumbs.hasClass('crumb-content-block')) {
@@ -26,6 +82,17 @@ const addNewCrumb = (hash, hashPage) => {
     }
 };
 
+const addSubMainCrumb = () => {
+    if ($('.menu__tab').hasClass('active')) {
+        const activeTab = $('.menu__tab.active a');
+        if (!breadCrumbs.hasClass('crumb-content')) {
+            const newCrumb = $(`<a href=${activeTab.attr('href')} class="crumb-content-block"></a>`);
+            newCrumb.html(activeTab.text());
+            breadCrumbs.append(newCrumb);
+        }
+    }
+};
+
 const changeBreadCrumbs = () => {
     const activeMenuTab = $('.menu__tab.active a');
     if (breadCrumbs.find('a').hasClass('crumb-content-block')) {
@@ -33,18 +100,14 @@ const changeBreadCrumbs = () => {
     }
     crumbContent.html(activeMenuTab.html());
     crumbContent.attr('href', `${activeMenuTab.attr('href')}`);
-
-    mainTitle.html(activeMenuTab.text());
 };
 
 const changeContent = (hashPage) => {
-    if (!window.location.hash.includes('page')) {
-        $('[data-content]').removeClass('active');
-        $(`[data-content=${hashPage}]`).addClass('active');
+    $('[data-content]').removeClass('active');
+    $(`[data-content=${hashPage}]`).addClass('active');
 
-        $('[data-open-content]').parent().removeClass('active');
-        $(`[data-open-content=${hashPage}]`).parent().addClass('active');
-    }
+    $('[data-open-content]').parent().removeClass('active');
+    $(`[data-open-content=${hashPage}]`).parent().addClass('active');
 };
 
 const changeContentBlock = (hash) => {
@@ -63,6 +126,10 @@ function renderContentPage(elem) {
     changeContent(hashPage);
     changeBreadCrumbs();
 
+    if ((window.innerWidth < 768 && window.location.hash) || window.innerWidth > 768) {
+        addSubMainCrumb();
+    }
+
     if ('data-content="fotogalereya"') {
         $('.photos__gallery').removeClass('active');
         $('.photos__contents').addClass('active');
@@ -74,42 +141,49 @@ function renderContentPage(elem) {
     }
 }
 
-$(window).on('hashchange', () => {
-    const hash = window.location.hash;
-    if (!hash.includes('page')) {
-        renderContentPage(hash);
+function renderContent() {
+    let hash = window.location.hash;
+    let page = getPage();
+
+    if (hash.includes('page')) {
+        showContent(CONTENT.ISTORIYA);
+        renderTitle(PAGES.ABOUT);
+        return;
     }
-});
+
+    if (hash) {
+        renderContentPage(hash);
+        showMobContent();
+    } else {
+        if (page === PAGES.SPECIALISTS) {
+            showContent(CONTENT.RUSSIAN_SOCIETY);
+        } else if (page === PAGES.BUSSINES) {
+            showContent(CONTENT.NAUCHNAYA_DEYATELNOST);
+        } else if (page === PAGES.ABOUT) {
+            showContent(CONTENT.ISTORIYA);
+        }
+        removeActiveTab();
+    }
+    renderTitle(page);
+}
 
 $(document).ready(() => {
-    const locationArr = window.location.href.split('/');
-    let page;
-
-    locationArr.forEach((item) => {
-        if (item.includes('#')) {
-            page = item.split('#')[0];
-        }
-    });
-
-    if (window.location.hash && !window.location.hash.includes('page')) {
-        const hash = window.location.hash;
-        renderContentPage(hash);
-    } else if (page === PAGES.SPECIALISTS) {
-        renderContentPage(CONTENT.RUSSIAN_SOCIETY);
-    } else if (page === PAGES.BUSSINES) {
-        renderContentPage(CONTENT.NAUCHNAYA_DEYATELNOST);
-    } else if (page === PAGES.ABOUT) {
-        renderContentPage(CONTENT.ISTORIYA);
-    }
-
-    if (window.location.hash) {
-        $('.content-menu-mob').removeClass('active');
-        $('.content-mob').addClass('active');
-    }
+    renderContent();
 
     if ($('main').hasClass('main-page')) {
         $('.header__top-burger-search').removeClass('hide');
         $('.header__top-burger-menu').addClass('hide');
         $('.header__menu').removeClass('header__menu-slide');
     }
+});
+
+$(window).on('hashchange', () => {
+    if (!window.location.hash.includes('page')) {
+        renderContent();
+    }
+});
+
+$(window).resize(function () {
+    let page = getPage();
+    renderTitle(page);
 });

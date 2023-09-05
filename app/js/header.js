@@ -64,5 +64,16 @@ $('.header__top-burger-menu').on('click', function () {
             $('.header__menu').removeClass('active');
         });
     }
-		$('body').toggleClass('hidden')
+    $('body').toggleClass('hidden');
+});
+
+$('.header-btn-drop a').on('click', function () {
+    $('.header-btn-drop').slideUp();
+    const burgerBtn = $('.header__top-burger-menu').find('img');
+    const closeBtn = $('.header__top-burger-menu').find('.header__top-burger-close');
+    closeBtn.fadeOut(0, function () {
+        closeBtn.removeClass('active');
+        burgerBtn.addClass('active').fadeIn();
+        $('.header__menu').removeClass('active');
+    });
 });

@@ -710,8 +710,8 @@ img {
   content: "";
   background: url("../img/icon/arrow-bread-crumbs.svg") no-repeat center;
   background-size: cover;
-  width: 1rem;
-  height: 1rem;
+  width: 0.8rem;
+  height: 1.4rem;
   display: block;
 }
 .bread-crumbs a:last-child {

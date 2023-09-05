@@ -279,11 +279,10 @@
         <div class="bread-crumbs">
             <a href="../index.html">Главная</a>
             <a href="../about-center-page.html">О научном центре</a>
-            <a href="#istoriya" class="crumb-content">История создания ГНЦДК</a>
         </div>
-        <div class="title about__title">О научном центре</div>
+        <div class="title"></div>
         <div class="about__wrapper">
-            <div class="about__left content-menu-mob active">
+            <div class="about__left content-menu-mob">
                 <ul class="menu__tabs">
                     <li class="menu__tab">
                         <a href="#istoriya" data-open-content="istoriya">История создания ГНЦДК</a>
@@ -319,7 +318,7 @@
             </div>
 
             <div class="about__right content-mob">
-                <div class="about__item active" data-content="istoriya">
+                <div class="about__item" data-content="istoriya">
     <div class="about__wrap">
         <div class="about__overlay"></div>
         <div id="canvas" class="book">
@@ -2764,7 +2763,6 @@
                     Hash.on('^page/([0-9]*)$', {
                         yep: function (path, parts) {
                             var page = parts[1];
-                            console.log(page);
                             if (page !== undefined) {
                                 if ($('.magazine').turn('is')) $('.magazine').turn('page', page);
                             }

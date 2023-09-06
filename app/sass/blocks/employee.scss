@@ -1,93 +1,174 @@
 .employee {
-	margin-top: 13.6rem;
-	padding-bottom: 15rem;
+    margin-top: 5.6rem;
+    padding-bottom: 15rem;
 
-	&__wrapper {
-		display: flex;
-		column-gap: 14rem;
-	}
+    &__wrapper {
+        display: flex;
+        column-gap: 14rem;
+    }
 
-	&__left {
-		width: 42rem;
-	}
+    &__left {
+        width: 42rem;
+    }
 
-	&__right {
-		width: 98rem;
-	}
+    &__right {
+        width: 98rem;
+    }
 
-	&__left-image {
-		width: 42rem;
-		height: 42rem;
-		img {
-			border-radius: 1rem;
-		}
-	}
+    &__left-image {
+        width: 42rem;
+        height: 42rem;
+        img {
+            border-radius: 1rem;
+        }
+    }
 
-	&__subtitle {
-		width: 100%;
-		padding-bottom: 1.4rem;
-		&::after {
-			background: rgba(63, 76, 92, 0.20);
-			width: 100%;
-			height: 0.1rem;
-			content: "";
-			display: block;
-			position: relative;
-			top: 1.4rem;
-		}
-	}
+    &__subtitle {
+        width: 100%;
+        padding-bottom: 1.4rem;
+        &::after {
+            background: rgba(63, 76, 92, 0.2);
+            width: 100%;
+            height: 0.1rem;
+            content: '';
+            display: block;
+            position: relative;
+            top: 1.4rem;
+        }
+    }
 
-	&__job{
-		color:rgba(63, 76, 92, 0.69);
-		font-size: 2rem;
-		font-weight: 700;
-		line-height: 2.5rem;
-	}
+    &__job {
+        color: rgba(63, 76, 92, 0.69);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
 
-	&__blocks {
-		display: flex;
-		flex-direction: column;
-		row-gap: 1rem;
-		margin-top: 4rem;
-	}
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 4rem;
+    }
 
-	&__block-title {
-		color: #3F4C5C;
-		font-size: 1.8rem;
-		font-weight: 400;
-		line-height: 150%;
-	}
+    &__block-title {
+        color: #3f4c5c;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 150%;
+    }
 
-	&__block-desc {
-		color: rgba(63, 76, 92, 0.69);
-		font-size: 1.8rem;
-		font-weight: 400;
-		line-height: 150%;
-	}
+    &__block-desc {
+        color: rgba(63, 76, 92, 0.69);
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 150%;
+    }
 
-	&__block-row {
-		display: flex;
-		column-gap: 0.5rem;
-	}
+    &__block-row {
+        display: flex;
+        column-gap: 0.5rem;
+    }
 
-	li {
-		color: rgba(63, 76, 92, 0.69);
-		font-size: 1.8rem;
-		font-weight: 400;
-		line-height: 150%;
-		padding-left: 2rem;
-		display: flex;
-		position: relative;
-		&::after {
-			content: "";
-			width: 0.4rem;
-			height: 0.4rem;
-			background: rgba(63, 76, 92, 0.69);
-			border-radius: 50%;
-			position: absolute;
-			display: block;
-			left: 0.6rem;
-			top: 1.2rem;
-		}
-	}
+    li {
+        color: rgba(63, 76, 92, 0.69);
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 150%;
+        padding-left: 2rem;
+        display: flex;
+        position: relative;
+        &::after {
+            content: '';
+            width: 0.4rem;
+            height: 0.4rem;
+            background: rgba(63, 76, 92, 0.69);
+            border-radius: 50%;
+            position: absolute;
+            display: block;
+            left: 0.6rem;
+            top: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .employee {
+        margin-top: 2.8vw;
+        padding-bottom: 24vw;
+
+        &__wrapper {
+            row-gap: 8vw;
+            flex-direction: column;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+        }
+
+        &__left-image {
+            width: 100%;
+            height: 100%;
+
+            img {
+                border-radius: 1.6vw;
+            }
+        }
+
+        &__subtitle {
+            width: 100%;
+            padding-bottom: 2.8vw;
+            margin-bottom: 1.4vw;
+            font-size: 5.3vw;
+            line-height: 125%;
+
+            &::after {
+                width: 100%;
+                top: 1.4vw;
+            }
+        }
+
+        &__job {
+            font-size: 4.27vw;
+            font-weight: 400;
+            line-height: 130%;
+            color: #3f4c5c;
+        }
+
+        &__blocks {
+            row-gap: 2.8vw;
+            margin-top: 8vw;
+        }
+
+        &__block-title {
+            font-size: 4.27vw;
+						margin-bottom: 1vw;
+						line-height: 130%;
+        }
+
+        &__block-desc {
+            font-size: 4.27vw;
+        }
+
+        &__block-row {
+            flex-direction: column;
+            row-gap: 1vw;
+        }
+
+        li {
+            font-size: 4.27vw;
+            padding-left: 5.2vw;
+
+            &::after {
+                width: 1.2vw;
+                height: 1.2vw;
+                left: 1.6vw;
+                top: 3.2vw;
+            }
+        }
+    }
 }

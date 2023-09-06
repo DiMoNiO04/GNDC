@@ -2920,6 +2920,12 @@ img {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .header__top-burger-search.--mob, .header__top-burger-menu.--mob {
+    display: none;
+  }
+  .header__top-burger-search.active, .header__top-burger-menu.active {
+    display: block;
+  }
   .header__top-burger-close.active span::before {
     top: 50%;
     -webkit-transform: rotate(-45deg) translate(0px, -50%);

@@ -249,6 +249,12 @@
             img {
                 object-fit: contain;
             }
+            &.--mob {
+                display: none;
+            }
+            &.active {
+                display: block;
+            }
         }
 
         &__top-burger-close.active {

@@ -19,8 +19,6 @@ const TITLE = {
 };
 
 const breadCrumbs = $('.bread-crumbs');
-const crumbContentBlock = $('.crumb-content-block');
-const crumbContent = $('.crumb-content');
 //------------------------------------------------------------//
 
 const showMobMenu = () => {
@@ -39,18 +37,9 @@ const showContent = (content) => {
 };
 
 const getPage = () => {
-    let page;
-    const locationArr = window.location.href.split('/');
-
-    locationArr.forEach((item) => {
-        if (item.includes('#')) {
-            page = item.split('#')[0];
-        } else {
-            page = locationArr[locationArr.length - 1];
-        }
-    });
-
-    return page;
+    const locationUrl = window.location.href.split('#');
+    const locationArr = locationUrl[0].split('/');
+    return locationArr[locationArr.length - 1];
 };
 
 const removeActiveTab = () => {
@@ -71,35 +60,24 @@ const renderTitle = (page) => {
     }
 };
 
-const addNewCrumb = (hash, hashPage) => {
-    if (breadCrumbs.hasClass('crumb-content-block')) {
-        crumbContentBlock.html($(`[data-content=${hashPage}] .menu__button.active`).html());
-        crumbContentBlock.attr('href', `#${hash}`);
-    } else {
+const changeBreadCrumb = (hash, hashBlock) => {
+    $('.crumb-content').remove();
+    $('.crumb-content-block').remove();
+
+    const activeMenuTab = $('.menu__tab.active a');
+    const newCrumb = $(`<a href=${activeMenuTab.attr('href')} class="crumb-content"></a>`);
+    newCrumb.html(activeMenuTab.text());
+    breadCrumbs.append(newCrumb);
+    if (window.innerWidth < 768 && window.location.hash === '') {
+        $('.crumb-content').remove();
+    }
+
+    if (hashBlock) {
+        $('.crumb-content-block').remove();
         const newCrumb = $(`<a href=${hash} class="crumb-content-block"></a>`);
-        newCrumb.html($(`[data-content=${hashPage}] .menu__button.active`).html());
+        newCrumb.html($(`[data-open-content-block='${window.location.hash.slice(1)}'`).text());
         breadCrumbs.append(newCrumb);
     }
-};
-
-const addSubMainCrumb = () => {
-    if ($('.menu__tab').hasClass('active')) {
-        const activeTab = $('.menu__tab.active a');
-        if (!breadCrumbs.hasClass('crumb-content')) {
-            const newCrumb = $(`<a href=${activeTab.attr('href')} class="crumb-content-block"></a>`);
-            newCrumb.html(activeTab.text());
-            breadCrumbs.append(newCrumb);
-        }
-    }
-};
-
-const changeBreadCrumbs = () => {
-    const activeMenuTab = $('.menu__tab.active a');
-    if (breadCrumbs.find('a').hasClass('crumb-content-block')) {
-        $('.crumb-content-block').remove();
-    }
-    crumbContent.html(activeMenuTab.html());
-    crumbContent.attr('href', `${activeMenuTab.attr('href')}`);
 };
 
 const changeContent = (hashPage) => {
@@ -124,11 +102,7 @@ function renderContentPage(elem) {
     const hashBlock = hash.split('/')[1];
 
     changeContent(hashPage);
-    changeBreadCrumbs();
-
-    if ((window.innerWidth < 768 && window.location.hash) || window.innerWidth > 768) {
-        addSubMainCrumb();
-    }
+    changeBreadCrumb(hash, hashBlock);
 
     if ('data-content="fotogalereya"') {
         $('.photos__gallery').removeClass('active');
@@ -137,7 +111,6 @@ function renderContentPage(elem) {
 
     if (hashBlock) {
         changeContentBlock(hash);
-        addNewCrumb(hash, hashPage);
     }
 }
 
@@ -146,8 +119,13 @@ function renderContent() {
     let page = getPage();
 
     if (hash.includes('page')) {
+        if (window.innerWidth < 768) {
+            window.location.hash = CONTENT.ISTORIYA;
+        }
         showContent(CONTENT.ISTORIYA);
         renderTitle(PAGES.ABOUT);
+        removeActiveTab();
+        changeBreadCrumb();
         return;
     }
 
@@ -170,9 +148,10 @@ function renderContent() {
 $(document).ready(() => {
     renderContent();
 
-    if ($('main').hasClass('main-page')) {
-        $('.header__top-burger-search').removeClass('hide');
-        $('.header__top-burger-menu').addClass('hide');
+    if (!$('main').hasClass('main-page')) {
+        $('.header__top-burger-menu').addClass('active');
+    } else {
+        $('.header__top-burger-search').addClass('active');
         $('.header__menu').removeClass('header__menu-slide');
     }
 });
@@ -184,6 +163,5 @@ $(window).on('hashchange', () => {
 });
 
 $(window).resize(function () {
-    let page = getPage();
-    renderTitle(page);
+    renderContent();
 });

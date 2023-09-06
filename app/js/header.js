@@ -75,5 +75,6 @@ $('.header-btn-drop a').on('click', function () {
         closeBtn.removeClass('active');
         burgerBtn.addClass('active').fadeIn();
         $('.header__menu').removeClass('active');
+				$('body').removeClass('hidden');
     });
 });

@@ -201,10 +201,3 @@ $('.distant__text-btn').click(function () {
     }
 });
 //---------------------------------------
-
-if (window.innerWidth < 768) {
-    $('.menu__tab').on('click', function () {
-        $('.content-menu-mob').removeClass('active');
-        $('.content-mob').addClass('active');
-    });
-}

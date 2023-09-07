@@ -234,8 +234,20 @@
         margin-bottom: 4rem;
     }
 
-    .menu__button {
-        padding: 2.8rem 8.5rem;
-        height: auto;
-    }
+		&__sergev {
+			.menu__buttons {
+				flex-wrap: wrap;
+				row-gap: 4rem;
+				li:first-child {
+					width: 100%;
+				}
+			}
+		}
+
+		&__sergev-content {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
 }

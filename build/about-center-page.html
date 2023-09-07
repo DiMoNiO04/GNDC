@@ -68,7 +68,7 @@
                         <ul class="header-dropdown header-btn-drop">
                             <li><a href="./about-center-page.html#istoriya">История создания ГНЦДК</a></li>
                             <li><a href="./about-center-page.html#rukovodstvo">Руководство</a></li>
-                            <li><a href="./about-center-page.html#struktura-GNCDK">Структура ГНЦДК</a></li>
+                            <li><a href="./about-center-page.html#struktura-GNCDK/centralnyj-nauchno-issledovatelskij-kozhno-venerologicheskij-institut">Структура ГНЦДК</a></li>
                             <li>
                                 <a href="./about-center-page.html#svedeniya-o-medicinskoj-organizacii"
                                     >Сведения о медицинской организации</a
@@ -278,40 +278,47 @@
     <div class="container">
         <div class="bread-crumbs">
             <a href="../index.html">Главная</a>
-            <a href="../build/about-center-page.html#">О научном центре</a>
+            <a href="../about-center-page.html#">О научном центре</a>
         </div>
-        <div class="title"></div>
+
+        <div class="title title-main">О научном центре</div>
+        <div class="title title-change hide"></div>
+
         <div class="about__wrapper">
             <div class="about__left content-menu-mob">
                 <ul class="menu__tabs">
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#istoriya" data-open-content="istoriya">История создания ГНЦДК</a>
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#rukovodstvo" data-open-content="rukovodstvo">Руководство</a>
                     </li>
-                    <li class="menu__tab">
-                        <a href="#struktura-GNCDK" data-open-content="struktura-GNCDK">Структура ГНЦДК</a>
+                    <li class="menu__tab js-link-main">
+                        <a
+                            href="#struktura-GNCDK/centralnyj-nauchno-issledovatelskij-kozhno-venerologicheskij-institut"
+                            data-open-content="struktura-GNCDK"
+                            >Структура ГНЦДК</a
+                        >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a
                             href="#svedeniya-o-medicinskoj-organizacii"
                             data-open-content="svedeniya-o-medicinskoj-organizacii"
                             >Сведения о медицинской организации</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#vakansii/nauchnye" data-open-content="vakansii">Вакансии</a>
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#zakupki" data-open-content="zakupki">Закупки</a>
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#protivodejstvie-korrupcii" data-open-content="protivodejstvie-korrupcii"
                             >Противодействие коррупции</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#fotogalereya/meropriyatiya" data-open-content="fotogalereya">Фотогалерея</a>
                     </li>
                 </ul>
@@ -1280,22 +1287,34 @@
 
                 <div class="about__item" data-content="struktura-GNCDK">
     <div class="about__wrap">
-        <div class="structure__btns">
-            <button class="all-btn__blue active">
-                Центральный научно-исследовательский кожно-венерологический институт <br />
-                (ЦНИКВИ ФГБУ «ГНЦДК» Минздрав России)
-            </button>
-            <a href="./sergev-posad-page.html" class="all-btn__blue"
-                >Сергиево-Посадский филиал <br />
-                (СПФ ФГБУ «ГНЦДК» Минздрав России)</a
-            >
-            <a href="https://ngfcnikvi.ru/" class="all-btn__blue"
-                >Нижегородский филиал <br />
-                (НГФ ФГБУ «ГНЦДК» Минздрав России)</a
-            >
-        </div>
+        <ul class="menu__buttons structure__buttons">
+            <li class="menu__button">
+                <a
+								data-open-content-block="struktura-GNCDK/centralnyj-nauchno-issledovatelskij-kozhno-venerologicheskij-institut"
+                    href="#struktura-GNCDK/centralnyj-nauchno-issledovatelskij-kozhno-venerologicheskij-institut"
+                >
+                    Центральный научно-исследовательский кожно-венерологический институт <br />
+                    (ЦНИКВИ ФГБУ «ГНЦДК» Минздрав России)
+                </a>
+            </li>
+            <li class="all-btn__blue">
+                <a href="./sergev-posad-page.html"
+                    >Сергиево-Посадский филиал <br />
+                    (СПФ ФГБУ «ГНЦДК» Минздрав России)</a
+                >
+            </li>
+            <li class="all-btn__blue">
+                <a href="https://ngfcnikvi.ru/"
+                    >Нижегородский филиал <br />
+                    (НГФ ФГБУ «ГНЦДК» Минздрав России)</a
+                >
+            </li>
+        </ul>
 
-        <div class="about__content active">
+        <div
+            class="about__content"
+            data-content-block="struktura-GNCDK/centralnyj-nauchno-issledovatelskij-kozhno-venerologicheskij-institut"
+        >
             <ul class="block__items">
                 <li class="block__item">
                     <a href="#" class="block__item-inner">
@@ -1632,35 +1651,29 @@
 </div>
                 <div class="about__item" data-content="vakansii">
     <div class="about__wrap">
-        <div class="menu__buttons">
-            <a
-                href="#vakansii/nauchnye"
-                class="menu__button all-btn__blue active"
-                data-open-content-block="vakansii/nauchnye"
-                >Научные</a
-            >
-            <a
-                href="#vakansii/klinicheskie"
-                class="menu__button all-btn__blue"
-                data-open-content-block="vakansii/klinicheskie"
-                >Клинические</a
-            >
-            <a
-                href="#vakansii/laboratornyj-centr"
-                class="menu__button all-btn__blue"
-                data-open-content-block="vakansii/laboratornyj-centr"
-                >Лабораторный центр</a
-            >
-            <a
-                href="#vakansii/administrativno-upravlencheskie"
-                class="menu__button all-btn__blue"
-                data-open-content-block="vakansii/administrativno-upravlencheskie"
-            >
-                Административно-управленческие
-            </a>
-        </div>
+        <ul class="menu__buttons">
+            <li class="menu__button">
+                <a href="#vakansii/nauchnye" data-open-content-block="vakansii/nauchnye">Научные</a>
+            </li>
+            <li class="menu__button">
+                <a href="#vakansii/klinicheskie" data-open-content-block="vakansii/klinicheskie">Клинические</a>
+            </li>
+            <li class="menu__button">
+                <a href="#vakansii/laboratornyj-centr" data-open-content-block="vakansii/laboratornyj-centr"
+                    >Лабораторный центр</a
+                >
+            </li>
+            <li class="menu__button">
+                <a
+                    href="#vakansii/administrativno-upravlencheskie"
+                    data-open-content-block="vakansii/administrativno-upravlencheskie"
+                >
+                    Административно-управленческие
+                </a>
+            </li>
+        </ul>
 
-        <div class="about__content active" data-content-block="vakansii/nauchnye">
+        <div class="about__content" data-content-block="vakansii/nauchnye">
             <ul class="vacancies__buttons">
                 <li class="all-btn__blue">
                     <a download="#" href="#">
@@ -2428,15 +2441,19 @@
 </div>
  <div class="about__item" data-content="fotogalereya">
     <div class="about__wrap">
-        <div class="menu__buttons">
-						<a href="#fotogalereya/meropriyatiya" class="menu__button all-btn__blue active"
-							data-open-content-block="fotogalereya/meropriyatiya">Мероприятия</a>
-						<a href="#fotogalereya/otdeleniya" class="menu__button all-btn__blue"
-							data-open-content-block="fotogalereya/otdeleniya">Отделения</a>
-        </div>
+        <ul class="menu__buttons">
+            <li class="menu__button">
+                <a href="#fotogalereya/meropriyatiya" data-open-content-block="fotogalereya/meropriyatiya"
+                    >Мероприятия</a
+                >
+            </li>
+            <li class="menu__button">
+                <a href="#fotogalereya/otdeleniya" data-open-content-block="fotogalereya/otdeleniya">Отделения</a>
+            </li>
+        </ul>
 
-        <div class="photos__contents active">
-            <div class="about__content active" data-content-block="fotogalereya/meropriyatiya">
+        <div class="photos__contents">
+            <div class="about__content" data-content-block="fotogalereya/meropriyatiya">
                 <div class="photos__items">
                     <div class="photos__item-image">
                         <img src="./img/photos/photo.webp" alt="" />
@@ -2623,7 +2640,7 @@
 				
 			</div>
 			<div class="modal__conferences-main">
-				<div class="modal__block-conferences active" data-conf="photos">
+				<div class="modal__block-conferences" data-conf="photos">
 					<div class="modal__conferences-swiper swiper" id="modal__conferences-swiper">
 						<div class="modal__conferences-swiper-wrapper swiper-wrapper">
 							<div class="modal__conferences-slide swiper-slide">
@@ -2661,7 +2678,7 @@
 				<button class="menu__button all-btn__blue" data-open-conf="info">Информация о конференции</button>
 				<button class="menu__button all-btn__blue" data-open-conf="program">Программа конференции</button>
 				<button class="menu__button all-btn__blue" data-open-conf="results">Итоги конференции</button>
-				<button class="menu__button all-btn__blue active" data-open-conf="photos">Фотогалерея</button>
+				<button class="menu__button all-btn__blue" data-open-conf="photos">Фотогалерея</button>
 			</div>
 		 </div>
 	</div>

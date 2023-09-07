@@ -3,32 +3,33 @@ const PAGES = {
     SPECIALISTS: 'specialists-page.html',
     BUSSINES: 'bussines-page.html',
     ABOUT: 'about-center-page.html',
+    SERGEV_POSAD: 'sergev-posad-page.html',
 };
 
 const CONTENT = {
     RUSSIAN_SOCIETY: '#rossijskoe-obshchestvo-dermatovenerologov-i-kosmetologov',
     NAUCHNAYA_DEYATELNOST: '#nauchnaya-deyatelnost',
     ISTORIYA: '#istoriya',
+    SERGEV_POSAD: '#sergievo-posadskij-filial',
 };
-
-const TITLE = {
-    ABOUT: 'О научном центре',
-    BUSSINES: 'Направление деятельности',
-    SPECIALISTS: 'Специалистам',
-    PATIENTS: 'Пациентам',
-};
-
-const breadCrumbs = $('.bread-crumbs');
 //------------------------------------------------------------//
 
 const showMobMenu = () => {
     $('.content-mob').removeClass('active');
     $('.content-menu-mob').addClass('active');
+    if(window.innerWidth < 768) {
+    		$('.title-main').removeClass('hide');
+    		$('.title-change').addClass('hide')
+    }
 };
 
 const showMobContent = () => {
     $('.content-menu-mob').removeClass('active');
     $('.content-mob').addClass('active');
+    if(window.innerWidth < 768) {
+    		$('.title-main').addClass('hide');
+    		$('.title-change').removeClass('hide')
+    }
 };
 
 const showContent = (content) => {
@@ -44,19 +45,7 @@ const getPage = () => {
 
 const removeActiveTab = () => {
     if (window.innerWidth < 768) {
-        $('.menu__tab').removeClass('active');
-    }
-};
-
-const renderTitle = (page) => {
-    if (page === PAGES.ABOUT) {
-        $('.title').text(TITLE.ABOUT);
-    } else if (page == PAGES.BUSSINES) {
-        $('.title').text(TITLE.BUSSINES);
-    }
-
-    if (window.innerWidth < 768 && window.location.hash) {
-        $('.title').text($('.menu__tab.active a').text());
+        $('.js-link-main').removeClass('active');
     }
 };
 
@@ -64,10 +53,10 @@ const changeBreadCrumb = (hash, hashBlock) => {
     $('.crumb-content').remove();
     $('.crumb-content-block').remove();
 
-    const activeMenuTab = $('.menu__tab.active a');
+    const activeMenuTab = $('.js-link-main.active a');
     const newCrumb = $(`<a href=${activeMenuTab.attr('href')} class="crumb-content"></a>`);
     newCrumb.html(activeMenuTab.text());
-    breadCrumbs.append(newCrumb);
+    $('.bread-crumbs').append(newCrumb);
     if (window.innerWidth < 768 && window.location.hash === '') {
         $('.crumb-content').remove();
     }
@@ -76,7 +65,7 @@ const changeBreadCrumb = (hash, hashBlock) => {
         $('.crumb-content-block').remove();
         const newCrumb = $(`<a href=${hash} class="crumb-content-block"></a>`);
         newCrumb.html($(`[data-open-content-block='${window.location.hash.slice(1)}'`).text());
-        breadCrumbs.append(newCrumb);
+        $('.bread-crumbs').append(newCrumb);
     }
 };
 
@@ -84,16 +73,18 @@ const changeContent = (hashPage) => {
     $('[data-content]').removeClass('active');
     $(`[data-content=${hashPage}]`).addClass('active');
 
-    $('[data-open-content]').parent().removeClass('active');
+    $('[data-open-content]').parent().siblings().removeClass('active');
     $(`[data-open-content=${hashPage}]`).parent().addClass('active');
 };
 
 const changeContentBlock = (hash) => {
-    $(`[data-open-content-block="${hash}"`).siblings().removeClass('active');
-    $(`[data-open-content-block="${hash}"`).addClass('active');
 
-    $(`[data-content-block="${hash}"`).siblings().removeClass('active');
+	  $(`[data-content-block]`).siblings().removeClass('active');
     $(`[data-content-block="${hash}"`).addClass('active');
+	
+		console.log( $(`[data-open-content-block="${hash}"`).parent().addClass('active').text())
+    $(`[data-open-content-block]`).parent().removeClass('active');
+    $(`[data-open-content-block="${hash}"`).parent().addClass('active');
 };
 
 function renderContentPage(elem) {
@@ -112,6 +103,8 @@ function renderContentPage(elem) {
     if (hashBlock) {
         changeContentBlock(hash);
     }
+
+		$('.title-change').text($('.js-link-main.active a').text())
 }
 
 function renderContent() {
@@ -123,7 +116,6 @@ function renderContent() {
             window.location.hash = CONTENT.ISTORIYA;
         }
         showContent(CONTENT.ISTORIYA);
-        renderTitle(PAGES.ABOUT);
         removeActiveTab();
         changeBreadCrumb();
         return;
@@ -139,10 +131,11 @@ function renderContent() {
             showContent(CONTENT.NAUCHNAYA_DEYATELNOST);
         } else if (page === PAGES.ABOUT) {
             showContent(CONTENT.ISTORIYA);
+        } else if (page === PAGES.SERGEV_POSAD) {
+            showContent(CONTENT.SERGEV_POSAD);
         }
         removeActiveTab();
     }
-    renderTitle(page);
 }
 
 $(document).ready(() => {
@@ -154,12 +147,12 @@ $(document).ready(() => {
         $('.header__top-burger-search').addClass('active');
         $('.header__menu').removeClass('header__menu-slide');
     }
-});
 
-$(window).on('hashchange', () => {
+		$(window).on('hashchange', () => {
     if (!window.location.hash.includes('page')) {
         renderContent();
     }
+});
 });
 
 $(window).resize(function () {

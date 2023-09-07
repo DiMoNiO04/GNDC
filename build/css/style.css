@@ -1118,11 +1118,52 @@ img {
   width: 100%;
 }
 .menu__button {
-  padding: 1.8rem;
-  width: 50%;
-  font-weight: 700;
+  width: calc(50% - 0.2rem);
   height: 10rem;
+  border-radius: 0.6rem;
+  background: inherit;
+  border: 1px solid #3f4c5c;
+  color: #3f4c5c;
+  text-align: center;
+}
+.menu__button a {
+  font-weight: 700;
   font-size: 2.3rem;
+  padding: 1.8rem;
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__button:hover {
+  color: #ffffff;
+  background: #3f4c5c;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.menu__button:hover svg {
+  fill: #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.menu__button.active {
+  background: #3f4c5c;
+  color: #ffffff;
+}
+.menu__button:hover {
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .menu__tabs {
   padding-left: 1rem;
@@ -1215,7 +1256,6 @@ img {
   }
   .menu__button {
     padding: 1.8rem;
-    width: 50%;
     height: 10rem;
     font-size: 2.3rem;
   }
@@ -1898,7 +1938,7 @@ img {
 .structure__items a:hover {
   border-bottom: 0.1rem solid transparent;
 }
-.structure__btns {
+.structure__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1910,18 +1950,14 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.structure__btns button,
-.structure__btns a {
-  padding: 1.5rem 2rem;
+.structure__buttons li {
   font-weight: 700;
   height: 10rem;
   font-size: 2.3rem;
-}
-.structure__btns button {
-  width: 100%;
-}
-.structure__btns a {
   width: calc(50% - 2rem);
+}
+.structure__buttons li:first-child {
+  width: 100%;
 }
 .structure-item {
   font-size: 2rem;
@@ -6915,9 +6951,19 @@ img {
 .department .menu__buttons {
   margin-bottom: 4rem;
 }
-.department .menu__button {
-  padding: 2.8rem 8.5rem;
-  height: auto;
+.department__sergev .menu__buttons {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 4rem;
+}
+.department__sergev .menu__buttons li:first-child {
+  width: 100%;
+}
+.department__sergev-content {
+  display: none;
+}
+.department__sergev-content.active {
+  display: block;
 }
 
 .news {

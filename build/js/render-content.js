@@ -14,13 +14,13 @@ const CONTENT = {
 };
 //------------------------------------------------------------//
 
-const changeTitleResize = () => {
-    if (window.innerWidth < 768) {
-        $('.title-main').addClass('hide');
-        $('.title-change').removeClass('hide');
-    } else {
+const changeTitle = () => {
+    if (($('.content-menu-mob').hasClass('active') && window.innerWidth < 768) || window.innerWidth > 768) {
         $('.title-main').removeClass('hide');
         $('.title-change').addClass('hide');
+    } else if ((!$('.content-menu-mob').hasClass('active') && window.innerWidth < 768) || window.innerWidth < 768) {
+        $('.title-main').addClass('hide');
+        $('.title-change').removeClass('hide');
     }
 };
 
@@ -32,7 +32,6 @@ const showMobMenu = () => {
 const showMobContent = () => {
     $('.content-menu-mob').removeClass('active');
     $('.content-mob').addClass('active');
-    changeTitleResize();
 };
 
 const showMobSubMenu = () => {
@@ -43,7 +42,6 @@ const showMobSubMenu = () => {
 const showMobSubContent = () => {
     $('.subcontent-menu-mob').removeClass('active');
     $('.subcontent-mob').addClass('active');
-    changeTitleResize();
 
     $('.menu__button-title a').text($('.js-link-submain.active a').text());
 };
@@ -117,7 +115,6 @@ const changeContentBlock = (hash) => {
     $(`[data-content-block]`).siblings().removeClass('active');
     $(`[data-content-block="${hash}"`).addClass('active');
 
-    console.log($(`[data-open-content-block="${hash}"`).parent().addClass('active').text());
     $(`[data-open-content-block]`).parent().removeClass('active');
     $(`[data-open-content-block="${hash}"`).parent().addClass('active');
 };
@@ -143,6 +140,7 @@ function renderContentPage(elem) {
         showMobSubMenu();
     }
     $('.title-change').text($('.js-link-main.active a').first().text());
+    removeActiveMainLink();
 }
 
 function renderContent() {
@@ -174,6 +172,7 @@ function renderContent() {
         }
         removeActiveMainLink();
     }
+		changeTitle()
 }
 
 $(document).ready(() => {
@@ -194,10 +193,8 @@ $(document).ready(() => {
 });
 
 $(window).resize(function () {
-			    changeTitleResize();
     renderContent();
     if ($('.js-link-main.active.--desc').hasClass('active') || $('.js-link-main.active.--mob').hasClass('active')) {
         changeHashResize();
     }
-    removeActiveMainLink();
 });

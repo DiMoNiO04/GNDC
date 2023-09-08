@@ -105,11 +105,20 @@
 
     .all-btn__white,
     .all-btn__blue {
-        padding: 4.8vw;
+        padding: 4.2vw;
         width: 100%;
         height: auto;
         border-radius: 1.6vw;
         font-size: 4.27vw;
+
+        a {
+            text-align: left;
+        }
+
+        svg {
+            min-width: 5.3vw;
+            min-height: 5.3vw;
+        }
     }
 
     .btn-white__download {
@@ -119,10 +128,5 @@
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 150%;
-
-        svg {
-            min-width: 2rem;
-            min-height: 2rem;
-        }
     }
 }

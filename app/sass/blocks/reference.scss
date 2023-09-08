@@ -1,71 +1,71 @@
 .reference {
-	margin-top: 5.8rem;
-	padding-bottom: 15rem;
+    margin-top: 5.8rem;
+    padding-bottom: 15rem;
 
-	&__items {
-		display: flex;
-		flex-direction: column;
-		row-gap: 4rem;
-		li {
-			display: flex;
-			flex-direction: column;
-			row-gap: 1.4rem;
-		}
-	}
+    &__items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+        li {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.4rem;
+        }
+    }
 
-	&__items-title {
-		font-weight: 700;
-		font-size: 2rem;
-		line-height: 130%;
-		color: #3F4C5C;
-		position: relative;
-		display: flex;
-		padding-left: 2rem;
-		&::before {
-			display: block;
-			content: "";
-			height: 0.5rem;
-			width: 0.5rem;
-			border-radius: 50%;
-			background-color: #3F4C5C;
-			position: absolute;
-			top: calc(50% - 0.5rem);
-			left: 0.5rem;
-		}
-	}
+    &__items-title {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 130%;
+        color: #3f4c5c;
+        position: relative;
+        display: flex;
+        padding-left: 2rem;
+        &::before {
+            display: block;
+            content: '';
+            height: 0.5rem;
+            width: 0.5rem;
+            border-radius: 50%;
+            background-color: #3f4c5c;
+            position: absolute;
+            top: calc(50% - 0.5rem);
+            left: 0.5rem;
+        }
+    }
 
-	&__contact-block a{
-		font-weight: 700;
-	}
+    &__contact-block a {
+        font-weight: 700;
+    }
 
-	&__task-block {
-		display: flex;
-		flex-direction: column;
-		row-gap: 1rem;
-	}
+    &__task-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 
-	li {
-		font-weight: 400;
-		font-size: 1.8rem;
-		line-height: 150%;
-		color: #3F4C5C;
-	}
-	
-	&__aplicator {
-		margin-top: 4rem;
-	}
+    li {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #3f4c5c;
+    }
 
-	&__swipper {
-		width: 100%;
-    overflow: hidden;
-    margin-bottom: 2.2rem;
-	}
+    &__aplicator {
+        margin-top: 4rem;
+    }
 
-	&__pagination {
-		margin-top: 2.2rem;
-	}
+    &__swipper {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 2.2rem;
+    }
 
-	&__bullets .swiper-pagination-bullet-active {
-		background: #3F4C5C;
-	}
+    &__pagination {
+        margin-top: 2.2rem;
+    }
+
+    &__bullets .swiper-pagination-bullet-active {
+        background: #3f4c5c;
+    }
 }

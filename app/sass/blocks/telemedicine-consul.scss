@@ -1,48 +1,48 @@
 .telemedicine {
-	margin-top: 5.6rem;
-	padding-bottom: 15rem;
+    margin-top: 5.6rem;
+    padding-bottom: 15rem;
 
-	&__block {
-		margin-bottom: 4rem;
-		display: flex;
-		flex-direction: column;
-		row-gap: 2.2rem;
-		font-weight: 400;
-		font-size: 1.8rem;
-		line-height: 150%;
-		color: #3F4C5C;
-		&:last-child {
-			margin-bottom: 0;
-		}
-		a {
-			font-weight: 400;
-			font-size: 2rem;
-			line-height: 50%;
-			color: #3F4C5C;
-			display: inline-block;
-			width: fit-content;
-			&::after {
-				content: "";
-				display: inline-block;
-				height: 0.1rem;
-				width: 100%;
-				background-color: #3F4C5C;
-				position: relative;
-				bottom: 0.5rem;
-			}
-			&:hover::after {
-				visibility: hidden;
-			}
-		}
-		ul {
-			padding-left: 2.4rem;
-		}
-		li {
-			list-style: unset;
-		}
-	}
+    &__block {
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.2rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #3f4c5c;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 50%;
+            color: #3f4c5c;
+            display: inline-block;
+            width: fit-content;
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 0.1rem;
+                width: 100%;
+                background-color: #3f4c5c;
+                position: relative;
+                bottom: 0.5rem;
+            }
+            &:hover::after {
+                visibility: hidden;
+            }
+        }
+        ul {
+            padding-left: 2.4rem;
+        }
+        li {
+            list-style: unset;
+        }
+    }
 
-	.subtitle {
-		margin-bottom: 0;
-	}
+    .subtitle {
+        margin-bottom: 0;
+    }
 }

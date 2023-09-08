@@ -1,41 +1,41 @@
 .hospitalization {
     margin-top: 5.6rem;
     padding-bottom: 15rem;
-		
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
     }
 
-		&__right {
-			width: 98.2rem;
-	}
+    &__right {
+        width: 98.2rem;
+    }
 
-		&__left {
-			width: 33rem;
-		}
+    &__left {
+        width: 33rem;
+    }
 
-		&__btn {
-			background-color: #FFFFFF;
-			width: 21rem;
-			column-gap: 1.8rem;
-		}
+    &__btn {
+        background-color: #ffffff;
+        width: 21rem;
+        column-gap: 1.8rem;
+    }
 
     &__block {
-				padding: 2.5rem 2.5rem 3.5rem 2.5rem;
-        background: #D8DEE8;
+        padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+        background: #d8dee8;
         border-radius: 0.6rem;
         width: 32.6rem;
         margin-bottom: 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-				&.hidden {
-					display: none;
-				}
-				&:last-child {
-					margin-bottom: 0;
-				}
+        &.hidden {
+            display: none;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__block-title {
@@ -44,15 +44,15 @@
         font-size: 2rem;
         line-height: 125%;
         text-align: center;
-        color: #3F4C5C;
+        color: #3f4c5c;
         margin-bottom: 2.3rem;
     }
 
     &__content {
         display: none;
-				&.active {
-					display: block;
-				}
+        &.active {
+            display: block;
+        }
     }
 
     &__content-lists {
@@ -60,13 +60,13 @@
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
-        color: #3F4C5C;
+        color: #3f4c5c;
 
         li {
             margin-bottom: 0rem;
             padding-left: 2.5rem;
             position: relative;
-          
+
             &::before {
                 position: absolute;
                 content: '';
@@ -78,17 +78,17 @@
                 top: 1.2rem;
             }
 
-						&:last-child {
-							margin-bottom: 0;
-						}
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
     &__content-wrap {
         margin-bottom: 4rem;
-				&:last-child {
-					margin-bottom: 0;
-				}
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__conditions-text {
@@ -96,8 +96,8 @@
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
-        color: #3F4C5C;
-				margin-bottom: 0.8rem;
+        color: #3f4c5c;
+        margin-bottom: 0.8rem;
     }
 
     &__conditions-lists {
@@ -106,7 +106,7 @@
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
-        color: #3F4C5C;
+        color: #3f4c5c;
         margin-top: 0.8rem;
 
         li {
@@ -123,9 +123,9 @@
                 left: 0;
                 top: 1.2rem;
             }
-						&:last-child {
-							margin-bottom: 0;
-						}
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

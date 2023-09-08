@@ -5,13 +5,13 @@
         width: 100%;
     }
 
-    &__button {
+    &__button,
+    &__button-title {
         width: calc(50% - 0.4rem / 2);
         height: 10rem;
         border-radius: 0.6rem;
         background: inherit;
         border: 1px solid #3f4c5c;
-        color: #3f4c5c;
         text-align: center;
 
         a {
@@ -24,7 +24,23 @@
             justify-content: center;
             align-items: center;
         }
+    }
 
+    &__button-title {
+        color: #ffffff;
+        background: #3f4c5c;
+        cursor: pointer;
+        margin-bottom: 8vw;
+
+        svg {
+            fill: #ffffff;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &__button {
+        color: #3f4c5c;
         &:hover {
             color: #ffffff;
             background: #3f4c5c;
@@ -41,12 +57,6 @@
         &.active {
             background: #3f4c5c;
             color: #ffffff;
-        }
-
-        &:hover {
-            color: #ffffff;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
         }
     }
 
@@ -147,14 +157,26 @@
 @media screen and (max-width: 48em) {
     .menu {
         &__buttons {
-            column-gap: 0.4rem;
+            flex-wrap: wrap;
             width: 100%;
         }
 
+        &__button,
+        &__button-title {
+            height: auto;
+            width: 100%;
+            border-radius: 1.6vw;
+
+            a {
+                padding: 4.2vw 5.3vw;
+                font-size: 5.3vw;
+            }
+        }
+
         &__button {
-            padding: 1.8rem;
-            height: 10rem;
-            font-size: 2.3rem;
+            &:not(:last-child) {
+                margin-bottom: 5.3vw;
+            }
         }
 
         &__tabs {

@@ -1,8 +1,9 @@
 @import './general/normalize';
 @import './general/fonts';
 @import './general/set';
-@import './general/elements';
 
+@import './components/header.scss';
+@import './components/footer.scss';
 @import './components/bread-crumb.scss';
 @import './components/btn.scss';
 @import './components/checkbox.scss';
@@ -10,14 +11,19 @@
 @import './components/menu.scss';
 @import './components/select.scss';
 @import './components/block.scss';
+@import './components/pagination.scss';
+@import './components/titles.scss';
+
+@import './blocks/about__center/index.scss';
+@import './blocks/bussines/index.scss';
+@import './blocks/patients/index.scss';
+@import './blocks/specialists/index.scss';
+@import './blocks/departments/index.scss';
 
 @import './blocks/modals.scss';
-@import './blocks/about.scss';
 @import './blocks/clinical-guidelines.scss';
 @import './blocks/clinical-guidelines-two.scss';
-@import './blocks/department-dermatology.scss';
 @import './blocks/conferences.scss';
-@import './blocks/header';
 @import './blocks/partners';
 @import './blocks/distant';
 @import './blocks/cost';
@@ -27,45 +33,14 @@
 @import './blocks/hospitalization';
 @import './blocks/connection';
 @import './blocks/contacts';
-@import './blocks/footer';
 @import './blocks/telemedicine-consul';
 @import './blocks/reference';
 @import './blocks/employee.scss';
 @import './blocks/hair-center.scss';
 @import './blocks/hair-transplant.scss';
-@import './blocks/specialists.scss';
-@import './blocks/patients/patients.scss';
-@import './blocks/patients/patients-page.scss';
 @import './blocks/dissertation-сouncil.scss';
-@import './blocks/department.scss';
 @import './blocks/news.scss';
 @import './blocks/main';
 @import './blocks/article.scss';
-@import './blocks/bussines.scss';
-@import './blocks/bussines/academic-consul.scss';
-@import './blocks/bussines/submit-doc.scss';
-@import './blocks/bussines/admission-residency-2023.scss';
-@import './blocks/bussines/procedure-consideration-claims.scss';
-@import './blocks/patients/rules-preparing-diagnosis.scss';
 
-.--mob {
-    display: none;
-}
-
-.--desc {
-    display: block;
-}
-
-@media screen and (max-width: 48em) {
-    .--mob {
-        display: block;
-    }
-
-    .--desc {
-        display: none;
-    }
-}
-
-.hide {
-    display: none;
-}
+@import './components/elements.scss';

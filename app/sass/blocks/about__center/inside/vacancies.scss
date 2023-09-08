@@ -1,0 +1,126 @@
+.vacancies {
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #3f4c5c;
+    }
+
+    &__descs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: rgba(63, 76, 92, 0.69);
+    }
+
+    &__points li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 150%;
+        display: block;
+        cursor: pointer;
+        padding-left: 3rem;
+        position: relative;
+        color: rgba(63, 76, 92, 0.69);
+        &::before {
+            position: absolute;
+            content: '';
+            width: 0.4rem;
+            height: 0.4rem;
+            background: rgba(63, 76, 92, 0.69);
+            border-radius: 50%;
+            left: 0.5rem;
+            top: 1rem;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1rem;
+        width: 100%;
+        margin-bottom: 4rem;
+        li {
+            background: #ffffff;
+            width: auto;
+            font-size: 1.7rem;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .vacancies {
+        &__subtitle {
+            font-size: 4.8vw;
+            line-height: 110%;
+        }
+
+        &__descs {
+            row-gap: 2.8vw;
+        }
+
+        &__desc {
+            row-gap: 3vw;
+            div,
+            address {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1vw;
+            }
+        }
+
+        &__text {
+            font-size: 4.27vw;
+            line-height: 130%;
+        }
+
+        &__points li {
+            font-size: 4.27vw;
+            padding-left: 5.3vw;
+
+            &::before {
+                width: 1.2vw;
+                height: 1.2vw;
+                left: 1.6vw;
+                top: 2.4vw;
+            }
+        }
+
+        &__buttons {
+            flex-wrap: wrap;
+            row-gap: 5.3vw;
+            column-gap: 1rem;
+            margin-bottom: 14vw;
+
+            li {
+                font-size: 4.8vw;
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            a {
+                column-gap: 4.8vw;
+            }
+        }
+    }
+}

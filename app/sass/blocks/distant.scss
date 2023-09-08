@@ -9,7 +9,7 @@
             font-weight: 700;
             font-size: 2.2rem;
             line-height: 3.2rem;
-            color: #3F4C5C;
+            color: #3f4c5c;
             margin-bottom: 2rem;
         }
 
@@ -33,7 +33,7 @@
         font-weight: 700;
         font-size: 1.8rem;
         line-height: 2.7rem;
-        color: #3F4C5C;
+        color: #3f4c5c;
     }
 
     &__text-link {
@@ -47,37 +47,37 @@
 
     &__lists {
         display: flex;
-				column-gap: 8rem;
+        column-gap: 8rem;
         .distant__lists-item:first-child {
             margin-right: 8rem;
         }
     }
 
-		&__btn {
-			background: inherit;
-			width: 24rem;
-			&.active {
-				background: #FFFFFF;
-			}
-			&:hover {
-				background-color: #FFFFFF;
-				color: #3F4C5C;
-			}
-		}
+    &__btn {
+        background: inherit;
+        width: 24rem;
+        &.active {
+            background: #ffffff;
+        }
+        &:hover {
+            background-color: #ffffff;
+            color: #3f4c5c;
+        }
+    }
 
-		&__wrap {
-			display: none;
-		}
+    &__wrap {
+        display: none;
+    }
 
-		&__btn-two {
-			width: 40.6rem;
-			background-color: #FFFFFF;
-			margin-top: 4rem;
-		}
+    &__btn-two {
+        width: 40.6rem;
+        background-color: #ffffff;
+        margin-top: 4rem;
+    }
 
-		&__btn-two.hidden {
-			display: none;
-		}
+    &__btn-two.hidden {
+        display: none;
+    }
 
     &__lists-item {
         display: flex;
@@ -85,26 +85,26 @@
         align-items: center;
         width: 24.1rem;
         height: 6rem;
-        border: 0.1rem solid #00AC60;
+        border: 0.1rem solid #00ac60;
         border-radius: 0.6rem;
         font-style: normal;
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 2.7rem;
-        color: #3F4C5C;
+        color: #3f4c5c;
         cursor: pointer;
     }
 
     &__lists-item.active {
-        color: #FFFFFF;
-        background: #00AC60;
+        color: #ffffff;
+        background: #00ac60;
     }
 
     &__buttons {
         margin: 4rem 0;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__content {
@@ -129,7 +129,7 @@
         width: 3.8rem;
         height: 3.8rem;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         background: rgba(63, 76, 92, 0.69);
         border-radius: 50%;
@@ -137,7 +137,7 @@
         font-weight: 400;
         font-size: 2rem;
         line-height: 2.9rem;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-right: 2rem;
     }
 
@@ -172,7 +172,7 @@
     }
 
     &__content-right-content {
-        background: #D8DEE8;
+        background: #d8dee8;
         border-radius: 0.8rem;
         width: 113.6rem;
         padding-top: 4rem;
@@ -195,7 +195,7 @@
         font-weight: 400;
         font-size: 2rem;
         line-height: 2.9rem;
-        color: #3F4C5C;
+        color: #3f4c5c;
         margin-bottom: 3rem;
         padding-left: 1.2rem;
     }
@@ -205,7 +205,7 @@
             font-family: 'Circe';
             width: 40rem;
             height: 6rem;
-            background: #E5E9EF;
+            background: #e5e9ef;
             border-radius: 0.8rem;
             display: block;
             margin-bottom: 3rem;
@@ -223,9 +223,9 @@
         }
     }
 
-		&__form-btn {
-			width: 19rem;
-		}
+    &__form-btn {
+        width: 19rem;
+    }
 
     &__content-right-content-block {
         margin-bottom: 3rem;
@@ -234,7 +234,7 @@
             border: none;
             width: 61.1rem;
             min-height: 12.6rem;
-            background: #E5E9EF;
+            background: #e5e9ef;
             border-radius: 0.8rem;
             font-style: normal;
             font-weight: 400;
@@ -262,7 +262,7 @@
             font-size: 1.8rem;
             line-height: 2.7rem;
             margin-bottom: 1.5rem;
-            color: #3F4C5C;
+            color: #3f4c5c;
         }
 
         p {
@@ -284,7 +284,7 @@
             font-size: 1.8rem;
             line-height: 2.7rem;
             margin-right: 2.4rem;
-            color: #3F4C5C;
+            color: #3f4c5c;
             display: inline-block;
             font-feature-settings: 'tnum' on, 'lnum' on;
         }
@@ -295,8 +295,7 @@
             font-size: 2.2rem;
             line-height: 3.2rem;
             font-feature-settings: 'tnum' on, 'lnum' on;
-            color: #00AC60;
-
+            color: #00ac60;
         }
     }
 
@@ -363,7 +362,7 @@
         line-height: 150%;
         text-transform: uppercase;
         margin-bottom: 3rem;
-        color: #3F4C5C;
+        color: #3f4c5c;
     }
 
     ul {

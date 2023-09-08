@@ -19,7 +19,7 @@ if (window.innerWidth > 768) {
             $(this).appendTo(pageElement);
             pageElement.find('.loader').remove();
         });
-        img.attr('src', 'pages/' + page + '.webp');
+        img.attr('src', 'pages-book/' + page + '.webp');
     }
 
     function zoomTo(event) {
@@ -70,7 +70,7 @@ if (window.innerWidth > 768) {
         var img = pageElement.find('img');
         img.css({ width: '100%', height: '100%' });
         img.unbind('load');
-        img.attr('src', 'pages/' + page + '.webp');
+        img.attr('src', 'pages-book/' + page + '.webp');
     }
 
     function isChrome() {

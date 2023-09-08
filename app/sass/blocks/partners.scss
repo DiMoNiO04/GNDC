@@ -10,13 +10,13 @@
     }
 
     &__content {
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 0.4rem;
         padding-top: 1.1rem;
         padding-bottom: 1.1rem;
         padding-left: 1.6rem;
         padding-right: 1.6rem;
-			
+
         img {
             border-radius: 0.8rem;
         }
@@ -24,30 +24,29 @@
 }
 
 @media screen and (max-width: 48em) {
-	.partners {
-		
-		&__slide {
-			height: auto;
-		}
+    .partners {
+        &__slide {
+            height: auto;
+        }
 
-		&__content {
-			padding: 2.4vw 3.75vw;
-			border-radius: 1vw;
-		}
+        &__content {
+            padding: 2.4vw 3.75vw;
+            border-radius: 1vw;
+        }
 
-		&__image {
-			img {
-				object-fit: fill;
-			}
-		}
+        &__image {
+            img {
+                object-fit: fill;
+            }
+        }
 
-		&__pagination {
-			justify-content: center;
-		}
+        &__pagination {
+            justify-content: center;
+        }
 
-		&__prev,
-		&__next {
-			display: none;
-		}
-	}
+        &__prev,
+        &__next {
+            display: none;
+        }
+    }
 }

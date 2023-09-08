@@ -2,12 +2,12 @@
     margin-top: 5.6rem;
     padding-bottom: 15rem;
 
-		&__wrapper {
-			margin-bottom: 8rem;
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
+    &__wrapper {
+        margin-bottom: 8rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 
     &__title {
         display: flex;
@@ -18,27 +18,27 @@
             font-size: 2.3rem;
             line-height: 135%;
             display: block;
-            color: #3F4C5C;
+            color: #3f4c5c;
         }
     }
 
-		&__content {
-			padding: 0;
-			row-gap: 0 !important;
-		}
+    &__content {
+        padding: 0;
+        row-gap: 0 !important;
+    }
 
-		&__table:last-child .schedule__table-content {
-			border-radius: 0rem 0rem 0.8rem 0.8rem;
-		}
+    &__table:last-child .schedule__table-content {
+        border-radius: 0rem 0rem 0.8rem 0.8rem;
+    }
 
     &__table-content {
         display: flex;
-        background: #B9C3D3;
+        background: #b9c3d3;
         transition: 0.2s;
         cursor: pointer;
         &:hover {
             transition: 0.2s;
-            background: #D8DEE8;
+            background: #d8dee8;
         }
     }
 
@@ -55,7 +55,7 @@
     }
 
     &__table-doctor {
-				padding: 2rem 0;
+        padding: 2rem 0;
         margin-left: 4rem;
         width: 45.7rem;
         border-right: 0.1rem solid rgba(63, 76, 92, 0.2);
@@ -74,13 +74,13 @@
         height: fit-content;
         width: fit-content;
         display: block;
-        border-bottom: 0.1rem solid #3F4C5C;
+        border-bottom: 0.1rem solid #3f4c5c;
         margin-bottom: 1rem;
-        color: #3F4C5C;
+        color: #3f4c5c;
         transition: 0.2s;
         &:hover {
-            color: #00AC60;
-            border-bottom: 0.1rem solid #00AC60;
+            color: #00ac60;
+            border-bottom: 0.1rem solid #00ac60;
             transition: 0.2s;
         }
     }
@@ -89,7 +89,7 @@
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 125%;
-        color: #3F4C5C;
+        color: #3f4c5c;
         margin-bottom: 1rem;
     }
 
@@ -111,17 +111,17 @@
         width: 10.2rem;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         font-style: normal;
         font-weight: 400;
         font-size: 2rem;
         line-height: 130%;
-        color: #3F4C5C;
+        color: #3f4c5c;
     }
 
-		&__table-cab {
-			width: 9.8rem;
-		}
+    &__table-cab {
+        width: 9.8rem;
+    }
 
     &__table-doctor:last-child {
         border-bottom: none;
@@ -152,8 +152,8 @@
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 135%;
-        color: #3F4C5C;
-				padding: 2rem 0 2.5rem 0;
+        color: #3f4c5c;
+        padding: 2rem 0 2.5rem 0;
     }
 
     &__list-two {
@@ -170,7 +170,7 @@
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 135%;
-        color: #3F4C5C;
+        color: #3f4c5c;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -180,7 +180,7 @@
     &__list-four,
     &__list-five,
     &__list-six,
-    &__list-seven { 
+    &__list-seven {
         width: 18.7rem;
     }
 
@@ -196,16 +196,16 @@
     }
 
     &__list-days-one {
-            font-weight: 700;
-            font-size: 2.3rem;
-            line-height: 135%;
-            color: #3F4C5C;
-            display: block;
-						padding: 2.3rem 0;
-            width: 34.2rem;
-            border-right: 1px solid rgba(63, 76, 92, 0.2);
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 135%;
+        color: #3f4c5c;
+        display: block;
+        padding: 2.3rem 0;
+        width: 34.2rem;
+        border-right: 1px solid rgba(63, 76, 92, 0.2);
     }
-   
+
     &__list-days-three,
     &__list-days-four,
     &__list-days-five,
@@ -224,7 +224,7 @@
             font-weight: 700;
             font-size: 2.3rem;
             line-height: 135%;
-            color: #3F4C5C;
+            color: #3f4c5c;
             display: block;
         }
 
@@ -232,7 +232,7 @@
             font-weight: 400;
             font-size: 2rem;
             line-height: 130%;
-            color: #3F4C5C;
+            color: #3f4c5c;
             display: block;
         }
     }

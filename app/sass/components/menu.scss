@@ -63,6 +63,7 @@
     &__tabs {
         padding-left: 1rem;
         margin-bottom: 6rem;
+        width: 31.3rem;
     }
 
     &__tab {
@@ -173,8 +174,8 @@
             }
         }
 
-        &__button {
-            &:not(:last-child) {
+        &__buttons {
+            li:not(:last-child) {
                 margin-bottom: 5.3vw;
             }
         }
@@ -182,6 +183,7 @@
         &__tabs {
             padding-left: 0;
             margin-bottom: 0;
+            width: 100%;
         }
 
         &__tab {

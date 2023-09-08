@@ -14,22 +14,25 @@ const CONTENT = {
 };
 //------------------------------------------------------------//
 
-const showMobMenu = () => {
-    $('.content-mob').removeClass('active');
-    $('.content-menu-mob').addClass('active');
+const changeTitleResize = () => {
     if (window.innerWidth < 768) {
+        $('.title-main').addClass('hide');
+        $('.title-change').removeClass('hide');
+    } else {
         $('.title-main').removeClass('hide');
         $('.title-change').addClass('hide');
     }
 };
 
+const showMobMenu = () => {
+    $('.content-mob').removeClass('active');
+    $('.content-menu-mob').addClass('active');
+};
+
 const showMobContent = () => {
     $('.content-menu-mob').removeClass('active');
     $('.content-mob').addClass('active');
-    if (window.innerWidth < 768) {
-        $('.title-main').addClass('hide');
-        $('.title-change').removeClass('hide');
-    }
+    changeTitleResize();
 };
 
 const showMobSubMenu = () => {
@@ -40,6 +43,7 @@ const showMobSubMenu = () => {
 const showMobSubContent = () => {
     $('.subcontent-menu-mob').removeClass('active');
     $('.subcontent-mob').addClass('active');
+    changeTitleResize();
 
     $('.menu__button-title a').text($('.js-link-submain.active a').text());
 };
@@ -67,11 +71,25 @@ const removeActiveSubMainLink = () => {
     }
 };
 
+const changeHashResize = () => {
+    if (window.innerWidth > 768) {
+        window.location.hash = $('.js-link-main.active.--desc a').attr('href');
+    } else {
+        window.location.hash = $('.js-link-main.active.--mob a').attr('href');
+    }
+};
+
 const changeBreadCrumb = (hash, hashBlock) => {
     $('.crumb-content').remove();
     $('.crumb-content-block').remove();
 
-    const activeMenuTab = $('.js-link-main.active a');
+    let activeMenuTab;
+    if (window.innerWidth < 768) {
+        activeMenuTab = $('.js-link-main.active a').last();
+    } else {
+        activeMenuTab = $('.js-link-main.active a').first();
+    }
+
     const newCrumb = $(`<a href=${activeMenuTab.attr('href')} class="crumb-content"></a>`);
     newCrumb.html(activeMenuTab.text());
     $('.bread-crumbs').append(newCrumb);
@@ -124,8 +142,7 @@ function renderContentPage(elem) {
         removeActiveSubMainLink();
         showMobSubMenu();
     }
-
-    $('.title-change').text($('.js-link-main.active a').text());
+    $('.title-change').text($('.js-link-main.active a').first().text());
 }
 
 function renderContent() {
@@ -177,13 +194,10 @@ $(document).ready(() => {
 });
 
 $(window).resize(function () {
+			    changeTitleResize();
     renderContent();
+    if ($('.js-link-main.active.--desc').hasClass('active') || $('.js-link-main.active.--mob').hasClass('active')) {
+        changeHashResize();
+    }
+    removeActiveMainLink();
 });
-
-// $('.js-link-main').on('click', function () {
-//     showMobSubMenu();
-// });
-
-// $('.menu__button').on('click', function () {
-//     showMobSubContent();
-// });

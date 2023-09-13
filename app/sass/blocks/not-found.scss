@@ -1,0 +1,51 @@
+.not-found {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 22.4rem;
+    padding: 15rem 0;
+  }
+
+  &__img {
+    width: 54.7rem;
+    height: 49.7rem;
+    flex-shrink: 0;
+  }
+
+  &__number {
+    color: #323439;
+      font-size: 15rem;
+      font-weight: 700;
+      line-height: 100%;
+      font-variant: small-caps;
+      margin-bottom: 2rem;
+  }
+
+  &__title {
+    color: #3F4C5C;
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 150%;
+      margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: #3F4C5C;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 150%;
+      margin-bottom: 4.4rem;
+  }
+
+  .all-btn__blue {
+    background: #FFFFFF;
+    color: #3F4C5C;
+
+    &:hover {
+      color: #FFFFFF;
+      background: #3F4C5C;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}

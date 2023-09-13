@@ -338,4 +338,27 @@
     .subtitle {
         margin-bottom: 0;
     }
+
+    &__time {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    &__time-title {
+      color: #3F4C5C;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+
+    &__time-text {
+      color:rgba(63, 76, 92, 0.69);
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
 }

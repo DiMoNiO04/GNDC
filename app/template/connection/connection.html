@@ -1,0 +1,113 @@
+<section class="connection">
+    <div class="container">
+        <div class="bread-crumbs">
+            <a href="../index.html">Главная</a>
+            <a href="../connection-page.html">Обратная связь</a>
+        </div>
+        <div class="title">Обратная связь</div>
+        <div class="connection__wrapper">
+            <div class="connection__left">
+                <ul class="menu__tabs">
+                    <li class="menu__tab js-link-main">
+                        <a href="#voprosy-otvety" data-open-content="voprosy-otvety">Вопросы и ответы</a>
+                    </li>
+                    <li class="menu__tab js-link-main">
+                        <a href="#otzyvy-pacientov" data-open-content="otzyvy-pacientov">Отзывы пациентов</a>
+                    </li>
+                    <li class="menu__tab js-link-main">
+                        <a
+                            href="#rabota-s-obrashcheniyami-grazhdan"
+                            data-open-content="rabota-s-obrashcheniyami-grazhdan"
+                        >
+                            Работа с обращениями граждан
+                        </a>
+                    </li>
+                </ul>
+
+                <aside class="aside aside__connection active" data-content="voprosy-otvety">
+                    <form action="#" class="aside-form" mehod="#">
+                        <div class="aside-form__title">
+                            <strong>Задать вопрос</strong>
+                        </div>
+                        <div class="aside-form__content">
+                            <input type="text" placeholder="ФИО*" name="#" />
+                            <input type="text" placeholder="E-mail*" name="#" />
+                            <textarea placeholder="Вопрос*" name="#"></textarea>
+                            <label class="checkbox-other">
+                                <input type="checkbox" name="#" />
+                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                            </label>
+                            <button class="all-btn__blue connection__btn" type="submit" name="#">
+                                Отправить вопрос
+                            </button>
+                        </div>
+                    </form>
+                </aside>
+
+                <aside class="aside aside__connection active" data-content="voprosy-otvety">
+                    <form action="#" class="aside-form" method="#" action="#">
+                        <div class="aside-form__title">
+                            <strong>Записаться на прием</strong>
+                        </div>
+                        <div class="aside-form__content">
+                            <input type="text" placeholder="ФИО*" name="#" />
+                            <input type="text" placeholder="Номер телефона*" name="#" />
+                            <input type="text" placeholder="E-mail*" name="#" />
+                            <input type="text" placeholder="Специалист или проблема*" name="#" />
+                            <label class="checkbox-other">
+                                <input type="checkbox" name="#" />
+                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                            </label>
+                            <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
+                        </div>
+                    </form>
+                </aside>
+
+                <aside class="aside aside__connection" data-content="otzyvy-pacientov">
+                    <form action="" class="aside-form" mehod="#">
+                        <div class="aside-form__title">
+                            <strong>Оставить отзыв</strong>
+                        </div>
+                        <div class="aside-form__content">
+                            <input type="text" placeholder="ФИО*" name="#" />
+                            <input type="text" placeholder="E-mail*" name="#" />
+                            <input type="text" placeholder="ФИО врача*" name="#" />
+                            <textarea placeholder="Отзыв*" name="#"></textarea>
+                            <label class="checkbox-other">
+                                <input type="checkbox" name="#" />
+                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                            </label>
+                            <button class="all-btn__blue connection__btn" type="submit" name="#">
+                                Отправить отзыв
+                            </button>
+                        </div>
+                    </form>
+                </aside>
+
+                <aside class="aside aside__connection" data-content="otzyvy-pacientov">
+                    <form action="" class="aside-form" method="#" action="#">
+                        <div class="aside-form__title">
+                            <strong>Записаться на прием</strong>
+                        </div>
+                        <div class="aside-form__content">
+                            <input type="text" placeholder="ФИО*" name="#" />
+                            <input type="text" placeholder="Номер телефона*" name="#" />
+                            <input type="text" placeholder="E-mail*" name="#" />
+                            <input type="text" placeholder="Специалист или проблема*" name="#" />
+                            <label class="checkbox-other">
+                                <input type="checkbox" name="#" />
+                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                            </label>
+                            <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
+                        </div>
+                    </form>
+                </aside>
+            </div>
+            <div class="connection__right">
+							@@include('./questions.html')
+							@@include('./review.html')
+							@@include('./work.html')
+            </div>
+        </div>
+    </div>
+</section>

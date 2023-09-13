@@ -1,11 +1,18 @@
 .managment {
-    &__employees,
-    &__director {
+    &__employees {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         column-gap: 2.95rem;
         row-gap: 3rem;
         flex-wrap: wrap;
+    }
+
+    &__title {
+      color:#3F4C5C;
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 2rem;
     }
 
     &__block {
@@ -56,14 +63,28 @@
             transition: all 0.5s ease-in-out;
         }
     }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+    }
 }
 
 @media screen and (max-width: 48em) {
     .managment {
-        &__employees,
-        &__director {
+        &__employees {
             row-gap: 5.3vw;
             flex-direction: column;
+        }
+
+        &__items {
+            row-gap: 8vw;
+        }
+
+        &__title {
+            font-size: 5.3vw;
+            margin-bottom: 5.3vw;
         }
 
         &__block {

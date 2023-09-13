@@ -4,6 +4,7 @@ const PAGES = {
     BUSSINES: 'bussines-page.html',
     ABOUT: 'about-center-page.html',
     SERGEV_POSAD: 'sergev-posad-page.html',
+    CONNECTION: 'connection-page.html'
 };
 
 const CONTENT = {
@@ -11,6 +12,7 @@ const CONTENT = {
     NAUCHNAYA_DEYATELNOST: '#nauchnaya-deyatelnost',
     ISTORIYA: '#istoriya',
     SERGEV_POSAD: '#sergievo-posadskij-filial',
+    CONNECTION: '#voprosy-otvety'
 };
 //------------------------------------------------------------//
 
@@ -147,6 +149,8 @@ function renderContent() {
     let hash = window.location.hash;
     let page = getPage();
 
+		console.log(page)
+
     if (hash.includes('page')) {
         if (window.innerWidth < 768) {
             window.location.hash = CONTENT.ISTORIYA;
@@ -169,10 +173,12 @@ function renderContent() {
             showContent(CONTENT.ISTORIYA);
         } else if (page === PAGES.SERGEV_POSAD) {
             showContent(CONTENT.SERGEV_POSAD);
+        } else if(page === PAGES.CONNECTION) {
+          showContent(CONTENT.CONNECTION)
         }
         removeActiveMainLink();
     }
-		changeTitle()
+    changeTitle()
 }
 
 $(document).ready(() => {

@@ -46,3 +46,4 @@ class Modal {
 }
 
 let conferences = document.querySelector('[data-modal="conferences"]') ? new Modal('conferences') : null;
+let succesReg = document.querySelector('[data-modal="success-reg"]') ? new Modal('success-reg') : null;

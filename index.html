@@ -19,7 +19,7 @@
             font-size: 24px;
             font-weight: 700;
             color: #ffffff;
-            margin-left: 100px;
+            margin-bottom: 20px;
         }
 
         .menu {
@@ -41,16 +41,16 @@
             border-radius: 10px;
             background: rgb(163, 172, 148);
             text-align: center;
-        }
-
-        .item a {
-            font-size: 16px;
+             font-size: 16px;
             font-weight: 700;
-            width: 100%;
-            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .item a {
+            width: 100%;
+            height: 100%;
         }
 
         .item:hover {
@@ -60,6 +60,7 @@
     </style>
 
     <body>
+        <h2>Страницы</h2>
         <ul class="menu">
             <li class="item">
                 <a href="./build/index.html"> Главная страница </a>
@@ -196,6 +197,101 @@
             <li class="item">
                 <a href="./build/department-clinical-leprology-page.html">Отделение клинической лепрологии </a>
             </li>
+            <li class="item">
+              <a href="./build/not-found-page.html">Страница не найдена </a>
+            </li>
+        </ul>
+
+        <h2>Модальные окна</h2>
+        <ul class="menu">
+          <li class="item" data-modal-class="conferences">
+            Модалка конференции
+          </li>
+          <li class="item" data-modal-class="success-reg">
+            Успешная запись на прием
+          </li>
         </ul>
     </body>
+    <!-- Модалка конференции-->
+    <div class="modal close-x" data-modal="conferences">
+      <div class="modal__inner">
+        <div class="modal__content modal__content-conferences">
+          <div class="modal__content-close close-x">
+            <img class="close-x" src="./img/icon/modal-close.svg" alt="" />
+          </div>
+          <div class="modal__title"></div>
+          <div class="modal__conferences-main">
+            <div class="modal__block-conferences" data-conf="photos">
+              <div class="modal__conferences-swiper swiper" id="modal__conferences-swiper">
+                <div class="modal__conferences-swiper-wrapper swiper-wrapper">
+                  <div class="modal__conferences-slide swiper-slide">
+                    <div class="modal__conferences-slide-image">
+                      <img src="./img/conferences/tula/tula-1.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="modal__conferences-slide swiper-slide">
+                    <div class="modal__conferences-slide-image">
+                      <img src="./img/conferences/tula/tula-1.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="modal__conferences-slide swiper-slide">
+                    <div class="modal__conferences-slide-image">
+                      <img src="./img/conferences/tula/tula-1.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination modal__conferences-pagination">
+                <div class="pagination__prev modal__conferenes-prev">
+                  <img src="./img/icon/arrow-green-btn-prev.svg" alt="" />
+                </div>
+                <div class="pagination__bullets modal__conferences-bullets"></div>
+                <div class="pagination__next modal__conferenes-next">
+                  <img src="./img/icon/arrow-green-btn-next.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="modal__block-conferences" data-conf="info"></div>
+            <div class="modal__block-conferences" data-conf="program"></div>
+            <div class="modal__block-conferences" data-conf="results"></div>
+          </div>
+          <div class="menu__buttons modal__buttons-conferences">
+            <button class="menu__button all-btn__blue" data-open-conf="info">Информация о конференции</button>
+            <button class="menu__button all-btn__blue" data-open-conf="program">Программа конференции</button>
+            <button class="menu__button all-btn__blue" data-open-conf="results">Итоги конференции</button>
+            <button class="menu__button all-btn__blue" data-open-conf="photos">Фотогалерея</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Модалка успешной записи-->
+    <div class="modal close-x" data-modal="success-reg">
+      <div class="modal__inner">
+        <div class="modal__content modal__content-succes-reg">
+          <div class="modal__content-close close-x">
+            <img class="close-x" src="./img/icon/modal-close.svg" alt="" />
+          </div>
+          <div class="modal__content-succes-reg-title">
+            Вы записаны на первичный приём
+          </div>
+          <div class="modal__content-succes-reg-text">
+            Мы свяжемся с Вами для уточнения деталей
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="./app/lib/swiper-bundle.js"></script>
+    <script src="./app/lib/jquery.maskedinput.js"></script>
+    <script src="./app/js/modal.js"></script>
+    <script src="./app/js/Jq-script.js"></script>
+    <script src="./app/js/swiper.js"></script>
+    <script src="./app/js/render-content.js"></script>
+    <script src="./app/js/header.js"></script>
+    <script src="./app/js/cost.js"></script>
+    <script src="./app/js/input-select.js"></script>
 </html>

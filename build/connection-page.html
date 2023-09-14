@@ -309,7 +309,7 @@
                     </li>
                 </ul>
 
-                <aside class="aside aside__connection active" data-content="voprosy-otvety">
+                <aside class="aside aside__connection" data-content="voprosy-otvety">
                     <form action="#" class="aside-form" mehod="#">
                         <div class="aside-form__title">
                             <strong>Задать вопрос</strong>
@@ -329,7 +329,7 @@
                     </form>
                 </aside>
 
-                <aside class="aside aside__connection active" data-content="voprosy-otvety">
+                <aside class="aside aside__connection" data-content="voprosy-otvety">
                     <form action="#" class="aside-form" method="#" action="#">
                         <div class="aside-form__title">
                             <strong>Записаться на прием</strong>
@@ -356,7 +356,32 @@
                         <div class="aside-form__content">
                             <input type="text" placeholder="ФИО*" name="#" />
                             <input type="text" placeholder="E-mail*" name="#" />
-                            <input type="text" placeholder="ФИО врача*" name="#" />
+
+                            <div class="input-datalist-form">
+                              <div class="input-datalist-form__block">
+                                <input class="input-datalist-form__block-input" autocomplete="off" role="combobox" list="" name="" placeholder="ФИО врача*" />
+                              </div>
+                              <div class="input-datalist-form__list" style="display: none">
+                                <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                                  <option value="Хирург">Хирург</option>
+                                  <option value="Лор">Лор</option>
+                                  <option value="Окулист">Окулист</option>
+                                  <option value="Логопед">Логопед</option>
+                                  <option value="Невролог">Невролог</option>
+                                  <option value="Хирург">Хирург</option>
+                                  <option value="Лор">Лор</option>
+                                  <option value="Окулист">Окулист</option>
+                                  <option value="Логопед">Логопед</option>
+                                  <option value="Невролог">Невролог</option>
+                                  <option value="Хирург">Хирург</option>
+                                  <option value="Лор">Лор</option>
+                                  <option value="Окулист">Окулист</option>
+                                  <option value="Логопед">Логопед</option>
+                                  <option value="Невролог">Невролог</option>
+                                </datalist>
+                              </div>
+                            </div>
+
                             <textarea placeholder="Отзыв*" name="#"></textarea>
                             <label class="checkbox-other">
                                 <input type="checkbox" name="#" />
@@ -389,7 +414,7 @@
                 </aside>
             </div>
             <div class="connection__right">
-							<div class="connection__wrap" data-content="voprosy-otvety">
+              <div class="connection__wrap" data-content="voprosy-otvety">
   <div class="connection__question-swiper swiper" id="question__swiper">
     <div class="connection__question-swiper-wrapper swiper-wrapper">
       <div class="connection__question-slide swiper-slide">
@@ -1128,7 +1153,7 @@
     </div>
   </div>
 </div>
-							                <div class="connection__wrap" data-content="otzyvy-pacientov">
+                              <div class="connection__wrap" data-content="otzyvy-pacientov">
                     <div class="connection__review-swiper swiper" id="review__swiper">
                         <div class="connection__review-swiper-wrapper swiper-wrapper">
                             <div class="connection__review-slide swiper-slide">
@@ -1485,7 +1510,7 @@
                         </div>
                     </div>
                 </div>
-							<div class="connection__wrap" data-content="rabota-s-obrashcheniyami-grazhdan">
+              <div class="connection__wrap" data-content="rabota-s-obrashcheniyami-grazhdan">
   <div class="connection__time">
     <div class="connection__time-title">
       Часы приема граждан директором ФГБУ "ГНЦДК" Минздрава России

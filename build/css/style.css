@@ -966,6 +966,64 @@ input[type=number] {
   height: 0;
 }
 
+.input-datalist-form {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.input-datalist-form__block {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+.input-datalist-form__block.active input {
+  border-radius: 0.8rem 0.8rem 0 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.input-datalist-form__list {
+  background: #e5e9ef;
+  padding: 2rem;
+  z-index: 10;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+.input-datalist-form__list-datalist {
+  max-height: 16rem;
+  overflow-y: auto;
+  display: block;
+}
+.input-datalist-form__list-datalist::-webkit-scrollbar {
+  width: 0.3rem;
+}
+.input-datalist-form__list-datalist::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: 0.3rem;
+}
+.input-datalist-form__list-datalist::-webkit-scrollbar-thumb {
+  background-color: #3f6088;
+  border: 0.3rem solid #3f6088;
+  position: relative;
+  border-radius: 0.3rem;
+}
+.input-datalist-form__list-datalist option {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 136%;
+  color: rgba(63, 76, 92, 0.62);
+  cursor: pointer;
+  width: 100%;
+  overflow-x: hidden;
+}
+.input-datalist-form__list-datalist option:not(:last-child) {
+  padding-bottom: 0.8rem;
+}
+.input-datalist-form__list-datalist option:hover, .input-datalist-form__list-datalist option.active {
+  color: rgb(63, 76, 92);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .menu__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4716,6 +4774,8 @@ h2 {
   font-size: 1.6rem;
   line-height: 136%;
   color: rgba(63, 76, 92, 0.62);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .aside-form__content input:last-child {
   margin-bottom: 0;

@@ -24,7 +24,7 @@
                     </li>
                 </ul>
 
-                <aside class="aside aside__connection active" data-content="voprosy-otvety">
+                <aside class="aside aside__connection" data-content="voprosy-otvety">
                     <form action="#" class="aside-form" mehod="#">
                         <div class="aside-form__title">
                             <strong>Задать вопрос</strong>
@@ -44,7 +44,7 @@
                     </form>
                 </aside>
 
-                <aside class="aside aside__connection active" data-content="voprosy-otvety">
+                <aside class="aside aside__connection" data-content="voprosy-otvety">
                     <form action="#" class="aside-form" method="#" action="#">
                         <div class="aside-form__title">
                             <strong>Записаться на прием</strong>
@@ -71,7 +71,32 @@
                         <div class="aside-form__content">
                             <input type="text" placeholder="ФИО*" name="#" />
                             <input type="text" placeholder="E-mail*" name="#" />
-                            <input type="text" placeholder="ФИО врача*" name="#" />
+
+                            <div class="input-datalist-form">
+                              <div class="input-datalist-form__block">
+                                <input class="input-datalist-form__block-input" autocomplete="off" role="combobox" list="" name="" placeholder="ФИО врача*" />
+                              </div>
+                              <div class="input-datalist-form__list" style="display: none">
+                                <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                                  <option value="Хирург">Хирург</option>
+                                  <option value="Лор">Лор</option>
+                                  <option value="Окулист">Окулист</option>
+                                  <option value="Логопед">Логопед</option>
+                                  <option value="Невролог">Невролог</option>
+                                  <option value="Хирург">Хирург</option>
+                                  <option value="Лор">Лор</option>
+                                  <option value="Окулист">Окулист</option>
+                                  <option value="Логопед">Логопед</option>
+                                  <option value="Невролог">Невролог</option>
+                                  <option value="Хирург">Хирург</option>
+                                  <option value="Лор">Лор</option>
+                                  <option value="Окулист">Окулист</option>
+                                  <option value="Логопед">Логопед</option>
+                                  <option value="Невролог">Невролог</option>
+                                </datalist>
+                              </div>
+                            </div>
+
                             <textarea placeholder="Отзыв*" name="#"></textarea>
                             <label class="checkbox-other">
                                 <input type="checkbox" name="#" />
@@ -104,9 +129,9 @@
                 </aside>
             </div>
             <div class="connection__right">
-							@@include('./questions.html')
-							@@include('./review.html')
-							@@include('./work.html')
+              @@include('./questions.html')
+              @@include('./review.html')
+              @@include('./work.html')
             </div>
         </div>
     </div>

@@ -29,6 +29,11 @@
         width: 28.7rem;
     }
 
+		.form__input {
+			margin-bottom: 1.5rem;
+			flex-shrink: 0;
+		}
+
     &__form {
         input {
             font-family: 'Inter', sans-serif;
@@ -37,7 +42,6 @@
             background: #d8dee8;
             border-radius: 0.8rem;
             display: block;
-            margin-bottom: 1.5rem;
             border: none;
             padding-left: 2rem;
             font-style: normal;

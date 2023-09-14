@@ -333,12 +333,12 @@
             <div class="distant__content">
                 <div class="distant__content-left">
                     <div class="distant__content-block">
-                        <div class="distant__content-block-chapter">
+                        <div class="distant__content-block-chapter active">
                             <span class="distant__content-block-chapter-number">1.</span>
                             <div class="distant__content-block-chapter-text">Пациент</div>
                         </div>
                         <ul class="distant__content-block-lists">
-                            <li class="distant__content-block-item">Фамилия</li>
+                            <li class="distant__content-block-item active">Фамилия</li>
                             <li class="distant__content-block-item">Имя</li>
                             <li class="distant__content-block-item">E-mail</li>
                             <li class="distant__content-block-item">Номер телефона</li>
@@ -381,31 +381,97 @@
                     <div class="distant__content-right-content">
                         <div class="distant__content-right-content-title">1. Пациент</div>
                         <form action="" class="distant__form">
+
+                          <div class="form__input error">
                             <input type="text" placeholder="Фамилия*" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" placeholder="Имя*" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" placeholder="Отчество" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" class="date" placeholder="Дата рождения*" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" placeholder="E-mail*" />
-                            <input type="text" placeholder="Номер телефона*" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                            <div class="form__input">
+                              <input type="text" placeholder="Номер телефона*" />
+                              <div class="form__input-error">
+                                <img src="./img/triagle.svg" alt="">
+                                <span>Поле заполнено неверно</span>
+                              </div>
+                            </div>
                         </form>
                     </div>
                     <div class="distant__content-right-content">
                         <div class="distant__content-right-content-title">2. Выбор специалиста</div>
-                        <div class="select">
+                        <div class="form__input error">
+                          <div class="select">
                             <input class="select-input" type="hidden" name="" />
                             <div class="select-head">Специальность*</div>
-                            <ul class="select-list">
+                            <div class="select-list" style="display: none;">
+                              <ul class="select-items">
                                 <li class="select-item">Терапевт</li>
                                 <li class="select-item">Хирург</li>
-                            </ul>
+                                <li class="select-item">Терапевт</li>
+                                <li class="select-item">Хирург</li>
+                                <li class="select-item">Терапевт</li>
+                                <li class="select-item">Хирург</li>
+                                <li class="select-item">Терапевт</li>
+                                <li class="select-item">Хирург</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>Поле заполнено неверно</span>
+                          </div>
                         </div>
-                        <div class="select">
+
+                        <div class="form__input">
+                          <div class="select">
                             <input class="select-input" type="hidden" name="" />
-                            <div class="select-head">Выберите врача*</div>
-                            <ul class="select-list">
-                                <li class="select-item">Иван Геннадьевич</li>
-                                <li class="select-item">Петр Мамонов</li>
-                            </ul>
+                            <div class="select-head">Специальность*</div>
+                            <div class="select-list" style="display: none;">
+                              <ul class="select-items">
+                                <li class="select-item">Терапевт</li>
+                                <li class="select-item">Хирург</li>
+                                <li class="select-item">Терапевт</li>
+                                <li class="select-item">Хирург</li>
+                                <li class="select-item">Терапевт</li>
+                                <li class="select-item">Хирург</li>
+                                <li class="select-item">Терапевт</li>
+                                <li class="select-item">Хирург</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>Поле заполнено неверно</span>
+                          </div>
                         </div>
                     </div>
                     <div class="distant__content-right-content">
@@ -482,8 +548,11 @@
                             </form>
                         </div>
                     </div>
-                    <div class="distant__content-right-content">
-                        <div class="distant__content-right-content-title">4. Оплата</div>
+                    <div class="distant__content-right-content error">
+                        <div class="distant__content-right-content-title">
+                          4. Оплата
+                          <span>CAPTCHA не прошла проверку</span>
+                        </div>
                         <div class="distant__content-right-content-price">
                             <p>Итоговая стоимость приема:</p>
                             <span>2500 руб.</span>
@@ -494,13 +563,27 @@
                             <img src="./img/icon/mir.svg" alt="" />
                             <img src="./img/icon/jcb.svg" alt="" />
                         </div>
-                        <div class="distant__content-right-content-captha">
+
+                        <div class="form__input error">
+                          <div class="distant__content-right-content-captha">
                             <img src="./img/icon/captha.svg" alt="" />
+                          </div>
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>CAPTCHA не прошла проверку</span>
+                          </div>
                         </div>
-                        <label class="checkbox-other">
-                            <input type="checkbox" />
-                            <span>Я согласен на <a href="#" class="link-green">обработку персональных данных</a></span>
-                        </label>
+                        
+                          <div class="form__input error">
+                            <label class="checkbox-other">
+                              <input type="checkbox" />
+                              <span>Я согласен на <a href="#" class="link-green">обработку персональных данных</a></span>
+                            </label>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Необходимо согласие на обработку данных</span>
+                            </div>
+                          </div>
 
                         <button class="all-btn__white distant__form-btn">Оплатить</button>
                     </div>

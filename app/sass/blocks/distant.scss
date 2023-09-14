@@ -123,6 +123,14 @@
         display: flex;
         align-items: center;
         margin-bottom: 1rem;
+        &.active {
+          .distant__content-block-chapter-number {
+            background: #00AC60;
+          }
+          .distant__content-block-chapter-text {
+            color: #00AC60;
+          }
+        }
     }
 
     &__content-block-chapter-number {
@@ -160,6 +168,9 @@
         line-height: 136%;
         color: rgba(63, 76, 92, 0.69);
         margin-bottom: 1.2rem;
+        &.active {
+          color: #00AC60;
+        }
     }
 
     &__content-block-item:last-child {
@@ -172,6 +183,8 @@
     }
 
     &__content-right-content {
+			display: flex;
+			flex-direction: column;
         background: #d8dee8;
         border-radius: 0.8rem;
         width: 113.6rem;
@@ -181,12 +194,11 @@
         margin-bottom: 6rem;
         padding-right: 1rem;
 
-        .select {
-            margin-bottom: 3rem;
-        }
-
-        .select:last-child {
-            margin-bottom: 0;
+        &.error {
+          .distant__content-right-content-title span {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+          }
         }
     }
 
@@ -198,9 +210,19 @@
         color: #3f4c5c;
         margin-bottom: 3rem;
         padding-left: 1.2rem;
+        span {
+          margin-left: 4rem;
+          color: #E80000;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0;
+        }
     }
 
     &__form {
+			display: flex;
+			flex-direction: column;
         input {
             font-family: 'Circe';
             width: 40rem;
@@ -208,7 +230,6 @@
             background: #e5e9ef;
             border-radius: 0.8rem;
             display: block;
-            margin-bottom: 3rem;
             border: none;
             padding: 1.8rem 2rem;
             font-style: normal;
@@ -330,7 +351,6 @@
     &__content-right-content-captha {
         width: 41.2rem;
         height: 10.3rem;
-        margin-bottom: 3rem;
         display: block;
     }
 
@@ -372,4 +392,9 @@
     li {
         list-style-type: disc;
     }
+
+		.select ul,
+		.select {
+			margin-bottom: 0;
+		}
 }

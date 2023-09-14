@@ -305,17 +305,53 @@
                     </p>
                 </div>
                 <form class="record__form" method="#" action="">
+                  <div class="form__input error">
                     <input type="text" placeholder="ФИО*" name="#" />
-                    <input type="text" placeholder="Номер телефона*" name="#" />
-                    <input type="text" placeholder="E-mail*" name="#" />
-                    <textarea placeholder="Специалист или описание проблемы*" name=""></textarea>
-                    <div class="captcha">
-                        <img src="../img/captcha.png" alt="" />
+                    <div class="form__input-error">
+                      <img src="./img/triagle.svg" alt="">
+                      <span>Поле заполнено неверно</span>
                     </div>
-                    <label class="checkbox-other">
-                        <input type="checkbox" name="#" />
-                        <span>Я согласен на <a href="#" class="link-green">обработку персональных данных</a></span>
-                    </label>
+                  </div>
+                    <div class="form__input ">
+                      <input type="text" placeholder="Номер телефона*" name="#" />
+                      <div class="form__input-error">
+                        <img src="./img/triagle.svg" alt="">
+                        <span>Поле заполнено неверно</span>
+                      </div>
+                    </div>
+                    <div class="form__input ">
+                      <input type="text" placeholder="E-mail*" name="#" />
+                      <div class="form__input-error">
+                        <img src="./img/triagle.svg" alt="">
+                        <span>Поле заполнено неверно</span>
+                      </div>
+                    </div>
+                    <div class="form__input ">
+                      <textarea placeholder="Специалист или описание проблемы*" name=""></textarea>
+                      <div class="form__input-error">
+                        <img src="./img/triagle.svg" alt="">
+                        <span>Поле заполнено неверно</span>
+                      </div>
+                    </div>
+                    <div class="form__input ">
+                      <div class="captcha">
+                        <img src="../img/captcha.png" alt="" />
+                      </div>
+                      <div class="form__input-error">
+                        <img src="./img/triagle.svg" alt="">
+                        <span>CAPTCHA не прошла проверку</span>
+                      </div>
+                    </div>
+                      <div class="form__input ">
+                        <label class="checkbox-other">
+                          <input type="checkbox" name="#" />
+                          <span>Я согласен на <a href="#" class="link-green">обработку персональных данных</a></span>
+                        </label>
+                        <div class="form__input-error">
+                          <img src="./img/triagle.svg" alt="">
+                          <span>Необходимо согласие на обработку данных</span>
+                        </div>
+                      </div>
                     <button class="all-btn__white record__btn" type="submit" name="#">Записаться</button>
                 </form>
             </div>

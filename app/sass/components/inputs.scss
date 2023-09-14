@@ -90,70 +90,58 @@
     height: 0;
 }
 
-.input-datalist-form {
-  position: relative;
-  margin-bottom: 1.5rem;
+.form__input {
+  display: inline-flex;
+  column-gap: 1.6rem;
+  margin-bottom: 3rem;
+  width: fit-content;
+  align-items: center;
+  row-gap: 1.5rem;
+  width: 100%;
 
-  &__block {
+  input, textarea {
+    flex-shrink: 0;
+  }
+
+  &-error {
+    border-radius: 0.8rem;
     position: relative;
-    width: 100%;
-    cursor: pointer;
-    &.active {
-      input {
-              border-radius: 0.8rem 0.8rem 0 0;
-              transition: all 0.3s ease-in-out;
-      }
-    }
+      background: #FFF;
+      flex-shrink: 0;
+      z-index: 2;
+      padding: 2rem;
+      color: #FF2525;
+        text-align: center;
+              height: fit-content;
+                display: none;
+                transition: all 0.3s ease-in-out;
+
+        span {
+          font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 111.4%;
+        }
+
+        img {
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          left: -1rem;
+        }
   }
 
-  &__list {
-    background: #e5e9ef;
-    padding: 2rem;
-    z-index: 10;
-    border-radius: 0 0 0.8rem 0.8rem;
-  }
-
-  &__list-datalist {
-    max-height: 16rem;
-    overflow-y: auto;
-    display: block;
-
-    &::-webkit-scrollbar {
-      width: 0.3rem;
+  &.error {
+    input,
+    textarea,
+    .select-head {
+      border: 0.2rem solid #E80000;
+      transition: all 0.3s ease-in-out;
     }
 
-    &::-webkit-scrollbar-track {
-      background: #FFFFFF;
-        border-radius: 0.3rem;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: #3f6088;
-      border: 0.3rem solid #3f6088;
-      position: relative;
-      border-radius: 0.3rem;
-    }
-
-    option {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      font-style: normal;
-        font-weight: 700;
-        font-size: 1.6rem;
-        line-height: 136%;
-        color: rgba(63, 76, 92, 0.62);
-      cursor: pointer;
-      width: 100%;
-      overflow-x: hidden;
-
-      &:not(:last-child) {
-          padding-bottom: 0.8rem;
-      }
-
-      &:hover,
-      &.active {
-        color: rgba(63, 76, 92);
-        transition: all 0.5s;
-      }
+    .form__input-error {
+      display: block;
+      transition: all 0.3s ease-in-out;
     }
   }
 }

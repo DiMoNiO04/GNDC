@@ -30,13 +30,37 @@
                             <strong>Задать вопрос</strong>
                         </div>
                         <div class="aside-form__content">
-                            <input type="text" placeholder="ФИО*" name="#" />
-                            <input type="text" placeholder="E-mail*" name="#" />
+                          <div class="form__input error">
+                            <input type="text" placeholder="ФИО*" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input error">
+                            <input type="text" placeholder="E-mail*" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input error">
                             <textarea placeholder="Вопрос*" name="#"></textarea>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input error">
                             <label class="checkbox-other">
-                                <input type="checkbox" name="#" />
-                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                              <input type="checkbox" name="#" />
+                              <span>Я согласен на <a href="#">обработку персональных данных</a></span>
                             </label>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Необходимо согласие на обработку данных</span>
+                            </div>
+                          </div>
                             <button class="all-btn__blue connection__btn" type="submit" name="#">
                                 Отправить вопрос
                             </button>
@@ -50,14 +74,44 @@
                             <strong>Записаться на прием</strong>
                         </div>
                         <div class="aside-form__content">
+                          <div class="form__input error">
                             <input type="text" placeholder="ФИО*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" placeholder="Номер телефона*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" placeholder="E-mail*" name="#" />
-                            <input type="text" placeholder="Специалист или проблема*" name="#" />
-                            <label class="checkbox-other">
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                            <div class="form__input">
+                              <input type="text" placeholder="Специалист или проблема*" name="#" />
+                              <div class="form__input-error">
+                                <img src="./img/triagle.svg" alt="">
+                                <span>Поле заполнено неверно</span>
+                              </div>
+                            </div>
+                            <div class="form__input error">
+                              <label class="checkbox-other">
                                 <input type="checkbox" name="#" />
                                 <span>Я согласен на <a href="#">обработку персональных данных</a></span>
-                            </label>
+                              </label>
+                              <div class="form__input-error">
+                                <img src="./img/triagle.svg" alt="">
+                                <span>Необходимо согласие на обработку данных</span>
+                              </div>
+                            </div>
                             <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
                         </div>
                     </form>
@@ -69,39 +123,59 @@
                             <strong>Оставить отзыв</strong>
                         </div>
                         <div class="aside-form__content">
+                          <div class="form__input error">
                             <input type="text" placeholder="ФИО*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" placeholder="E-mail*" name="#" />
-
-                            <div class="input-datalist-form">
-                              <div class="input-datalist-form__block">
-                                <input class="input-datalist-form__block-input" autocomplete="off" role="combobox" list="" name="" placeholder="ФИО врача*" />
-                              </div>
-                              <div class="input-datalist-form__list" style="display: none">
-                                <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                                  <option value="Хирург">Хирург</option>
-                                  <option value="Лор">Лор</option>
-                                  <option value="Окулист">Окулист</option>
-                                  <option value="Логопед">Логопед</option>
-                                  <option value="Невролог">Невролог</option>
-                                  <option value="Хирург">Хирург</option>
-                                  <option value="Лор">Лор</option>
-                                  <option value="Окулист">Окулист</option>
-                                  <option value="Логопед">Логопед</option>
-                                  <option value="Невролог">Невролог</option>
-                                  <option value="Хирург">Хирург</option>
-                                  <option value="Лор">Лор</option>
-                                  <option value="Окулист">Окулист</option>
-                                  <option value="Логопед">Логопед</option>
-                                  <option value="Невролог">Невролог</option>
-                                </datalist>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input error">
+                            <div class="select">
+                              <input class="select-input" type="hidden" name="" />
+                              <div class="select-head">ФИО врача*</div>
+                              <div class="select-list" style="display: none;">
+                                <ul class="select-items">
+                                  <li class="select-item">Терапевт</li>
+                                  <li class="select-item">Хирург</li>
+                                  <li class="select-item">Терапевт</li>
+                                  <li class="select-item">Хирург</li>
+                                  <li class="select-item">Терапевт</li>
+                                  <li class="select-item">Хирург</li>
+                                  <li class="select-item">Терапевт</li>
+                                  <li class="select-item">Хирург</li>
+                                </ul>
                               </div>
                             </div>
-
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <textarea placeholder="Отзыв*" name="#"></textarea>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <label class="checkbox-other">
-                                <input type="checkbox" name="#" />
-                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                              <input type="checkbox" name="#" />
+                              <span>Я согласен на <a href="#">обработку персональных данных</a></span>
                             </label>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Необходимо согласие на обработку данных</span>
+                            </div>
+                          </div>
                             <button class="all-btn__blue connection__btn" type="submit" name="#">
                                 Отправить отзыв
                             </button>
@@ -115,14 +189,44 @@
                             <strong>Записаться на прием</strong>
                         </div>
                         <div class="aside-form__content">
+                          <div class="form__input error">
                             <input type="text" placeholder="ФИО*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input">
                             <input type="text" placeholder="Номер телефона*" name="#" />
-                            <input type="text" placeholder="E-mail*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                            <div class="form__input error">
+                              <input type="text" placeholder="E-mail*" name="#" />
+                              <div class="form__input-error">
+                                <img src="./img/triagle.svg" alt="">
+                                <span>Поле заполнено неверно</span>
+                              </div>
+                            </div>
+                          <div class="form__input">
                             <input type="text" placeholder="Специалист или проблема*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="form__input error">
                             <label class="checkbox-other">
-                                <input type="checkbox" name="#" />
-                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                              <input type="checkbox" name="#" />
+                              <span>Я согласен на <a href="#">обработку персональных данных</a></span>
                             </label>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Необходимо согласие на обработку данных</span>
+                            </div>
+                          </div>
                             <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
                         </div>
                     </form>

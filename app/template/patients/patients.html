@@ -1,33 +1,41 @@
 <section class="patients">
-	<div class="container">
-		<div class="bread-crumbs">
-			<a href="../index.html">Главная</a>
-			<a href="../patients-page.html">Пациентам</a>
-			<a href="#zapis-na-priem" class="crumb-content">Запись на прием</a>
-		</div>
-		<div class="title">Пациентам</div>
-		<div class="patients__wrapper">
-			<div class="patients__left">
-				<ul class="menu__tabs">
-					<li class="menu__tab">
-						<a href="#informaciya-dlya-pacientov" data-open-content="informaciya-dlya-pacientov">Информация для пациентов</a>
-					</li>
-					<li class="menu__tab">
-						<a href="#medical-tourism" data-open-content="medical-tourism">Medical tourism</a>
-					</li>
-					<li class="menu__tab">
-						<a href="#nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah" data-open-content="nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah">Набор пациентов для участия в клинических исследованиях</a>
-					</li>
-					<li class="menu__tab">
-						<a href="#grafik-priema-grazhdan-direktorom-FGBU-GNCDK-Minzdrava-Rossii" data-open-content="grafik-priema-grazhdan-direktorom-FGBU-GNCDK-Minzdrava-Rossii">График приема граждан директором ФГБУ «ГНЦДК» Минздрава России</a>
-					</li>
-				</ul>
-			</div>
+  <div class="container">
+    <div class="bread-crumbs">
+      <a href="../index.html">Главная</a>
+      <a href="../patients-page.html">Пациентам</a>
+    </div>
+    <div class="title">Пациентам</div>
+    <div class="patients__wrapper">
+			<ul class="menu__tabs">
+				<li class="menu__tab js-link-main">
+					<a href="#programma-gosudarstvennyh-garantij" data-open-content="programma-gosudarstvennyh-garantij">
+						Программа государственных гарантий
+					</a>
+				</li>
+				<li class="menu__tab js-link-main">
+					<a href="#informaciya-dlya-pacientov" data-open-content="informaciya-dlya-pacientov">
+						Информация для пациентов
+					</a>
+				</li>
+				<li class="menu__tab js-link-main">
+					<a href="#nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah"
+						data-open-content="nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah">
+						Набор пациентов для участия в клинических исследованиях
+					</a>
+				</li>
+				<li class="menu__tab js-link-main">
+					<a href="#">
+						Medical tourism
+					</a>
+				</li>
+			</ul>
 
-			<div class="patients__right">
-				@@include('./patients-inside/information.html')
-			</div>
-		</div>
-		</div>
-	</div>
+      <div class="patients__main-content">
+        @@include('./patients-inside/state-guar.html')
+        @@include('./patients-inside/information.html')
+        @@include('./patients-inside/recruitment.html')
+      </div>
+    </div>
+    </div>
+  </div>
 </section>

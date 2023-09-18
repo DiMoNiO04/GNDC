@@ -4,7 +4,8 @@ const PAGES = {
     BUSSINES: 'bussines-page.html',
     ABOUT: 'about-center-page.html',
     SERGEV_POSAD: 'sergev-posad-page.html',
-    CONNECTION: 'connection-page.html'
+    CONNECTION: 'connection-page.html',
+    PATIENTS: 'patients-page.html'
 };
 
 const CONTENT = {
@@ -12,7 +13,8 @@ const CONTENT = {
     NAUCHNAYA_DEYATELNOST: '#nauchnaya-deyatelnost',
     ISTORIYA: '#istoriya',
     SERGEV_POSAD: '#sergievo-posadskij-filial',
-    CONNECTION: '#voprosy-otvety'
+    CONNECTION: '#voprosy-otvety',
+    PATIENTS: '#programma-gosudarstvennyh-garantij'
 };
 //------------------------------------------------------------//
 
@@ -56,7 +58,8 @@ const showContent = (content) => {
 const getPage = () => {
     const locationUrl = window.location.href.split('#');
     const locationArr = locationUrl[0].split('/');
-    return locationArr[locationArr.length - 1];
+    const page = locationArr[locationArr.length - 2]
+    return page;
 };
 
 const removeActiveMainLink = () => {
@@ -149,8 +152,6 @@ function renderContent() {
     let hash = window.location.hash;
     let page = getPage();
 
-		console.log(page)
-
     if (hash.includes('page')) {
         if (window.innerWidth < 768) {
             window.location.hash = CONTENT.ISTORIYA;
@@ -175,6 +176,8 @@ function renderContent() {
             showContent(CONTENT.SERGEV_POSAD);
         } else if(page === PAGES.CONNECTION) {
           showContent(CONTENT.CONNECTION)
+        } else if(page === PAGES.PATIENTS) {
+          showContent(CONTENT.PATIENTS)
         }
         removeActiveMainLink();
     }

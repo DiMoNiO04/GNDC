@@ -1098,6 +1098,8 @@ input[type=number] {
   padding-left: 1rem;
   margin-bottom: 6rem;
   width: 31.3rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .menu__tab {
   font-weight: 700;
@@ -2970,7 +2972,6 @@ h2 {
 .patients-page__block p,
 .patients-page__block li,
 .patients-page__block a {
-  color: #3f4c5c;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -3230,16 +3231,16 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 18.6rem;
-     -moz-column-gap: 18.6rem;
-          column-gap: 18.6rem;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
-.patients__left {
-  width: 38.8rem;
-}
-.patients__right {
-  max-width: 89rem;
+.patients__main-content {
+  width: 115.4rem;
 }
 .patients__item {
   display: none;
@@ -3253,6 +3254,9 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 6rem;
+}
+.patients__item .title {
+  margin-bottom: 0;
 }
 .patients__btns {
   display: -webkit-box;

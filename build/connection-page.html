@@ -1666,12 +1666,48 @@
     <form method="post" action="" class="connection__form" enctype="multipart/form-data">
       <section class="connection__section">
         <div class="connection__form-title">1. Пациент</div>
-        <input name="lat_surname" type="text" placeholder="Фамилия*" />
-        <input name="first_name" type="text" placeholder="Имя*" />
-        <input name="surname" type="text" placeholder="Отчество" />
-        <input name="date" type="text" class="date" placeholder="Дата рождения*" />
-        <input name="email" type="email" placeholder="E-mail*" />
-        <input name="phone" type="text" placeholder="Номер телефона*" />
+        <div class="form__input">
+          <input name="lat_surname" type="text" placeholder="Фамилия*" />
+          <div class="form__input-error">
+            <img src="./img/triagle.svg" alt="">
+            <span>Поле заполнено неверно</span>
+          </div>
+        </div>
+        <div class="form__input">
+          <input name="first_name" type="text" placeholder="Имя*" />
+          <div class="form__input-error">
+            <img src="./img/triagle.svg" alt="">
+            <span>Поле заполнено неверно</span>
+          </div>
+        </div>
+        <div class="form__input">
+          <input name="surname" type="text" placeholder="Отчество" />
+          <div class="form__input-error">
+            <img src="./img/triagle.svg" alt="">
+            <span>Поле заполнено неверно</span>
+          </div>
+        </div>
+        <div class="form__input">
+          <input name="date" type="text" class="date" placeholder="Дата рождения*" />
+          <div class="form__input-error">
+            <img src="./img/triagle.svg" alt="">
+            <span>Поле заполнено неверно</span>
+          </div>
+        </div>
+        <div class="form__input">
+          <input name="email" type="email" placeholder="E-mail*" />
+          <div class="form__input-error">
+            <img src="./img/triagle.svg" alt="">
+            <span>Поле заполнено неверно</span>
+          </div>
+        </div>
+        <div class="form__input">
+          <input name="phone" type="text" placeholder="Номер телефона*" />
+          <div class="form__input-error">
+            <img src="./img/triagle.svg" alt="">
+            <span>Поле заполнено неверно</span>
+          </div>
+        </div>
       </section>
       <section class="connection__section">
         <div class="connection__form-title">2. Цель обращения</div>
@@ -1696,11 +1732,17 @@
         <p>
           В соответствии с 59-Ф3 срок ответа 30 дней. Ответом может служить телефонный звонок.
         </p>
-        <label class="checkbox-other connection__checkbox">
-          <input type="checkbox" name="agree" />
-          <span>Я согласен на
-            <a href="#" class="link-green">с политикой конфиденциальности</a></span>
-        </label>
+        <div class="form__input error">
+          <label class="checkbox-other connection__checkbox">
+            <input type="checkbox" name="agree" />
+            <span>Я согласен на
+              <a href="#" class="link-green">с политикой конфиденциальности</a></span>
+          </label>
+          <div class="form__input-error">
+            <img src="./img/triagle.svg" alt="">
+            <span>Необходимо согласие на обработку данных</span>
+          </div>
+        </div>
         <button type="submit" class="all-btn__blue connection__form-btn">Отправить</button>
       </section>
     </form>

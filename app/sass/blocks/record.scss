@@ -29,10 +29,11 @@
         width: 28.7rem;
     }
 
-		.form__input {
-			margin-bottom: 1.5rem;
-			flex-shrink: 0;
-		}
+    .form__input {
+      margin-bottom: 1.5rem;
+      flex-shrink: 0;
+      width: 100%;
+    }
 
     &__form {
         input {

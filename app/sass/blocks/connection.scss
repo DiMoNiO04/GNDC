@@ -16,6 +16,10 @@
     &__right {
         width: 110rem;
         overflow: hidden;
+          .form__input {
+              width: 100%;
+              margin-bottom: 0;
+            }
     }
 
     &__item {

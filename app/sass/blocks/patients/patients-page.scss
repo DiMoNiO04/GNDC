@@ -175,20 +175,128 @@
     .block__item-inner {
         align-items: flex-start;
     }
+}
 
-    .state-guarant-content {
-        padding-bottom: 2rem;
-        row-gap: 3rem;
-        .patients-page__block a,
-        .patients-page__block li,
-        .patients-page__block p {
-            font-size: 2rem;
+
+
+@media screen and (max-width: 48em) {
+  .patients-page {
+			margin-top: 2.8vw;
+				padding-bottom: 24vw;
+  
+      &__container {
+        row-gap: 8vw;
+      }
+
+			.title {
+				margin-bottom: 8vw;
+			}
+  
+      &__block {
+        row-gap: 5.3vw;
+  
+        p,
+        li,
+        a {
+          font-size: 4.27vw;
+					line-height: 130%;
         }
 
-        &__block {
-            display: flex;
-            flex-direction: column;
-            row-gap: 0.8rem;
+				a {
+					line-height: 150%;
+				}
+  
+        ul {
+          row-gap: 2.2vw;
         }
+  
+        li {
+          padding-left: 0;
+  
+          &::before {
+						width: 1.2vw;
+							height: 1.2vw;
+							left: 1.6vw;
+							top: 2.4vw;
+          }
+  
+          ul {
+            margin: 2.2vw 0;
+  
+            li {
+              font-size: 4.27vw;
+  
+              &::before {
+								width: 1vw;
+									height: 1vw;
+									left: 1.6vw;
+									top: 2.4vw;
+              }
+            }
+          }
+        }
+      }
+  
+      &__block-title,
+      &__block-title-up {
+        font-size: 4.8vw;
+      }
+  
+      &__btns-download-types {
+        row-gap: 5.3vw;
+				flex-direction: column;
+				padding-bottom: 16vw;
+  
+        a {
+          width: 100%;
+        }
+      }
+  
+      &__btns-download-state {
+        row-gap: 5.3vw;
+				margin-bottom: 10.6vw;
+  
+        a {
+          width: 100%;
+        }
+      }
+  
+      &__btns-download-rights-obligations {
+       row-gap: 5.3vw;
+  
+        a {
+          width: 100%;
+        }
+      }
+  
+      &__right-obl-ul {
+        li {
+          padding-left: 5.3vw;
+  
+          a {
+            font-size: 4.8vw;
+          }
+  
+          &::before {
+						width: 1.2vw;
+							height: 1.2vw;
+							left: 1.6vw;
+							top: 2.4vw;
+          }
+        }
+      }
+  
+      &__block-work {
+        row-gap: 1.2rem;
+      }
+  
+      .block__items {
+        margin-top: 4.4rem;
+      }
+  
+      .block__item-title {
+        padding-left: 1.4rem;
+        max-width: 120rem;
+      }
     }
 }

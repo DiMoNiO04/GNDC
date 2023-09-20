@@ -122,11 +122,12 @@
     }
 
     .btn-white__download {
-        height: 100%;
-        padding: 1.6rem 2.4rem;
-        column-gap: 1.8rem;
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: 150%;
+        padding: 4.27vw 6.4vw;
+        column-gap: 4.8vw;
+        font-size: 4.8vw;
+        svg {
+            min-width: 5.3vw;
+            min-height: 5.3vw;
+          }
     }
 }

@@ -4,33 +4,36 @@
       <a href="../index.html">Главная</a>
       <a href="../patients-page.html">Пациентам</a>
     </div>
-    <div class="title">Пациентам</div>
-    <div class="patients__wrapper">
-			<ul class="menu__tabs">
-				<li class="menu__tab js-link-main">
-					<a href="#programma-gosudarstvennyh-garantij" data-open-content="programma-gosudarstvennyh-garantij">
-						Программа государственных гарантий
-					</a>
-				</li>
-				<li class="menu__tab js-link-main">
-					<a href="#informaciya-dlya-pacientov" data-open-content="informaciya-dlya-pacientov">
-						Информация для пациентов
-					</a>
-				</li>
-				<li class="menu__tab js-link-main">
-					<a href="#nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah"
-						data-open-content="nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah">
-						Набор пациентов для участия в клинических исследованиях
-					</a>
-				</li>
-				<li class="menu__tab js-link-main">
-					<a href="#">
-						Medical tourism
-					</a>
-				</li>
-			</ul>
 
-      <div class="patients__main-content">
+    <div class="title title-main">Пациентам</div>
+    <div class="title title-change hide"></div>
+
+    <div class="patients__wrapper">
+      <ul class="menu__tabs content-menu-mob">
+        <li class="menu__tab js-link-main">
+          <a href="#programma-gosudarstvennyh-garantij" data-open-content="programma-gosudarstvennyh-garantij">
+            Программа государственных гарантий
+          </a>
+        </li>
+        <li class="menu__tab js-link-main">
+          <a href="#informaciya-dlya-pacientov" data-open-content="informaciya-dlya-pacientov">
+            Информация для пациентов
+          </a>
+        </li>
+        <li class="menu__tab js-link-main">
+          <a href="#nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah"
+            data-open-content="nabor-pacientov-dlya-uchastiya-klinicheskih-issledovaniyah">
+            Набор пациентов для участия в клинических исследованиях
+          </a>
+        </li>
+        <li class="menu__tab js-link-main">
+          <a href="#">
+            Medical tourism
+          </a>
+        </li>
+      </ul>
+
+      <div class="patients__main-content content-mob">
         @@include('./patients-inside/state-guar.html')
         @@include('./patients-inside/information.html')
         @@include('./patients-inside/recruitment.html')

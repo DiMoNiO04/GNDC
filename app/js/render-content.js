@@ -58,7 +58,8 @@ const showContent = (content) => {
 const getPage = () => {
     const locationUrl = window.location.href.split('#');
     const locationArr = locationUrl[0].split('/');
-    const page = locationArr[locationArr.length - 2]
+    // const page = locationArr[locationArr.length - 2]
+		const page = locationArr[3]
     return page;
 };
 

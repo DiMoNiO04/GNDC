@@ -40,6 +40,14 @@ h2 {
     cursor: auto;
 }
 
+h4 {
+  color: #3F4C5C;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
 @media screen and (max-width: 48em) {
     .title {
         font-size: 5.86vw;

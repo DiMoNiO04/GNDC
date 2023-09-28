@@ -1637,6 +1637,9 @@ h4 {
     font-size: 5.86vw;
     margin-bottom: 5.33vw;
   }
+  .subtitle {
+    font-size: 4.8vw;
+  }
 }
 .history__img {
   position: absolute;
@@ -3357,6 +3360,109 @@ h4 {
   border-right: 0.1px solid rgba(63, 76, 92, 0.2);
 }
 
+@media screen and (max-width: 48em) {
+  .peppery {
+    row-gap: 8vw;
+  }
+  .peppery__desc {
+    max-width: 100%;
+  }
+  .peppery__desc .subtitle {
+    font-size: 5.3vw;
+    margin-bottom: 5.3vw;
+  }
+  .peppery__desc-text {
+    row-gap: 2.8vw;
+  }
+  .peppery__desc-text p,
+  .peppery__desc-text li {
+    font-size: 4.27vw;
+  }
+  .peppery__desc-text ul {
+    row-gap: 1vw;
+  }
+  .peppery__desc-text li {
+    padding-left: 5.3vw;
+  }
+  .peppery__desc-text li::before {
+    width: 1.2vw;
+    height: 1.2vw;
+    left: 1.6vw;
+    top: 2.4vw;
+  }
+  .peppery__table {
+    border-radius: 2.8vw;
+  }
+  .peppery__table-title {
+    font-size: 5.3vw;
+    padding: 4vw 5.3vw;
+  }
+  .peppery__table-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .peppery__table-item:not(:last-child) {
+    border-bottom: 0.1px solid rgba(63, 76, 92, 0.2);
+  }
+  .peppery__table-item:nth-of-type(2n + 1) {
+    background: #b9c3d3;
+  }
+  .peppery__table-item > div {
+    color: #3f4c5c;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .peppery__table-item > div:nth-child(1) {
+    width: 8rem;
+    padding: 2rem 2rem 2rem 4rem;
+    border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+  }
+  .peppery__table-item > div:nth-child(2) {
+    width: 11rem;
+  }
+  .peppery__table-item > div:nth-child(3) {
+    width: 34rem;
+  }
+  .peppery__table-item > div:nth-child(2), .peppery__table-item > div:nth-child(3) {
+    border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+    padding: 2rem;
+  }
+  .peppery__table-item > div:nth-child(1), .peppery__table-item > div:nth-child(2), .peppery__table-item > div:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .peppery__table-item-desc {
+    width: 101.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .peppery__table-item-desc div {
+    padding: 2rem;
+    border-bottom: 0.1px solid rgba(63, 76, 92, 0.2);
+  }
+  .peppery__table-item-desc div:nth-child(1) {
+    width: 8.5rem;
+  }
+  .peppery__table-item-desc div:nth-child(2) {
+    width: 33.6rem;
+  }
+  .peppery__table-item-desc div:nth-child(3) {
+    width: 23.5rem;
+  }
+  .peppery__table-item-desc div:nth-child(4) {
+    width: 35.6rem;
+    padding-right: 4rem;
+  }
+  .peppery__table-item-desc div:nth-child(1), .peppery__table-item-desc div:nth-child(2), .peppery__table-item-desc div:nth-child(3) {
+    border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+  }
+}
 .patients-page {
   margin-top: 5.6rem;
   padding-bottom: 15rem;
@@ -3573,7 +3679,7 @@ h4 {
     row-gap: 2.2vw;
   }
   .patients-page__block li {
-    padding-left: 0;
+    padding-left: 5.3vw;
   }
   .patients-page__block li::before {
     width: 1.2vw;
@@ -3689,6 +3795,9 @@ h4 {
   }
   .state-guarant-content__phone p {
     font-size: 4.27vw;
+  }
+  .state-guarant-content__phone p:first-child {
+    margin-bottom: 2.2vw;
   }
 }
 .specialists {
@@ -7443,7 +7552,15 @@ h4 {
 .dissertation__contacts p a:hover::after {
   display: none;
 }
-.dissertation__application ul {
+.dissertation__announcement {
+  margin-bottom: 6rem;
+}
+.dissertation__announcement p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 130%;
+}
+.dissertation__application ul, .dissertation__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7453,7 +7570,7 @@ h4 {
           flex-direction: column;
   row-gap: 0.8rem;
 }
-.dissertation__application li {
+.dissertation__application li, .dissertation__list li {
   position: relative;
   padding-left: 2rem;
   color: #3f4c5c;
@@ -7463,10 +7580,10 @@ h4 {
   line-height: 150%;
   cursor: pointer;
 }
-.dissertation__application li a {
+.dissertation__application li a, .dissertation__list li a {
   position: relative;
 }
-.dissertation__application li a::after {
+.dissertation__application li a::after, .dissertation__list li a::after {
   position: absolute;
   content: "";
   display: block;
@@ -7476,10 +7593,10 @@ h4 {
   right: 0;
   bottom: 0.3rem;
 }
-.dissertation__application li a:hover::after {
+.dissertation__application li a:hover::after, .dissertation__list li a:hover::after {
   display: none;
 }
-.dissertation__application li::before {
+.dissertation__application li::before, .dissertation__list li::before {
   content: "";
   display: inline-block;
   width: 0.3rem;
@@ -7489,6 +7606,13 @@ h4 {
   position: absolute;
   left: 0.4rem;
   top: 1rem;
+}
+.dissertation__list .subtitle {
+  text-transform: unset;
+  margin-bottom: 1rem;
+}
+.dissertation__list ul {
+  row-gap: 0;
 }
 
 .news {
@@ -8348,6 +8472,43 @@ h4 {
   line-height: 150%;
 }
 
+@media screen and (max-width: 48em) {
+  .contacts-regulatory {
+    margin-top: 2.8vw;
+    padding-bottom: 24vw;
+  }
+  .contacts-regulatory .title {
+    margin-bottom: 8vw;
+  }
+  .contacts-regulatory__container {
+    row-gap: 8vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .contacts-regulatory__block {
+    row-gap: 5.3vw;
+  }
+  .contacts-regulatory__block:nth-child(1) {
+    grid-area: 1/1/1/1;
+  }
+  .contacts-regulatory__block:nth-child(1) .contacts-regulatory__items,
+  .contacts-regulatory__block:nth-child(1) .contacts-regulatory__item, .contacts-regulatory__block:nth-child(2) .contacts-regulatory__items,
+  .contacts-regulatory__block:nth-child(2) .contacts-regulatory__item, .contacts-regulatory__block:nth-child(3) .contacts-regulatory__items,
+  .contacts-regulatory__block:nth-child(3) .contacts-regulatory__item, .contacts-regulatory__block:nth-child(4) .contacts-regulatory__items,
+  .contacts-regulatory__block:nth-child(4) .contacts-regulatory__item, .contacts-regulatory__block:nth-child(5) .contacts-regulatory__items,
+  .contacts-regulatory__block:nth-child(5) .contacts-regulatory__item {
+    width: 100%;
+  }
+  .contacts-regulatory__items {
+    row-gap: 5.3vw;
+  }
+  .contacts-regulatory__item {
+    row-gap: 2.8vw;
+  }
+  .contacts-regulatory__item-title, .contacts-regulatory__item-text {
+    font-size: 4.8vw;
+  }
+}
 body {
   display: -webkit-box;
   display: -ms-flexbox;

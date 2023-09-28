@@ -48,6 +48,9 @@
   
       &-content__phone p {
         font-size: 4.27vw;
+				&:first-child {
+					margin-bottom: 2.2vw;
+				}
       }
     }
 }

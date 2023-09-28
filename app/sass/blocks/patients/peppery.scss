@@ -134,3 +134,130 @@
     }
   }
 }
+
+
+@media screen and (max-width: 48em) {
+  .peppery {
+      row-gap: 8vw;
+  
+      &__desc {
+        max-width: 100%;
+
+        .subtitle {
+          font-size: 5.3vw;
+          margin-bottom: 5.3vw;
+        }
+      }
+  
+      &__desc-text {
+        row-gap: 2.8vw;
+  
+        p,
+        li {
+          font-size: 4.27vw;
+        }
+  
+        ul {
+          row-gap: 1vw;
+        }
+  
+        li {
+          padding-left: 5.3vw;
+  
+          &::before {
+            width: 1.2vw;
+            height: 1.2vw;
+            left: 1.6vw;
+            top: 2.4vw;
+          }
+        }
+      }
+  
+      &__table {
+        border-radius: 2.8vw;
+      }
+  
+      &__table-title {
+        font-size: 5.3vw;
+        padding: 4vw 5.3vw;
+      }
+  
+      &__table-item {
+        display: flex;
+  
+        &:not(:last-child) {
+          border-bottom: 0.1px solid rgba(63, 76, 92, 0.2);
+        }
+  
+        &:nth-of-type(2n + 1) {
+          background: #b9c3d3;
+        }
+  
+        &>div {
+          color: #3f4c5c;
+          font-size: 1.6rem;
+          font-weight: 400;
+  
+          &:nth-child(1) {
+            width: 8rem;
+            padding: 2rem 2rem 2rem 4rem;
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+  
+          &:nth-child(2) {
+            width: 11rem;
+          }
+  
+          &:nth-child(3) {
+            width: 34rem;
+          }
+  
+          &:nth-child(2),
+          &:nth-child(3) {
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+            padding: 2rem;
+          }
+  
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+  
+      &__table-item-desc {
+        width: 101.2rem;
+        display: flex;
+  
+        div {
+          padding: 2rem;
+          border-bottom: 0.1px solid rgba(63, 76, 92, 0.2);
+  
+          &:nth-child(1) {
+            width: 8.5rem;
+          }
+  
+          &:nth-child(2) {
+            width: 33.6rem;
+          }
+  
+          &:nth-child(3) {
+            width: 23.5rem;
+          }
+  
+          &:nth-child(4) {
+            width: 35.6rem;
+            padding-right: 4rem;
+          }
+  
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+        }
+      }
+    }
+}

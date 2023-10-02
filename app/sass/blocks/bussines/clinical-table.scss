@@ -1,0 +1,318 @@
+.clinical-table {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    
+    &:nth-of-type(even):nth-of-type(n + 2) {
+      background: #b9c3d3;
+    }
+
+    & > div {
+      color: #3F4C5C;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+
+  &__header {
+    border-top: 0.1px solid rgba(63, 76, 92, 0.2);
+      & > div {
+          display: flex;
+          color: #3F4C5C;
+          font-size: 2.3rem;
+          font-weight: 700;
+          line-height: 130%;
+    }
+  }
+
+  &-6 {
+    padding: 0;
+
+    .clinical-table__item,
+    .clinical-table__header {
+      & > div {
+          &:nth-child(1) {
+            width: 19.5rem;
+          }
+
+          &:nth-child(2) {
+            width: 20.1rem;
+          }
+
+          &:nth-child(3) {
+            width: 21rem;
+          }
+
+          &:nth-child(4) {
+            width: 14.4rem;
+          }
+
+          &:nth-child(5) {
+            width: 16rem;
+          }
+
+          &:nth-child(6) {
+            width: 17.2rem;
+          }
+
+          &:nth-child(1) {
+            padding: 2rem 1.5rem 2rem 4rem;
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5) {
+            padding: 2rem 1.5rem;
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+
+          &:nth-child(6) {
+            padding: 2rem 4rem 2rem 1.5rem;
+          }
+      }
+    }
+  }
+
+  &-3 {
+    padding: 0;
+    
+      .clinical-table__item,
+      .clinical-table__header {
+        &>div {
+          &:nth-child(1) {
+            width: 37.2rem;
+          }
+    
+          &:nth-child(2) {
+            width: 37.2rem;
+          }
+    
+          &:nth-child(3) {
+            width: 33.8rem;
+            div:last-child {
+              font-size: 2rem;
+              line-height: 100%;
+            }
+          }
+    
+          &:nth-child(1) {
+            padding: 2rem 2rem 2rem 4rem;
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+    
+          &:nth-child(2) {
+            padding: 2rem;
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+    
+          &:nth-child(3) {
+            padding: 2rem 4rem 2rem 2rem;
+          }
+        }
+      }
+  }
+
+    &-4 {
+      padding: 0;
+  
+      .clinical-table__item,
+      .clinical-table__header {
+        &>div {
+          &:nth-child(1) {
+            width: 12.6rem;
+          }
+  
+          &:nth-child(2) {
+            width: 27.6rem;
+            
+            div:last-child {
+              font-size: 2rem;
+              line-height: 130%;
+            }
+          }
+  
+          &:nth-child(3) {
+            width: 17.6rem;
+          }
+
+          &:nth-child(4) {
+            width: 24.4rem;
+          }
+
+          &:nth-child(5) {
+            width: 26rem;
+          }
+  
+          &:nth-child(1) {
+            padding: 2rem 2rem 2rem 4rem;
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+  
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            padding: 2rem;
+            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          }
+  
+          &:nth-child(5) {
+            padding: 2rem 4rem 2rem 2rem;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 48em) {
+  .clinical-table {  
+      &__item {
+
+        & > div {
+          font-size: 4.27vw;
+        }
+      }
+  
+      &-6 {  
+        .clinical-table__item,
+        .clinical-table__header {
+          padding: 8vw 5.3vw;
+
+          & > div {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+              width: 100%;
+              border: 0;
+              padding: 0;
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 5.3vw;
+            }
+
+            div:first-child {
+              color: #3F4C5C;
+                font-size: 4.8vw;
+                font-weight: 700;
+              margin-bottom: 4.27vw;
+            }
+          }
+        }
+
+        .clinical-table__item {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .clinical-table__header {
+          display: none;
+        }
+      }
+
+      &-3 {
+          .clinical-table__item,
+          .clinical-table__header {
+            padding: 8vw 5.3vw;
+
+            & > div {
+              &:nth-child(1),
+              &:nth-child(2),
+              &:nth-child(3) {
+                width: 100%;
+                border: 0;
+                padding: 0;
+              }
+
+              &:nth-child(3) {
+                div:last-child {
+                    font-size: 4.27vw;
+                  }
+              }
+
+              &:not(:last-child) {
+                 margin-bottom: 5.3vw;
+                }
+
+                div:first-child {
+                  color: #3F4C5C;
+                  font-size: 4.8vw;
+                  font-weight: 700;
+                  margin-bottom: 4.27vw;
+                }
+            }
+          }
+
+          .clinical-table__item {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .clinical-table__header {
+              display: none;
+            }
+      }
+
+      &-4 {
+        .clinical-table__item,
+        .clinical-table__header {
+          padding: 8vw 5.3vw;
+
+          &>div {
+          
+              &:nth-child(1),
+              &:nth-child(2),
+              &:nth-child(3),
+              &:nth-child(4),
+              &:nth-child(5) {
+                width: 100%;
+                border: 0;
+                padding: 0;
+              }
+
+              &:nth-child(1) {
+                display: flex;
+                column-gap: 4.27vw;
+
+                div:first-child {
+                  margin: 0;
+                }
+              }
+          
+              &:nth-child(2) {
+                div:last-child {
+                  font-size: 4.27vw;
+                }
+              }
+          
+              &:not(:last-child) {
+                margin-bottom: 5.3vw;
+              }
+          
+              div:first-child {
+                color: #3F4C5C;
+                font-size: 4.8vw;
+                font-weight: 700;
+                margin-bottom: 4.27vw;
+              }
+            }
+        }
+
+         .clinical-table__item {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .clinical-table__header {
+              display: none;
+            }
+      }
+    }
+}

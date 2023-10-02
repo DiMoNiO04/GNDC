@@ -3240,16 +3240,308 @@ h4 {
   .bussines__content-block-isp-main {
     row-gap: 5.3vw;
   }
-  .bussines__item-clinical .menu__button {
-    height: 21.5rem;
-    padding: 1.5rem 2rem;
-    line-height: 130%;
+  .bussines__item-clinical a {
+    border-bottom: 0;
   }
-  .bussines__item-clinical .bussines__content-block {
-    row-gap: 2rem;
+  .bussines__item-clinical p {
+    font-size: 4.27vw;
+    font-weight: 400;
+    line-height: 117%;
+    font-variant: small-caps;
   }
-  .bussines__item-clinical .block__item {
-    padding-left: 0;
+}
+.clinical-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.clinical-table__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clinical-table__item:nth-of-type(even):nth-of-type(n + 2) {
+  background: #b9c3d3;
+}
+.clinical-table__item > div {
+  color: #3F4C5C;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 130%;
+}
+.clinical-table__header {
+  border-top: 0.1px solid rgba(63, 76, 92, 0.2);
+}
+.clinical-table__header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3F4C5C;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 130%;
+}
+.clinical-table-6 {
+  padding: 0;
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(1),
+.clinical-table-6 .clinical-table__header > div:nth-child(1) {
+  width: 19.5rem;
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(2),
+.clinical-table-6 .clinical-table__header > div:nth-child(2) {
+  width: 20.1rem;
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(3),
+.clinical-table-6 .clinical-table__header > div:nth-child(3) {
+  width: 21rem;
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(4),
+.clinical-table-6 .clinical-table__header > div:nth-child(4) {
+  width: 14.4rem;
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(5),
+.clinical-table-6 .clinical-table__header > div:nth-child(5) {
+  width: 16rem;
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(6),
+.clinical-table-6 .clinical-table__header > div:nth-child(6) {
+  width: 17.2rem;
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(1),
+.clinical-table-6 .clinical-table__header > div:nth-child(1) {
+  padding: 2rem 1.5rem 2rem 4rem;
+  border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(2), .clinical-table-6 .clinical-table__item > div:nth-child(3), .clinical-table-6 .clinical-table__item > div:nth-child(4), .clinical-table-6 .clinical-table__item > div:nth-child(5),
+.clinical-table-6 .clinical-table__header > div:nth-child(2),
+.clinical-table-6 .clinical-table__header > div:nth-child(3),
+.clinical-table-6 .clinical-table__header > div:nth-child(4),
+.clinical-table-6 .clinical-table__header > div:nth-child(5) {
+  padding: 2rem 1.5rem;
+  border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+}
+.clinical-table-6 .clinical-table__item > div:nth-child(6),
+.clinical-table-6 .clinical-table__header > div:nth-child(6) {
+  padding: 2rem 4rem 2rem 1.5rem;
+}
+.clinical-table-3 {
+  padding: 0;
+}
+.clinical-table-3 .clinical-table__item > div:nth-child(1),
+.clinical-table-3 .clinical-table__header > div:nth-child(1) {
+  width: 37.2rem;
+}
+.clinical-table-3 .clinical-table__item > div:nth-child(2),
+.clinical-table-3 .clinical-table__header > div:nth-child(2) {
+  width: 37.2rem;
+}
+.clinical-table-3 .clinical-table__item > div:nth-child(3),
+.clinical-table-3 .clinical-table__header > div:nth-child(3) {
+  width: 33.8rem;
+}
+.clinical-table-3 .clinical-table__item > div:nth-child(3) div:last-child,
+.clinical-table-3 .clinical-table__header > div:nth-child(3) div:last-child {
+  font-size: 2rem;
+  line-height: 100%;
+}
+.clinical-table-3 .clinical-table__item > div:nth-child(1),
+.clinical-table-3 .clinical-table__header > div:nth-child(1) {
+  padding: 2rem 2rem 2rem 4rem;
+  border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+}
+.clinical-table-3 .clinical-table__item > div:nth-child(2),
+.clinical-table-3 .clinical-table__header > div:nth-child(2) {
+  padding: 2rem;
+  border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+}
+.clinical-table-3 .clinical-table__item > div:nth-child(3),
+.clinical-table-3 .clinical-table__header > div:nth-child(3) {
+  padding: 2rem 4rem 2rem 2rem;
+}
+.clinical-table-4 {
+  padding: 0;
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(1),
+.clinical-table-4 .clinical-table__header > div:nth-child(1) {
+  width: 12.6rem;
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(2),
+.clinical-table-4 .clinical-table__header > div:nth-child(2) {
+  width: 27.6rem;
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(2) div:last-child,
+.clinical-table-4 .clinical-table__header > div:nth-child(2) div:last-child {
+  font-size: 2rem;
+  line-height: 130%;
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(3),
+.clinical-table-4 .clinical-table__header > div:nth-child(3) {
+  width: 17.6rem;
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(4),
+.clinical-table-4 .clinical-table__header > div:nth-child(4) {
+  width: 24.4rem;
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(5),
+.clinical-table-4 .clinical-table__header > div:nth-child(5) {
+  width: 26rem;
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(1),
+.clinical-table-4 .clinical-table__header > div:nth-child(1) {
+  padding: 2rem 2rem 2rem 4rem;
+  border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(2), .clinical-table-4 .clinical-table__item > div:nth-child(3), .clinical-table-4 .clinical-table__item > div:nth-child(4),
+.clinical-table-4 .clinical-table__header > div:nth-child(2),
+.clinical-table-4 .clinical-table__header > div:nth-child(3),
+.clinical-table-4 .clinical-table__header > div:nth-child(4) {
+  padding: 2rem;
+  border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+}
+.clinical-table-4 .clinical-table__item > div:nth-child(5),
+.clinical-table-4 .clinical-table__header > div:nth-child(5) {
+  padding: 2rem 4rem 2rem 2rem;
+}
+
+@media screen and (max-width: 48em) {
+  .clinical-table__item > div {
+    font-size: 4.27vw;
+  }
+  .clinical-table-6 .clinical-table__item,
+  .clinical-table-6 .clinical-table__header {
+    padding: 8vw 5.3vw;
+  }
+  .clinical-table-6 .clinical-table__item > div:nth-child(1), .clinical-table-6 .clinical-table__item > div:nth-child(2), .clinical-table-6 .clinical-table__item > div:nth-child(3), .clinical-table-6 .clinical-table__item > div:nth-child(4), .clinical-table-6 .clinical-table__item > div:nth-child(5), .clinical-table-6 .clinical-table__item > div:nth-child(6),
+  .clinical-table-6 .clinical-table__header > div:nth-child(1),
+  .clinical-table-6 .clinical-table__header > div:nth-child(2),
+  .clinical-table-6 .clinical-table__header > div:nth-child(3),
+  .clinical-table-6 .clinical-table__header > div:nth-child(4),
+  .clinical-table-6 .clinical-table__header > div:nth-child(5),
+  .clinical-table-6 .clinical-table__header > div:nth-child(6) {
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+  .clinical-table-6 .clinical-table__item > div:not(:last-child),
+  .clinical-table-6 .clinical-table__header > div:not(:last-child) {
+    margin-bottom: 5.3vw;
+  }
+  .clinical-table-6 .clinical-table__item > div div:first-child,
+  .clinical-table-6 .clinical-table__header > div div:first-child {
+    color: #3F4C5C;
+    font-size: 4.8vw;
+    font-weight: 700;
+    margin-bottom: 4.27vw;
+  }
+  .clinical-table-6 .clinical-table__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinical-table-6 .clinical-table__header {
+    display: none;
+  }
+  .clinical-table-3 .clinical-table__item,
+  .clinical-table-3 .clinical-table__header {
+    padding: 8vw 5.3vw;
+  }
+  .clinical-table-3 .clinical-table__item > div:nth-child(1), .clinical-table-3 .clinical-table__item > div:nth-child(2), .clinical-table-3 .clinical-table__item > div:nth-child(3),
+  .clinical-table-3 .clinical-table__header > div:nth-child(1),
+  .clinical-table-3 .clinical-table__header > div:nth-child(2),
+  .clinical-table-3 .clinical-table__header > div:nth-child(3) {
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+  .clinical-table-3 .clinical-table__item > div:nth-child(3) div:last-child,
+  .clinical-table-3 .clinical-table__header > div:nth-child(3) div:last-child {
+    font-size: 4.27vw;
+  }
+  .clinical-table-3 .clinical-table__item > div:not(:last-child),
+  .clinical-table-3 .clinical-table__header > div:not(:last-child) {
+    margin-bottom: 5.3vw;
+  }
+  .clinical-table-3 .clinical-table__item > div div:first-child,
+  .clinical-table-3 .clinical-table__header > div div:first-child {
+    color: #3F4C5C;
+    font-size: 4.8vw;
+    font-weight: 700;
+    margin-bottom: 4.27vw;
+  }
+  .clinical-table-3 .clinical-table__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinical-table-3 .clinical-table__header {
+    display: none;
+  }
+  .clinical-table-4 .clinical-table__item,
+  .clinical-table-4 .clinical-table__header {
+    padding: 8vw 5.3vw;
+  }
+  .clinical-table-4 .clinical-table__item > div:nth-child(1), .clinical-table-4 .clinical-table__item > div:nth-child(2), .clinical-table-4 .clinical-table__item > div:nth-child(3), .clinical-table-4 .clinical-table__item > div:nth-child(4), .clinical-table-4 .clinical-table__item > div:nth-child(5),
+  .clinical-table-4 .clinical-table__header > div:nth-child(1),
+  .clinical-table-4 .clinical-table__header > div:nth-child(2),
+  .clinical-table-4 .clinical-table__header > div:nth-child(3),
+  .clinical-table-4 .clinical-table__header > div:nth-child(4),
+  .clinical-table-4 .clinical-table__header > div:nth-child(5) {
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+  .clinical-table-4 .clinical-table__item > div:nth-child(1),
+  .clinical-table-4 .clinical-table__header > div:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 4.27vw;
+       -moz-column-gap: 4.27vw;
+            column-gap: 4.27vw;
+  }
+  .clinical-table-4 .clinical-table__item > div:nth-child(1) div:first-child,
+  .clinical-table-4 .clinical-table__header > div:nth-child(1) div:first-child {
+    margin: 0;
+  }
+  .clinical-table-4 .clinical-table__item > div:nth-child(2) div:last-child,
+  .clinical-table-4 .clinical-table__header > div:nth-child(2) div:last-child {
+    font-size: 4.27vw;
+  }
+  .clinical-table-4 .clinical-table__item > div:not(:last-child),
+  .clinical-table-4 .clinical-table__header > div:not(:last-child) {
+    margin-bottom: 5.3vw;
+  }
+  .clinical-table-4 .clinical-table__item > div div:first-child,
+  .clinical-table-4 .clinical-table__header > div div:first-child {
+    color: #3F4C5C;
+    font-size: 4.8vw;
+    font-weight: 700;
+    margin-bottom: 4.27vw;
+  }
+  .clinical-table-4 .clinical-table__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinical-table-4 .clinical-table__header {
+    display: none;
   }
 }
 .rules-preparing {
@@ -6642,11 +6934,11 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.hospitalization__right {
-  width: 98.2rem;
+.hospitalization__contents {
+  width: 115.4rem;
 }
 .hospitalization__left {
-  width: 33rem;
+  width: 34.8rem;
 }
 .hospitalization__btn {
   background-color: #ffffff;
@@ -6654,6 +6946,12 @@ h4 {
   -webkit-column-gap: 1.8rem;
      -moz-column-gap: 1.8rem;
           column-gap: 1.8rem;
+}
+.hospitalization__blocks {
+  display: none;
+}
+.hospitalization__blocks.active {
+  display: block;
 }
 .hospitalization__block {
   padding: 2.5rem 2.5rem 3.5rem 2.5rem;
@@ -6760,6 +7058,97 @@ h4 {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 48em) {
+  .hospitalization {
+    margin-top: 2.2vw;
+    padding-bottom: 21.3vw;
+  }
+  .hospitalization .subtitle {
+    font-size: 5.3vw;
+  }
+  .hospitalization__contents, .hospitalization__right, .hospitalization__left {
+    width: 100%;
+  }
+  .hospitalization__btn {
+    width: 56vw;
+    -webkit-column-gap: 4.8vw;
+       -moz-column-gap: 4.8vw;
+            column-gap: 4.8vw;
+  }
+  .hospitalization__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    row-gap: 0;
+  }
+  .hospitalization__blocks {
+    margin-top: 30vw;
+  }
+  .hospitalization__block {
+    padding: 6.6vw 10.6vw 8.6vw 10.6vw;
+    border-radius: 1.8vw;
+    width: 100%;
+    margin-bottom: 8vw;
+  }
+  .hospitalization__block-title {
+    font-size: 5.3vw;
+    margin-bottom: 6.4vw;
+  }
+  .hospitalization__content-lists {
+    margin-bottom: 8vw;
+    font-size: 4.27vw;
+    line-height: 130%;
+  }
+  .hospitalization__content-lists li {
+    padding-left: 5.3vw;
+  }
+  .hospitalization__content-lists li::before {
+    background: #3F4C5C;
+    width: 1.2vw;
+    height: 1.2vw;
+    left: 1.6vw;
+    top: 2.4vw;
+  }
+  .hospitalization__image {
+    width: 100%;
+    height: 101vw;
+  }
+  .hospitalization__image img {
+    border-radius: 2.2vw;
+  }
+  .hospitalization__content-wrap {
+    margin-bottom: 4rem;
+  }
+  .hospitalization__conditions-text {
+    font-size: 4.27vw;
+    line-height: 130%;
+    margin-bottom: 2.2vw;
+  }
+  .hospitalization__conditions-text strong {
+    display: block;
+    margin-top: 2.2vw;
+  }
+  .hospitalization__conditions-lists {
+    margin-bottom: 8vw;
+    font-size: 4.27vw;
+    line-height: 130%;
+  }
+  .hospitalization__conditions-lists li {
+    margin-bottom: 2.2vw;
+    padding-left: 5.3vw;
+  }
+  .hospitalization__conditions-lists li::before {
+    background: #3F4C5C;
+    width: 1.2vw;
+    height: 1.2vw;
+    left: 1.6vw;
+    top: 2.4vw;
+  }
+  .content-menu-mob.active ~ .hospitalization__blocks {
+    display: none !important;
+  }
+}
 .connection {
   margin-top: 5.6rem;
   padding-bottom: 15rem;

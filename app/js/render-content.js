@@ -6,7 +6,8 @@ const PAGES = {
     SERGEV_POSAD: 'sergev-posad-page.html',
     CONNECTION: 'connection-page.html',
     PATIENTS: 'patients-page.html',
-    CLINICAL: 'clinical-guidelines-two-page.html'
+    CLINICAL: 'clinical-guidelines-two-page.html',
+    HOSPITALIZATION: 'hospitalization-page.html'
 };
 
 const CONTENT = {
@@ -16,7 +17,8 @@ const CONTENT = {
     SERGEV_POSAD: '#sergievo-posadskij-filial',
     CONNECTION: '#voprosy-otvety',
     PATIENTS: '#programma-gosudarstvennyh-garantij',
-    CLINICAL: '#proekty-klinicheskih-rekomendacij'
+    CLINICAL: '#proekty-klinicheskih-rekomendacij',
+    HOSPITALIZATION: '#usloviya-gospitalizacii'
 };
 //------------------------------------------------------------//
 
@@ -187,6 +189,8 @@ function renderContent() {
           showContent(CONTENT.PATIENTS)
         } else if(page === PAGES.CLINICAL) {
           showContent(CONTENT.CLINICAL)
+        } else if(page === PAGES.HOSPITALIZATION) {
+          showContent(CONTENT.HOSPITALIZATION)
         }
         removeActiveMainLink();
     }

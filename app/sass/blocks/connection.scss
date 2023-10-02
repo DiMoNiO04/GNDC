@@ -174,8 +174,13 @@
 
     &__feedback {
         width: 110rem;
-        padding-bottom: 5rem;
         border-bottom: 1px solid rgba(63, 76, 92, 0.2);
+        
+        &:not(:first-child) {
+          padding-top: 2.5rem;
+        }
+
+        padding-bottom: 2.5rem;
     }
 
     &__feedback-inner {

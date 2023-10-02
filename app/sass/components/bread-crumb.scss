@@ -20,6 +20,7 @@
             width: 0.8rem;
             height: 1.4rem;
             display: block;
+            flex-shrink: 0;
         }
 
         &:last-child {

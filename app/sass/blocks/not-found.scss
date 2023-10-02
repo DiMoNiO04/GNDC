@@ -49,3 +49,41 @@
     }
   }
 }
+
+@media screen and (max-width: 48em) {
+  .not-found {
+      &__container {
+        row-gap: 11.8vw;
+        padding: 8vw 0 16vw 0;
+        flex-direction: column;
+      }
+  
+      &__img {
+        width: 61.3vw;
+        height: 56vw;
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      &__number {
+        font-size: 40vw;
+        margin-bottom: 5.3vw;
+      }
+  
+      &__title {
+        font-size: 5.3vw;
+        margin-bottom: 2.7vw;
+      }
+  
+      &__text {
+        font-size: 4.27vw;
+        margin-bottom: 8vw;
+        text-align: center;
+      }
+    }
+}

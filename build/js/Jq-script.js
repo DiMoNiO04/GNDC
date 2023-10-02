@@ -50,23 +50,6 @@ $('.photos__item-image').on('click', function () {
 });
 //--------------------------------------------------------------------------//
 
-//-------------------------Clinical quide----------------------------------//
-// $('[data-open-clinical').on('click', function () {
-//     $('[data-open-clinical]').removeClass('active');
-//     $(`[data-open-clinical="${$(this).data('open-clinical')}"`).addClass('active');
-
-//     $('[data-clinical]').removeClass('active');
-//     $(`[data-clinical="${$(this).data('open-clinical')}"`).addClass('active');
-// });
-
-// $('[data-open-draft-clinical').on('click', function () {
-//     $('[data-open-draft-clinical]').removeClass('active');
-//     $(`[data-open-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
-
-//     $('[data-draft-clinical]').removeClass('active');
-//     $(`[data-draft-clinical="${$(this).data('open-draft-clinical')}"`).addClass('active');
-// });
-//------------------------------------------------------------------------//
 
 //----------------------Conferences--------------------------------------//
 $('[data-open-conf').on('click', function () {

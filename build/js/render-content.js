@@ -5,7 +5,8 @@ const PAGES = {
     ABOUT: 'about-center-page.html',
     SERGEV_POSAD: 'sergev-posad-page.html',
     CONNECTION: 'connection-page.html',
-    PATIENTS: 'patients-page.html'
+    PATIENTS: 'patients-page.html',
+    CLINICAL: 'clinical-guidelines-two-page.html'
 };
 
 const CONTENT = {
@@ -14,7 +15,8 @@ const CONTENT = {
     ISTORIYA: '#istoriya',
     SERGEV_POSAD: '#sergievo-posadskij-filial',
     CONNECTION: '#voprosy-otvety',
-    PATIENTS: '#programma-gosudarstvennyh-garantij'
+    PATIENTS: '#programma-gosudarstvennyh-garantij',
+    CLINICAL: '#proekty-klinicheskih-rekomendacij'
 };
 //------------------------------------------------------------//
 
@@ -36,6 +38,10 @@ const showMobMenu = () => {
 const showMobContent = () => {
     $('.content-menu-mob').removeClass('active');
     $('.content-mob').addClass('active');
+
+    if(getPage() === PAGES.SERGEV_POSAD) {
+      $('.menu__button-title a').text($('.title-change').text());
+    }
 };
 
 const showMobSubMenu = () => {
@@ -59,7 +65,7 @@ const getPage = () => {
     const locationUrl = window.location.href.split('#');
     const locationArr = locationUrl[0].split('/');
     // const page = locationArr[locationArr.length - 2]
-		const page = locationArr[3]
+    const page = locationArr[3]
     return page;
 };
 
@@ -179,6 +185,8 @@ function renderContent() {
           showContent(CONTENT.CONNECTION)
         } else if(page === PAGES.PATIENTS) {
           showContent(CONTENT.PATIENTS)
+        } else if(page === PAGES.CLINICAL) {
+          showContent(CONTENT.CLINICAL)
         }
         removeActiveMainLink();
     }

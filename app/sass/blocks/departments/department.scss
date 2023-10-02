@@ -20,6 +20,10 @@
         height: 42rem;
         border-radius: 0.8rem;
         margin-bottom: 3.4rem;
+
+        img {
+          border-radius: 0.8rem;
+        }
     }
 
     &__main-employee-name {
@@ -50,6 +54,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
+        
         .subtitle,
         ul {
             margin: 0;
@@ -193,6 +198,7 @@
         font-weight: 700;
         line-height: 2.5rem;
         margin-bottom: 2.2rem;
+
         span {
             text-transform: uppercase;
         }
@@ -225,6 +231,7 @@
         font-weight: 400;
         line-height: 150%;
         font-style: normal;
+
         p {
             margin-bottom: 1rem;
         }
@@ -250,4 +257,193 @@
             display: block;
         }
     }
+}
+
+
+@media screen and (max-width: 48em) {
+  .department {
+      margin-top: 2.8vw;
+      padding-bottom: 21.3vw;
+
+      .title {
+        margin-bottom: 8vw;
+      }
+  
+      &__wrapper {
+        row-gap: 21.3vw;
+        flex-direction: column;
+      }
+  
+      &__left,
+      &__right {
+        width: 100%;
+      }
+  
+      &__main-employee {
+        margin-bottom: 8vw;
+      }
+  
+      &__main-employee-img {
+        width: 95vw;
+        height: 80vw;
+        margin-bottom: 4.27vw;
+
+        img {
+          border-radius: 2.2vw;
+        }
+      }
+  
+      &__main-employee-name {
+        font-size: 4.27vw;
+        margin-bottom: 1.8vw;
+      }
+  
+      &__main-employee-job {
+        font-size: 4.27vw;
+      }
+  
+      &__employees {
+        row-gap: 5.8vw;
+      }
+  
+      &__employees-title {
+        font-size: 4.8vw;
+        margin-bottom: 5.3vw;
+      }
+  
+      &__employees-block {
+        li {
+          padding-left: 5.3vw;
+  
+          span {
+            font-size: 4.27vw;
+            line-height: 130%;
+          }
+
+          .link-blue {
+            border: 0;
+          }
+  
+          &::before {
+            width: 1.2vw;
+              height: 1.2vw;
+              left: 1.6vw;
+              top: 2.4vw;
+          }
+        }
+      }
+  
+      &__text {
+        margin-bottom: 21.3vw;
+  
+        p,
+        li {
+          font-size: 4.27vw;
+          line-height: 150%;
+        }
+  
+        ul {
+          margin-top: 2.7vw;
+        }
+  
+        li {
+          padding-left: 5.3vw;
+  
+          &::before {
+            width: 1.2vw;
+              height: 1.2vw;
+              left: 1.6vw;
+              top: 2.4vw;
+          }
+
+                     ul {
+                       margin-top: 0.6vw;
+                     }
+          
+                     li {
+                       font-size: 4.27vw;
+          
+                       &::before {
+                        width: 0.8vw;
+                          height: 0.8vw;
+                          left: 2vw;
+                          top: 2.8vw;
+                       }
+                     }
+        }
+      }
+  
+      &__photo-link {
+        font-size: 4vw;
+      }
+  
+      &__slider {
+        margin-bottom: 5.3vw;
+      }
+  
+      &__slide {
+        width: 95vw;
+        height: 80vw;
+      }
+  
+      &__swiper-wrapper {
+        margin-bottom: 5.3vw;
+      }
+  
+      &__texts {
+        flex-direction: column;
+      }
+  
+      &__text-title {
+        font-size: 4.8vw;
+        line-height: 140%;
+        margin-bottom: 2.8vw;
+      }
+
+      &__next,
+      &__prev {
+        display: none;
+      }
+
+      &__pagination {
+        justify-content: center;
+      }
+  
+      &__text-title-up {
+        font-size: 4.8vw;
+        line-height: 140%;
+        margin-bottom: 5.3vw;
+      }
+  
+      &__text-block {
+        font-size: 4.27vw;
+        line-height: 150%;
+  
+        p {
+          margin-bottom: 2.2vw;
+        }
+      }
+  
+      .menu__buttons {
+        margin-bottom: 0;
+      }
+  
+      &__sergev {
+        .department__wrapper {
+          row-gap: 8vw;
+        }
+
+        .department__text {
+        margin-bottom: 8vw;
+        }
+
+        .department__main-employee {
+          margin-bottom: 0;
+        }
+
+        .department__slider {
+          margin-bottom: 8vw;
+        }
+      }
+    } 
 }

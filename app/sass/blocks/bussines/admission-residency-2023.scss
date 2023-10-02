@@ -24,10 +24,13 @@
         p,
         a,
         li {
-            color: #3f4c5c;
             font-size: 1.8rem;
             font-weight: 400;
             line-height: 150%;
+        }
+
+        p, li {
+          color: #3f4c5c;
         }
     }
 
@@ -35,5 +38,40 @@
         padding: 0;
         margin: 0;
         padding-left: 2.8rem;
+    }
+}
+
+
+@media screen and (max-width: 48em) {
+  .admission-residency {
+      margin-top: 2.7vw;
+      padding-bottom: 21.3vw;
+  
+      &__wrapper {
+        row-gap: 8vw;
+      }
+  
+      &__block-title {
+        font-size: 4vw;
+        margin-bottom: 0;
+      }
+  
+      &__block {
+        row-gap: 5.3vw;
+  
+        p,
+        a,
+        li {
+          font-size: 4.27vw;
+        }
+      }
+  
+      ol {
+        padding-left: 5.3vw;
+
+        a {
+          border-bottom: 0;
+        }
+      }
     }
 }

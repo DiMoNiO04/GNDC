@@ -3,349 +3,384 @@
         <div class="bread-crumbs">
             <a href="../index.html">Главная</a>
             <a href="../patients-page.html">Пациентам</a>
-            <a href="../clinical-guidelines-two-page.html">Клинические рекомендации</a>
+            <a href="#">Клинические рекомендации</a>
         </div>
-        <div class="title main-title">Клинические рекомендации</div>
+        
+        <div class="title title-main">Клинические рекомендации</div>
+        <div class="title title-change hide"></div>
+        
         <div class="clinical-two__wrapper">
-            <div class="clinical-two__left">
-                <ul class="manu__tabs">
-                    <li class="menu__tab active" data-open-menu="draft-clinical-guid">
-                        Проекты клинических рекомендаций
-                    </li>
-                    <li class="menu__tab" data-open-menu="clinical-guid">
-                        Клинические рекомендации, размещенные в рубрикаторе минздрава РФ
-                    </li>
-                </ul>
-            </div>
-            <div class="clinical-two__right">
-                <div class="clinical-two__wrap active" data-menu="draft-clinical-guid">
-                    <div class="menu__buttons">
-                        <div class="menu__button all-btn__blue active" data-open-draft-clinical="dermatovenereology">
-                            Дерматовенерология
-                        </div>
-                        <div class="menu__button all-btn__blue" data-open-draft-clinical="cosmetology">
-                            Косметология
-                        </div>
-                    </div>
-                    <div class="clinical-two__wrap-content active" data-draft-clinical="dermatovenereology">
+            <ul class="menu__tabs content-menu-mob">
+              <li class="menu__tab js-link-main --desc">
+                <a href="#proekty-klinicheskih-rekomendacij/dermatologiya" data-open-content="proekty-klinicheskih-rekomendacij">
+                  Проекты клинических рекомендаций
+                </a>
+              </li>
+              <li class="menu__tab js-link-main --mob">
+                <a href="#proekty-klinicheskih-rekomendacij" data-open-content="proekty-klinicheskih-rekomendacij">
+                  Проекты клинических рекомендаций
+                </a>
+              </li>
+              <li class="menu__tab js-link-main --desc">
+                <a href="#klinicheskie-rekomendacii-minzdrava-RF/dermatologiya"
+                  data-open-content="klinicheskie-rekomendacii-minzdrava-RF">
+                  Клинические рекомендации, размещенные в рубрикаторе минздрава РФ
+                </a>
+              </li>
+              <li class="menu__tab js-link-main --mob">
+                <a href="#klinicheskie-rekomendacii-minzdrava-RF" data-open-content="klinicheskie-rekomendacii-minzdrava-RF">
+                  Клинические рекомендации, размещенные в рубрикаторе минздрава РФ
+                </a>
+              </li>
+            </ul>
+
+            <div class="clinical-two__main-content content-mob">
+                <div class="clinical-two__wrap" data-content="proekty-klinicheskih-rekomendacij">
+                    <ul class="menu__buttons subcontent-menu-mob">
+                      <li class="menu__button js-link-submain active">
+                        <a href="#proekty-klinicheskih-rekomendacij/dermatologiya" data-open-content-block="proekty-klinicheskih-rekomendacij/dermatologiya">Дерматовенерология</a>
+                      </li>
+                      <li class="menu__button js-link-submain">
+                        <a href="#proekty-klinicheskih-rekomendacij/kosmetologiya" data-open-content-block="proekty-klinicheskih-rekomendacij/kosmetologiya">Косметология</a>
+                      </li>
+                    </ul>
+                    <div class="subcontent-mob">
+
+                      <div class="menu__button-title --mob">
+                        <a href="#proekty-klinicheskih-rekomendacij"></a>
+                      </div>
+
+                      <div class="clinical-two__wrap-content active" data-content-block="proekty-klinicheskih-rekomendacij/dermatologiya">
                         <div class="clinical-two__items">
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
+                            <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
                         </div>
-                    </div>
-                    <div class="clinical-two__wrap-content" data-draft-clinical="cosmetology">
+                      </div>
+                      <div class="clinical-two__wrap-content" data-content-block="proekty-klinicheskih-rekomendacij/kosmetologiya">
                         <div class="clinical-two__items">
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">
-                                    КР Другие изменения кожи, вызванные хроническим воздействием неионизирующего
-                                    излучения, 2021
-                                </p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">
+                              КР Другие изменения кожи, вызванные хроническим воздействием неионизирующего
+                              излучения, 2021
+                            </p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
+                            <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
                         </div>
+                      </div>
                     </div>
                 </div>
-                <div class="clinical-two__wrap" data-menu="clinical-guid">
-                    <div class="menu__buttons">
-                        <div class="menu__button all-btn__blue active" data-open-clinical="dermatovenereology">
-                            Дерматовенерология
-                        </div>
-                        <div class="menu__button all-btn__blue" data-open-clinical="cosmetology">Косметология</div>
-                    </div>
-                    <div class="clinical-two__wrap-content active" data-clinical="dermatovenereology">
+
+                <div class="clinical-two__wrap" data-content="klinicheskie-rekomendacii-minzdrava-RF">
+                    <ul class="menu__buttons subcontent-menu-mob">
+                      <li class="menu__button js-link-submain active">
+                        <a href="#klinicheskie-rekomendacii-minzdrava-RF/dermatologiya" data-open-content-block="klinicheskie-rekomendacii-minzdrava-RF/dermatologiya">Дерматовенерология</a>
+                      </li>
+                      <li class="menu__button js-link-submain">
+                        <a href="#klinicheskie-rekomendacii-minzdrava-RF/kosmetologiya" data-open-content-block="klinicheskie-rekomendacii-minzdrava-RF/kosmetologiya">Косметология</a>
+                      </li>
+                    </ul>
+                    <div class="subcontent-mob">
+
+                      <div class="menu__button-title --mob">
+                        <a href="#klinicheskie-rekomendacii-minzdrava-RF"></a>
+                      </div>
+
+                      <div class="clinical-two__wrap-content active"
+                        data-content-block="klinicheskie-rekomendacii-minzdrava-RF/dermatologiya">
                         <div class="clinical-two__items">
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/old-man.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Старческая атрофия (вялость) кожи, 2021</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/old-man.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">
-                                    КР Другие изменения кожи, вызванные хроническим воздействием неионизирующего
-                                    излучения, 2021
-                                </p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Старческая атрофия (вялость) кожи, 2021</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">
+                              КР Другие изменения кожи, вызванные хроническим воздействием неионизирующего
+                              излучения, 2021
+                            </p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
+                            <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
                         </div>
-                    </div>
-                    <div class="clinical-two__wrap-content" data-clinical="cosmetology">
+                      </div>
+                      <div class="clinical-two__wrap-content" data-content-block="klinicheskie-rekomendacii-minzdrava-RF/kosmetologiya">
                         <div class="clinical-two__items">
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/old-man.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР (вялость) кожи, 2021</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/old-man.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">
-                                    КР Другие изменения кожи, вызванные хроническим воздействием неионизирующего
-                                    излучения, 2021
-                                </p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР (вялость) кожи, 2021</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">
+                              КР Другие изменения кожи, вызванные хроническим воздействием неионизирующего
+                              излучения, 2021
+                            </p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипергидроз, 2021</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Андрогенная алопеция, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Атрофические полосы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Гипертрофические рубцы, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Хлоазма, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/fat-man.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованное отложение жира, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/dermatology.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Локализованный гипертрихоз, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
-                            <div class="clinical-two__item">
-                                <div class="clinical-two__item-img">
-                                    <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
-                                </div>
-                                <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
-                                <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                            <p class="clinical-two__item-desc">КР Послевоспалительная гиперпигментация, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
+                          <div class="clinical-two__item">
+                            <div class="clinical-two__item-img">
+                              <img src="./img/clinical-recomendation/bubbles.svg" alt="" />
                             </div>
+                            <p class="clinical-two__item-desc">КР Другие уточненные нарушения пигментации, 2022</p>
+                            <a href="#" class="clinical-two__item-btn all-btn__blue">Подробнее</a>
+                          </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </div>

@@ -133,7 +133,7 @@
         &__item-inner {
             padding: 4vw 5.2vw;
             row-gap: 5.3vw;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
         }
 
@@ -146,8 +146,8 @@
         }
 
         &__item-arrow {
-            width: 8.8vw;
-            height: 8.8vw;
+            width: 8vw;
+            height: 8vw;
         }
 
         &__content {

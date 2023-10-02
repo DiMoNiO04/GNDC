@@ -1,60 +1,61 @@
 <section class="bussines">
     <div class="container">
         <div class="bread-crumbs">
-            <a href="../index.html">Главная</a>
-            <a href="../specialists-page.html">Направление деятельности</a>
+            <a href="./index.html">Главная</a>
+            <a href="./bussines-page.html">Направление деятельности</a>
             <a href="#nauchnaya-deyatelnost" class="crumb-content">Научная деятельность</a>
         </div>
-        <div class="title">Направление деятельности</div>
+
+        <div class="title title-main">Направление деятельности</div>
+        <div class="title title-change hide"></div>
+
         <div class="bussines__wrapper">
-            <div class="bussines__left">
-                <ul class="menu__tabs">
-                    <li class="menu__tab">
+                <ul class="menu__tabs content-menu-mob">
+                    <li class="menu__tab js-link-main">
                         <a href="#nauchnaya-deyatelnost" data-open-content="nauchnaya-deyatelnost"
                             >Научная деятельность</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#klinicheskaya-deyatelnost" data-open-content="klinicheskaya-deyatelnost"
                             >Клиническая деятельность</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a
                             href="#organizacionno-metodicheskaya-deyatelnost"
                             data-open-content="organizacionno-metodicheskaya-deyatelnost"
                             >Организационно-методическая деятельность</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a
-                            href="#obrazovatelnaya-deyatelnost/vysshee-obrazovanie"
+                            href="#obrazovatelnaya-deyatelnost"
                             data-open-content="obrazovatelnaya-deyatelnost"
                             >Образовательная деятельность</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a
                             href="#klinicheskie-ispytaniya/klinicheskie-issledovaniya-lekarstvennyh-i-kosmeticheskih-sredstv"
                             data-open-content="klinicheskie-ispytaniya"
                             >Клинические испытания лекарственных и косметических средств, медицинских изделий</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#ispytatelnyj-laboratornyj-centr" data-open-content="ispytatelnyj-laboratornyj-centr"
                             >Испытательный лабораторный центр</a
                         >
                     </li>
-                    <li class="menu__tab">
+                    <li class="menu__tab js-link-main">
                         <a href="#proizvodstvennaya-deyatelnost" data-open-content="proizvodstvennaya-deyatelnost"
                             >Производственная деятельность. Реализация Федерального проекта “Медицинская наука для
                             человека”</a
                         >
                     </li>
                 </ul>
-            </div>
 
-            <div class="bussines__right">
+            <div class="bussines__main-content content-mob">
                 @@include('./bussines-inside/scientific-activity.html')
                 @@include('./bussines-inside/clinical-activity.html')
                 @@include('./bussines-inside/obrazovatelnaya-deyatelnost.html')

@@ -21,12 +21,15 @@
         flex-direction: column;
         row-gap: 1rem;
         p,
-        a,
-        li {
-            color: #3f4c5c;
+        li,
+        a {
             font-size: 1.8rem;
             font-weight: 400;
             line-height: 150%;
+        }
+
+        p, li {
+          color: #3f4c5c;
         }
 
         li {
@@ -55,5 +58,53 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 48em) {
+  .submit-docs {
+      margin-top: 2.7vw;
+      padding-bottom: 21.3vw;
+  
+      &__wrapper {
+        row-gap: 8vw;
+      }
+  
+      &__block-title {
+        font-size: 4.8vw;
+        line-height: 140%;
+        margin-bottom: 0;
+      }
+  
+      &__block {
+        row-gap: 5.3vw;
+  
+        p,
+        a,
+        li {
+          font-size: 4.27vw;
+        }
+
+  
+        li {
+          padding-left: 5.3vw;
+
+          a {
+              border-bottom: 0;
+            }
+  
+          &::before {
+            width: 0.8vw;
+            height: 0.8vw;
+            left: 1.4vw;
+            top: 2.8vw;
+          }
+  
+          ul {
+            margin-top: 1.2vw;
+          }
+        }
+      }
     }
 }

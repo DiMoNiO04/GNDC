@@ -15,6 +15,10 @@
         width: 39.6rem;
         height: 39.6rem;
         margin-bottom: 3.4rem;
+
+        img {
+          border-radius: 0.8rem;
+        }
     }
 
     &__main-link {
@@ -93,6 +97,9 @@
         width: 100%;
         height: 30.8rem;
         margin-bottom: 1.6rem;
+        img {
+          border-radius: 0.8rem;
+        }
     }
 
     &__right {
@@ -111,5 +118,92 @@
 
     &__item {
         width: 30.8rem;
+    }
+}
+
+
+@media screen and (max-width: 48em) {
+  .employees {
+      margin-top: 2.7vw;
+      padding-bottom: 10.6vw;
+
+      .title {
+        margin-bottom: 8vw;
+      }
+
+      &__wrapper {
+        flex-direction: column;
+        row-gap: 24vw;
+      }
+  
+      &__left {
+        width: 100%;
+      }
+  
+      &__main {
+        width: 95vw;
+        height: 80vw;
+        margin-bottom: 5.3vw;
+        img {
+          border-radius: 2.2vw;
+        }
+      }
+  
+      &__main-link {
+        font-size: 4.27vw;
+        margin-bottom: 4vw;
+      }
+  
+      &__main-job {
+        font-size: 4.27vw;
+        line-height: 130%;
+      }
+  
+      &__degrees-title {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      &__degrees-items li {
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+  
+      &__title {
+        margin-bottom: 0;
+      }
+  
+      &__subtitle {
+        font-size: 5.3vw;
+        margin-bottom: 5.3vw;
+      }
+  
+      &__name {
+        font-size: 4.27vw;
+        margin-bottom: 1.8vw;
+      }
+
+      &__job {
+        font-size: 4.27vw;
+      }
+  
+      &__img {
+        width: 95vw;
+        height: 80vw;
+        margin-bottom: 4.27vw;
+      }
+  
+      &__right {
+        row-gap: 8vw;
+      }
+  
+      &__items {
+        row-gap: 5.3vw;
+      }
+  
+      &__item {
+        width: 100%;
+      }
     }
 }

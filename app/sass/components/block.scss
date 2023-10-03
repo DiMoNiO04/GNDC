@@ -11,6 +11,13 @@
         border-radius: 0.8rem;
     }
 
+    &__item-schedule {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 7rem;
+    }
+
     &__item-inner {
         display: flex;
         cursor: pointer;
@@ -68,7 +75,7 @@
         line-height: 125%;
         color: #3f4c5c;
         display: inline-block;
-        margin: 0 5rem 0 auto;
+        // margin: 0 5rem 0 auto;
         flex-shrink: 0;
     }
 
@@ -137,6 +144,14 @@
             align-items: center;
         }
 
+        &__item-schedule {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 5.3vw;
+          width: 100%;
+        }
+
         &__item-title {
             font-size: 5.3vw;
             max-width: 100%;
@@ -164,9 +179,9 @@
         }
 
         &__item-price {
-            font-size: 2rem;
-            line-height: 125%;
-            margin: 0 5rem 0 auto;
+            font-size: 4.8vw;
+            line-height: 110%;
+            // margin: 0 5rem 0 auto;
         }
 
         &__item-lists-subblock-inner {

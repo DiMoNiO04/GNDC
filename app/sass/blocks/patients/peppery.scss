@@ -182,80 +182,67 @@
         padding: 4vw 5.3vw;
       }
   
-      &__table-item {
-        display: flex;
-  
-        &:not(:last-child) {
-          border-bottom: 0.1px solid rgba(63, 76, 92, 0.2);
-        }
-  
-        &:nth-of-type(2n + 1) {
-          background: #b9c3d3;
-        }
-  
-        &>div {
-          color: #3f4c5c;
-          font-size: 1.6rem;
-          font-weight: 400;
-  
-          &:nth-child(1) {
-            width: 8rem;
-            padding: 2rem 2rem 2rem 4rem;
-            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+        &__table-item {
+          flex-direction: column;
+          padding: 8vw 5.3vw;
+          row-gap: 5.3vw;
+
+          &:not(:last-child) {
+            border-bottom: 0;
           }
-  
-          &:nth-child(2) {
-            width: 11rem;
+
+          &:nth-of-type(2n + 2) {
+            background: #b9c3d3;
           }
-  
-          &:nth-child(3) {
-            width: 34rem;
+
+          &:nth-of-type(2n + 1) {
+            background: #D8DEE8;
           }
-  
-          &:nth-child(2),
-          &:nth-child(3) {
-            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
-            padding: 2rem;
-          }
-  
+    
+        & > div {
+          font-size: 4.27vw;
+
           &:nth-child(1),
           &:nth-child(2),
           &:nth-child(3) {
-            display: flex;
-            align-items: center;
+            width: 100%;
+            border: 0;
+            padding: 0;
+          }
+
+          &:nth-child(2) {
+            position: absolute;
+              width: fit-content;
+              left: 75%;
           }
         }
       }
-  
+
       &__table-item-desc {
-        width: 101.2rem;
-        display: flex;
-  
+        width: 100%;
+        flex-direction: column;
+        row-gap: 4.27vw;
+
+        &:not(:last-child) {
+          margin-bottom: 5.3vw;
+        }
+        
         div {
-          padding: 2rem;
-          border-bottom: 0.1px solid rgba(63, 76, 92, 0.2);
-  
-          &:nth-child(1) {
-            width: 8.5rem;
-          }
-  
-          &:nth-child(2) {
-            width: 33.6rem;
-          }
-  
-          &:nth-child(3) {
-            width: 23.5rem;
-          }
-  
-          &:nth-child(4) {
-            width: 35.6rem;
-            padding-right: 4rem;
-          }
-  
+          padding: 0;
+          border-bottom: 0;
+
           &:nth-child(1),
           &:nth-child(2),
-          &:nth-child(3) {
-            border-right: 0.1px solid rgba(63, 76, 92, 0.2);
+          &:nth-child(3),
+          &:nth-child(4) {
+            width: 100%;
+            border: 0;
+            padding: 0;
+          }
+
+          &:nth-child(1) {
+            font-size: 4.8vw;
+              font-weight: 700;
           }
         }
       }

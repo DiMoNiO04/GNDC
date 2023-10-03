@@ -39,10 +39,10 @@ const mainNewsSlider = new Swiper('#news-main__swiper', {
         clickable: true,
         renderBullet: function (index, className) {
             return `
-				<span class="${className}">
-				 
-				</span>
-			`;
+        <span class="${className}">
+         
+        </span>
+      `;
         },
         el: '.main__news-bullets',
     },
@@ -232,12 +232,6 @@ const contactsBranchesSlider = new Swiper('#contacts__branches-swiper', {
 });
 
 const brandsSwiper = new Swiper('#news-swiper', {
-    slidesPerView: 3,
-    slidesPerColumn: 3,
-    grid: {
-        rows: 3,
-    },
-    spaceBetween: 30,
     navigation: {
         nextEl: '.news__next',
         prevEl: '.news__prev',
@@ -245,6 +239,25 @@ const brandsSwiper = new Swiper('#news-swiper', {
     pagination: {
         el: '.news__bullets',
         clickable: true,
+    },
+
+     breakpoints: {
+        300: {
+            slidesPerView: 1,
+            slidesPerColumn: 1,
+            grid: {
+                rows: 6,
+            },
+            spaceBetween: 20,
+        },
+        769: {
+            slidesPerView: 3,
+            slidesPerColumn: 3,
+            grid: {
+                rows: 3,
+            },
+            spaceBetween: 30,
+        },
     },
 });
 
@@ -262,10 +275,10 @@ const referenceSlider = new Swiper('#reference__swipper', {
         clickable: true,
         renderBullet: function (index, className) {
             return `
-				<span class="${className}">
-				 
-				</span>
-			`;
+        <span class="${className}">
+         
+        </span>
+      `;
         },
         el: '.reference__bullets',
     },
@@ -285,10 +298,10 @@ const conferencesModalSlider = new Swiper('#modal__conferences-swiper', {
         clickable: true,
         renderBullet: function (index, className) {
             return `
-				<span class="${className}">
-				 
-				</span>
-			`;
+        <span class="${className}">
+         
+        </span>
+      `;
         },
         el: '.modal__conferences-bullets',
     },
@@ -321,10 +334,10 @@ const bussinesSlider = new Swiper('#bussines__swipper', {
         clickable: true,
         renderBullet: function (index, className) {
             return `
-				<span class="${className}">
-				 
-				</span>
-			`;
+        <span class="${className}">
+         
+        </span>
+      `;
         },
         el: '.bussines__bullets',
     },

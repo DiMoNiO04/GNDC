@@ -28,6 +28,7 @@
 
     &__prev,
     &__next {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         width: fit-content;
         height: 5.6rem;
         cursor: pointer;
@@ -51,7 +52,12 @@
         }
 
         &__bullets {
-            column-gap: 2rem;
+            column-gap: 3.2vw;
+        }
+
+        &__prev,
+        &__next {
+          height: 16vw;
         }
     }
 }

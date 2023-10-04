@@ -265,17 +265,19 @@
             <a href="../index.html">Главная</a>
             <a href="../сost-honey-page.html">Стоимость медицинских услуг</a>
         </div>
+        <div class="title">Стоимость медицинских услуг</div>
         <div class="cost__wrapper">
             <div class="cost__left">
-                <div class="title">Стоимость медицинских услуг</div>
                 <div class="block__items">
                     <!--1 уровень вложенность-->
                     <div class="block__item">
                         <div class="block__item-inner">
                             <div class="block__item-title">1 уровень вложенность</div>
-                            <div class="block__item-price">от 280 руб.</div>
-                            <div class="block__item-arrow">
+                            <div class="block__item-cost">
+                              <div class="block__item-price">от 280 руб.</div>
+                              <div class="block__item-arrow">
                                 <img src="./img/icon/button-arrow-green.svg" alt="" />
+                              </div>
                             </div>
                         </div>
                         <div class="block__content cost__content">
@@ -336,9 +338,11 @@
                     <div class="block__item">
                         <div class="block__item-inner">
                             <div class="block__item-title">2 уровня вложенности</div>
-                            <div class="block__item-price">от 280 руб.</div>
-                            <div class="block__item-arrow">
+                            <div class="block__item-cost">
+                              <div class="block__item-price">от 280 руб.</div>
+                              <div class="block__item-arrow">
                                 <img src="./img/icon/button-arrow-green.svg" alt="" />
+                              </div>
                             </div>
                         </div>
 
@@ -470,9 +474,11 @@
                     <div class="block__item">
                         <div class="block__item-inner">
                             <div class="block__item-title">3 уровня вложенности</div>
-                            <div class="block__item-price">от 280 руб.</div>
-                            <div class="block__item-arrow">
+                            <div class="block__item-cost">
+                              <div class="block__item-price">от 280 руб.</div>
+                              <div class="block__item-arrow">
                                 <img src="./img/icon/button-arrow-green.svg" alt="" />
+                              </div>
                             </div>
                         </div>
 
@@ -618,9 +624,11 @@
                     <div class="block__item">
                         <div class="block__item-inner">
                             <div class="block__item-title">4 уровня вложенность</div>
-                            <div class="block__item-price">от 280 руб.</div>
-                            <div class="block__item-arrow">
+                            <div class="block__item-cost">
+                              <div class="block__item-price">от 280 руб.</div>
+                              <div class="block__item-arrow">
                                 <img src="./img/icon/button-arrow-green.svg" alt="" />
+                              </div>
                             </div>
                         </div>
 
@@ -780,7 +788,10 @@
                 </div>
             </div>
             <div class="cost__right">
-                <aside class="aside">
+              <button type="button" class="cost__button btn-show-toggle --mob">
+                Записаться на прием
+              </button>
+                <aside class="aside content-show">
                     <form action="#" method="#" class="aside-form">
                         <div class="aside-form__title">
                             <strong>Записаться на прием</strong>
@@ -815,16 +826,17 @@
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                          <div class="form__input">
-                          <label class="checkbox-other checkbox-white">
-                            <input type="checkbox" name="#" />
-                            <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                        <div class="form__input form__input-check">
+                          <label class="checkbox-other">
+                            <input type="checkbox" name="sogl" />
+                            <span>Я согласен на
+                              <a href="#" class="link-green">с политикой конфиденциальности</a></span>
                           </label>
-                            <div class="form__input-error">
-                              <img src="./img/triagle.svg" alt="">
-                              <span>Необходимо согласие на обработку данных</span>
-                            </div>
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>Необходимо согласие на обработку данных</span>
                           </div>
+                        </div>
                             <button class="all-btn__blue aside__btn" type="submit" name="#">Записаться</button>
                         </div>
                     </form>

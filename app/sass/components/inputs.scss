@@ -111,10 +111,10 @@
       z-index: 2;
       padding: 2rem;
       color: #FF2525;
-        text-align: center;
-              height: fit-content;
-                display: none;
-                transition: all 0.3s ease-in-out;
+      text-align: center;
+      height: fit-content;
+      display: none;
+      transition: all 0.3s ease-in-out;
 
         span {
           font-size: 1.8rem;
@@ -144,4 +144,29 @@
       transition: all 0.3s ease-in-out;
     }
   }
+}
+
+@media screen and (max-width: 48em) {
+	.form__input {
+			column-gap: 1.6rem;
+			margin-bottom: 3rem;
+			row-gap: 1.5rem;
+	
+			&-error {
+				border-radius: 2.2vw;
+				padding: 4vw 6.4vw;
+	
+				span {
+					font-size: 3.8vw;
+					line-height: normal;
+				}
+	
+				img {
+					width: 5.3vw;
+					height: 5.3vw;
+					left: -2.7vw;
+					top: -2vw;
+				}
+			}
+		}
 }

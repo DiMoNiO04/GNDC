@@ -1,17 +1,12 @@
 .cost {
     padding-bottom: 15rem;
     margin-top: 5.6rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
-    }
-
-    &__right {
-        margin-top: 7rem;
-    }
-
-    .block__item-price {
-        margin: 0 3rem 0 auto;
+        position: relative;
     }
 
     &__left {
@@ -109,5 +104,118 @@
                 flex-shrink: 0;
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 48em) {
+  .cost {
+      padding-bottom: 21.3vw;
+      margin-top: 2.2vw;
+
+      .content-show {
+          display: none;
+          margin-top: 5.3vw;
+        }
+
+      .block__item-inner {
+        flex-wrap: wrap;
+        row-gap: 3.2vw;
+        column-gap: 10.6vw;
+      }
+
+      .block__item-title {
+        width: 100%;
+      }
+
+      &__button {
+        color: #00AC60;
+          font-size: 4.27vw;
+          font-weight: 700;
+          line-height: 150%;
+          border-bottom: 0.1px solid #00AC60;
+      }
+
+      &__wrapper {
+        flex-direction: column-reverse;
+        padding-bottom: 78vw;
+      }
+  
+      &__left,
+      &__right {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      &__right {
+        margin-bottom: 8vw;
+      }
+  
+      &__content {
+        padding: 5.3vw 0;
+        margin: 0 5.3vw;
+        border-top: 0.1px solid rgba(63, 76, 92, 0.20);
+        row-gap: 3.2vw;
+      }
+  
+      &__content-arrow {
+        width: 8vw;
+        height: 8vw;
+      }
+  
+      &__content-1-con,
+      &__content-2-con,
+      &__content-3-con,
+      &__content-4-con {
+        row-gap: 1.6vw;
+      }
+
+      &__content-1-con,
+      &__content-2-con,
+      &__content-3-con {
+        padding-top: 4.8vw;
+      }
+
+      &__content-1-inn,
+      &__content-2-inn,
+      &__content-3-inn {
+        column-gap: 5.3vw;
+      }
+  
+      &__content-1-inn-title,
+      &__content-2-inn-title,
+      &__content-3-inn-title {
+        line-height:normal;
+        max-width: 100%;
+        font-size: 4.8vw;
+      }
+
+      &__content-3 {
+        .cost__content-4-con {
+          padding-top: 2.2rem;
+        }
+      }
+  
+      &__content-4-con {
+        row-gap: 1.6vw;
+  
+        li {
+          max-width: 100%;
+          font-size: 4.27vw;
+          font-weight: 400;
+          line-height: 150%;
+          column-gap: 5.3vw;
+  
+          div:last-child {
+            font-size: 4.8vw;
+            line-height: 150%;
+          }
+        }
+      }
+
+      .aside:last-child {
+        position: absolute;
+        bottom: 0;
+      }
     }
 }

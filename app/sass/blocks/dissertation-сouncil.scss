@@ -17,6 +17,25 @@
         }
     }
 
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      .title {
+        margin-bottom: 0;
+      }
+    }
+
+    &__date {
+      color:#3F4C5C;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -160,11 +179,59 @@
         height: 71rem;
         flex-shrink: 0;
         object-fit: cover;
+        margin-bottom: 8rem;
 
         video {
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+    }
+
+    &__video-other {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+
+      .all-btn__white {
+        width: 32.5rem;
+        margin: 0 auto;
+
+        &:hover {
+          background-color: #3F4C5C;
+        }
+      }
+    }
+
+    &__video-items {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      row-gap: 3.9rem;
+      column-gap: 3.9rem;
+    }
+
+    &__video-img {
+      width: 35.6rem;
+      height: 30.8rem;
+      margin-bottom: 1.6rem;
+
+      img {
+        border-radius: 0.8rem;
+      }
+    }
+
+    &__video-title {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 150%;
+        border-bottom: 0.1px solid;
+        margin-bottom: 0.6rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          border-color: transparent;
         }
     }
 }
@@ -178,6 +245,11 @@
         row-gap: 8vw;
         flex-direction: column;
         margin-bottom: 8vw;
+      }
+
+      &__title {
+        flex-direction: column;
+        align-items: end;
       }
   
       &__btn {
@@ -273,6 +345,45 @@
       &__video {
         width: 95vw;
         height: 106vw;
+        margin-bottom: 21.3vw;
+      }
+
+      &__video-other {
+        row-gap: 5.3vw;
+
+        .all-btn__white {
+          display: none;
+        }
+
+        .subtitle {
+          text-transform: unset;
+          font-size: 5.3vw;
+          margin: 0;
+        }
+      }
+
+      &__video-items {
+        row-gap: 5.3vw;
+        flex-direction: column;
+      }
+
+      &__video-img {
+        width: 100%;
+        height: 80vw;
+        margin-bottom: 4.27vw;
+
+        img {
+          border-radius: 2.2vw;
+        }
+      }
+
+      &__video-title {
+          font-size: 4.27vw;
+          margin-bottom: 1.6vw;
+      }
+
+      &__date {
+          font-size: 4.27vw;
       }
     }
 }

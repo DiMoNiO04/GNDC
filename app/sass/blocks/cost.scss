@@ -1,7 +1,5 @@
 .cost {
-    padding-bottom: 15rem;
-    margin-top: 5.6rem;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 5.6rem 0 15rem;
 
     &__wrapper {
         display: flex;
@@ -54,7 +52,6 @@
     &__content-1-inn-title,
     &__content-2-inn-title,
     &__content-3-inn-title {
-        color: #3f4c5c;
         line-height: 135%;
         opacity: 0.6899999976158142;
         max-width: 90rem;
@@ -76,7 +73,6 @@
     }
 
     &__content-3-inn-title {
-        font-weight: 400;
         span {
             border-bottom: 0.1rem solid #3f4c5c;
         }
@@ -89,14 +85,11 @@
             display: flex;
             justify-content: space-between;
             max-width: 102rem;
-            color: #3f4c5c;
             font-size: 1.8rem;
-            font-weight: 400;
             line-height: 140%;
             column-gap: 2rem;
 
             div:last-child {
-                color: #3f4c5c;
                 text-align: right;
                 font-size: 2rem;
                 font-weight: 700;
@@ -110,23 +103,7 @@
 
 @media screen and (max-width: 48em) {
   .cost {
-      padding-bottom: 21.3vw;
-      margin-top: 2.2vw;
-
-      .content-show {
-          display: none;
-          margin-top: 5.3vw;
-        }
-
-      .block__item-inner {
-        flex-wrap: wrap;
-        row-gap: 3.2vw;
-        column-gap: 10.6vw;
-      }
-
-      .block__item-title {
-        width: 100%;
-      }
+    margin: 2.8vw 0 21.3vw 0 ;
 
       &__button {
         color: #00AC60;
@@ -216,6 +193,16 @@
       .aside:last-child {
         position: absolute;
         bottom: 0;
+      }
+
+      .block__item-inner {
+        flex-wrap: wrap;
+        row-gap: 3.2vw;
+        column-gap: 10.6vw;
+      }
+
+      .block__item-title {
+        width: 100%;
       }
     }
 }

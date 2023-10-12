@@ -1,7 +1,6 @@
 .footer {
     background: #3f4c5c;
-    padding-top: 3.4rem;
-    padding-bottom: 5.8rem;
+    padding: 3.4rem 0 5.8rem 0;
 
     &__iframe {
         margin-bottom: 2.4rem;
@@ -33,15 +32,13 @@
             font-style: normal;
             font-weight: 700;
             font-size: 1.6rem;
-            line-height: 1;
-
             color: #ffffff;
             margin-bottom: 2.2rem;
             border-bottom: 0.1rem solid #ffffff;
-        }
 
-        li:last-child {
-            margin-bottom: 0;
+            &:last-child {
+              margin-bottom: 0;
+            }
         }
     }
 
@@ -52,10 +49,10 @@
             width: 3.2rem;
             height: 3.2rem;
             margin-right: 2.8rem;
-        }
 
-        a:last-child {
-            margin-right: 0;
+            &:last-child {
+              margin-right: 0;
+            }
         }
     }
 
@@ -69,22 +66,18 @@
     &__right-lists {
         li {
             display: block;
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.6rem;
             line-height: 2.4rem;
             color: #ffffff;
             margin-bottom: 1.5rem;
-        }
 
-        li:last-child {
-            margin-bottom: 0;
+            &:last-child {
+              margin-bottom: 0;
+            }
         }
     }
 
     &__policy {
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.4rem;
         line-height: 2.1rem;
         color: #ffffff;
@@ -109,13 +102,9 @@
 
 @media screen and (max-width: 48em) {
     .footer {
-        padding-top: 16vw;
-        padding-bottom: 16vw;
+      padding: 16vw 0;
 
-        &__wrapper {
-            margin-bottom: 16vw;
-        }
-
+        &__wrapper,
         &__left {
             margin-bottom: 16vw;
         }

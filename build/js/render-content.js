@@ -118,11 +118,22 @@ const changeBreadCrumb = (hash, hashBlock) => {
 };
 
 const changeContent = (hashPage) => {
+
     $('[data-content]').removeClass('active');
     $(`[data-content=${hashPage}]`).addClass('active');
 
     $('[data-open-content]').parent().siblings().removeClass('active');
     $(`[data-open-content=${hashPage}]`).parent().addClass('active');
+
+		// if(window.innerWidth < 768) {
+		// 	if(hashPage === 'rabota-s-obrashcheniyami-grazhdan') {
+		// 		$('.connection__left').css('display', 'none');
+		// 		$('.connection__wrap').css('padding-bottom', '0')
+		// 	} else {
+		// 		$('.connection__left').css('display', 'block');
+		// 		$('.connection__wrap').css('padding-bottom', '166vw')
+		// 	}
+		// }
 };
 
 const changeContentBlock = (hash) => {
@@ -220,3 +231,28 @@ $(window).resize(function () {
         changeHashResize();
     }
 });
+
+
+//--------------Toggle content btn---------------------//
+function changeTextBtn(text, el) {
+	el.parent().find('.content-show').slideToggle();
+
+		if (el.text().trim() === text) {
+					el.text('Скрыть форму');
+			} else {
+					el.text(text);
+			}
+}
+
+$('[data-content="otzyvy-pacientov"] .btn-show-toggle').on('click', function() {
+	changeTextBtn('Оставить отзыв', $(this))
+})
+
+$('[data-content="voprosy-otvety"] .btn-show-toggle').on('click', function() {
+	changeTextBtn('Задать вопрос', $(this));
+})
+
+$('.cost .btn-show-toggle').on('click', function() {
+	changeTextBtn('Записаться на прием', $(this))
+})
+//----------------------------------------------------//

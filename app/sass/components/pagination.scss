@@ -14,22 +14,20 @@
             background: #fff;
             opacity: 1;
 
+            &-active {
+              background: #00ac60;
+            }
+
             @media screen and (min-width: 48em) {
               &:hover {
                   opacity: 0.5;
                 }
             }
         }
-
-        .swiper-pagination-bullet-active {
-            background: #00ac60;
-        }
     }
 
     &__prev,
     &__next {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        width: fit-content;
         height: 5.6rem;
         cursor: pointer;
 
@@ -47,12 +45,12 @@
 @media screen and (max-width: 48em) {
     .pagination {
         .swiper-pagination-bullet {
-            width: 1.8vw;
-            height: 1.8vw;
+            width: 3.8vw;
+            height: 3.8vw;
         }
 
         &__bullets {
-            column-gap: 3.2vw;
+            column-gap: 5vw;
         }
 
         &__prev,

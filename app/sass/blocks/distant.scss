@@ -1,21 +1,16 @@
 .distant {
-    margin-top: 6.4rem;
-    padding-bottom: 15rem;
+		margin: 6.4rem 0 15rem 0;
 
     &__text {
         span {
             display: block;
-            font-style: normal;
             font-weight: 700;
             font-size: 2.2rem;
             line-height: 3.2rem;
-            color: #3f4c5c;
             margin-bottom: 2rem;
         }
 
         p {
-            font-style: normal;
-            font-weight: 400;
             font-size: 2.2rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
@@ -29,11 +24,9 @@
     }
 
     &__text-btn {
-        font-style: normal;
         font-weight: 700;
         font-size: 1.8rem;
         line-height: 2.7rem;
-        color: #3f4c5c;
     }
 
     &__text-link {
@@ -87,11 +80,8 @@
         height: 6rem;
         border: 0.1rem solid #00ac60;
         border-radius: 0.6rem;
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.8rem;
         line-height: 2.7rem;
-        color: #3f4c5c;
         cursor: pointer;
     }
 
@@ -141,8 +131,6 @@
         justify-content: center;
         background: rgba(63, 76, 92, 0.69);
         border-radius: 50%;
-        font-style: normal;
-        font-weight: 400;
         font-size: 2rem;
         line-height: 2.9rem;
         color: #ffffff;
@@ -150,8 +138,6 @@
     }
 
     &__content-block-chapter-text {
-        font-style: normal;
-        font-weight: 400;
         font-size: 2rem;
         line-height: 2.9rem;
         color: rgba(63, 76, 92, 0.69);
@@ -162,8 +148,6 @@
     }
 
     &__content-block-item {
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.6rem;
         line-height: 136%;
         color: rgba(63, 76, 92, 0.69);
@@ -203,18 +187,14 @@
     }
 
     &__content-right-content-title {
-        font-style: normal;
-        font-weight: 400;
         font-size: 2rem;
         line-height: 2.9rem;
-        color: #3f4c5c;
         margin-bottom: 3rem;
         padding-left: 1.2rem;
         span {
           margin-left: 4rem;
           color: #E80000;
             font-size: 1.8rem;
-            font-weight: 400;
             line-height: normal;
             opacity: 0;
         }
@@ -232,8 +212,6 @@
             display: block;
             border: none;
             padding: 1.8rem 2rem;
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.6rem;
             line-height: 136%;
             color: rgba(63, 76, 92, 0.62);
@@ -257,8 +235,6 @@
             min-height: 12.6rem;
             background: #e5e9ef;
             border-radius: 0.8rem;
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 2.7rem;
             color: rgba(63, 76, 92, 0.74);
@@ -278,17 +254,12 @@
 
         span {
             display: block;
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 2.7rem;
             margin-bottom: 1.5rem;
-            color: #3f4c5c;
         }
 
         p {
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 2.7rem;
             color: rgba(63, 76, 92, 0.74);
@@ -300,18 +271,14 @@
         align-items: center;
         margin-bottom: 3rem;
         p {
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 2.7rem;
             margin-right: 2.4rem;
-            color: #3f4c5c;
             display: inline-block;
             font-feature-settings: 'tnum' on, 'lnum' on;
         }
 
         span {
-            font-style: normal;
             font-weight: 700;
             font-size: 2.2rem;
             line-height: 3.2rem;
@@ -355,8 +322,6 @@
     }
 
     &__end-inner {
-        font-style: normal;
-        font-weight: 400;
         font-size: 2rem;
         line-height: 150%;
         color: rgba(63, 76, 92, 0.69);
@@ -376,13 +341,11 @@
     }
 
     &__end-title {
-        font-style: normal;
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 150%;
         text-transform: uppercase;
         margin-bottom: 3rem;
-        color: #3f4c5c;
     }
 
     ul {

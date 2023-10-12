@@ -1,6 +1,5 @@
 .dissertation {
-    margin-top: 5.6rem;
-    padding-bottom: 15rem;
+    margin: 5.6rem 0 15rem 0;
 
     &__btns {
         display: flex;
@@ -31,8 +30,6 @@
     &__date {
       color:#3F4C5C;
         font-size: 1.8rem;
-        font-style: normal;
-        font-weight: 400;
         line-height: 150%;
     }
 
@@ -43,10 +40,7 @@
         margin-bottom: 4.4rem;
         p,
         li {
-            color: #3f4c5c;
             font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
             line-height: 150%;
         }
         li {
@@ -87,8 +81,6 @@
     &__contacts p {
         color: rgba(63, 76, 92, 0.69);
         font-size: 1.8rem;
-        font-style: normal;
-        font-weight: 400;
         line-height: 136%;
         &:not(:last-child) {
             margin-bottom: 0.8rem;
@@ -97,7 +89,6 @@
             position: relative;
             color: #00ac60;
             font-size: 1.8rem;
-            font-style: normal;
             font-weight: 700;
             line-height: 136%;
             &::after {
@@ -120,7 +111,6 @@
       margin-bottom: 6rem;
       p {
           font-size: 2rem;
-          font-weight: 400;
           line-height: 130%;
       }
     }
@@ -135,10 +125,7 @@
         li {
             position: relative;
             padding-left: 2rem;
-            color: #3f4c5c;
             font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
             line-height: 150%;
             cursor: pointer;
             a {
@@ -224,7 +211,6 @@
 
     &__video-title {
         font-size: 1.8rem;
-        font-weight: 400;
         line-height: 150%;
         border-bottom: 0.1px solid;
         margin-bottom: 0.6rem;
@@ -238,8 +224,7 @@
 
 @media screen and (max-width: 48em) {
   .dissertation {
-      margin-top: 2.8vw;
-      padding-bottom: 21.3vw;
+    margin:  2.8vw 0 21.3vw 0;
   
       &__btns {
         row-gap: 8vw;

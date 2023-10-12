@@ -44,7 +44,6 @@
         font-size: 23px;
         line-height: 150%;
         text-transform: uppercase;
-        color: #3f4c5c;
         margin-bottom: 4.4rem;
     }
 
@@ -79,8 +78,6 @@
             height: auto;
             text-align: center;
             font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
             line-height: 150%;
         }
     }
@@ -124,16 +121,12 @@
     &__content-succes-reg-title {
       color: #323439;
         font-size: 3.2rem;
-        font-style: normal;
         font-weight: 700;
         line-height: 150%;
     }
 
     &__content-succes-reg-text {
-      color: #3F4C5C;
         font-size: 1.8rem;
-        font-style: normal;
-        font-weight: 400;
         line-height: 150%;
     }
 }
@@ -217,8 +210,6 @@
         width: 84vw;
         height: 133vw;
       }
-
-
   
       &__content-succes-reg {
         width: 66.4rem;

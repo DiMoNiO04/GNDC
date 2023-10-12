@@ -5,9 +5,7 @@
     margin-bottom: 5.6rem;
 
     a {
-        color: #3f4c5c;
         font-size: 1.6rem;
-        font-weight: 400;
         line-height: 130%;
         display: flex;
         column-gap: 1.6rem;
@@ -45,13 +43,6 @@
                 width: 2vw;
                 height: 3.2vw;
             }
-        }
-    }
-
-    .crumb-content {
-        display: block;
-        &.hide {
-            display: none;
         }
     }
 }

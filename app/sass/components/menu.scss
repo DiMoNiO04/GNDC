@@ -11,7 +11,7 @@
         height: 10rem;
         border-radius: 0.6rem;
         background: inherit;
-        border: 1px solid #3f4c5c;
+        border: 0.1rem solid #3f4c5c;
         text-align: center;
 
         a {
@@ -40,7 +40,6 @@
     }
 
     &__button {
-        color: #3f4c5c;
         &:hover {
             color: #ffffff;
             background: #3f4c5c;
@@ -64,7 +63,6 @@
         padding-left: 1rem;
         margin-bottom: 6rem;
         width: 31.3rem;
-        flex-shrink: 0;
     }
 
     &__tab {
@@ -99,7 +97,6 @@
             display: block;
             cursor: pointer;
             padding-left: 1.5rem;
-            font-weight: 400;
             font-size: 1.6rem;
             line-height: 136%;
             color: rgba(63, 76, 92, 0.69);
@@ -161,6 +158,10 @@
         &__buttons {
             flex-wrap: wrap;
             width: 100%;
+
+            li:not(:last-child) {
+                margin-bottom: 5.3vw;
+              }
         }
 
         &__button,
@@ -175,12 +176,6 @@
             }
         }
 
-        &__buttons {
-            li:not(:last-child) {
-                margin-bottom: 5.3vw;
-            }
-        }
-
         &__tabs {
             padding-left: 0;
             margin-bottom: 0;
@@ -190,7 +185,6 @@
         &__tab {
             margin-bottom: 6.4vw;
             padding-left: 6.4vw;
-            color: rgba(63, 76, 92, 0.69);
             font-size: 5.3vw;
             line-height: normal;
 

@@ -7,49 +7,6 @@
         margin-bottom: 15rem;
     }
 
-    &__connection {
-        display: none;
-        &.active {
-            display: block;
-        }
-    }
-
-    .select {
-      width: 100%;
-      &:not(:last-child) {
-          margin-bottom: 1.5rem;
-        }
-    }
-
-    .form__input {
-      width: 100%;
-      flex-direction: column;
-        .checkbox-other {
-            margin: 0;
-            flex-shrink: 0;
-        
-            label {
-              margin: 0;
-            }
-          }
-          .select {
-            margin-bottom: 0;
-          }
-      &-error {
-        flex-direction: column;
-        width: 20rem;
-        padding: 1rem 2rem;
-        span {
-          font-size: 1.4rem;
-        }
-        img {
-          left: calc(50% - 2rem/2);
-            top: -1rem;
-            transform: rotate(90deg);
-        }
-      }
-    }
-
     &__title {
         display: flex;
         flex-direction: column;
@@ -58,7 +15,6 @@
         padding: 0 3.6rem;
         strong {
             display: block;
-            font-style: normal;
             font-weight: 700;
             font-size: 2.3rem;
             line-height: 135%;
@@ -67,8 +23,6 @@
         }
 
         span {
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.6rem;
             line-height: 136%;
             color: #ffffff;
@@ -97,7 +51,6 @@
           margin-bottom: 3rem;
           strong {
               display: block;
-              font-style: normal;
               font-weight: 700;
               font-size: 2.3rem;
               line-height: 135%;
@@ -106,8 +59,6 @@
           }
 
           span {
-              font-style: normal;
-              font-weight: 400;
               font-size: 1.6rem;
               line-height: 136%;
               color: #ffffff;
@@ -117,8 +68,7 @@
       &__content {
           display: flex;
           flex-direction: column;
-          padding-left: 2.4rem;
-          padding-right: 2.6rem;
+          padding: 0 2.6rem 0 2.4rem;
 
           input {
               font-family: 'Circe';
@@ -129,8 +79,6 @@
               display: block;
               border: none;
               padding-left: 2rem;
-              font-style: normal;
-              font-weight: 400;
               font-size: 1.6rem;
               line-height: 136%;
               color: rgba(63, 76, 92, 0.62);
@@ -155,13 +103,47 @@
               display: block;
               border: none;
               padding-left: 2rem;
-              font-style: normal;
-              font-weight: 400;
               font-size: 1.6rem;
               line-height: 136%;
               color: rgba(63, 76, 92, 0.62);
               resize: none;
           }
+      }
+
+      .select {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+          }
+      }
+
+      .form__input {
+        width: 100%;
+        flex-direction: column;
+          .checkbox-other {
+              margin: 0;
+              flex-shrink: 0;
+          
+              label {
+                margin: 0;
+              }
+            }
+            .select {
+              margin-bottom: 0;
+            }
+        &-error {
+          flex-direction: column;
+          width: 20rem;
+          padding: 1rem 2rem;
+          span {
+            font-size: 1.4rem;
+          }
+          img {
+            left: calc(50% - 2rem/2);
+              top: -1rem;
+              transform: rotate(90deg);
+          }
+        }
       }
 
       .checkbox-other {
@@ -197,31 +179,6 @@
         margin-bottom: 0;
       }
   
-      .select {
-        &:not(:last-child) {
-          margin-bottom: 1.5rem;
-        }
-      }
-  
-      .form__input {
-        row-gap: 3vw;
-        margin-bottom: 5.3vw;
-
-        &-error {
-          width: 100%;
-          max-width: 65vw;
-          padding: 3.6vw;
-  
-          span {
-            font-size: 3.2vw;
-          }
-  
-          img {
-            top: -2vw;
-          }
-        }
-      }
-  
       &__title {
         margin-bottom: 8vw;
         padding: 0 5.3vw;
@@ -239,8 +196,7 @@
       }
   
       &__content {
-        padding-left: 5.3vw;
-        padding-right: 5.3vw;
+        padding: 0 5.3vw;
       }
 
       &-form {
@@ -278,18 +234,42 @@
     
           textarea {
             width: 100%;
-            min-height: 12.6rem;
-            padding-top: 1.8rem;
-            border-radius: 0.8rem;
-            padding-left: 2rem;
+            min-height: 32vw;
+            padding: 5.3vw;
+            border-radius: 2.2vw;
             font-weight: 400;
-            font-size: 1.6rem;
-            line-height: 136%;
+            font-size: 3.2vw;
+            line-height: normal;
           }
         }
     
         .checkbox-other input[type='checkbox']:checked+span:before {
           background-size: 4vw 4vw;
+        }
+
+        .select {
+          &:not(:last-child) {
+            margin-bottom: 1.5rem;
+          }
+        }
+    
+        .form__input {
+          row-gap: 3vw;
+          margin-bottom: 5.3vw;
+
+          &-error {
+            width: 100%;
+            max-width: 65vw;
+            padding: 3.6vw;
+    
+            span {
+              font-size: 3.8vw;
+            }
+    
+            img {
+              top: -2vw;
+            }
+          }
         }
       }
     }

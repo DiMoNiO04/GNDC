@@ -1,6 +1,5 @@
 .contacts {
-    margin-top: 5.8rem;
-    padding-bottom: 15rem;
+    margin: 5.8rem 0 15rem 0;
 
     &__btn {
         background-color: #ffffff;
@@ -49,7 +48,6 @@
         line-height: 150%;
         text-transform: uppercase;
         margin-bottom: 4rem;
-        color: #3f4c5c;
     }
 
     &__top-left-info-email {
@@ -64,18 +62,14 @@
             font-weight: 700;
             font-size: 2rem;
             line-height: 125%;
-            color: #3f4c5c;
             margin-bottom: 2.2rem;
         }
         span {
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             display: block;
-            color: #3f4c5c;
         }
         li {
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
@@ -117,18 +111,14 @@
             font-weight: 700;
             font-size: 2rem;
             line-height: 125%;
-            color: #3f4c5c;
             margin-bottom: 2.2rem;
         }
         span {
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             display: block;
-            color: #3f4c5c;
         }
         li {
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
@@ -156,12 +146,10 @@
             font-weight: 700;
             font-size: 2rem;
             line-height: 125%;
-            color: #3f4c5c;
             margin-bottom: 2.4rem;
         }
         span {
             display: block;
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
@@ -198,7 +186,6 @@
         font-weight: 700;
         font-size: 2rem;
         line-height: 125%;
-        color: #3f4c5c;
         margin-bottom: 2.2rem;
     }
 
@@ -223,7 +210,6 @@
         font-weight: 700;
         font-size: 2rem;
         line-height: 125%;
-        color: #3f4c5c;
         margin-bottom: 2.2rem;
     }
 
@@ -286,15 +272,12 @@
         font-weight: 700;
         font-size: 2rem;
         line-height: 130%;
-        color: #3f4c5c;
         margin-bottom: 3rem;
     }
 
     &__branches-table-link {
-        font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
-        color: #3f4c5c;
         margin-bottom: 4.3rem;
         display: inline-block;
     }
@@ -309,24 +292,20 @@
             line-height: 125%;
             margin-bottom: 2rem;
             display: block;
-            color: #3f4c5c;
         }
         span {
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             display: block;
             color: rgba(63, 76, 92, 0.69);
         }
         a {
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             display: block;
             color: rgba(63, 76, 92, 0.69);
         }
         li {
-            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: rgba(63, 76, 92, 0.69);
@@ -336,17 +315,15 @@
             }
         }
     }
-}
 
-.contacts__top-left-info .subtitle {
-    margin-bottom: 0;
+    &__top-left-info .subtitle {
+      margin-bottom: 0;
+    }
 }
-
 
 @media screen and (max-width: 48em) {
   .contacts {
-      margin-top: 2.8vw;
-      padding-bottom: 40vw;
+    margin: 2.8vw 0 40vw;
       overflow: hidden;
 
       &__top {

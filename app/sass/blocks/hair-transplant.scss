@@ -1,6 +1,5 @@
 .hair-transplant {
-    margin-top: 5.6rem;
-    padding-bottom: 15rem;
+    margin: 5.6rem 0 15rem 0;
 
     &__container {
         display: flex;
@@ -12,10 +11,7 @@
         li {
             position: relative;
             padding-left: 2rem;
-            color: #3f4c5c;
             font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
             line-height: 150%;
             &:not(:last-child) {
                 margin-bottom: 1rem;
@@ -57,7 +53,6 @@
     }
 
     &__block-item-text {
-        color: #3f4c5c;
         font-size: 2.3rem;
         font-weight: 700;
         line-height: 150%;
@@ -132,9 +127,7 @@
         flex-direction: column;
         row-gap: 2.4rem;
         li {
-            color: #3f4c5c;
             font-size: 2.3rem;
-            font-style: normal;
             font-weight: 700;
             line-height: normal;
         }
@@ -168,9 +161,7 @@
         align-items: center;
         justify-content: center;
         span {
-            color: #3f4c5c;
             font-size: 2.3rem;
-            font-style: normal;
             font-weight: 700;
             line-height: 150%;
             text-transform: uppercase;
@@ -178,9 +169,7 @@
     }
 
     &__block-result-text {
-        color: #3f4c5c;
         font-size: 2.3rem;
-        font-style: normal;
         font-weight: 700;
         line-height: 150%;
         text-transform: uppercase;
@@ -210,9 +199,7 @@
 
     &__block-trans-content-block {
         p {
-            color: #3f4c5c;
             font-size: 1.8rem;
-            font-weight: 400;
             line-height: 150%;
             span {
                 color: #00ac60;
@@ -227,16 +214,10 @@
 
 @media screen and (max-width: 48em) {
   .hair-transplant {
-      margin-top: 2.2vw;
-      padding-bottom: 21.3vw;
+      margin: 2.8vw 0 21.3vw 0;
 
       .title{
         margin-bottom: 8vw;
-      }
-
-      .subtitle {
-        margin-bottom: 5.3vw;
-        font-size: 5.3vw;
       }
   
       &__container {

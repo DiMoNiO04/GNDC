@@ -1,6 +1,5 @@
 .clinical {
-    margin-top: 5.6rem;
-    padding-bottom: 15rem;
+    margin: 5.6rem 0 15rem 0;
 
     &__link-title {
         font-weight: 700;
@@ -40,18 +39,18 @@
                 }
             }
         }
-    }
 
-    &__link a {
-        background: rgba(63, 76, 92, 0.5);
-        border-radius: 0.8rem;
-        width: 36.1rem;
-        height: 12.6rem;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        a {
+          background: rgba(63, 76, 92, 0.5);
+          border-radius: 0.8rem;
+          width: 36.1rem;
+          height: 12.6rem;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
     }
 
     &__links {
@@ -88,7 +87,6 @@
         background: #e5e9ef;
         border-radius: 0.8rem;
         padding: 1.8rem 2rem;
-        font-weight: 400;
         font-size: 1.6rem;
         line-height: 136%;
         color: rgba(63, 76, 92, 0.62);
@@ -109,15 +107,10 @@
 
 @media screen and (max-width: 48em) {
   .clinical {
-      margin-top: 2.2vw;
-      padding-bottom: 21.3vw;
+    margin: 2.8vw 0 21.3vw 0;
 
       .title {
         margin-bottom: 8vw;
-      }
-
-      .subtitle {
-        margin-bottom: 5.3vw;
       }
 
       &__links {

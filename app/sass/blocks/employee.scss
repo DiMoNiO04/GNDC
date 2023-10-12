@@ -1,6 +1,5 @@
 .employee {
-    margin-top: 5.6rem;
-    padding-bottom: 15rem;
+		margin: 5.6rem 0 15rem 0;
 
     &__wrapper {
         display: flex;
@@ -52,16 +51,13 @@
     }
 
     &__block-title {
-        color: #3f4c5c;
         font-size: 1.8rem;
-        font-weight: 400;
         line-height: 150%;
     }
 
     &__block-desc {
         color: rgba(63, 76, 92, 0.69);
         font-size: 1.8rem;
-        font-weight: 400;
         line-height: 150%;
     }
 
@@ -73,7 +69,6 @@
     li {
         color: rgba(63, 76, 92, 0.69);
         font-size: 1.8rem;
-        font-weight: 400;
         line-height: 150%;
         padding-left: 2rem;
         display: flex;
@@ -94,19 +89,15 @@
 
 @media screen and (max-width: 48em) {
     .employee {
-        margin-top: 2.8vw;
-        padding-bottom: 24vw;
+			margin: 2.8vw 0 24vw 0;
 
         &__wrapper {
             row-gap: 8vw;
             flex-direction: column;
         }
 
-        &__left {
-            width: 100%;
-        }
-
-        &__right {
+        &__left,
+				&__right {
             width: 100%;
         }
 
@@ -136,7 +127,6 @@
             font-size: 4.27vw;
             font-weight: 400;
             line-height: 130%;
-            color: #3f4c5c;
         }
 
         &__blocks {

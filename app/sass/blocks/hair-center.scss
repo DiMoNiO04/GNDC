@@ -1,6 +1,5 @@
 .hair-center {
-    margin-top: 5.6rem;
-    padding-bottom: 15rem;
+    margin: 5.6rem 0 15rem 0;
 
     &__container {
         display: flex;
@@ -95,7 +94,6 @@
     }
 
     &__block-item-text {
-        color: #3f4c5c;
         font-size: 2.3rem;
         font-weight: 700;
         line-height: 150%;
@@ -103,7 +101,6 @@
     }
 
     &__block-text {
-        color: #3f4c5c;
         font-size: 2.3rem;
         font-weight: 700;
         line-height: normal;
@@ -121,12 +118,7 @@
 
 @media screen and (max-width: 48em) {
   .hair-center {
-      margin-top: 2.2vw;
-      padding-bottom: 21.3vw;
-
-      .title {
-        margin-bottom: 8vw;
-      }
+      margin: 2.8vw 0 21.3vw 0;
   
       &__container {
         row-gap: 21.3vw;
@@ -185,6 +177,10 @@
       &__block-img {
         width: 100%;
         height: 80vw;
+      }
+
+      .title {
+        margin-bottom: 8vw;
       }
     }
 }

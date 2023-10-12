@@ -1,10 +1,14 @@
 .input-file-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 2rem;
+
     &::before {
-        position: absolute;
         content: '';
+        display: block;
         width: 2.4rem;
         height: 2.4rem;
-        background-image: url('../img/icon/heroicons.svg');
         background-image: url(../img/icon/heroicons-white.svg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -27,7 +31,10 @@
 
 .input-file {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
     background: #ffffff;
     border-radius: 0.8rem;
     width: 23.9rem;
@@ -36,8 +43,8 @@
     overflow: hidden;
 
     &::before {
-        position: absolute;
         content: '';
+        display: block;
         width: 2.4rem;
         height: 2.4rem;
         background-image: url(../img/icon/heroicons-white.svg);
@@ -65,11 +72,8 @@
         cursor: pointer;
         outline: none;
         text-decoration: none;
-        font-weight: 400;
         font-size: 1.8rem;
-        padding-left: 4rem;
         line-height: 150%;
-        color: #3f4c5c;
         border-radius: 0.8rem;
         background: none;
         width: 23.9rem;
@@ -119,7 +123,6 @@
         span {
           font-size: 1.8rem;
             font-style: normal;
-            font-weight: 400;
             line-height: 111.4%;
         }
 
@@ -147,26 +150,41 @@
 }
 
 @media screen and (max-width: 48em) {
-	.form__input {
-			column-gap: 1.6rem;
-			margin-bottom: 3rem;
-			row-gap: 1.5rem;
-	
-			&-error {
-				border-radius: 2.2vw;
-				padding: 4vw 6.4vw;
-	
-				span {
-					font-size: 3.8vw;
-					line-height: normal;
-				}
-	
-				img {
-					width: 5.3vw;
-					height: 5.3vw;
-					left: -2.7vw;
-					top: -2vw;
-				}
-			}
-		}
+  .form__input {
+      &-error {
+        border-radius: 2.2vw;
+        padding: 4vw 6.4vw;
+  
+        span {
+          font-size: 3.8vw;
+          line-height: normal;
+        }
+  
+        img {
+          width: 5.3vw;
+          height: 5.3vw;
+          left: -2.7vw;
+          top: -2vw;
+        }
+      }
+    }
+
+    .input-file {
+      border-radius: 1.6vw;
+      width: 100%;
+      padding: 4vw 5.3vw;
+      max-height: fit-content;
+
+      &::before {
+          width: 5.3vw;
+          height: 5.3vw;
+      }
+
+      span {
+          font-size: 3.8vw;
+          line-height: 140%;
+          border-radius: 2.2vw;
+          width: fit-content;
+      }
+    }
 }

@@ -33,6 +33,10 @@
     }
 
     &__btns {
+      a {
+        width: 100%;
+      }
+      
         a:nth-child(1),
         a:nth-child(2) {
             width: calc(50% - 1.4rem / 2);

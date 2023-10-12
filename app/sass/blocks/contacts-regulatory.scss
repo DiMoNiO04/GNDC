@@ -1,6 +1,5 @@
 .contacts-regulatory {
-  margin-top: 5.6rem;
-    padding-bottom: 15rem;
+    margin: 5.6rem 0 15rem 0;
 
     &__container {
       display: grid;
@@ -43,10 +42,6 @@
       }
     }
 
-    .subtitle {
-      margin-bottom: 0;
-    }
-
     &__items {
       display: flex;
       flex-wrap: wrap;
@@ -68,29 +63,25 @@
     }
 
     &__item-title {
-      color: #3F4C5C;
         font-size: 2rem;
         font-weight: 700;
         line-height: 125%;
     }
 
     &__item-text {
-      color: #3F4C5C;
         font-size: 1.8rem;
-        font-weight: 400;
         line-height: 150%;
+    }
+
+    .subtitle {
+      margin-bottom: 0;
     }
 }
 
 
 @media screen and (max-width: 48em) {
   .contacts-regulatory {
-      margin-top: 2.8vw;
-      padding-bottom: 24vw;
-
-      .title {
-        margin-bottom: 8vw;
-      }
+      margin: 2.8vw 0 24vw 0;
   
       &__container {
         row-gap: 8vw;
@@ -128,6 +119,10 @@
       &__item-title,
             &__item-text {
         font-size: 4.8vw;
+      }
+
+      .title {
+        margin-bottom: 8vw;
       }
     }
 }

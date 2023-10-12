@@ -22,7 +22,6 @@
 .all-btn__blue {
     background: inherit;
     border: 1px solid #3f4c5c;
-    color: #3f4c5c;
     text-align: center;
 
     &:hover {
@@ -67,9 +66,7 @@
     justify-content: flex-start;
     column-gap: 1.8rem;
     text-align: left;
-    color: #3f4c5c;
     font-size: 1.8rem;
-    font-weight: 400;
     line-height: 150%;
 
     svg {
@@ -80,7 +77,6 @@
 
 .link-green,
 .link-blue {
-    font-weight: 400;
     width: fit-content;
 
     &:hover {

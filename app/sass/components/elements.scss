@@ -32,13 +32,6 @@ img {
     }
 }
 
-@media screen and (max-width: 48em) {
-    .captcha {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 .--mob {
     display: none;
 }
@@ -54,6 +47,16 @@ img {
 
     .--desc {
         display: none;
+    }
+
+     .captcha {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-show {
+      display: none;
+      margin-top: 5.3vw;
     }
 
     .content-menu-mob,

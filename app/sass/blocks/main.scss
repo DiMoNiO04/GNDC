@@ -1,6 +1,5 @@
 .main {
-    padding-top: 8rem;
-    padding-bottom: 15rem;
+		margin: 8rem 0 15rem 0;
 
     &__btn {
         background: #00ac60;
@@ -80,7 +79,6 @@
     }
 
     &__slide-title {
-        font-style: normal;
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 122%;
@@ -91,8 +89,6 @@
     }
 
     &__slide-text {
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: #bbbfd8;
@@ -233,7 +229,6 @@
         height: 11.9rem;
         width: 74.6rem;
         border-radius: 0.8rem;
-        font-style: normal;
         font-weight: 700;
         font-size: 2rem;
         line-height: 110%;
@@ -262,7 +257,6 @@
         border-radius: 8px;
         width: 100%;
         height: 12.6rem;
-        font-style: normal;
         font-weight: 700;
         font-size: 2rem;
         line-height: 2.9rem;
@@ -329,6 +323,7 @@
 
 @media screen and (max-width: 48em) {
     .main {
+			
         padding-top: 16vw;
         padding-bottom: 16vw;
 

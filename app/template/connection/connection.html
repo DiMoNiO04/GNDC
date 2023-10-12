@@ -2,12 +2,15 @@
     <div class="container">
         <div class="bread-crumbs">
             <a href="../index.html">Главная</a>
-            <a href="../connection-page.html">Обратная связь</a>
+            <a href="#">Обратная связь</a>
         </div>
-        <div class="title">Обратная связь</div>
+        
+        <div class="title title-main">Обратная связь</div>
+        <div class="title title-change hide"></div>
+
         <div class="connection__wrapper">
             <div class="connection__left">
-                <ul class="menu__tabs">
+                <ul class="menu__tabs content-menu-mob">
                     <li class="menu__tab js-link-main">
                         <a href="#voprosy-otvety" data-open-content="voprosy-otvety">Вопросы и ответы</a>
                     </li>
@@ -24,57 +27,61 @@
                     </li>
                 </ul>
 
-                <aside class="aside aside__connection" data-content="voprosy-otvety">
-                    <form action="#" class="aside-form" mehod="#">
+                <div class="connection__asides">
+                  <div class="connection__aside" data-content="voprosy-otvety">
+                    <button type="button" class="connection__aside-button btn-show-toggle">
+                      Задать вопрос
+                    </button>
+                    <aside class="aside aside-connection content-show">
+                      <form action="#" class="aside-form" mehod="#">
                         <div class="aside-form__title">
-                            <strong>Задать вопрос</strong>
+                          <strong>Задать вопрос</strong>
                         </div>
                         <div class="aside-form__content">
-                          <div class="form__input error">
+                          <div class="form__input">
                             <input type="text" placeholder="ФИО*" />
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                          <div class="form__input error">
+                          <div class="form__input">
                             <input type="text" placeholder="E-mail*" />
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                          <div class="form__input error">
+                          <div class="form__input">
                             <textarea placeholder="Вопрос*" name="#"></textarea>
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                          <div class="form__input error">
+                          <div class="form__input form__input-check">
                             <label class="checkbox-other">
                               <input type="checkbox" name="#" />
-                              <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                              <span>Я согласен на <a href="#" class="link-blue">обработку персональных данных</a></span>
                             </label>
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
                               <span>Необходимо согласие на обработку данных</span>
                             </div>
                           </div>
-                            <button class="all-btn__blue connection__btn" type="submit" name="#">
-                                Отправить вопрос
-                            </button>
+                          <button class="all-btn__blue connection__btn" type="submit" name="#">
+                            Отправить вопрос
+                          </button>
                         </div>
-                    </form>
-                </aside>
-
-                <aside class="aside aside__connection" data-content="voprosy-otvety">
-                    <form action="#" class="aside-form" method="#" action="#">
+                      </form>
+                    </aside>
+                    <aside class="aside aside-connection">
+                      <form action="#" class="aside-form" method="#" action="#">
                         <div class="aside-form__title">
-                            <strong>Записаться на прием</strong>
+                          <strong>Записаться на прием</strong>
                         </div>
                         <div class="aside-form__content">
-                          <div class="form__input error">
+                          <div class="form__input">
                             <input type="text" placeholder="ФИО*" name="#" />
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
@@ -95,35 +102,40 @@
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                            <div class="form__input">
-                              <input type="text" placeholder="Специалист или проблема*" name="#" />
-                              <div class="form__input-error">
-                                <img src="./img/triagle.svg" alt="">
-                                <span>Поле заполнено неверно</span>
-                              </div>
+                          <div class="form__input">
+                            <input type="text" placeholder="Специалист или проблема*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
                             </div>
-                            <div class="form__input error">
-                              <label class="checkbox-other">
-                                <input type="checkbox" name="#" />
-                                <span>Я согласен на <a href="#">обработку персональных данных</a></span>
-                              </label>
-                              <div class="form__input-error">
-                                <img src="./img/triagle.svg" alt="">
-                                <span>Необходимо согласие на обработку данных</span>
-                              </div>
+                          </div>
+                          <div class="form__input form__input-check">
+                            <label class="checkbox-other">
+                              <input type="checkbox" name="#" />
+                              <span>Я согласен на <a href="#" class="link-blue">обработку персональных данных</a></span>
+                            </label>
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Необходимо согласие на обработку данных</span>
                             </div>
-                            <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
+                          </div>
+                          <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
                         </div>
-                    </form>
-                </aside>
+                      </form>
+                    </aside>
+                  </div>
 
-                <aside class="aside aside__connection" data-content="otzyvy-pacientov">
-                    <form action="" class="aside-form" mehod="#">
+                  <div class="connection__aside" data-content="otzyvy-pacientov">
+                    <button type="button" class="connection__aside-button btn-show-toggle">
+                      Оставить отзыв
+                    </button>
+                    <aside class="aside aside__connection content-show">
+                      <form action="" class="aside-form" mehod="#">
                         <div class="aside-form__title">
-                            <strong>Оставить отзыв</strong>
+                          <strong>Оставить отзыв</strong>
                         </div>
                         <div class="aside-form__content">
-                          <div class="form__input error">
+                          <div class="form__input">
                             <input type="text" placeholder="ФИО*" name="#" />
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
@@ -137,7 +149,7 @@
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                          <div class="form__input error">
+                          <div class="form__input">
                             <div class="select">
                               <input class="select-input" type="hidden" name="" />
                               <div class="select-head">ФИО врача*</div>
@@ -166,30 +178,30 @@
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                          <div class="form__input">
+                          <div class="form__input form__input-check">
                             <label class="checkbox-other">
                               <input type="checkbox" name="#" />
-                              <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                              <span>Я согласен на <a href="#" class="link-blue">обработку персональных данных</a></span>
                             </label>
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
                               <span>Необходимо согласие на обработку данных</span>
                             </div>
                           </div>
-                            <button class="all-btn__blue connection__btn" type="submit" name="#">
-                                Отправить отзыв
-                            </button>
+                          <button class="all-btn__blue connection__btn" type="submit" name="#">
+                            Отправить отзыв
+                          </button>
                         </div>
-                    </form>
-                </aside>
-
-                <aside class="aside aside__connection" data-content="otzyvy-pacientov">
-                    <form action="" class="aside-form" method="#" action="#">
+                      </form>
+                    </aside>
+                    
+                    <aside class="aside aside__connection">
+                      <form action="" class="aside-form" method="#" action="#">
                         <div class="aside-form__title">
-                            <strong>Записаться на прием</strong>
+                          <strong>Записаться на прием</strong>
                         </div>
                         <div class="aside-form__content">
-                          <div class="form__input error">
+                          <div class="form__input">
                             <input type="text" placeholder="ФИО*" name="#" />
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
@@ -203,13 +215,13 @@
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                            <div class="form__input error">
-                              <input type="text" placeholder="E-mail*" name="#" />
-                              <div class="form__input-error">
-                                <img src="./img/triagle.svg" alt="">
-                                <span>Поле заполнено неверно</span>
-                              </div>
+                          <div class="form__input">
+                            <input type="text" placeholder="E-mail*" name="#" />
+                            <div class="form__input-error">
+                              <img src="./img/triagle.svg" alt="">
+                              <span>Поле заполнено неверно</span>
                             </div>
+                          </div>
                           <div class="form__input">
                             <input type="text" placeholder="Специалист или проблема*" name="#" />
                             <div class="form__input-error">
@@ -217,22 +229,24 @@
                               <span>Поле заполнено неверно</span>
                             </div>
                           </div>
-                          <div class="form__input error">
+                          <div class="form__input form__input-check">
                             <label class="checkbox-other">
                               <input type="checkbox" name="#" />
-                              <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+                              <span>Я согласен на <a href="#" class="link-blue">обработку персональных данных</a></span>
                             </label>
                             <div class="form__input-error">
                               <img src="./img/triagle.svg" alt="">
                               <span>Необходимо согласие на обработку данных</span>
                             </div>
                           </div>
-                            <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
+                          <button type="submit" name="#" class="all-btn__blue connection__btn">Записаться</button>
                         </div>
-                    </form>
-                </aside>
+                      </form>
+                    </aside>
+                  </div>
+                </div>
             </div>
-            <div class="connection__right">
+            <div class="connection__contents content-mob">
               @@include('./questions.html')
               @@include('./review.html')
               @@include('./work.html')

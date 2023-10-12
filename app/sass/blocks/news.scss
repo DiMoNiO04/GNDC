@@ -1,21 +1,5 @@
 .news {
-    margin-top: 5.6rem;
-    padding-bottom: 15rem;
-
-    .news__text-title {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        height: 8rem;
-    }
-
-    .news__text-desc {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
+    margin: 5.6rem 0 15rem 0;
 
     &__swiper-wrapper {
         height: 133rem;
@@ -52,15 +36,11 @@
         left: 3.3rem;
         strong {
             display: block;
-            font-style: normal;
-            font-weight: 400;
             font-size: 4rem;
             line-height: 5.9rem;
         }
 
         span {
-            font-style: normal;
-            font-weight: 400;
             font-size: 1.2rem;
             line-height: 159%;
             letter-spacing: 0.05em;
@@ -70,20 +50,26 @@
     }
 
     &__text-title {
-        font-style: normal;
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 122%;
         color: #323439;
         margin-bottom: 0.4rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        height: 8rem;
     }
 
     &__text-desc {
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: #83868c;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
 
     &__bullets {
@@ -94,12 +80,7 @@
 
 @media screen and (max-width: 48em) {
   .news {
-      margin-top: 2.2vw;
-      padding-bottom: 21.3vw;
-  
-      .news__text-title {
-        height: 24vw;
-      }
+      margin: 2.8vw 0 21.3vw 0;
   
       &__swiper-wrapper {
         height: 695vw;
@@ -154,9 +135,8 @@
         column-gap: 3.2vw;
       }
 
-      .swiper-pagination-bullet {
-        width: 3.8vw;
-        height: 3.8vw;
+      .news__text-title {
+        height: 24vw;
       }
     }
 }

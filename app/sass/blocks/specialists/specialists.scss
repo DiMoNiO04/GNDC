@@ -2,29 +2,6 @@
     margin-top: 5.6rem;
     padding-bottom: 15rem;
 
-    &__wrapper {
-        display: flex;
-        column-gap: 18.6rem;
-        width: 100%;
-    }
-
-    &__left {
-        width: 38.8rem;
-    }
-
-    &__right {
-        max-width: 89rem;
-    }
-
-    &__item {
-        display: none;
-        &.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
     &__item-list {
         display: flex;
         flex-direction: column;

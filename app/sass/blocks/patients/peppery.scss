@@ -15,9 +15,7 @@
 
     p,
     li {
-      color: #3F4C5C;
         font-size: 2rem;
-        font-weight: 400;
         line-height: 130%;
     }
 
@@ -50,9 +48,7 @@
   }
 
   &__table-title {
-    color: #3f4c5c;
       font-size: 2.3rem;
-      font-style: normal;
       font-weight: 700;
       line-height: 135%;
       padding: 2rem 4rem;
@@ -71,9 +67,7 @@
       }
     
       & > div {
-          color: #3f4c5c;
           font-size: 1.6rem;
-          font-weight: 400;
     
           &:nth-child(1) {
             width: 8rem;

@@ -1,5 +1,5 @@
 .employee {
-		margin: 5.6rem 0 15rem 0;
+    margin: 5.6rem 0 15rem 0;
 
     &__wrapper {
         display: flex;
@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 48em) {
     .employee {
-			margin: 2.8vw 0 24vw 0;
+      margin: 2.8vw 0 24vw 0;
 
         &__wrapper {
             row-gap: 8vw;
@@ -97,7 +97,7 @@
         }
 
         &__left,
-				&__right {
+        &__right {
             width: 100%;
         }
 

@@ -1,5 +1,5 @@
 .distant {
-		margin: 6.4rem 0 15rem 0;
+    margin: 6.4rem 0 15rem 0;
 
     &__text {
         span {
@@ -167,8 +167,8 @@
     }
 
     &__content-right-content {
-			display: flex;
-			flex-direction: column;
+      display: flex;
+      flex-direction: column;
         background: #d8dee8;
         border-radius: 0.8rem;
         width: 113.6rem;
@@ -201,8 +201,8 @@
     }
 
     &__form {
-			display: flex;
-			flex-direction: column;
+      display: flex;
+      flex-direction: column;
         input {
             font-family: 'Circe';
             width: 40rem;
@@ -356,8 +356,8 @@
         list-style-type: disc;
     }
 
-		.select ul,
-		.select {
-			margin-bottom: 0;
-		}
+    .select ul,
+    .select {
+      margin-bottom: 0;
+    }
 }

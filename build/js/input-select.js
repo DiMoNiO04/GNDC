@@ -4,8 +4,6 @@ $(document).ready(function () {
         $(this).next().html(file.name);
     });
 
-    // инпут для скачивания файла
-
     $('.select').on('click', '.select-head', function () {
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
@@ -20,8 +18,8 @@ $(document).ready(function () {
 
     $('.select').on('click', '.select-item', function () {
         $('.select-head').removeClass('open');
-				$(this).siblings().removeClass('active')
-				$(this).addClass('active')
+        $(this).siblings().removeClass('active')
+        $(this).addClass('active')
         $(this).parent().parent().slideUp();
         $(this).parent().parent().prev().text($(this).text());
         $(this).parent().parent().prev().prev().val($(this).text());

@@ -8,9 +8,7 @@
     width: 21.6rem;
     height: 6rem;
     border-radius: 0.6rem;
-    font-weight: 400;
     font-size: 1.8rem;
-    line-height: 150%;
 
     &:hover {
         color: #ffffff;
@@ -46,7 +44,6 @@
 .all-btn__white {
     background-color: #ffffff;
     border: 1px solid #3f4c5c;
-    color: #3f4c5c;
 
     &:hover {
         background: #00ac60;
@@ -67,7 +64,6 @@
     column-gap: 1.8rem;
     text-align: left;
     font-size: 1.8rem;
-    line-height: 150%;
 
     svg {
         min-width: 2rem;
@@ -90,7 +86,6 @@
 }
 
 .link-blue {
-    color: #3f4c5c;
     border-bottom: 1px solid #3f4c5c;
 }
 

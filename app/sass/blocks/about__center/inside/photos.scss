@@ -41,7 +41,6 @@
             .photos__item-title {
                 cursor: pointer;
                 transition: all 0.5s ease-in-out;
-                color: #3f4c5c;
             }
             img {
                 opacity: 1;
@@ -50,8 +49,6 @@
     }
 
     &__item-title {
-        font-family: 'Circe';
-        font-style: normal;
         font-weight: 700;
         font-size: 2.3rem;
         line-height: 150%;
@@ -82,5 +79,33 @@
             width: 100%;
             height: 100%;
         }
+    }
+}
+
+
+@media screen and (max-width: 48em) {
+  .photos {
+      &__items {
+        row-gap: 5.3vw;
+        flex-direction: column;
+      }
+  
+      &__item-image,
+      &__gallery-image {
+        width: 100%;
+        height: 80vw;
+        border-radius: 2.8vw;
+        img {
+          border-radius: 2.8vw;
+        }
+      }
+  
+      &__item-title {
+        font-size: 5.3vw;
+      }
+  
+      &__gallery-images {
+        row-gap: 5.3vw;
+      }
     }
 }

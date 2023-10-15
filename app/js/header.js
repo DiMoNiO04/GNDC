@@ -15,9 +15,13 @@ function headerDrop() {
         }
     );
     if ($('body').width() < 768) {
-        $('.header-btn > a').on('click', function (e) {
+        $('.header__center-lists-item > a').on('click', function (e) {
             e.preventDefault();
         });
+
+        $('.header__bottom-lists-item-drop > a').on('click', function(e) {
+          event.preventDefault();
+        })
     }
 }
 

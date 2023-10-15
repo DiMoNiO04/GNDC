@@ -269,10 +269,10 @@ const referenceSlider = new Swiper('#reference__swipper', {
         prevEl: '.reference__prev',
         nextEl: '.reference__next',
     },
-		autoplay: true,
-		autoplay: {
-			delay: 2000,
-		},
+    autoplay: true,
+    autoplay: {
+      delay: 2000,
+    },
     pagination: {
         clickable: true,
         renderBullet: function (index, className) {
@@ -284,11 +284,11 @@ const referenceSlider = new Swiper('#reference__swipper', {
         },
         el: '.reference__bullets',
     },
-		breakpoints: {
-			769: {
-				autoplay: false,
-			}
-		}
+    breakpoints: {
+      769: {
+        autoplay: false,
+      }
+    }
 });
 
 const conferencesModalSlider = new Swiper('#modal__conferences-swiper', {

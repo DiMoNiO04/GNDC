@@ -1,10 +1,7 @@
 .vacancies {
     &__subtitle {
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
-        color: #3f4c5c;
     }
 
     &__descs {
@@ -20,16 +17,12 @@
     }
 
     &__text {
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
         color: rgba(63, 76, 92, 0.69);
     }
 
     &__points li {
-        font-style: normal;
-        font-weight: 400;
         font-size: 1.8rem;
         line-height: 150%;
         display: block;

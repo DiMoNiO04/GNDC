@@ -39,7 +39,6 @@
       position: relative;
       padding: 0 0 0 4rem;
       font-size: 1.6rem;
-      line-height: 150%;
       height: 3rem;
       color: rgba(63, 76, 92, 0.69);
 
@@ -82,7 +81,6 @@
         display: flex;
         align-items: center;
         font-feature-settings: 'tnum' on, 'lnum' on;
-        color: #3f4c5c;
   
         &:before {
           width: 3.7rem;

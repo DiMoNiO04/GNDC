@@ -7,7 +7,8 @@ const PAGES = {
     CONNECTION: 'connection-page.html',
     PATIENTS: 'patients-page.html',
     CLINICAL: 'clinical-guidelines-two-page.html',
-    HOSPITALIZATION: 'hospitalization-page.html'
+    HOSPITALIZATION: 'hospitalization-page.html',
+    MEDIACAL_ORG: 'medical-org-page.html'
 };
 
 const CONTENT = {
@@ -18,7 +19,8 @@ const CONTENT = {
     CONNECTION: '#voprosy-otvety',
     PATIENTS: '#programma-gosudarstvennyh-garantij',
     CLINICAL: '#proekty-klinicheskih-rekomendacij',
-    HOSPITALIZATION: '#usloviya-gospitalizacii'
+    HOSPITALIZATION: '#usloviya-gospitalizacii',
+    MEDIACAL_ORG: '#medicinskie-organizacii-na-karte'
 };
 //------------------------------------------------------------//
 
@@ -43,6 +45,9 @@ const showMobContent = () => {
 
     if(getPage() === PAGES.SERGEV_POSAD) {
       $('.menu__button-title a').text($('.title-change').text());
+    }
+    if(getPage() === PAGES.MEDIACAL_ORG) {
+      $('.menu__button-title a').text($('.crumb-content').text());
     }
 };
 
@@ -202,7 +207,9 @@ function renderContent() {
           showContent(CONTENT.CLINICAL)
         } else if(page === PAGES.HOSPITALIZATION) {
           showContent(CONTENT.HOSPITALIZATION)
-        }
+        } else if(page === PAGES.MEDIACAL_ORG) {
+          showContent(CONTENT.MEDIACAL_ORG)
+        } 
         removeActiveMainLink();
     }
     changeTitle()

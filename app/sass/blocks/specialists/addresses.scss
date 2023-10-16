@@ -1,0 +1,239 @@
+[class*='gototech'],
+[class*='copyrights-pane'],
+[class*='controls__control'],
+[class*='controls__toolbar'],
+[class*='controls__bottom'] {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 48em) {
+
+  #map:hover [class*='copyrights-pane'],
+  #map:hover [class*='controls__control'] {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  [class*='controls__control'],
+    [class*='copyrights-pane'] {
+      opacity: 1;
+    }
+}
+
+.addresses {
+
+  margin-top: 4rem;
+  flex-direction: column;
+  display: none;
+  position: relative;
+
+  &:last-child {
+      row-gap: 15rem;
+  }
+  
+    &.active {
+      display: flex;
+    }
+
+  &__title {
+    color: #323439;
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 130%;
+      margin-bottom: 4rem;
+  }
+
+  .address__title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 130%;
+      margin-bottom: 1rem;
+  }
+
+  .address__content {
+      font-size: 2rem;
+      line-height: 130%;
+
+      a {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: #00AC60;
+        }
+      }
+  }
+
+  &__map {
+    width: 100%;
+    height: 62.6rem;
+    border-radius: 0.8rem;
+  }
+
+  &__descs {
+        position: absolute;
+          z-index: 1;
+          left: 5.4rem;
+          top: 16.4rem;
+          transition: all 0.3s ease-in-out;
+  }
+
+  &__desc {
+    border-radius: 0.8rem;
+    background: #D8DEE8;
+    padding: 4.8rem 3.8rem;
+    row-gap: 3.2rem;
+    flex-direction: column;
+    width: 60rem;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__desc-title {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 125%;
+  }
+
+  &__desc-block {
+    &-tit {
+      margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 125%;
+    }
+
+    &-text {
+        font-size: 1.8rem;
+        line-height: 150%;
+    }
+  }
+
+  &__form {
+    border-radius: 0.8rem;
+    background-color: #D8DEE8;
+    width: 88.4rem;
+    margin-bottom: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 2rem;
+    padding: 0 2rem;
+
+    button {
+      width: 2.1rem;
+      height: 2.1rem;
+    }
+
+    input {
+      padding: 2rem 0;
+      background: transparent;
+      border: 0;
+      width: 100%;
+        font-size: 2rem;
+        color: #323439;
+        line-height: 136%;
+
+        &::placeholder {
+          color: rgba(63, 76, 92, 0.69);
+          font-size: 1.6rem;
+        }
+    }
+  }
+
+  .ymaps-2-1-79-inner-panes,
+  .ymaps-2-1-79-map {
+    border-radius: 0.8rem;
+  }
+}
+
+
+@media screen and (max-width: 48em) {
+  .addresses {
+  
+      margin-top: 8vw;
+
+      &:last-child {
+        row-gap: 21.3vw;
+      }
+  
+      &__title {
+        font-size: 5.86vw;
+        margin-bottom: 8vw;
+      }
+
+                &__map {
+                  width: 100%;
+                  height: 96vw;
+                  border-radius: 2.8vw;
+                }
+        
+                &__descs {
+                  left: 0;
+                  top: 0;
+                  position: relative;
+                  margin-top: 8vw;
+                }
+        
+                &__desc {
+                  border-radius: 2.8vw;
+                  padding: 5.3vw;
+                  row-gap: 8.5vw;
+                  width: 100%;
+                }
+        
+                &__desc-title {
+                  font-size: 4.8vw;
+                }
+        
+                &__desc-block {
+                  &-tit {
+                    margin-bottom: 4vw;
+                    font-size: 4.8vw;
+                  }
+        
+                  &-text {
+                    font-size: 4.27vw;
+                  }
+                }
+
+  &__form {
+    border-radius: 2.8vw;
+    width: 100%;
+    margin-bottom: 8vw;
+    column-gap: 5.3vw;
+    padding: 0 5.3vw;
+
+    button {
+      width: 5.3vw;
+      height: 5.3vw;
+    }
+
+    input {
+      padding: 5.3vw 0;
+        font-size: 5.3vw;
+
+        &::placeholder {
+          font-size: 4.27vw;
+        }
+    }
+  }
+  
+      .address__title {
+        font-size: 4.8vw;
+        margin-bottom: 5.3vw;
+      }
+  
+      .address__content {
+        font-size: 4.27vw;
+      }
+
+            .block__content[style*="display: block"],
+            .block__items {
+              row-gap: 8vw;
+            }
+    }
+}

@@ -1,0 +1,340 @@
+.project-docs {
+
+  margin: 5.6rem 0 15rem 0;
+
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8rem;
+  }
+
+  &__title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 150%;
+      text-transform: uppercase;
+      margin-bottom: 4.4rem;
+  }
+
+  &__date {
+    color: rgba(63, 76, 92, 0.69);
+      font-size: 1.8rem;
+      line-height: 150%;
+      margin-bottom: 1rem;
+  }
+
+  &__text,
+  p {
+    &:not(:last-child) {
+            margin-bottom: 1rem;
+    }
+      font-size: 1.8rem;
+      line-height: 150%;
+  }
+
+    ol {
+      padding: 0 0 0 2.8rem;
+      margin: 0;
+    }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    > li {
+      font-size: 1.8rem;
+        line-height: 150%;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          margin-top: 1rem;
+
+          li {
+            color: rgba(63, 76, 92, 0.69);
+              font-size: 1.8rem;
+              line-height: 150%;
+              position: relative;
+              padding-left: 2rem;
+
+              &::before {
+                position: absolute;
+                  content: '';
+                  width: 0.3rem;
+                  height: 0.3rem;
+                  background: rgba(63, 76, 92, 0.69);
+                  border-radius: 50%;
+                  left: 0.5rem;
+                  top: 1.1rem;
+              }
+          }
+        }
+    }
+  }
+
+  &__table-3 {
+        .project-docs__table-item,
+        .project-docs__table-header {
+          display: flex;
+      
+          &>div {
+            &:nth-child(1) {
+              width: 18.5rem;
+              padding: 2rem 1.5rem 2rem 4rem;
+              border-right: 1px solid rgba(63, 76, 92, 0.20);
+            }
+      
+            &:nth-child(2) {
+              width: 69.6rem;
+              padding: 2rem;
+              border-right: 1px solid rgba(63, 76, 92, 0.20);
+            }
+      
+            &:nth-child(3) {
+              width: 65.3rem;
+              padding: 2rem 4rem 2rem 2rem;
+            }
+          }
+        }
+      
+        .project-docs__table-subtitle div {
+          &:nth-child(2) {
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 135%;
+          }
+        }
+  }
+
+  &__table-5 {
+            .project-docs__table-item,
+              .project-docs__table-header {
+                display: flex;
+            
+                &>div {
+                  &:nth-child(1) {
+                    width: 11.7rem;
+                    padding: 2rem 1.5rem 2rem 4rem;
+                    border-right: 1px solid rgba(63, 76, 92, 0.20);
+                  }
+            
+                  &:nth-child(2) {
+                    width: 31.2rem;
+                  }
+            
+                  &:nth-child(3) {
+                    width: 42.7rem;
+                  }
+
+                  &:nth-child(4) {
+                    width: 38.7rem;
+                  }
+
+                   &:nth-child(5) {
+                    width: 30.1rem;
+                    padding: 2rem 4rem 2rem 2rem;
+                    border-right: 1px solid rgba(63, 76, 92, 0.20);
+                  }
+
+                  &:nth-child(2),
+                  &:nth-child(3),
+                  &:nth-child(4) {
+                    padding: 2rem;
+                      border-right: 1px solid rgba(63, 76, 92, 0.20);
+                  }
+                }
+              }
+            
+              .project-docs__table-subtitle div {
+                &:nth-child(2) {
+                  font-size: 2.3rem;
+                  font-weight: 700;
+                  line-height: 135%;
+                }
+              }
+  }
+
+    &__table-item {
+      background: #D8DEE8;
+  
+      &>div {
+        font-size: 1.6rem;
+        line-height: 130%;
+      }
+  
+      &:nth-of-type(2n + 1) {
+        background: #b9c3d3;
+      }
+  
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(63, 76, 92, 0.20);
+      }
+
+      &:last-child {
+        border-radius: 0 0 0.8rem 0.8rem;
+      }
+    }
+
+      &__table-header {
+       &>div {
+         font-size: 2.3rem;
+         font-weight: 700;
+         line-height: 130%;
+       }
+     }
+
+    &__table-title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 135%;
+      padding: 2rem 4rem;
+      border-radius: 0.8rem 0.8rem 0 0;
+      background: #D8DEE8;
+      border-bottom: 1px solid rgba(63, 76, 92, 0.20);
+    }
+
+    &__table-desc {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 150%;
+      margin-bottom: 2.2rem;
+    }
+
+  &__table {
+    margin-bottom: 4.4rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .project-docs {
+  
+      margin: 3.2vw 0 21.3vw 0;
+  
+      &__blocks {
+        row-gap: 8vw;
+      }
+  
+      &__title {
+        font-size: 5.3vw;
+        margin-bottom: 5.3vw;
+      }
+  
+      &__date {
+        font-size: 4.27vw;
+        margin-bottom: 1.2vw;
+      }
+  
+      &__text,
+      p {
+        &:not(:last-child) {
+          margin-bottom: 3.2vw;
+        }
+  
+        font-size: 4.27vw;
+      }
+
+      ol {
+        margin: 0;
+        padding-left: 4.8vw;
+      }
+  
+      &__list {
+        row-gap: 1.2vw;
+  
+        >li {
+          font-size: 4.27vw;
+  
+          ul {
+            margin-top: 1.2vw;
+  
+            li {
+              font-size: 4.27vw;
+              padding-left: 5.3vw;
+  
+              &::before {
+                width: 1.2vw;
+                  height: 1.2vw;
+                  left: 1.6vw;
+                  top: 2.4vw;
+              }
+            }
+          }
+        }
+      }
+
+      &__table-3,
+      &__table-5 {
+                .project-docs__table-item,
+                .project-docs__table-header {
+                  &>div {
+                    &:nth-child(n) {
+                      border: none;
+                      padding: 0;
+                      width: 100%;
+                    }
+                  }
+                }
+              
+                .project-docs__table-subtitle {
+                  padding: 4vw 5.3vw;
+              
+                  div {
+                    &:nth-child(2) {
+                      font-size: 5.3vw;
+                      line-height: normal;
+                    }
+              
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                      display: none;
+                    }
+                  }
+                }
+
+                .project-docs__table-header {
+                  display: none;
+                }
+      }
+
+            &__table-item {
+              flex-direction: column;
+              padding: 5.3vw 10.6vw;
+              row-gap: 5.3vw;
+      
+              &>div {
+                font-size: 4.27vw;
+      
+                div:first-child {
+                  margin-bottom: 4.27vw;
+                  font-size: 4.8vw;
+                  font-weight: 700;
+                  line-height: 130%;
+                }
+              }
+      
+              &:not(:last-child) {
+                border-bottom: none;
+              }
+
+              &:last-child {
+                border-radius: 0 0 2.8vw 2.8vw;
+              }
+            }
+
+       &__table-title {
+                  font-size: 5.3vw;
+                  padding: 4vw 5.3vw;
+                  border-radius: 2.8vw 2.8vw 0 0;
+                }
+
+      &__table-desc {
+          font-size: 4.8vw;
+          margin-bottom: 5.3vw;
+      }
+
+      &__table {
+        margin-bottom: 8vw;
+      }
+    }
+}

@@ -123,22 +123,11 @@ const changeBreadCrumb = (hash, hashBlock) => {
 };
 
 const changeContent = (hashPage) => {
-
     $('[data-content]').removeClass('active');
     $(`[data-content=${hashPage}]`).addClass('active');
 
     $('[data-open-content]').parent().siblings().removeClass('active');
     $(`[data-open-content=${hashPage}]`).parent().addClass('active');
-
-    // if(window.innerWidth < 768) {
-    // 	if(hashPage === 'rabota-s-obrashcheniyami-grazhdan') {
-    // 		$('.connection__left').css('display', 'none');
-    // 		$('.connection__wrap').css('padding-bottom', '0')
-    // 	} else {
-    // 		$('.connection__left').css('display', 'block');
-    // 		$('.connection__wrap').css('padding-bottom', '166vw')
-    // 	}
-    // }
 };
 
 const changeContentBlock = (hash) => {

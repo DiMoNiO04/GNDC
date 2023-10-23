@@ -9,7 +9,7 @@ const mainSlider = new Swiper('#main__swiper', {
     spaceBetween: 20,
     autoplay: true,
     autoplay: {
-        delay: 2000,
+        delay: 5000,
     },
     pagination: {
         clickable: true,
@@ -33,7 +33,7 @@ const mainNewsSlider = new Swiper('#news-main__swiper', {
     spaceBetween: 20,
     autoplay: true,
     autoplay: {
-        delay: 2000,
+        delay: 5000,
     },
     pagination: {
         clickable: true,
@@ -55,7 +55,7 @@ const partnersSlider = new Swiper('#partners__swiper', {
     loop: true,
     autoplay: true,
     autoplay: {
-        delay: 2000,
+        delay: 5000,
     },
     navigation: {
         prevEl: '.partners__prev',

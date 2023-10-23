@@ -50,6 +50,7 @@
         background-image: url(../img/icon/heroicons-white.svg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        flex-shrink: 0;
     }
 
     &:hover {
@@ -59,6 +60,10 @@
 
         &::before {
             background-image: url('../img/icon/heroicons.svg');
+            width: 2.4rem;
+            height: 2.4rem;
+            background-size: cover;
+            flex-shrink: 0;
         }
 
         span {
@@ -75,7 +80,6 @@
         font-size: 1.8rem;
         border-radius: 0.8rem;
         background: none;
-        width: 23.9rem;
         box-sizing: border-box;
         border: none;
         margin: 0;
@@ -105,7 +109,7 @@
   input, textarea {
     flex-shrink: 0;
   }
-
+  
   &-error {
     border-radius: 0.8rem;
     position: relative;

@@ -29,6 +29,20 @@ $('.block__item-lists-subblock').each(function () {
 });
 //-------------------------------------------------------------//
 
+//-----------------------Data contest mob----------------------//
+$('[data-open-contest]').on('click', function() {
+    $('[data-open-contest]').removeClass('active');
+    $(`[data-open-contest="${$(this).data('open-contest')}"`).addClass('active');
+
+    $('[data-block-contest]').removeClass('active');
+    $(`[data-block-contest="${$(this).data('open-contest')}"`).addClass('active');
+
+		$('html, body').animate({
+        scrollTop: $('.contest__forms').offset().top
+    }, 800);
+})
+//-----------------------------------------------------------------//
+
 //-------------------------About---------------------------------------//
 $('[data-open-photo-category').on('click', function () {
     $('.photos__gallery').removeClass('active');

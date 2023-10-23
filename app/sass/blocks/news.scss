@@ -7,7 +7,7 @@
 
     &__slide {
         width: 48rem;
-        height: 40.5rem;
+        height: auto;
         background: #fefefe;
         border-radius: 0.8rem;
         padding: 2rem;
@@ -57,9 +57,8 @@
         margin-bottom: 0.4rem;
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
-        height: 8rem;
     }
 
     &__text-desc {

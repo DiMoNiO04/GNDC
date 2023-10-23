@@ -216,6 +216,11 @@
       .form__input {
         flex-direction: column;
       }
+
+    .input-file,
+     .input-file span {
+       width: 100%;
+     }
   
       &__wrapper {
         row-gap: 5.3vw;

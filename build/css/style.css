@@ -2809,9 +2809,17 @@ h4 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contest .input-file,
-  .contest .input-file span {
+  .contest .input-file {
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contest .input-file span {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 4.8vw;
   }
   .contest__wrapper {
     row-gap: 5.3vw;
@@ -2947,18 +2955,6 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .contest__form-input .input-file {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contest__form-input .input-file span {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 4.8vw;
   }
   .contest__form-top {
     -webkit-box-align: start;
@@ -3693,6 +3689,12 @@ h4 {
           flex-direction: column;
   row-gap: 2rem;
 }
+.bussines__block {
+  max-width: 98.2rem;
+}
+.bussines__block:not(:last-child) {
+  margin-bottom: 8rem;
+}
 
 .bussines__item-clinical .menu__button {
   height: 21.5rem;
@@ -3732,6 +3734,12 @@ h4 {
   .bussines {
     margin-top: 2.7vw;
     padding-bottom: 21.3vw;
+  }
+  .bussines__block {
+    max-width: 100%;
+  }
+  .bussines__block:not(:last-child) {
+    margin-bottom: 16vw;
   }
   .bussines .title {
     margin-bottom: 8vw;

@@ -217,10 +217,15 @@
         flex-direction: column;
       }
 
-    .input-file,
-     .input-file span {
-       width: 100%;
-     }
+        .input-file {
+          width: 100%;
+          justify-content: center;
+        }
+    
+        .input-file span {
+          width: fit-content;
+          font-size: 4.8vw;
+        }
   
       &__wrapper {
         row-gap: 5.3vw;
@@ -360,16 +365,6 @@
       &__form-input {
         row-gap: 5.3vw;
         flex-direction: column;
-  
-        .input-file {
-          width: 100%;
-          justify-content: center;
-        }
-
-        .input-file span {
-          width: fit-content;
-          font-size: 4.8vw;
-        }
       }
   
       &__form-top {

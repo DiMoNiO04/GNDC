@@ -228,6 +228,13 @@
         flex-direction: column;
         row-gap: 2rem;
     }
+
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: 8rem;
+      }
+      max-width: 98.2rem;
+    }
 }
 
 .bussines__item-clinical {
@@ -272,6 +279,13 @@
   .bussines {
       margin-top: 2.7vw;
       padding-bottom: 21.3vw;
+
+      &__block {
+        &:not(:last-child) {
+          margin-bottom: 16vw;
+        }
+        max-width: 100%;
+      }
 
       .title {
         margin-bottom: 8vw;

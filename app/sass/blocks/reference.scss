@@ -72,9 +72,14 @@
 
     &__swipper {
         width: 100%;
+				height: 80rem;
         overflow: hidden;
         margin-bottom: 2.2rem;
     }
+
+		.applicator__slide-image {
+			height: 100%;
+		}
 
     &__pagination {
         margin-top: 2.2rem;
@@ -137,6 +142,7 @@
   
       &__swipper {
         margin-bottom: 8vw;
+				height: auto;
       }
   
       &__pagination {

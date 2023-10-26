@@ -265,6 +265,7 @@ const referenceSlider = new Swiper('#reference__swipper', {
     slidesPerView: 1,
     wrapperClass: 'reference__swipper-wrapper',
     slideClass: 'reference__slide',
+    spaceBetween: 20,
     navigation: {
         prevEl: '.reference__prev',
         nextEl: '.reference__next',

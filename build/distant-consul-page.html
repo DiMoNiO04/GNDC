@@ -265,8 +265,8 @@
             <a href="../index.html">Главная</a>
             <a href="../distant-consul-page.html">Дистанционные консультации пациентов</a>
         </div>
+        <div class="title">Дистанционные консультации пациентов</div>
         <div class="distant__wrapper">
-            <div class="title">Дистанционные консультации пациентов</div>
             <div class="distant__text">
                 <span>Уважаемые пациенты!</span>
                 <p>
@@ -291,11 +291,12 @@
                     наличии).
                 </p>
             </div>
-            <!-- text -->
-        </div>
-        <div class="distant__text-inner">
-            <button class="distant__text-btn">Скрыть текст</button>
-            <a href="#" class="distant__text-link link-green">Прейскурант на услуги дистанционных консультаций</a>
+            <div class="distant__text-inner">
+              <button class="distant__text-btn">Скрыть текст</button>
+              <div class="distant__text-link">
+                <a href="#" class="link-green">Прейскурант на услуги дистанционных консультаций</a>
+              </div>
+            </div>
         </div>
         <button class="all-btn__blue distant__btn-two">Получить дистанционную консультацию</button>
         <div class="distant__wrap">
@@ -354,218 +355,253 @@
                     <!-- block -->
                 </div>
                 <div class="distant__content-right">
+                  <div class="distant__content-right-btns --mob">
+                    <button type="button" data-open-distant="distant-block-1" class="distant__content-right-btn active">
+                      <div class="distant__content-right-btn-number">1.</div>
+                      <div class="distant__content-right-btn-text">Пациент</div>
+                    </button>
+                    <button type="button" data-open-distant="distant-block-2" class="distant__content-right-btn">
+                      <div class="distant__content-right-btn-number">2.</div>
+                      <div class="distant__content-right-btn-text">Выбор специалиста</div>
+                    </button>
+                    <button type="button" data-open-distant="distant-block-3" class="distant__content-right-btn">
+                      <div class="distant__content-right-btn-number">3.</div>
+                      <div class="distant__content-right-btn-text">Причины обращения</div>
+                    </button>
+                    <button type="button" data-open-distant="distant-block-4" class="distant__content-right-btn">
+                      <div class="distant__content-right-btn-number">4.</div>
+                      <div class="distant__content-right-btn-text">Оплата</div>
+                    </button>
+                  </div>
+                  <div class="distant__content-right-block active" data-block-distant="distant-block-1">
                     <div class="distant__content-right-content">
-                        <div class="distant__content-right-content-title">1. Пациент</div>
-                        <form action="" class="distant__form">
-
-                          <div class="form__input error">
-                            <input type="text" placeholder="Фамилия*" />
-                            <div class="form__input-error">
-                              <img src="./img/triagle.svg" alt="">
-                              <span>Поле заполнено неверно</span>
-                            </div>
-                          </div>
-                          <div class="form__input">
-                            <input type="text" placeholder="Имя*" />
-                            <div class="form__input-error">
-                              <img src="./img/triagle.svg" alt="">
-                              <span>Поле заполнено неверно</span>
-                            </div>
-                          </div>
-                          <div class="form__input">
-                            <input type="text" placeholder="Отчество" />
-                            <div class="form__input-error">
-                              <img src="./img/triagle.svg" alt="">
-                              <span>Поле заполнено неверно</span>
-                            </div>
-                          </div>
-                          <div class="form__input">
-                            <input type="text" class="date" placeholder="Дата рождения*" />
-                            <div class="form__input-error">
-                              <img src="./img/triagle.svg" alt="">
-                              <span>Поле заполнено неверно</span>
-                            </div>
-                          </div>
-                          <div class="form__input">
-                            <input type="text" placeholder="E-mail*" />
-                            <div class="form__input-error">
-                              <img src="./img/triagle.svg" alt="">
-                              <span>Поле заполнено неверно</span>
-                            </div>
-                          </div>
-                            <div class="form__input">
-                              <input type="text" placeholder="Номер телефона*" />
-                              <div class="form__input-error">
-                                <img src="./img/triagle.svg" alt="">
-                                <span>Поле заполнено неверно</span>
-                              </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="distant__content-right-content">
-                        <div class="distant__content-right-content-title">2. Выбор специалиста</div>
+                      <div class="distant__content-right-content-title">1. Пациент</div>
+                      <form action="" class="distant__form">
+                    
                         <div class="form__input error">
-                          <div class="select">
-                            <input class="select-input" type="hidden" name="" />
-                            <div class="select-head">Специальность*</div>
-                            <div class="select-list" style="display: none;">
-                              <ul class="select-items">
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                              </ul>
-                            </div>
-                          </div>
+                          <input type="text" placeholder="Фамилия*" />
                           <div class="form__input-error">
                             <img src="./img/triagle.svg" alt="">
                             <span>Поле заполнено неверно</span>
                           </div>
                         </div>
-
                         <div class="form__input">
-                          <div class="select">
-                            <input class="select-input" type="hidden" name="" />
-                            <div class="select-head">Специальность*</div>
-                            <div class="select-list" style="display: none;">
-                              <ul class="select-items">
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                                <li class="select-item">Терапевт</li>
-                                <li class="select-item">Хирург</li>
-                              </ul>
-                            </div>
-                          </div>
+                          <input type="text" placeholder="Имя*" />
                           <div class="form__input-error">
                             <img src="./img/triagle.svg" alt="">
                             <span>Поле заполнено неверно</span>
                           </div>
                         </div>
+                        <div class="form__input">
+                          <input type="text" placeholder="Отчество" />
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>Поле заполнено неверно</span>
+                          </div>
+                        </div>
+                        <div class="form__input">
+                          <input type="text" class="date" placeholder="Дата рождения*" />
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>Поле заполнено неверно</span>
+                          </div>
+                        </div>
+                        <div class="form__input">
+                          <input type="text" placeholder="E-mail*" />
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>Поле заполнено неверно</span>
+                          </div>
+                        </div>
+                        <div class="form__input">
+                          <input type="text" placeholder="Номер телефона*" />
+                          <div class="form__input-error">
+                            <img src="./img/triagle.svg" alt="">
+                            <span>Поле заполнено неверно</span>
+                          </div>
+                        </div>
+                      </form>
                     </div>
+                    <button type="button"  data-open-distant="distant-block-2" class="btn all-btn__white --mob">
+                      Далее
+                    </button>
+                  </div>
+                  <div class="distant__content-right-block" data-block-distant="distant-block-2">
                     <div class="distant__content-right-content">
-                        <div class="distant__content-right-content-title">3. Причина обращения и данные анамнеза</div>
-                        <div class="distant__content-right-content-block">
-                            <div class="distant__content-right-content-block-text">
-                                <span>Причина обращения</span>
-                                <p></p>
-                            </div>
-                            <textarea></textarea>
+                      <div class="distant__content-right-content-title">2. Выбор специалиста</div>
+                      <div class="form__input error">
+                        <div class="select">
+                          <input class="select-input" type="hidden" name="" />
+                          <div class="select-head">Специальность*</div>
+                          <div class="select-list" style="display: none;">
+                            <ul class="select-items">
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="distant__content-right-content-block">
-                            <div class="distant__content-right-content-block-text">
-                                <span>Жалобы</span>
-                                <p>
-                                    Опишите давность кожных проявлений, проводимое ранее лечение, назначенное врачами
-                                    дерматовенерологами и (или) проводимое самостоятельно и его эффективность
-                                </p>
-                            </div>
-                            <textarea></textarea>
+                        <div class="form__input-error">
+                          <img src="./img/triagle.svg" alt="">
+                          <span>Поле заполнено неверно</span>
                         </div>
-                        <div class="distant__content-right-content-block">
-                            <div class="distant__content-right-content-block-text">
-                                <span>Аллергоанамнез</span>
-                                <p>
-                                    Укажите наличие аллергических реакций на лекарственные препараты, пищевые продукты,
-                                    цветение, средства косметики и гигиены или на другие факторы
-                                </p>
-                            </div>
-                            <textarea></textarea>
+                      </div>
+                    
+                      <div class="form__input">
+                        <div class="select">
+                          <input class="select-input" type="hidden" name="" />
+                          <div class="select-head">Специальность*</div>
+                          <div class="select-list" style="display: none;">
+                            <ul class="select-items">
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                              <li class="select-item">Терапевт</li>
+                              <li class="select-item">Хирург</li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="distant__content-right-content-block">
-                            <div class="distant__content-right-content-block-text">
-                                <span>Наследственность</span>
-                                <p>Укажите заболевания дерматологического профиля у кровных родственников</p>
-                            </div>
-                            <textarea></textarea>
+                        <div class="form__input-error">
+                          <img src="./img/triagle.svg" alt="">
+                          <span>Поле заполнено неверно</span>
                         </div>
-                        <div class="distant__content-right-content-block">
-                            <div class="distant__content-right-content-block-text">
-                                <span>Сопутствующая терапия</span>
-                                <p>
-                                    Укажите лекарственные препараты, которые Вы принимали последние 2 месяца и/или
-                                    принимаете постоянно. Для женщин необходимо указать о приёме оральных контрацептивов
-                                </p>
-                            </div>
-                            <textarea></textarea>
-                        </div>
-                        <div class="distant__content-right-content-block">
-                            <div class="distant__content-right-content-block-text">
-                                <span>Иное</span>
-                                <p>
-                                    Укажите имеющиеся и перенесенные хронические заболевания, инфекции, оперативные
-                                    вмешательства, травмы. Укажите дополнительную информацию о заболевании, которую
-                                    считаете необходимой
-                                </p>
-                            </div>
-                            <textarea></textarea>
-                        </div>
-                        <div class="distant__content-right-content-block">
-                            <div class="distant__content-right-content-block-text">
-                                <span>Добавить файлы</span>
-                                <p>
-                                    Приложите фотографии пораженного участка кожного покрова или результаты
-                                    дополнительных исследований. Прикрепляемые файлы должны быть в форматах pdf, jpg,
-                                    mp4
-                                </p>
-                            </div>
-                            <form method="post" enctype="multipart/form-data">
-                                <label class="input-file">
-                                    <input type="file" name="file" />
-                                    <span>Прикрепить файлы</span>
-                                </label>
-                            </form>
-                        </div>
+                      </div>
                     </div>
+                    <button type="button"  data-open-distant="distant-block-3" class="btn all-btn__white --mob">
+                      Далее
+                    </button>
+                  </div>
+                  <div class="distant__content-right-block" data-block-distant="distant-block-3">
+                    <div class="distant__content-right-content">
+                      <div class="distant__content-right-content-title">3. Причина обращения и данные анамнеза</div>
+                      <div class="distant__content-right-content-block">
+                        <div class="distant__content-right-content-block-text">
+                          <span>Причина обращения</span>
+                          <p></p>
+                        </div>
+                        <textarea></textarea>
+                      </div>
+                      <div class="distant__content-right-content-block">
+                        <div class="distant__content-right-content-block-text">
+                          <span>Жалобы</span>
+                          <p>
+                            Опишите давность кожных проявлений, проводимое ранее лечение, назначенное врачами
+                            дерматовенерологами и (или) проводимое самостоятельно и его эффективность
+                          </p>
+                        </div>
+                        <textarea></textarea>
+                      </div>
+                      <div class="distant__content-right-content-block">
+                        <div class="distant__content-right-content-block-text">
+                          <span>Аллергоанамнез</span>
+                          <p>
+                            Укажите наличие аллергических реакций на лекарственные препараты, пищевые продукты,
+                            цветение, средства косметики и гигиены или на другие факторы
+                          </p>
+                        </div>
+                        <textarea></textarea>
+                      </div>
+                      <div class="distant__content-right-content-block">
+                        <div class="distant__content-right-content-block-text">
+                          <span>Наследственность</span>
+                          <p>Укажите заболевания дерматологического профиля у кровных родственников</p>
+                        </div>
+                        <textarea></textarea>
+                      </div>
+                      <div class="distant__content-right-content-block">
+                        <div class="distant__content-right-content-block-text">
+                          <span>Сопутствующая терапия</span>
+                          <p>
+                            Укажите лекарственные препараты, которые Вы принимали последние 2 месяца и/или
+                            принимаете постоянно. Для женщин необходимо указать о приёме оральных контрацептивов
+                          </p>
+                        </div>
+                        <textarea></textarea>
+                      </div>
+                      <div class="distant__content-right-content-block">
+                        <div class="distant__content-right-content-block-text">
+                          <span>Иное</span>
+                          <p>
+                            Укажите имеющиеся и перенесенные хронические заболевания, инфекции, оперативные
+                            вмешательства, травмы. Укажите дополнительную информацию о заболевании, которую
+                            считаете необходимой
+                          </p>
+                        </div>
+                        <textarea></textarea>
+                      </div>
+                      <div class="distant__content-right-content-block">
+                        <div class="distant__content-right-content-block-text">
+                          <span>Добавить файлы</span>
+                          <p>
+                            Приложите фотографии пораженного участка кожного покрова или результаты
+                            дополнительных исследований. Прикрепляемые файлы должны быть в форматах pdf, jpg,
+                            mp4
+                          </p>
+                        </div>
+                        <form method="post" enctype="multipart/form-data">
+                          <label class="input-file">
+                            <input type="file" name="file" />
+                            <span>Прикрепить файлы</span>
+                          </label>
+                        </form>
+                      </div>
+                    </div>
+                    <button type="button"  data-open-distant="distant-block-4" class="btn all-btn__white --mob">
+                      Далее
+                    </button>
+                  </div>
+                  <div class="distant__content-right-block" data-block-distant="distant-block-4">
                     <div class="distant__content-right-content error">
-                        <div class="distant__content-right-content-title">
-                          4. Оплата
+                      <div class="distant__content-right-content-title">
+                        4. Оплата
+                        <span>CAPTCHA не прошла проверку</span>
+                      </div>
+                      <div class="distant__content-right-content-price">
+                        <p>Итоговая стоимость приема:</p>
+                        <span>2500 руб.</span>
+                      </div>
+                      <div class="distant__content-right-content-images">
+                        <img src="./img/icon/visa.svg" alt="" />
+                        <img src="./img/icon/mastercard.svg" alt="" />
+                        <img src="./img/icon/mir.svg" alt="" />
+                        <img src="./img/icon/jcb.svg" alt="" />
+                      </div>
+                    
+                      <div class="form__input error">
+                        <div class="distant__content-right-content-captha">
+                          <img src="./img/icon/captha.svg" alt="" />
+                        </div>
+                        <div class="form__input-error">
+                          <img src="./img/triagle.svg" alt="">
                           <span>CAPTCHA не прошла проверку</span>
                         </div>
-                        <div class="distant__content-right-content-price">
-                            <p>Итоговая стоимость приема:</p>
-                            <span>2500 руб.</span>
+                      </div>
+                    
+                      <div class="form__input error">
+                        <label class="checkbox-other">
+                          <input type="checkbox" />
+                          <span>Я согласен на <a href="#" class="link-green">обработку персональных данных</a></span>
+                        </label>
+                        <div class="form__input-error">
+                          <img src="./img/triagle.svg" alt="">
+                          <span>Необходимо согласие на обработку данных</span>
                         </div>
-                        <div class="distant__content-right-content-images">
-                            <img src="./img/icon/visa.svg" alt="" />
-                            <img src="./img/icon/mastercard.svg" alt="" />
-                            <img src="./img/icon/mir.svg" alt="" />
-                            <img src="./img/icon/jcb.svg" alt="" />
-                        </div>
-
-                        <div class="form__input error">
-                          <div class="distant__content-right-content-captha">
-                            <img src="./img/icon/captha.svg" alt="" />
-                          </div>
-                          <div class="form__input-error">
-                            <img src="./img/triagle.svg" alt="">
-                            <span>CAPTCHA не прошла проверку</span>
-                          </div>
-                        </div>
-                        
-                          <div class="form__input error">
-                            <label class="checkbox-other">
-                              <input type="checkbox" />
-                              <span>Я согласен на <a href="#" class="link-green">обработку персональных данных</a></span>
-                            </label>
-                            <div class="form__input-error">
-                              <img src="./img/triagle.svg" alt="">
-                              <span>Необходимо согласие на обработку данных</span>
-                            </div>
-                          </div>
-
-                        <button class="all-btn__white distant__form-btn">Оплатить</button>
+                      </div>
+                    
+                      <button class="all-btn__white distant__form-btn">Оплатить</button>
                     </div>
+                  </div>
                 </div>
             </div>
-            <div class="distant__end">
+            <div class="distant__end" data-block-distant="distant-block-4">
                 <div class="distant__end-inner">
                     <div class="distant__end-title">Способы Оплаты и возврат средств</div>
                     <p>

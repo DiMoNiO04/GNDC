@@ -61,6 +61,32 @@
         }
     }
 
+		&-search__result {
+				display: none;
+				position: absolute;
+				right: 0;
+				top: 8rem;
+				width: 100%;
+				padding: 2.5rem 3rem;
+				background-color: white;
+				z-index: 10;
+				border-radius: 0.8rem;
+				border: 0.2rem solid #3f4c5c;
+				max-height: 27rem;
+				overflow: scroll;
+
+				li {
+					font-size: 1.4rem;
+					&:not(:last-child) {
+						margin-bottom: 0.8rem;
+					}
+				}
+
+				&::-webkit-scrollbar {
+					display: none;
+				}
+		}
+
     &__center {
         margin-bottom: 3rem;
     }

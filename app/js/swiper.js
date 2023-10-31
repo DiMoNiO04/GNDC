@@ -79,7 +79,7 @@ const partnersSlider = new Swiper('#partners__swiper', {
             loop: true,
         },
         769: {
-            slidesPerView: 5,
+            slidesPerView: 2.24,
             autoplay: false,
         },
     },
@@ -232,6 +232,7 @@ const contactsBranchesSlider = new Swiper('#contacts__branches-swiper', {
 });
 
 const brandsSwiper = new Swiper('#news-swiper', {
+	slidesPerView: 1,
     navigation: {
         nextEl: '.news__next',
         prevEl: '.news__prev',
@@ -239,26 +240,7 @@ const brandsSwiper = new Swiper('#news-swiper', {
     pagination: {
         el: '.news__bullets',
         clickable: true,
-    },
-
-     breakpoints: {
-        300: {
-            slidesPerView: 1,
-            slidesPerColumn: 1,
-            grid: {
-                rows: 6,
-            },
-            spaceBetween: 20,
-        },
-        769: {
-            slidesPerView: 3,
-            slidesPerColumn: 3,
-            grid: {
-                rows: 3,
-            },
-            spaceBetween: 30,
-        },
-    },
+    }
 });
 
 const referenceSlider = new Swiper('#reference__swipper', {

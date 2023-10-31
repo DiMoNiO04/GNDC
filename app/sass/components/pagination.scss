@@ -31,9 +31,11 @@
         height: 5.6rem;
         cursor: pointer;
 
-        &:hover {
-            opacity: 0.5;
-        }
+				@media screen and (min-width: 48em) {
+					&:hover {
+							opacity: 0.5;
+						}
+				}
     }
 }
 

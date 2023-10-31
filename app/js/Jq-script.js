@@ -145,3 +145,13 @@ $('.distant__text-btn').click(function () {
     }
 });
 //---------------------------------------
+
+//--------Search------------------------
+$('.header__search input').on('click', function() {
+	$(this).on('input', function() {
+		if($(this).val().length >= 1) {
+			$('.header-search__result').fadeIn();
+		}
+	})
+})
+//------------------------------------

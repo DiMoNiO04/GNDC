@@ -1,5 +1,5 @@
 .main {
-    margin: 8rem 0 15rem 0;
+    margin: 3rem 0 15rem 0;
 
     &__btn {
         background: #00ac60;
@@ -16,12 +16,6 @@
         overflow: hidden;
         position: relative;
         margin-right: 4.4rem;
-    }
-
-    &__slide-flower {
-        position: absolute;
-        right: 0;
-        bottom: 0;
     }
 
     &__news-slide {
@@ -62,36 +56,40 @@
     &__slide-content {
         display: flex;
         height: 36.3rem;
-        background: #3f4c5c;
-        border-radius: 0.8rem;
-        padding-left: 4.7rem;
-        padding-top: 5.2rem;
+        background: #ffffff;
+        border-radius: 0.5rem;
+        padding-left: 7rem;
         cursor: pointer;
         justify-content: space-between;
     }
 
+    &__slide-left {
+              padding-top: 8rem;
+              flex-shrink: 0;
+    }
+
     &__slide-right {
-        width: 49.5rem;
-        height: 41.8rem;
+        width: 49rem;
+        height: 100%;
         position: relative;
-        bottom: 10.7rem;
+        bottom: 0;
         right: 0;
     }
 
     &__slide-title {
         font-weight: 700;
-        font-size: 2.3rem;
+        font-size: 3rem;
         line-height: 122%;
         text-transform: uppercase;
         margin-bottom: 2.4rem;
-        color: #ffffff;
+        color: #3F4C5C;
         display: block;
     }
 
     &__slide-text {
-        font-size: 1.6rem;
+        font-size: 2rem;
         line-height: 2.4rem;
-        color: #bbbfd8;
+        color: #3F4C5C;
         width: 44.6rem;
         margin-bottom: 5.4rem;
         p {
@@ -278,17 +276,16 @@
     &__pagination {
         position: absolute;
         z-index: 2;
-        top: 8.8rem;
-        right: 2.6rem;
+       bottom: 3rem;
+       left: 7rem;
     }
 
     &__bullets {
         position: relative;
-        top: 0.5rem;
         .swiper-pagination-bullet {
-            width: 0.6rem;
-            height: 0.6rem;
-            background: #fff;
+            width: 1.1rem;
+            height: 1.1rem;
+            background: #D9D9D9;
             opacity: 1;
         }
         .swiper-pagination-bullet-active {
@@ -334,14 +331,6 @@
             margin-bottom: 21.3vw;
         }
 
-        &__slide-flower {
-            position: absolute;
-            top: 14vw;
-            left: 12vw;
-            height: 90vw;
-            width: 78vw;
-        }
-
         &__btn {
             position: absolute;
             z-index: 10;
@@ -369,9 +358,16 @@
             margin-top: 8.5vw;
         }
 
-        &__bullets .swiper-pagination-bullet {
-            width: 1.8vw;
-            height: 1.8vw;
+        &__bullets {
+          .swiper-pagination-bullet {
+              width: 1.8vw;
+              height: 1.8vw;
+              background: #FFFFFF;
+            }
+          
+            .swiper-pagination-bullet-active {
+              background: #00ac60;
+            }
         }
 
         &__slide {
@@ -387,10 +383,11 @@
         }
 
         &__slide-right {
-            width: 95vw;
+            width: 100%;
             height: 80vw;
             bottom: 0;
             left: 0;
+            margin-top: 8vw;
             img {
                 border-radius: 2.1vw;
             }

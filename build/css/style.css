@@ -11371,7 +11371,7 @@ h4 {
   }
 }
 .main {
-  margin: 8rem 0 15rem 0;
+  margin: 3rem 0 15rem 0;
 }
 .main__btn {
   background: #00ac60;
@@ -11387,11 +11387,6 @@ h4 {
   overflow: hidden;
   position: relative;
   margin-right: 4.4rem;
-}
-.main__slide-flower {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 .main__news-slide {
   margin-top: auto;
@@ -11427,35 +11422,39 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   height: 36.3rem;
-  background: #3f4c5c;
-  border-radius: 0.8rem;
-  padding-left: 4.7rem;
-  padding-top: 5.2rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding-left: 7rem;
   cursor: pointer;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.main__slide-left {
+  padding-top: 8rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 .main__slide-right {
-  width: 49.5rem;
-  height: 41.8rem;
+  width: 49rem;
+  height: 100%;
   position: relative;
-  bottom: 10.7rem;
+  bottom: 0;
   right: 0;
 }
 .main__slide-title {
   font-weight: 700;
-  font-size: 2.3rem;
+  font-size: 3rem;
   line-height: 122%;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
-  color: #ffffff;
+  color: #3F4C5C;
   display: block;
 }
 .main__slide-text {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 2.4rem;
-  color: #bbbfd8;
+  color: #3F4C5C;
   width: 44.6rem;
   margin-bottom: 5.4rem;
 }
@@ -11653,17 +11652,16 @@ h4 {
 .main__pagination {
   position: absolute;
   z-index: 2;
-  top: 8.8rem;
-  right: 2.6rem;
+  bottom: 3rem;
+  left: 7rem;
 }
 .main__bullets {
   position: relative;
-  top: 0.5rem;
 }
 .main__bullets .swiper-pagination-bullet {
-  width: 0.6rem;
-  height: 0.6rem;
-  background: #fff;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #D9D9D9;
   opacity: 1;
 }
 .main__bullets .swiper-pagination-bullet-active {
@@ -11705,13 +11703,6 @@ h4 {
     row-gap: 21.3vw;
     margin-bottom: 21.3vw;
   }
-  .main__slide-flower {
-    position: absolute;
-    top: 14vw;
-    left: 12vw;
-    height: 90vw;
-    width: 78vw;
-  }
   .main__btn {
     position: absolute;
     z-index: 10;
@@ -11741,6 +11732,10 @@ h4 {
   .main__bullets .swiper-pagination-bullet {
     width: 1.8vw;
     height: 1.8vw;
+    background: #FFFFFF;
+  }
+  .main__bullets .swiper-pagination-bullet-active {
+    background: #00ac60;
   }
   .main__slide {
     padding-top: 0;
@@ -11752,10 +11747,11 @@ h4 {
     top: 0 !important;
   }
   .main__slide-right {
-    width: 95vw;
+    width: 100%;
     height: 80vw;
     bottom: 0;
     left: 0;
+    margin-top: 8vw;
   }
   .main__slide-right img {
     border-radius: 2.1vw;

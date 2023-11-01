@@ -79,7 +79,7 @@ const partnersSlider = new Swiper('#partners__swiper', {
             loop: true,
         },
         769: {
-            slidesPerView: 2.24,
+            slidesPerView: 5,
             autoplay: false,
         },
     },

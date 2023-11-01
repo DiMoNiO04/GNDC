@@ -6,10 +6,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 2.2rem;
-        li {
+        > li {
             position: relative;
             padding-left: 2rem;
-            a {
+            > a {
                 font-size: 2.3rem;
                 font-weight: 700;
                 line-height: 150%;
@@ -31,6 +31,7 @@
             }
         }
     }
+
 }
 
 @media screen and (max-width: 48em) {

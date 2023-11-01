@@ -5343,20 +5343,20 @@ h4 {
           flex-direction: column;
   row-gap: 2.2rem;
 }
-.specialists__item-list li {
+.specialists__item-list > li {
   position: relative;
   padding-left: 2rem;
 }
-.specialists__item-list li a {
+.specialists__item-list > li > a {
   font-size: 2.3rem;
   font-weight: 700;
   line-height: 150%;
   border-bottom: 0.1rem solid #3f4c5c;
 }
-.specialists__item-list li a:hover {
+.specialists__item-list > li > a:hover {
   border-bottom: none;
 }
-.specialists__item-list li::before {
+.specialists__item-list > li::before {
   content: "";
   display: inline-block;
   width: 0.5rem;

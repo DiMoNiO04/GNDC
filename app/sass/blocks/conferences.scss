@@ -1,7 +1,7 @@
 .conferences {
     margin: 5.6rem 0 15rem 0;
 
-    &__wrapper {
+    &__slide {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 4rem;
@@ -79,17 +79,25 @@
             display: block;
         }
     }
+
+		&__pagination {
+			margin-top: 3rem;
+		}
 }
 
 @media screen and (max-width: 48em) {
   .conferences {
       margin: 2.8vw 0 21.3vw 0;
   
-      &__wrapper {
+      &__slide {
         display: flex;
         flex-direction: column;
         row-gap: 5.3vw;
       }
+
+										&__pagination {
+											margin-top: 8vw;
+										}
   
       &__block {
         border-radius: 2.2vw;

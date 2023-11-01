@@ -6797,7 +6797,7 @@ h4 {
 .conferences {
   margin: 5.6rem 0 15rem 0;
 }
-.conferences__wrapper {
+.conferences__slide {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 4rem;
@@ -6870,12 +6870,15 @@ h4 {
 .conferences__title.active, .conferences__photos.active, .conferences__info.active, .conferences__program.active, .conferences__results.active {
   display: block;
 }
+.conferences__pagination {
+  margin-top: 3rem;
+}
 
 @media screen and (max-width: 48em) {
   .conferences {
     margin: 2.8vw 0 21.3vw 0;
   }
-  .conferences__wrapper {
+  .conferences__slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6884,6 +6887,9 @@ h4 {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 5.3vw;
+  }
+  .conferences__pagination {
+    margin-top: 8vw;
   }
   .conferences__block {
     border-radius: 2.2vw;

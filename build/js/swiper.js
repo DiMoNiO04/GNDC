@@ -332,3 +332,24 @@ const bussinesSlider = new Swiper('#bussines__swipper', {
         el: '.bussines__bullets',
     },
 });
+
+const conferencesSlider = new Swiper('#conferences__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+        prevEl: '.conferences__prev',
+        nextEl: '.conferences__next',
+    },
+    pagination: {
+        clickable: true,
+        renderBullet: function (index, className) {
+            return `
+        <span class="${className}">
+         
+        </span>
+      `;
+        },
+        el: '.conferences__bullets',
+    },
+});

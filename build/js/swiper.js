@@ -297,19 +297,27 @@ const conferencesModalSlider = new Swiper('#modal__conferences-swiper', {
     },
 });
 
-const departmentSwiper = new Swiper('#department-swiper', {
+document.querySelectorAll('.department-swiper').forEach(slider => {
+	new Swiper(slider, {
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
-        nextEl: '.department__next',
-        prevEl: '.department__prev',
+        nextEl: slider.parentElement.querySelector('.department__next'),
+        prevEl: slider.parentElement.querySelector('.department__prev'),
     },
-    pagination: {
-        el: '.department__bullets',
+		pagination: {
         clickable: true,
+        renderBullet: function (index, className) {
+            return `
+        <span class="${className}">
+         
+        </span>
+      `;
+        },
+        el: slider.parentElement.querySelector('.department__bullets'),
     },
 });
-
+})
 const bussinesSlider = new Swiper('#bussines__swipper', {
     slidesPerView: 1,
     wrapperClass: 'bussines__swipper-wrapper',

@@ -373,17 +373,50 @@
                 margin-top: 5.3vw;
               }
 
-      &__content-right-btns {
+			&__content-right-btns {
+				display: flex;
+					align-items: center;
+					justify-content: space-between;
+					column-gap: 2rem;
+					margin-bottom: 8vw;
+					position: relative;
+					border-bottom: 1.5px solid #ADB8BF;
+
+					&::after {
+						content: "";
+						height: 1.5px;
+						display: block;
+						position: absolute;
+						background-color: #00AC60;
+						bottom: -1px;
+						z-index: 1;
+					}
+
+										&.width-25::after {
+											width: 25%;
+										}
+										&.width-50::after {
+											width: 50%;
+										}
+										&.width-75::after {
+											width: 75%;
+										}
+										&.width-100::after {
+											width: 100%;
+										}
+
+					&.--mob {
+							display: flex;
+						}
+			}
+
+      &__content-right-btns-active,
+			&__content-right-btns-no-active {
         display: flex;
-        margin-bottom: 8vw;
         align-items: center;
         justify-content: space-between;
-        column-gap: 1rem;
+        column-gap: 2rem;
         padding-top: 16vw;
-
-        &.--mob {
-          display: flex;
-        }
       }
 
       &__content-right {
@@ -396,9 +429,15 @@
         column-gap: 1.6vw;
         padding-bottom: 3.4vw;
 
+				&.active-prev {
+					transition: all 0.2s ease-in-out;
+					.distant__content-right-btn-number {
+							background: #00AC60;
+							color: white;
+						}
+				}
+
         &.active {
-          border-bottom: 1.5px solid #00AC60;
-      
           .distant__content-right-btn-number {
             background: #00AC60;
             color: white;

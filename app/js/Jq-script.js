@@ -77,24 +77,57 @@ $('[data-open-conf').on('click', function () {
 $('[data-modal-class]').on('click', function () {
     let id = $(this).attr('id');
 
-    let title = $(this).find('.conferences__title').text();
-    $('.modal__title').text(title);
+    console.log(id)
 
-    let info = $(this).find('.conferences__info').text();
-    $('[data-conf="info"]').text(info);
+    let title = $(this).find('.conferences__title').html();
+    $('.modal__title').html(title);
 
-    let results = $(this).find('.conferences__results').text();
-    $('[data-conf="results"]').text(results);
+    let info = $(this).find('.conferences__info').html();
+    $('[data-conf="info"]').html(info);
 
-    let programs = $(this).find('.conferences__program').text();
-    $('[data-conf="program"').text(programs);
+    let results = $(this).find('.conferences__results').html();
+    $('[data-conf="results"]').html(results);
+
+    let programs = $(this).find('.conferences__program').html();
+    $('[data-conf="program"').html(programs);
 });
 //----------------------------------------------------------------------//
 
 //---------------Distant-------------
 $('[data-open-distant]').on('click', function() {
     $('[data-open-distant]').removeClass('active');
+    $('[data-open-distant]').removeClass('active-prev');
     $(`[data-open-distant="${$(this).data('open-distant')}"`).addClass('active');
+
+    const index = $(this).data('open-distant').split('')[$(this).data('open-distant').length - 1];
+
+    $('[data-open-distant]').each(function() {
+      if($(this).data('open-distant').slice(-1) <= index) {
+        $(this).addClass('active-prev');
+        if($(this).hasClass('distant__content-right-btn')) {
+          $('.distant__content-right-btns-active').append($(this));
+        }
+      } else {
+        if($(this).hasClass('distant__content-right-btn')) {
+          $('.distant__content-right-btns-no-active').append($(this));
+        }
+      }
+
+      $('.distant__content-right-btns').removeClass('width-25');
+      $('.distant__content-right-btns').removeClass('width-50');
+      $('.distant__content-right-btns').removeClass('width-75');
+      $('.distant__content-right-btns').removeClass('width-100');
+
+      if(index == 1) {
+        $('.distant__content-right-btns').addClass('width-25');
+      } else if(index == 2) {
+        $('.distant__content-right-btns').addClass('width-50');
+      } else if(index == 3) {
+        $('.distant__content-right-btns').addClass('width-75');
+      } else if(index == 4) {
+        $('.distant__content-right-btns').addClass('width-100');
+      }
+    })
 
     $('[data-block-distant]').removeClass('active');
     $(`[data-block-distant="${$(this).data('open-distant')}"`).addClass('active');
@@ -148,10 +181,10 @@ $('.distant__text-btn').click(function () {
 
 //--------Search------------------------
 $('.header__search input').on('click', function() {
-	$(this).on('input', function() {
-		if($(this).val().length >= 1) {
-			$('.header-search__result').fadeIn();
-		}
-	})
+  $(this).on('input', function() {
+    if($(this).val().length >= 1) {
+      $('.header-search__result').fadeIn();
+    }
+  })
 })
 //------------------------------------

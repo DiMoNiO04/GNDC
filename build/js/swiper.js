@@ -344,6 +344,8 @@ const bussinesSlider = new Swiper('#bussines__swipper', {
 const conferencesSlider = new Swiper('#conferences__swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
+		autoHeight: true,
+		 effect: 'slide',
     loop: true,
     navigation: {
         prevEl: '.conferences__prev',

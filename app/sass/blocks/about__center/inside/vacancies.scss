@@ -61,7 +61,37 @@
     }
 }
 
+[data-content="vakansii"] {
+
+  .menu__buttons {
+    flex-wrap: wrap;
+  }
+
+  .menu__button {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: calc(33.33% - 0.28rem);
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      width: calc(50% - 0.4rem/2);
+    }
+  }
+}
+
 @media screen and (max-width: 48em) {
+
+  [data-content="vakansii"] {
+  
+      .menu__button {
+        &:nth-child(n) {
+          width: 100%;
+        }
+      }
+    }
+
     .vacancies {
         &__subtitle {
             font-size: 4.8vw;

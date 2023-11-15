@@ -14,7 +14,7 @@
 
     &__block {
         width: 49.4rem;
-        height: 39.8rem;
+        height: auto;
         background: #fefefe;
         border-radius: 0.8rem;
         padding: 2rem;
@@ -36,20 +36,20 @@
         color: #ffffff;
         background: #3f4c5c;
         border-radius: 0.8rem;
-        width: 13.2rem;
-        height: 11.7rem;
+        width: 10rem;
+        height: 7rem;
         text-align: center;
-        top: 0;
-        left: 3.3rem;
+        top: 13.4rem;
+        right: 4.4rem;
         strong {
             display: block;
-            font-size: 4rem;
-            line-height: 5.9rem;
+            font-size: 2.6rem;
+            line-height: 120%;
         }
 
         span {
-            font-size: 1.2rem;
-            line-height: 159%;
+            font-size: 1rem;
+            line-height: 120%;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: #ffffff;

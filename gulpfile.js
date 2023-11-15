@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
-var postcss = require('gulp-postcss');
+// var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var csso = require('gulp-csso');
 var server = require('browser-sync').create();
@@ -32,7 +32,7 @@ gulp.task('css', function () {
         .src('app/sass/style.scss')
         .pipe(plumber())
         .pipe(sass())
-        .pipe(postcss([autoprefixer()]))
+        // .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest('build/css'))
         .pipe(csso())
         .pipe(rename('style.min.css'))

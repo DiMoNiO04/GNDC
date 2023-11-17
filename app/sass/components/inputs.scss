@@ -14,19 +14,21 @@
         background-size: 100% 100%;
     }
 
-    &:hover {
-        cursor: pointer;
-        background: #00ac60;
-        transition: all 0.5s ease-in-out;
-
-        &::before {
-            background-image: url(../img/icon/heroicons-white.svg);
-        }
-
-        span {
-            color: #ffffff;
-        }
-    }
+		@media screen and (min-width: 48em) {
+			&:hover {
+					cursor: pointer;
+					background: #00ac60;
+					transition: all 0.5s ease-in-out;
+			
+					&::before {
+						background-image: url(../img/icon/heroicons-white.svg);
+					}
+			
+					span {
+						color: #ffffff;
+					}
+				}
+		}
 }
 
 .input-file {
@@ -53,23 +55,25 @@
         flex-shrink: 0;
     }
 
-    &:hover {
-        cursor: pointer;
-        background: #00ac60;
-        transition: all 0.5s ease-in-out;
-
-        &::before {
-            background-image: url('../img/icon/heroicons.svg');
-            width: 2.4rem;
-            height: 2.4rem;
-            background-size: cover;
-            flex-shrink: 0;
-        }
-
-        span {
-            color: #ffffff;
-        }
-    }
+		@media screen and (min-width: 48em) {
+			&:hover {
+					cursor: pointer;
+					background: #00ac60;
+					transition: all 0.5s ease-in-out;
+			
+					&::before {
+						background-image: url('../img/icon/heroicons.svg');
+						width: 2.4rem;
+						height: 2.4rem;
+						background-size: cover;
+						flex-shrink: 0;
+					}
+			
+					span {
+						color: #ffffff;
+					}
+				}
+		}
 
     span {
         position: relative;

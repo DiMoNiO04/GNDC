@@ -146,6 +146,10 @@
        width: 26rem;
      }
 
+     .input-file {
+      flex-shrink: 0;
+     }
+
   &__form-top {
     display: flex;
     align-items: center;
@@ -206,6 +210,37 @@
 
   &__btns {
     display: flex;
+  }
+
+  &__form-files {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  &__form-files-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 0.6rem;
+  }
+
+  &__form-files-item {
+    display: flex;
+    column-gap: 0.8rem;
+    align-items: center;
+
+    span {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    
+      button {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
   }
 }
 
@@ -472,5 +507,28 @@
           line-height: 110%;
           display: none;
       }
+
+            &__form-files {
+              flex-direction: column;
+              row-gap: 5.3vw;
+            }
+      
+            &__form-files-items {
+              column-gap: 5.3vw;
+              row-gap: 2.8vw;
+            }
+      
+            &__form-files-item {
+              column-gap: 2.8vw;
+      
+              span {
+                font-size: 4.8vw;
+              }
+      
+              button {
+                width: 3.2vw;
+                height: 3.2vw;
+              }
+            }
     }
 }

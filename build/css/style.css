@@ -802,16 +802,18 @@ input[type=number] {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.input-file-white:hover {
-  cursor: pointer;
-  background: #00ac60;
-  transition: all 0.5s ease-in-out;
-}
-.input-file-white:hover::before {
-  background-image: url(../img/icon/heroicons-white.svg);
-}
-.input-file-white:hover span {
-  color: #ffffff;
+@media screen and (min-width: 48em) {
+  .input-file-white:hover {
+    cursor: pointer;
+    background: #00ac60;
+    transition: all 0.5s ease-in-out;
+  }
+  .input-file-white:hover::before {
+    background-image: url(../img/icon/heroicons-white.svg);
+  }
+  .input-file-white:hover span {
+    color: #ffffff;
+  }
 }
 
 .input-file {
@@ -837,20 +839,22 @@ input[type=number] {
   background-size: 100% 100%;
   flex-shrink: 0;
 }
-.input-file:hover {
-  cursor: pointer;
-  background: #00ac60;
-  transition: all 0.5s ease-in-out;
-}
-.input-file:hover::before {
-  background-image: url("../img/icon/heroicons.svg");
-  width: 2.4rem;
-  height: 2.4rem;
-  background-size: cover;
-  flex-shrink: 0;
-}
-.input-file:hover span {
-  color: #ffffff;
+@media screen and (min-width: 48em) {
+  .input-file:hover {
+    cursor: pointer;
+    background: #00ac60;
+    transition: all 0.5s ease-in-out;
+  }
+  .input-file:hover::before {
+    background-image: url("../img/icon/heroicons.svg");
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: cover;
+    flex-shrink: 0;
+  }
+  .input-file:hover span {
+    color: #ffffff;
+  }
 }
 .input-file span {
   position: relative;
@@ -2347,6 +2351,9 @@ h4 {
 .contest .input-file span {
   width: 26rem;
 }
+.contest .input-file {
+  flex-shrink: 0;
+}
 .contest__form-top {
   display: flex;
   align-items: center;
@@ -2395,6 +2402,32 @@ h4 {
 }
 .contest__btns {
   display: flex;
+}
+.contest__form-files {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.contest__form-files-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 0.6rem;
+}
+.contest__form-files-item {
+  display: flex;
+  column-gap: 0.8rem;
+  align-items: center;
+}
+.contest__form-files-item span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.contest__form-files-item button {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 @media screen and (max-width: 48em) {
@@ -2607,6 +2640,24 @@ h4 {
     font-size: 4.8vw;
     line-height: 110%;
     display: none;
+  }
+  .contest__form-files {
+    flex-direction: column;
+    row-gap: 5.3vw;
+  }
+  .contest__form-files-items {
+    column-gap: 5.3vw;
+    row-gap: 2.8vw;
+  }
+  .contest__form-files-item {
+    column-gap: 2.8vw;
+  }
+  .contest__form-files-item span {
+    font-size: 4.8vw;
+  }
+  .contest__form-files-item button {
+    width: 3.2vw;
+    height: 3.2vw;
   }
 }
 .academic-consul {

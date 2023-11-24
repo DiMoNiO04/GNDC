@@ -148,11 +148,6 @@ function renderContentPage(elem) {
     changeContent(hashPage);
     changeBreadCrumb(hash, hashBlock);
 
-    if ('data-content="fotogalereya"') {
-        $('.photos__gallery').removeClass('active');
-        $('.photos__contents').addClass('active');
-    }
-
     if (hashBlock) {
         changeContentBlock(hash);
         showMobSubContent();

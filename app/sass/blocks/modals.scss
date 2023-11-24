@@ -23,7 +23,7 @@
         width: fit-content;
         position: relative;
         z-index: 2;
-        margin: auto;
+        margin: 5rem auto;
         -webkit-transform: scale(0.1);
         transform: scale(0.1);
         opacity: 0;
@@ -85,7 +85,7 @@
         display: none;
         &.active {
             display: block;
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 
@@ -182,7 +182,7 @@
   
       &__block-conferences {
         &.active {
-          font-size: 4.8vw;
+          font-size: 4.27vw;
         }
       }
 

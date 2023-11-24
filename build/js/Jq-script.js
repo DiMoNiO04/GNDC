@@ -43,27 +43,6 @@ $('[data-open-contest]').on('click', function() {
 })
 //-----------------------------------------------------------------//
 
-//-------------------------About---------------------------------------//
-$('[data-open-photo-category').on('click', function () {
-    $('.photos__gallery').removeClass('active');
-    $('.photos__contents').addClass('active');
-
-    $('[data-open-photo-category]').removeClass('active');
-    $(`[data-open-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
-
-    $('[data-photo-category]').removeClass('active');
-    $(`[data-photo-category="${$(this).data('open-photo-category')}"`).addClass('active');
-});
-
-$('.photos__item-image').on('click', function () {
-    $('.photos__gallery').addClass('active');
-    $('.photos__contents').removeClass('active');
-
-    const title = $(this).find('.photos__item-title').text();
-    $('.photos__gallery-title').text(title);
-});
-//--------------------------------------------------------------------------//
-
 
 //----------------------Conferences--------------------------------------//
 $('[data-open-conf').on('click', function () {
@@ -76,8 +55,6 @@ $('[data-open-conf').on('click', function () {
 
 $('[data-modal-class]').on('click', function () {
     let id = $(this).attr('id');
-
-    console.log(id)
 
     let title = $(this).find('.conferences__title').html();
     $('.modal__title').html(title);
